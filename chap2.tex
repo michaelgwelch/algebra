@@ -113,7 +113,6 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
          x * (y * z) & = x * (y + 2z + 4) \\
 	             & = x + 2(y + 2z + 4) + 4 \\
 		     & = x + 2y + 4z + 12  \\
-\\
          (x * y) * z & = (x + 2y + 4) * z \\
 	             & = (x + 2y + 4) + 2z + 4 \\
 		     & = x + 2y + 2z + 8
@@ -134,7 +133,6 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
          x * -2 & = x + (2)(-2) + 4 \\
 	        & = x - 4 + 4       \\
 		& = x               \\
-		\\
 	 -2 * x & = -2 + 2x + 4     \\
 	        & = 2x + 2          
       \end{align*}
@@ -154,7 +152,6 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
             (1) and (2) below:
       \begin{align*}
          x * y & = x + 2y - xy \\
-	                       \\
 	 y * x & = y + 2x - yx \\
 	       & = 2x + y - xy \notag
       \end{align*}
@@ -166,7 +163,6 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
 	             & = x + 2(y + 2z - yz) - x(y + 2z - yz) \notag \\
 		     & = x + 2y + 4z - 2yz - xy - 2xz + xyz  \notag \\
 		     & = x + 2y + 4z - xy - 2xz - 2yz + xyz  \notag \\
-		     \notag \\
 	 (x * y) * z & = (x + 2y - xy) * z                          \\
 	             & = (x + 2y - xy) + 2z - (x + 2y - xy)z \notag \\
 		     & = (x + 2y - xy) + 2z - xz - 2yz - xyz \notag \\
@@ -176,7 +172,6 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
       \item From the following we can see that $e=0$. 
       \begin{align*}
          x * e & = x                  \\
-	 \\
 	 x * e & = x + 2e - xe        \\
 	     x & = x + 2e - xe \notag \\
 	     0 & =     2e - xe \notag \\
@@ -206,7 +201,6 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
       \item From the following we can see that the operation is commutative:
       \begin{align*}
          x * y & = | x + y |         \\
-	 \\
 	 y * x & = | y + x |         \\
 	       & = | x + y | \notag  
       \end{align*}
@@ -218,7 +212,6 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
          x * (y * z) & = 7 * | -13 + 1 | \\
 	             & = | 7 + 12 | \notag \\
 		     & = 19         \notag \\
-		                    \notag \\
 	 (x * y) * z & = | 7 + -13 | * 1   \\
 	             & = | -6 | * 1 \notag \\
 		     & = | 6 + 1 |  \notag \\
@@ -249,7 +242,6 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
 	          x - y,     & \text{if $x \ge y$;} \\
 		  y - x,     & \text{otherwise.}
 	       \end{cases} \notag \\
-	                                         \notag \\
 	 y * x & = | y - x |           \\
 	       & =
 	       \begin{cases}
@@ -265,7 +257,6 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
 	             & = 1 * 5       \notag \\
 		     & = | 1 - 5 |   \notag \\
 		     & = 4           \notag \\
-		                     \notag \\
 	 (x * y) * z & = | 1 - (-2) | * 3  \\
 	             & = 3 * 3       \notag \\
 		     & = | 3 - 3 |   \notag \\
@@ -291,7 +282,6 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
       \item The operation is commutative as seen below.
       \begin{align*}
          x * y & = xy + 1  \\
-	 \\
 	 y * x & = yx + 1 \\
 	       & = xy + 1 \quad\text{(Multiplication is commutative.)}
       \end{align*}
@@ -301,7 +291,6 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
          x * (y * z) & = x * (yz + 1) \\
 	             & = x(yz + 1) + 1 \\
 		     & = x + xyz + 1 \\
-		     \\
 	 (x * y) * z & = (xy + 1) * z \\
 	             & = (xy + 1)z + 1 \\
 		     & = z + xyz + 1 \\
@@ -313,9 +302,7 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
       depens on $x$. This is not a constant value.
       \begin{align*}
          x * e & = x \\
-	 \\
 	 x * e & = xe + 1 \\
-	 \\
 	     x & = xe + 1 \\
 	 x - 1 & = xe     \\
 	 xe    & = x - 1  \\
@@ -331,7 +318,12 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
 
    \begin{enumerate}
       
-      \item The operation is commutative.
+      \item The operation is commutative. This can be seen in 
+      figure~\ref{fig:max_com} on page~\pageref{fig:max_com}.
+
+      \begin{figure}
+      \caption{Proof that max function is commutative.}
+      \label{fig:max_com}
       \begin{align*}
          x * y & = \max(x,y)    \\
 	       & =
@@ -339,7 +331,6 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
 	          x,       & \text{if $x \ge y$;} \\
 		  y,       & \text{otherwise.}
 	       \end{cases} \\
-	       \\
 	 y * x & = \max(y,x)   \\
 	       & =
 	       \begin{cases}
@@ -347,8 +338,14 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
 		  y,       & \text{otherwise.}
 	       \end{cases}
       \end{align*}
+      \end{figure}
 
-      \item The operation is associative.
+      \item The operation is associative. The proof can be seen in
+      figure~\ref{fig:max_assoc} on page~\pageref{fig:max_assoc}.
+
+      \begin{figure}
+      \caption{Proof that the max function is associative.}
+      \label{fig:max_assoc}
       \begin{align*}
          x * (y * z) & = x * \max(y,z) \\
 	             &= \max(x, \max(y,z)) \\
@@ -363,7 +360,6 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
 			y,  & \text{if $x < y \wedge y \ge z$;}   \\
 			z,  & \text{otherwise.}
 		     \end{cases} \\
-		     \\
 	 (x * y) * z & = \max(x,y) * z \\
 	             & = \max(\max(x,y), z) \\
 		     & =
@@ -378,6 +374,7 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
 			z, & \text{otherwise.}
 		     \end{cases}
       \end{align*}
+      \end{figure}
 
       \item There is no identity element. We will prove this by contradiction.
       Assume that there is some identity element $e$. Then by definition 
@@ -394,13 +391,19 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
 
    \noindent \Solution The solution is as follows
    \begin{enumerate}
-      \item The operation is commutative.
+      \item The operation is commutative. The proof is shown in 
+      figure~\ref{fig:b7_com} on page~\pageref{fig:b7_com}.
+
+      \begin{figure}
+      \caption{Proof that the equation of problem 2.7 (B7 in the text) 
+      is commutative.}
+      \label{fig:b7_com}
       \begin{align*}
          x * y & = \frac{xy}{x + y + 1} \\
-	 \\
 	 y * x & = \frac{yx}{y + x + 1} \\
 	       & = \frac{xy}{x + y + 1} && \text{(+,$\cdot$ are commutative)}
       \end{align*}
+      \end{figure}
 
       \item The operation is not associative. This can be demonstrated 
       with the values $x = 2, y = 3, z = 4$.
@@ -411,7 +414,6 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
 		     & = \frac{6/2}{9/2} \\
 		     & = \frac{6}{9} \\
 		     & = \frac{2}{3} \\
-		     \\
 	 (2 * 3) * 4 & = \frac{2 \cdot 3}{2 + 3 + 1} * 4 \\
 	             & = \frac{6}{7} * 4 \\
 		     & = \frac{(6/7) \cdot 4}{(3/7) + 4 + 1} \\
@@ -443,8 +445,12 @@ Let $A$ be the two-element set $A = \{a,b\}$.
    \item \Problem Write the tables of all 16 operations on $A$. (Use the format
    explained on page 20.) Label these operations $O_1$ to $O_{16}$. 
 
-   \noindent \Solution The tables are listed below.
+   \noindent \Solution The tables are shown in table \ref{tab:boolean_ops} on 
+   page~\pageref{tab:boolean_ops}.
 
+   \begin{table}
+   \caption{The sixteen different operations for a two element set.}
+   \label{tab:boolean_ops}
    \begin{tabular}{cccc}
       & & & \\
       \begin{tabular}{c|c}    
@@ -583,8 +589,10 @@ Let $A$ be the two-element set $A = \{a,b\}$.
       \end{tabular}  \\
       & & & \\
    \end{tabular}
+   \end{table}
 
    \item \Problem Identify which of the operations $O_1$ to $O_{16}$ are
+   commutative.
 
    \noindent \Solution This can be solved very easily by looking at the
    second and third entries in each table to see if $a*b=b*a$. The commutative
@@ -595,8 +603,12 @@ Let $A$ be the two-element set $A = \{a,b\}$.
    associative.
 
    \noindent \Solution 
-   In general there are eight cases to check.
-
+   In general there are eight cases to check. These cases are shown in
+   table~\ref{tab:eight_cases} on page~\pageref{tab:eight_cases}.
+%
+   \begin{table}
+   \caption{The eight cases of associativity.}
+   \label{tab:eight_cases}
    \begin{align*}
       a * (a * a) & = (a * a) * a && 1\\
       a * (a * b) & = (a * a) * b && 2\\
@@ -607,12 +619,17 @@ Let $A$ be the two-element set $A = \{a,b\}$.
       b * (b * a) & = (b * b) * a && 7\\
       b * (b * b) & = (b * b) * b && 8
    \end{align*}
+   \end{table}
 
    Let's consider how many cases there are when $*$ is commutative. 
    It will be shown that only two cases need to be checked: 2 and 4. All
    the others are trivially true by commutativity, or else they are true
-   if 2 or 4 is true. 
-
+   if 2 or 4 is true. See table~\ref{tab:com_check} on 
+   page~\pageref{tab:com_check} to see the list of proofs.
+%
+   \begin{table}
+   \caption{Equations proving only 2 cases must be checked when operation is commutative}
+   \label{tab:com_check}
    \begin{align*}
       a * (a * a) & = (a * a) * a    && \text{(Commutativity)} \\
       \\
@@ -638,45 +655,52 @@ Let $A$ be the two-element set $A = \{a,b\}$.
       \\
       b * (b * b) & = (b * b) * b    && \text{(Commutativity)}
    \end{align*}
+   \end{table}
 
    Now we need to start checking all the cases.
 
-   $\mathbf{O_1}$\textbf{:} This operation is commutative. Check cases 2 and 4 to
-   see that is it also associative.
+   $\mathbf{O_1}$\textbf{:} This operation is commutative. Cases 2 and 4 
+   are true, so this operation is associative. See figure~\ref{fig:o1}
+   \begin{figure}
+   \caption{The proofs for $O_1$.}
+   \label{fig:o1}
    \begin{align*}
       a * (a * b) & = a * a  && \text{(Left hand side of case 2.)}\\
                   & = a      \\
-		  \\
       (a * a) * b & = a * b  && \text{(Right hand side of case 2.)}\\
-                  & = a      && \text{(Case 2 is true.)}
-		  \\
+                  & = a      && \text{(Case 2 is true.)} \\
       a * (b * b) & = a * b && \text{(Left hand side of case 4.)}\\
-                  & = a
-		  \\
+                  & = a \\
       (a * b) * b & = a * b && \text{(Right hand side of case 4.)}\\
                   & = a     && \text{(Case 4 is true.)}
    \end{align*}
+   \end{figure}
 
    $\mathbf{O_2}$\textbf{:} This operation is not commutative. Therefore there are
    eight cases to check. Rather than check them all, we'll use boolean
    algebra. We assume $a$ is the value \verb=false= and $b$ is the value
    \verb=true=. The operation is equivalent to the boolean equation $x\wedge
-   \neg y$.
+   \neg y$. We calculate the appropriate equations for $x * (y * z)$ and
+   $(x * y) * z$ in figure~\ref{fig:o2_bool_eq}.
+
+   \begin{figure}
+   \caption{The 3 variable boolean equations for $O_2$.}
+   \label{fig:o2_bool_eq}
    \begin{align*}
       x * (y * z) & = x * (y \wedge \neg z) \\
 		  & = x \wedge \neg(y \wedge \neg z)\\
 		  & = x \wedge (\neg y \vee z) \\
-		  \\
       (x * y) * z & = (x \wedge \neg y) * z \\
                   & = (x \wedge \neg y) \wedge \neg z \\
 		  & = x \wedge \neg y \wedge \neg z 
    \end{align*}
+   \end{figure}
 
-   Now we find to find a difference. So we'll calculate a triple of
+   Now we need to find a difference. So we'll calculate a triple of
    values where the first formula is true, but the second formula is not.
    We'll do this with an equation of the form $f \wedge \neg s$ where $f$
    is the first equation and s is the second equation.
-
+%
    \begin{align*}
       f \wedge s & = x \wedge (\neg y \vee z) \wedge \neg 
                        (x \wedge \neg y \wedge \neg z))\\
@@ -684,16 +708,15 @@ Let $A$ be the two-element set $A = \{a,b\}$.
 	     (\neg x \vee y \vee z) \\
 	 & = (x \wedge y \wedge z) \vee (x \wedge \neg y \wedge z) 
 	      \vee (x \wedge z) \\
-	 & = (x \wedge z) \vee (y \vee \neg y \vee \top) \\
+	 & = (x \wedge z) \wedge (y \vee \neg y \vee \top) \\
 	 & = x \wedge z
    \end{align*}
 
    So the two formulas differ when $x = b, z = b$. Let's check.
-
+%
    \begin{align*}
        b * (a * b) & = b * a \\
                    & = b \\
-		   \\
        (b * a) * b & = b * b \\
                    & = a     \\
 		   & \ne b
@@ -702,11 +725,10 @@ Let $A$ be the two-element set $A = \{a,b\}$.
    $\mathbf{O_3}$\textbf{:} This operation is not commutative. We'll solve
    it the same way we solve ${O_2}$. This operation is equivalent to the 
    equation $x*y=x$.
-
+%
    \begin{align*}
       x * (y * z) & = x * y \\
                   & = x     \\
-		  \\
       (x * y) * z & = x * z \\
                   & = x
    \end{align*}
@@ -715,11 +737,186 @@ Let $A$ be the two-element set $A = \{a,b\}$.
 
    $\mathbf{O_4}$\textbf{:} This operation is not commutative. It is 
    equivalent to the equatioin $x * y = \neg x \wedge y$.
+%
+   \begin{align*}
+      x * (y * z) & = x * (\neg y \wedge z)    \\
+                  & = \neg x \wedge \neg y \wedge z \\
+      (x * y) * z & = (\neg x \wedge y) * z \\
+                  & = \neg (\neg x \wedge y) \wedge z
+   \end{align*}
 
-   
-   
+   The first formula is more restrictive. Let's find a set of values
+   where the second formula is true but the first is not: $s \wedge \neg f$.
+%
+   \begin{align*}
+      s \wedge \neg f & = (\neg (\neg x \wedge y) \wedge z) \wedge \neg
+                 (\neg x \wedge \neg y \wedge z ) \\
+         & = (x \vee \neg y) \wedge z \wedge (x \vee y \vee \neg z) \\
+	 & = (x \vee \neg y) \wedge ((x \wedge z) \vee (y \wedge z) \vee \bot)\\
+	 & = (x \wedge z) \vee (x \wedge y \wedge z) \vee 
+	     (\neg y \wedge x \wedge z) \vee (\neg y \wedge y \wedge z)  \\
+	 & = (x \wedge z) \wedge (y \vee \neg y) \\
+	 & = x \wedge z
+   \end{align*}
 
+   When $x = b, z = b$ we find a difference, therefore $O_4$ is not associative.
+%
+   \begin{align*}
+      b * (b * b) & = b * a \\
+                  & = a \\
+      (b * b) * b & = a * b \\
+                  & = b \\
+		  & \ne a
+   \end{align*}
+
+   $\mathbf{O_5}$\textbf{:} This is not commutative either. It is equivalent
+   to $x * y = y$. It is associative. We can see this since both formulas
+   evaluate to the same thing.
+%   
+   \begin{align*}
+      x * (y * z) & = x * z \\
+                  & = z \\
+      (x * y) * z & = y * z \\
+                  & = z 
+   \end{align*}
    
+   $\mathbf{O_6}$\textbf{:} This operation is commutative. We just have to
+   check cases 2 and 4 from above. Below we see both cases are true, therefore
+   this operation is associative.
+%
+   \begin{align*}
+      a * (a * b) & = a * b && \text{(Left hand side of case 2.)}\\
+                  & = b \\
+      (a * a) * b & = a * b && \text{(Right hand side of case 2.)}\\
+                  & = b     && \text{(Case 2 is true.)} \\
+      a * (b * b) & = a * a && \text{(Left hand side of case 4.)}\\
+                  & = a \\
+      (a * b) * b & = b * b && \text{(Right hand side of case 4.)} \\
+                  & = a     && \text{(Case 4 is true.)}
+   \end{align*}
+
+   $\mathbf{O_7}$\textbf{:} This operation is commutative. Cases 2 and
+   4 are true, therefore this operation is associative.
+%
+   \begin{align*}
+      a * (a * b) & = a * b && \text{(Left hand side of case 2.)}\\
+                  & = b \\
+      (a * a) * b & = a * b && \text{(Right hand side of case 2.)}\\
+                  & = b     && \text{(Case 2 is true.)}\\
+      a * (b * b) & = a * b && \text{(Left hand side of case 4.)} \\
+                  & = b  \\
+      (a * b) * b & = b * b && \text{(Right hand side of case 4.)} \\
+                  & = b     && \text{(Case 4 is true.)}
+   \end{align*}
+
+   $\mathbf{O_8}$\textbf{:} This operation is commutative. Case 2 is 
+   false, therefore this operation is not associative.
+   %
+   \begin{align*}
+      a * (a * b) & = a * a && \text{(Left hand side of case 2.)} \\
+                  & = b     \\
+      (a * a) * b & = b * b && \text{(Right hand side of case 2.)} \\
+                  & = a     && \text{(Case 2 is false.)}
+   \end{align*}
+
+   $\mathbf{O_9}$\textbf{:} This operation is commutative. Cases 2 and
+   4 are true, therefore this operation is associative.
+   %
+   \begin{align*}
+      a * (a * b) & = a * a  \\
+                  & = b \\
+      (a * a) * b & = b * b \\
+                  & = b && \text{(Case 2 is true.)} \\
+      a * (b * b) & = a * b \\
+                  & = a \\
+      (a * b) * b & = a * b \\
+                  & = a && \text{(Case 4 is true.)} 
+   \end{align*}
+
+   $\mathbf{O_{10}}$\textbf{:} This operation is not commutative. This
+   operation corresponds to the boolean equation $x * y = \neg y$. See
+   figure~\ref{fig:o10_assoc} for proof that this operation is not
+   associative.
+
+   \begin{figure}
+      \caption{Proof that $O_{10}$ is not associative.}
+      \label{fig:o10_assoc}
+      \begin{align*}
+         x * y & = \neg y  && \text{(Boolean equivalent equation for $O_{10}$.)} \\
+         x * (y * z) & = x * \neg z \\
+	             & = z \\
+         (x * y) * z & = \neg y * z \\
+	             & = \neg z && \text{(Doesn't equal $z$.)}.
+      \end{align*}
+   \end{figure}
+
+
+   $\mathbf{O_{11}}$\textbf{:} This operation is not commutative. 
+   The equivalent binary equation is $x * y = x \vee \neg x \wedge \neg y$. See
+   the derivation of the boolean equivalent equations for $x * (y * z)$ and $(x
+   * y) * z$ in figure~\ref{fig:o11_assoc} to see that they equal $x \vee \neg
+   * x \wedge \neg y \wedge z$ and $x \vee \neg x \wedge \neg y$ respectively.
+
+   \begin{figure}
+      \caption{Derivation of the boolean equations $x * (y * z)$ and
+      $(x * y) * z$ for $O_{11}$.}
+      \label{fig:o11_assoc}
+      \begin{align*}
+         x * y & = x \vee (\neg z \wedge \neg y) \\
+	 x * (y * z) & = x * (y \vee (\neg y \wedge \neg z)) \\
+	             & = x \vee (\neg x \wedge \neg (y \vee (\neg y 
+		         \wedge \neg z))) \\
+	             & = x \vee (\neg x \wedge (\neg y \wedge \neg (\neg y
+		         \wedge \neg z)))  \\
+	             & = x \vee (\neg x \wedge (\neg y \wedge (y \vee z))) \\
+		     & = x \vee (\neg x \wedge \neg y \wedge y) 
+		         \vee (\neg x \wedge \neg y \wedge z) \\
+		     & = x \vee (\neg x \wedge \neg y \wedge z) \\
+         (x * y) * z & = (x \vee (\neg x \wedge \neg y) * z \\
+	             & = (x \vee (\neg x \wedge \neg y) \vee 
+		         (z \wedge (x \vee (\neg x \wedge \neg y))) \\
+		     & = x \vee (\neg x \wedge \neg y) \vee (x \wedge z)
+		         \vee (\neg x \wedge \neg y \wedge z) \\
+		     & = x \vee (\neg x \wedge \neg y)
+      \end{align*}
+   \end{figure}
+
+
+   From the equations in figure~\ref{fig:o11_assoc} you can see that
+   one of the equations is true for ${x = a, y = a, z = a}$ and the other
+   one is false for the same set of values. So this is our counter example
+   that $O_{11}$ is not associative. See figure~\ref{fig:o11_assoc2}
+   for the derivation.
+
+   \begin{figure}
+      \caption{Derivation of ${x = a, y = a, z = a}$ to show $O_{11}$ 
+      is not associative. One evaluates to $a$ and the other $b$.}
+      \label{fig:o11_assoc2} 
+      \begin{align*}
+         a * (a * a) & = a * b \\
+                     & = a \\
+         (a * a) * a & = b * a \\
+	             & = b        
+      \end{align*}
+   \end{figure}
+
+   $\mathbf{O_{12}}$\textbf{:} This operation is not commutative. Its boolean
+   equivalent equation is $x * y = \neg x$. This operation is not associative
+   The two equations evaluate to different values. See figure~\ref{fig:o12_assoc}.
+
+   \begin{figure}
+      \caption{Evaluation of binary equivalent equations for $O_{12}$ to show
+      that it is not associative.}
+      \label{fig:o12_assoc}
+      \begin{align*}
+         x * y & = \neg x  \\
+         x * (y * z) & = x * \neg z \\
+	             & = \neg x \\
+         (x * y) * z & = \neg x * z \\
+	             & = x
+      \end{align*}
+   \end{figure}
+
 \end{enumerate}
 
 \end{document}
