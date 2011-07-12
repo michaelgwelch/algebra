@@ -1,4 +1,4 @@
-\documentclass{amsart}
+\documentclass[draft,twoside]{amsart}
 \usepackage{amssymb,latexsym}
 \usepackage{xspace}
 \newcommand{\Rationals}{\mathbb{Q}{}}
@@ -10,7 +10,10 @@
 \newcommand{\ltrue}{\top}
 \newcommand{\lfalse}{\bot}
 \begin{document}
-These are my answers to the Chapter 2 exercises.
+\title{Answers to Chapter 2 Excercises - A Book of Abstract Algebra}
+\author{Michael Welch}
+\date{\today}
+\maketitle
 
 \section{Examples of Operations}
 Which of the following rules are operations on the indicated set?  ($\Integers$
@@ -1017,6 +1020,94 @@ Let $A$ be the two-element set $A = \{a,b\}$.
 	 & = x               && \qed
       \end{align*}
    \end{figure}
+
+   \item \Problem For which of the operations $O_1$ to $O_{16}$ does
+   every element have an inverse?
+
+   \noindent \Solution The answer is that only $O_6$ and $O_9$ provide
+   inverses for every element.
+   
+   As we saw in the last problem only 4 operations
+   have an identity: $O_1$, $O_6$, $O_7$ and $O_9$ so these are the only
+   four operations we need to consider. $O_1$ does not have an inverse 
+   for the value $a$, as there is no value of $y$ that makes the following
+   equation true: $a * y = b$. Likewise, $O_7$ does not provide an inverse
+   for the value $b$ as there is no value for $y$ which makes the 
+   following equation true: $b * y = a$. 
+   
+   The remaining two operations do
+   provide inverses for every element. For $O_6$ we have that 
+   $a^{-1} = a \And b^{-1} = b$. For $O_9$ we have that 
+   $a^{-1} = a \And b^{-1} = b$. In general for these two operations
+   we have that $x^{-1} = x$.
+
+\end{enumerate}
+
+\section{Automata: The Algebra of Input/Output Sequences}
+Digital computers and related machines proces information which is received in
+the form of input sequences. An \emph{input sequence} is a finite sequence of
+symbols from some alphabet $A$. For instance, if $A=\{0,1\}$ (that is, if the
+alphabet consists of only the two symbols 0 and 1), then examples of input
+sequences are 011010 and 1010111. If $A=\{a,b,c\}$, then examples of input
+sequences are \emph{babbcac} and \emph{cccabaa}. \emph{Output sequences} are
+defined in the same way as input sequences. The set of all sequences of symbols
+in the alphabet $A$ is denoted by $A^*$.
+
+There is an operation on $A^*$ called \emph{concatenation}: If $\mathbf{a}$ and
+$\mathbf{b}$ are in $A^*$, say $\mathbf{a} = a_1 a_2 \ldots a_n$ and
+$\mathbf{b} = b_1 b_2 \ldots b_m$, then \begin{align*} \mathbf{ab} & = a_1 a_2
+\ldots a_n b_1 b_2 \ldots b_m \end{align*} In other words, the sequence
+$\mathbf{ab}$ consists of the two sequences $\mathbf{a}$ and $\mathbf{b}$ end
+to end.  For example, in the alphabet $A=\{0,1\}$, if $\mathbf{a} = 1001$ and
+$\mathbf{b} = 010$, then $\mathbf{ab} = 1001010$.
+
+The symbol $\lambda$ denotes the empty sequence.
+
+\begin{enumerate}
+   \item Prove that the operation above is associative.
+   
+   \begin{proof}
+      Let $\mathbf{a} = a_1 a_2 \ldots a_r$, and $\mathbf{b} = b_1 b_2
+      \ldots b_s$, and $\mathbf{c} = c_1 c_2 \ldots c_t$. Then we have
+      \begin{align*}
+        (\mathbf{ab})\mathbf{c} 
+	               & = (a_1 a_2 \ldots a_r b_1 b_2 \ldots b_s)\mathbf{c}\\
+	               & = a_1 a_2 \ldots a_r b_1 b_2 \ldots b_s c_1 c_2 
+		           \ldots c_t \\
+        \mathbf{a}(\mathbf{bc})
+	               & = \mathbf{a}(b_1 b_2 \ldots b_s c_1 c_2 \ldots c_t)\\
+	               & = a_1 a_2 \ldots a_r b_1 b_2 \ldots b_s c_1 c_2 
+		           \ldots c_t 
+      \end{align*}
+   \end{proof}
+
+   \item Explain why the operation is not commutative. 
+   
+   \noindent \Solution It is not commutative
+   because commutativity changes the order of the symbols in the resulting
+   sequence. For example, let $\mathbf{a} = a_1 a_2 \ldots a_n$ and 
+   $\mathbf{b} = b_1 b_2 \ldots b_m$. Then, as before, we have 
+   $\mathbf{ab} = a_1 a_2 \ldots a_n b_1 b_2 \ldots b_m$. However, we
+   get a different result for $\mathbf{ba}$: $\mathbf{ba} = b_1 b_2 \ldots
+   b_m a_1 a_2 \ldots a_n$.
+
+   \item Prove that there is an identity element for this operation.
+
+   \begin{proof}
+      We choose the identity element, $e$, to be the empty sequence $\lambda$,
+      and again choose $\mathbf{a} = a_1 a_2 \ldots a_n$.
+      Now we will demonstrate that $e$ is indeed the identity element.
+      \begin{align*}
+         \mathbf{a}\lambda & = a_1 a_2 \ldots a_n \lambda \\
+	                   & = a_1 a_2 \ldots a_n 
+			            && \text{Defn. of $\lambda$} \\
+			   & = \mathbf{a} && \text{Defn. of $\mathbf{a}$} \\
+	 \lambda\mathbf{a} & = \lambda a_1 a_2 \ldots a_n \\
+	                   & = a_1 a_2 \ldots a_n 
+			            && \text{Defn. of $\lambda$} \\
+			   & = \mathbf{a} && \text{Defn. of $\mathbf{a}$} 
+      \end{align*}
+   \end{proof}
 
 \end{enumerate}
 
