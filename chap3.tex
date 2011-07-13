@@ -383,8 +383,17 @@ of A Book of Abstract Algebra.
       this is impossible.]
 
       \begin{proof}
-      Assume there is a word $\mathbf{x}$ such that $\mathbf{x} \in
-      S_t(\mathbf{a})$ and $\mathbf{x}\in S_t( \mathbf{b})$. 
+         Assume there is a word $\mathbf{x}$ such that $\mathbf{x} \in
+         S_t(\mathbf{a})$ and $\mathbf{x}\in S_t( \mathbf{b})$. 
+         We have
+         \begin{align*}
+	 S_t(\mathbf{a}) & = \{\mathbf{x} : d(\mathbf{a},\mathbf{x}) 
+	    \le \frac{1}{2}(m-1) \} \\
+         S_t(\mathbf{b}) & = \{\mathbf{x} : d(\mathbf{b},\mathbf{x}) 
+	    \le \frac{1}{2}(m-1) \} \\
+	    S_t(\mathbf{a}) \cap S_t(\mathbf{b}) & \ne \emptyset 
+	        && \text{Assumed}
+         \end{align*}
       \end{proof}
 
 \end{enumerate}
