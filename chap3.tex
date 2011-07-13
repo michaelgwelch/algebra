@@ -1,6 +1,8 @@
-\documentclass[draft,twoside]{amsart}
+\documentclass[twoside]{amsart}
 \usepackage{amssymb,latexsym}
 \usepackage{xspace}
+\usepackage{enumerate}
+\usepackage{graphics}
 \newcommand{\Rationals}{\mathbb{Q}{}}
 \newcommand{\Reals}{\mathbb{R}{}}
 \newcommand{\Integers}{\mathbb{Z}{}}
@@ -10,243 +12,360 @@
 \newcommand{\ltrue}{\top}
 \newcommand{\lfalse}{\bot}
 \begin{document}
-\title{Answers to Chapter 3 Excercises - A Book of Abstract Algebra}
+\title{Answers to Chapter 3 Exercises - A Book of Abstract Algebra}
 \author{Michael Welch}
 \date{\today}
 \maketitle
 
-\section{Examples of Abelian Groups (Exercise A)}
+This document contains selected answers to exercises from chapter 3
+of A Book of Abstract Algebra.
 
-Prove that each of the following sets, with the indicated operation, is an
-abelian group.
+\begin{enumerate}[A.]
+   \item \textsc{Examples of Abelian Groups}
 
-\textbf{Instructions} Proceed as in Chapter 2, Exercise B.
+   Prove that each of the following sets, with the indicated operation, is an
+   abelian group.
 
-\begin{enumerate}
-   \item $x * y = x + y + k$ (k is a fixed constant), on the set 
-   $\Reals$ of the real numbers.
+   \textbf{Instructions} Proceed as in Chapter 2, Exercise B.
 
-   \begin{enumerate} % 4 parts: assoc, commut, identity, inverse
-      \item 
-      \begin{proof}[Proof that operation is commutative]
-         \begin{align*}
-	    x * y & = x + y + k \\
-	    y * x & = y + x + k \\
-	          & = x + y + k && \text{Commute addition} \qedhere
+   \begin{enumerate}[1.]
+      \item $x * y = x + y + k$ (k is a fixed constant), on the set 
+      $\Reals$ of the real numbers.
+
+      \begin{enumerate} % 4 parts: assoc, commut, identity, inverse
+	 \item 
+	 \begin{proof}[Proof that operation is commutative]
+	    \begin{align*}
+	       x * y & = x + y + k \\
+	       y * x & = y + x + k \\
+		     & = x + y + k && \text{Commute addition} \qedhere
+	    \end{align*}
+	 \end{proof}
+
+	 \item 
+	 \begin{proof}[Proof that operation is associative]
+	    \begin{align*}
+	       x * (y * z) & = x * (y + z + k) \\
+			   & = x + (y + z + k) + k \\
+			   & = x + y + z + 2k \\
+	       (x * y) * z & = (x + y + k) * z \\
+			   & = (x + y + k) + z + k \\
+			   & = x + y + z + 2k \qedhere
+	    \end{align*}
+	 \end{proof}
+
+	 \item The identity element can be calculated:
+	 \begin{align*}
+	    x * e & = x         \\
+	    x * e & = x + e + k \\
+		x & = x + e + k \\
+		e & = -k
 	 \end{align*}
-      \end{proof}
 
-      \item 
-      \begin{proof}[Proof that operation is associative]
-         \begin{align*}
-	    x * (y * z) & = x * (y + z + k) \\
-	                & = x + (y + z + k) + k \\
-			& = x + y + z + 2k \\
-	    (x * y) * z & = (x + y + k) * z \\
-	                & = (x + y + k) + z + k \\
-			& = x + y + z + 2k \qedhere
+	 We know by commuativity that $x * (-k) = (-k) * x$. Therefore,
+	 $-k$ is the identity element.
+
+	 \item We can caluclate the inverse of $x$ which we label $x'$.
+	 \begin{align*}
+	    x * x' & = -k          \\
+	    x * x' & = x + x' + k  \\
+	       -k  & = x + x' + k  \\
+		x' & = -x - 2k
 	 \end{align*}
-      \end{proof}
 
-      \item The identity element can be calculated:
-      \begin{align*}
-         x * e & = x         \\
-         x * e & = x + e + k \\
-	     x & = x + e + k \\
-	     e & = -k
-      \end{align*}
+      \end{enumerate}
 
-      We know by commuativity that $x * (-k) = (-k) * x$. Therefore,
-      $-k$ is the identity element.
+      \item $\displaystyle x * y = \frac{xy}{2}$, on the set $\{x \in \Reals
+      : x \ne 0\}$
+      
+	 \begin{enumerate}
+	    \item
+	    \begin{proof}[Proof the operation is commutative]
+	       \begin{align*}
+		  x * y & = \frac{xy}{2}         \\
+		  y * x & = \frac{yx}{2}         \\
+			& = \frac{xy}{2} \qedhere
+	       \end{align*}
+	    \end{proof}
 
-      \item We can caluclate the inverse of $x$ which we label $x'$.
-      \begin{align*}
-         x * x' & = -k          \\
-	 x * x' & = x + x' + k  \\
-	    -k  & = x + x' + k  \\
-	     x' & = -x - 2k
-      \end{align*}
+	    \item
+	    \begin{proof}[Proof the operation is associative]
+	       \begin{align*}
+		  x * (y * z) & = x * \frac{yz}{2}   \\
+			      & = \frac{x\displaystyle\frac{yz}{2}}{2} \\
+			      & = \frac{xyz}{4} \\
+		  (x * y) * z & = \frac{xy}{2} * z \\
+			      & = \frac{\displaystyle \frac{xy}{2}z}{2} \\
+			      & = \frac{xyz}{4} \qedhere
+	       \end{align*}
+	    \end{proof}
+
+	    \item The following calculation shows that the identity element
+	    is 2.
+	    \begin{align*}
+	       x * e & = x              \\
+	       x * e & = \frac{xe}{2}   \\
+		   x & = \frac{xe}{2}   \\
+		   1 & = \frac{e}{2}    \\
+		   e & = 2
+	    \end{align*}
+
+	    \item The following calculation shows that the inverse of
+	    $x$ is $4/x$.
+	    \begin{align*}
+	       x * x' & = 2             \\
+	       x * x' & = \frac{xx'}{2} \\
+		   2  & = \frac{xx'}{2} \\
+		   4  & = xx'           \\
+		   x' & = 4/x    && \text{$x \ne 0$ is given}
+	    \end{align*}
+	 \end{enumerate}
+
+	 \item $x * y = x + y + xy$, on the set $\{x \in \Reals : x \ne -1\}$
+	 \begin{enumerate}
+	    \item
+	    \begin{proof}[Proof the operation is commutative]
+	       \begin{align*}
+		  x * y & = x + y + xy \\
+		  y * x & = y + x + yx \\
+			& = x + y + xy \qedhere
+	       \end{align*}
+	    \end{proof}
+
+	    \item
+	    \begin{proof}[Proof the operation is associative]
+	       \begin{align*}
+		  x * (y * z) & = x * (y + z + yz) \\
+			      & = x + (y + z + yz) + x(y + z + yz) \\
+			      & = x + y + z + yz + xy + xz + xyz\\
+			      & = x + y + xy + xz + yz + xyz \\
+		  (x * y) * z & = (x + y + xy) * z \\
+			      & = (x + y + xy) + z + (x + y + xy)z \\
+			      & = x + y + xy + z + xz + yz + xyz \\
+			      & = x + y + xy + xz + yz + xyz \qedhere
+	       \end{align*}
+	    \end{proof}
+
+	    \item The following calculation shows the identity element to
+	    be 0.
+	    \begin{align*}
+	       x * e & = x           \\
+	       x * e & = x + e + xe  \\
+		   x & = x + e + xe  \\
+		   0 & =     e + xe  \\
+		   0 & =   e(1 + x)  \\
+		   e & = 0 && \text{$x\ne-1$ given}
+	    \end{align*}
+
+	    \item The following calculation shows the inverse of $x$ is 
+	    $\displaystyle \frac{-x}{1+x}$.
+	    \begin{align*}
+	       x * x' & = 0            \\
+	       x * x' & = x + x' + xx' \\
+		    0 & = x + x' + xx' \\
+		    0 & = x + x'(1 + x) \\
+		   -x & = x'(1+x) \\
+	       x'(1+x)& = -x \\
+		   x' & = \frac{-x}{1+x} && \text{$x\ne-1$ given}
+	    \end{align*}
+
+	 \end{enumerate}
+
+	 \item $x * y = \displaystyle \frac{x + y}{xy + 1}$, on the set
+	 $\{x \in \Reals : -1 < x < 1\}$.
+	 \begin{enumerate}
+	    \item
+	    \begin{proof}[Proof the operation is commutative]
+	       \begin{align*}
+		  x * y & = \frac{x+y}{xy + 1} \\
+		  y * x & = \frac{y+x}{yx + 1} \\
+			& = \frac{x+y}{xy + 1} \qedhere
+	       \end{align*}
+	    \end{proof}
+
+	    \item
+	    \begin{proof}[Proof the operation is associative]
+	       \begin{align*}
+		  x * (y * z) & = x * \frac{y + z}{yz + 1} \\
+			      & = \frac{x + \displaystyle \frac{y + z}{yz + 1}}
+				  {x\displaystyle \frac{y + z}{yz + 1} + 1} \\
+			      & = \frac{x(yz+1)+y+z}{xy+xz+yz+1} \\
+			      & = \frac{x + y + z + xyz}{xy + xz + yz + 1}
+				  \qedhere
+	       \end{align*}
+	    \end{proof}
+
+	    \item The following caluclation shows the identity element to be 0.
+	    \begin{align*}
+	       x * e & = x \\
+	       x * e & = \frac{x + e}{xe + 1} \\
+		   x & = \frac{x + e}{xe + 1} \\
+	       x + e & = x(xe + 1) \\
+	       x + e & = x^2e + x \\
+	       e - x^2e & = 0  \\
+	       e(1-x^2) & = 0    \\
+		   e & = 0  && \text{$-1 < x < 1$ is given}
+	    \end{align*}
+
+	    \item The following caluclation shows the inverse of $x$ to be
+	    $-x$.
+	    \begin{align*}
+	       x * x' & = 0                      \\
+	       x * x' & = \frac{x + x'}{xx' + 1} \\
+		   0  & = \frac{x + x'}{xx' + 1} \\
+		   0  & = x + x' \\
+		   x' & = -x
+	    \end{align*}
+	 \end{enumerate}
+   \end{enumerate}
+
+   \item \textsc{Groups on the Set $\Reals \times \Reals$}
+
+   The symbol $\Reals \times \Reals$ represents the set of all ordered pairs
+   $(x,y)$ of real numbers.  $\Reals \times \Reals$ may therefore be identified
+   with the set of all the points in the plane.  Which of the following subsets
+   of $\Reals \times \Reals$, with the indicated operation, is a group?  Which
+   is an abelian group?
+
+   \textbf{Instructions} Proceed as in the preceding exercise. To find the
+   identity element, which in these problems is an ordered pair $(e_1, e_2)$ of
+   real numbers, solve the equation $(a,b) * (e_1, e_2) = (a,b)$ for $e_1$ and
+   $e_2$. To find the inverse $(a',b')$ of $(a,b)$, solve the equation
+   $(a,b)*(a',b')=(e_1,e_2)$ for $a'$ and $b'$. [Remember that $(x,y)=(x',y')$
+   if and only if $x=x'$ and $y=y'$.]
+
+      \begin{enumerate}[1.]
+	 \item $(a,b)*(c,d)=(ad+bc,bd)$, on the set $\{(x,y) \in \Reals
+	 \times \Reals : y \ne 0\}$.
+	 \begin{enumerate}
+	    \item The operation is commutative.
+	    \begin{proof}
+	       \begin{align*}
+		  (a,b)*(c,d) & = (ad+bc,bd) \\
+		  (c,d)*(a,b) & = (cb+da,db) \\
+			      & = (ad+bc,bd) \qedhere
+	       \end{align*}
+	    \end{proof}
+
+	    \item The operation is associative.
+	    \begin{proof}
+	       \begin{align*}
+		  (a,b) * ((c,d) * (e,f)) & = (a,b) * (cf+de,df)  \\
+					  & = (adf + b(cf+de), bdf) \\
+					  & = (adf +bcf + bde, bdf) \\
+		  ((a,b) * (c,d)) * (e,f) & = (ad+bc,bd) * (e,f)    \\
+					  & = ((ad+bc)f+bde, bdf)   \\
+					  & = (adf+bcf+bde,bdf) \qedhere
+	       \end{align*}
+	    \end{proof}
+
+	    \item 
+	    \begin{align*}
+	       (a,b) * (e_1,e_2) & = (a,b)            \\
+	       (a,b) * (e_1,e_2) & = (ae_2+be_1,be_2) \\
+		       (a,b)     & = (ae_2+be_1,be_2) 
+	    \end{align*}
+	    This implies that $a=ae_2+be_1$ and $b=be_2$. So $e_2=1$
+	    and $e_1=0$. So the identity element is $(0,1)$.
+
+	    \item
+	    \begin{align*}
+	       (a,b) * (a',b') & = (0,1) \\
+	       (a,b) * (a',b') & = (ab'+ba',bb') \\
+		 (ab'+ba',bb') & = (0,1) \\
+	    \end{align*}
+	    This implies $ab'+ba'=0$ and $bb'=1$. So $b'=1/b$. Let's
+	    solve for $a$:
+	    \begin{align*}
+	       ab'+ba' & = 0         \\
+	       a(1/b) + ba' & = 0    \\
+		    ba' & = -1(a/b)  \\
+		    a' & = -a/b^2
+	    \end{align*}
+	    So $(a',b') = (-a/b^2,1/b)$.
+
+	 \end{enumerate}
+      \end{enumerate}
+
+   \item \textsc{Groups of Subsets of a Set}
+
+   If $A$ and $B$ are any two sets, their \emph{symmetric difference}
+   is the set $A \ominus B$ defined as follows (see figure~\ref{fig:symmdif}):
+   \begin{center}
+   $$ A\ominus B = (A-B) \cup (B-A) $$
+   \end{center}
+
+   \textsc{Note}: $A - B$ represents the set obtained by removing from
+   $A$ all the elements which are in $B$.
+
+   \begin{figure}[ht]
+      \includegraphics{img/symmetric_diff.png}
+      \caption{The colored area is $A \ominus B$}
+      \label{fig:symmdif}
+   \end{figure}
+
+   If $D$ is a set, then the \emph{power set} of $D$ is the set $P_D$
+   of all the subsets of $D$. That is,
+   \begin{center}
+   $$ P_D = \{ A : A \subseteq D \} $$
+   \end{center}
+
+   The operation $\ominus$ is to be regarded as an operation on $P_D$.
+
+   \begin{enumerate}[1.]
+
+   \item Prove that there is an identity element with respect to the operation
+   $\ominus$, thus showing $\langle P_D,\ominus \rangle$ is a group!
+
+   \begin{proof}
+   The identity element of $\ominus$ is $\emptyset$. 
+   \begin{align*}
+      A \ominus \emptyset & = (A - \emptyset) \cup (\emptyset - A) \\
+                          & = A \cup \emptyset \\
+			  & = A
+   \end{align*}
+   By inspection, it's obvious that $\ominus$ is commutative. Therefore,
+   $\emptyset$ is the identity element.
+   \end{proof}
 
    \end{enumerate}
 
-   \item $\displaystyle x * y = \frac{xy}{2}$, on the set $\{x \in \Reals
-   : x \ne 0\}$
-   
-      \begin{enumerate}
-         \item
-	 \begin{proof}[Proof the operation is commutative]
-	    \begin{align*}
-	       x * y & = \frac{xy}{2}         \\
-               y * x & = \frac{yx}{2}         \\
-	             & = \frac{xy}{2} \qedhere
-	    \end{align*}
-	 \end{proof}
+   \item \textsc{A Checkerboard Game}
 
-	 \item
-	 \begin{proof}[Proof the operation is associative]
-	    \begin{align*}
-	       x * (y * z) & = x * \frac{yz}{2}   \\
-	                   & = \frac{x\displaystyle\frac{yz}{2}}{2} \\
-			   & = \frac{xyz}{4} \\
-	       (x * y) * z & = \frac{xy}{2} * z \\
-	                   & = \frac{\displaystyle \frac{xy}{2}z}{2} \\
-			   & = \frac{xyz}{4} \qedhere
-	    \end{align*}
-	 \end{proof}
+   \item \textsc{A Coin Game}
 
-	 \item The following calculation shows that the identity element
-	 is 2.
-	 \begin{align*}
-	    x * e & = x              \\
-	    x * e & = \frac{xe}{2}   \\
-	        x & = \frac{xe}{2}   \\
-		1 & = \frac{e}{2}    \\
-		e & = 2
-	 \end{align*}
+   \item \textsc{Groups in Binary Codes}
 
-	 \item The following calculation shows that the inverse of
-	 $x$ is $4/x$.
-	 \begin{align*}
-	    x * x' & = 2             \\
-	    x * x' & = \frac{xx'}{2} \\
-	        2  & = \frac{xx'}{2} \\
-		4  & = xx'           \\
-		x' & = 4/x    && \text{$x \ne 0$ is given}
-	 \end{align*}
-      \end{enumerate}
+   \item \textsc{Theory of Coding: Maximum Likelihood Decoding}
 
-      \item $x * y = x + y + xy$, on the set $\{x \in \Reals : x \ne -1\}$
-      \begin{enumerate}
-         \item
-	 \begin{proof}[Proof the operation is commutative]
-	    \begin{align*}
-	       x * y & = x + y + xy \\
-	       y * x & = y + x + yx \\
-	             & = x + y + xy \qedhere
-	    \end{align*}
-	 \end{proof}
+      \noindent 1.Verify
+      
+      \noindent 2. Let
+      
+      \noindent 3. Design
+      
+      \noindent 4. Decode
 
-	 \item
-	 \begin{proof}[Proof the operation is associative]
-	    \begin{align*}
-	       x * (y * z) & = x * (y + z + yz) \\
-	                   & = x + (y + z + yz) + x(y + z + yz) \\
-			   & = x + y + z + yz + xy + xz + xyz\\
-			   & = x + y + xy + xz + yz + xyz \\
-	       (x * y) * z & = (x + y + xy) * z \\
-	                   & = (x + y + xy) + z + (x + y + xy)z \\
-			   & = x + y + xy + z + xz + yz + xyz \\
-			   & = x + y + xy + xz + yz + xyz \qedhere
-	    \end{align*}
-	 \end{proof}
+      In the remaining exercises, let $C$ be a code in $\mathbb{B}^n$,
+      let $m$ denote the minimum distance in $C$, and let 
+      $\mathbf{a}$ and $\mathbf{b}$ denote codewords in $C$.
 
-	 \item The following calculation shows the identity element to
-	 be 0.
-	 \begin{align*}
-	    x * e & = x           \\
-	    x * e & = x + e + xe  \\
-	        x & = x + e + xe  \\
-		0 & =     e + xe  \\
-		0 & =   e(1 + x)  \\
-		e & = 0 && \text{$x\ne-1$ given}
-	 \end{align*}
+      \noindent 5. Prove that it is possible to detect up to $m-1$ errors.
+      (That is, if there are errors of transmission in $m-1$ or 
+      fewer positions of a codeword, it can always be determined
+      that the received word is incorrect.)
 
-         \item The following calculation shows the inverse of $x$ is 
-	 $\displaystyle \frac{-x}{1+x}$.
-	 \begin{align*}
-	    x * x' & = 0            \\
-	    x * x' & = x + x' + xx' \\
-	         0 & = x + x' + xx' \\
-		 0 & = x + x'(1 + x) \\
-		-x & = x'(1+x) \\
-	    x'(1+x)& = -x \\
-	        x' & = \frac{-x}{1+x} && \text{$x\ne-1$ given}
-	 \end{align*}
+      \begin{proof}
+	 Let $w$ be the sent word and $w'$ be the received word. Let 
+	 $n$ be the number of errors in $w'$ such that $0 < n <= m - 1$. 
+	 Assume that $w'$ is not determined to be incorrect. This means
+	 that it was accepted as a codeword. However, the distance
+	 between $w$ and $w'$ is $n$ and $n < m$. Therefore, the 
+	 minimum distance of $C$ is $n$. But this contradicts
+	 the definition of our code that states that $m$ is the minimum
+	 distance. Therefore, our assumption is proved incorect, and
+	 the word $w'$ will be detected to have errors.
+      \end{proof}
 
-      \end{enumerate}
-
-      \item $x * y = \displaystyle \frac{x + y}{xy + 1}$, on the set
-      $\{x \in \Reals : -1 < x < 1\}$.
-      \begin{enumerate}
-	 \item
-         \begin{proof}[Proof the operation is commutative]
-	    \begin{align*}
-	       x * y & = \frac{x+y}{xy + 1} \\
-	       y * x & = \frac{y+x}{yx + 1} \\
-	             & = \frac{x+y}{xy + 1} \qedhere
-	    \end{align*}
-	 \end{proof}
-
-	 \item
-	 \begin{proof}[Proof the operation is associative]
-	    \begin{align*}
-	       x * (y * z) & = x * \frac{y + z}{yz + 1} \\
-	                   & = \frac{x + \displaystyle \frac{y + z}{yz + 1}}
-			       {x\displaystyle \frac{y + z}{yz + 1} + 1} \\
-			   & = \frac{x(yz+1)+y+z}{xy+xz+yz+1} \\
-			   & = \frac{x + y + z + xyz}{xy + xz + yz + 1}
-			       \qedhere
-	    \end{align*}
-	 \end{proof}
-
-	 \item The following caluclation shows the identity element to be 0.
-	 \begin{align*}
-	    x * e & = x \\
-	    x * e & = \frac{x + e}{xe + 1} \\
-	        x & = \frac{x + e}{xe + 1} \\
-            x + e & = x(xe + 1) \\
-	    x + e & = x^2e + x \\
-	    e - x^2e & = 0  \\
-	    e(1-x^2) & = 0    \\
-	        e & = 0  && \text{$-1 < x < 1$ is given}
-	 \end{align*}
-
-	 \item The following caluclation shows the inverse of $x$ to be
-	 $-x$.
-	 \begin{align*}
-	    x * x' & = 0                      \\
-	    x * x' & = \frac{x + x'}{xx' + 1} \\
-	        0  & = \frac{x + x'}{xx' + 1} \\
-		0  & = x + x' \\
-	        x' & = -x
-	 \end{align*}
-      \end{enumerate}
 \end{enumerate}
-
-\section{Groups on the Set $\Reals \times \Reals (Exercise B)$}
-
-The symbol $\Reals \times \Reals$ represents the set of all ordered pairs
-$(x,y)$ of real numbers.  $\Reals \times \Reals$ may therefore be identified
-with the set of all the points in the plane.  Which of the following subsets of
-$\Reals \times \Reals$, with the indicated operation, is a group?  Which is an
-abelian group?
-
-\textbf{Instructions} Proceed as in the preceding exercise. To find the
-identity element, which in these problems is an ordered pair $(e_1, e_2)$ of
-real numbers, solve the equation $(a,b) * (e_1, e_2) = (a,b)$ for $e_1$ and
-$e_2$. To find the inverse $(a',b')$ of $(a,b)$, solve the equation
-$(a,b)*(a',b')=(e_1,e_2)$ for $a'$ and $b'$. [Remember that $(x,y)=(x',y')$ if
-and only if $x=x'$ and $y=y'$.]
-
-   \begin{enumerate}
-      \item $(a,b)*(c,d)=(ad+bc,bd)$, on the set $\{(x,y) \in \Reals
-      \times \Reals : y \ne 0\}$.
-      \begin{enumerate}
-         \item The operation is commutative.
-	 \begin{proof}
-	    \begin{align*}
-	       (a,b)*(c,d) & = (ad+bc,bd) \\
-	       (c,d)*(a,b) & = (cb+da,db) \\
-	                   & = (ad+bc,bd) \qedhere
-	    \end{align*}
-	 \end{proof}
-
-	 \item The operation is associative.
-	 \begin{proof}
-	    \begin{align*}
-	    \end{align*}
-	 \end{proof}
-      \end{enumerate}
-   \end{enumerate}
-
 \end{document}
