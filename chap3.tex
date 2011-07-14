@@ -282,11 +282,10 @@ of A Book of Abstract Algebra.
 		    ba' & = -1(a/b)  \\
 		    a' & = -a/b^2
 	    \end{align*}
-	    So $(a',b') = (-a/b^2,1/b)$.
+	    So $(a',b') = (-a/b^2,1/b)$. 
 
 	 \end{enumerate}
-      \end{enumerate}
-
+      \end{enumerate} 
    \item \textsc{Groups of Subsets of a Set}
 
    If $A$ and $B$ are any two sets, their \emph{symmetric difference}
@@ -299,10 +298,30 @@ of A Book of Abstract Algebra.
    $A$ all the elements which are in $B$.
 
    \begin{figure}[ht]
-      \includegraphics{img/symmetric_diff.png}
+      \scalebox{.75}{\includegraphics{img/symmetric_diff.png}}
       \caption{The colored area is $A \ominus B$}
       \label{fig:symmdif}
    \end{figure}
+
+   It is perfectly clear that $A \ominus B = B \ominus A$; hence this 
+   operation is commutative. It is also associative, as the accompanying
+   pictorial representation suggests: Let the union of $A$, $B$, and
+   $C$ be divided into seven regions as illustrated.
+
+   \begin{figure}[ht]
+      \scalebox{.25}{\includegraphics{img/interlock_circles.png}}
+   \end{figure}
+
+   \begin{gather*}
+      A \ominus B \text{ consists of the regions 1, 4, 3, and 6.} \\
+      B \ominus C \text{ consists of the regions 2, 3, 4, and 7.} \\
+      A \ominus (B \ominus C) \text{ consists of the regions 1, 3, 5, and 7.}
+      \\
+      (A \ominus B) \ominus C \text{ consists of the regions 1, 3, 5, and 7.} 
+   \end{gather*}
+
+   \noindent Thus, $A \ominus (B \ominus C) = (A \ominus B) \ominus C$.
+
 
    If $D$ is a set, then the \emph{power set} of $D$ is the set $P_D$
    of all the subsets of $D$. That is,
@@ -315,7 +334,7 @@ of A Book of Abstract Algebra.
    \begin{enumerate}[1.]
 
    \item Prove that there is an identity element with respect to the operation
-   $\ominus$, thus showing $\langle P_D,\ominus \rangle$ is a group!
+   $\ominus$. 
 
    \begin{proof}
    The identity element of $\ominus$ is $\emptyset$. 
@@ -328,9 +347,108 @@ of A Book of Abstract Algebra.
    $\emptyset$ is the identity element.
    \end{proof}
 
+   \item Prove every subset $A$ of $D$ has an inverse with respect to 
+   $\ominus$, thus showing $\langle P_D,\ominus \rangle$ is a group!
+
+   \begin{proof}
+      The inverse of $A$ is $A$.
+      \begin{align*}
+         A \ominus A & = (A - A) \cup (A - A) \\
+	             & = \emptyset \cup \emptyset \\
+		     & = \emptyset
+      \end{align*}
+   \end{proof}
+
+   \item Let $D$ be the three-element set $D = \{a,b,c\}$. List the elements
+   of $P_D$. (For example, one element is $\{a\}$, another is $\{a,b\}$ and 
+   so on. Do not forget the empty set and the whole set $D$.) Then
+   write the operation table for $\langle P_D,\ominus \rangle$.
+
+   \begin{center}
+      $$ P_D = \{ \emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{b,c\}, 
+                  \{a,c\}, \{a,b,c\} \} $$
+   \end{center}
+
+   \begin{center}
+   \scalebox{.9}
+   {\begin{tabular}{c|cccccccc}
+      $\ominus$ & $\emptyset$ & $\{a\}$ & $\{b\}$ & $\{c\}$ & $\{a,b\}$ & 
+          $\{b,c\}$ & $\{a,c\}$ & $\{a,b,c\}$  \\ \hline
+      $\emptyset$ & $\emptyset$ & $\emptyset$ & $\emptyset$ & $\emptyset$ 
+                  & $\emptyset$ & $\emptyset$ & $\emptyset$ & $\emptyset$\\
+      $\{a\}$ & $\emptyset$ & $\emptyset$ & $\{a,b\}$ & $\{a,c\}$ & $\{b\}$ &
+         $\{a,b,c\}$ & $\{c\}$ & $\{b,c\}$\\
+      $\{b\}$ & $\emptyset$ & $\{a,b\}$ & $\emptyset$ & $\{b,c\}$ & $\{a\}$ &
+         $\{c\}$ & $\{a,b,c\}$ & $\{a,c\}$ \\
+      $\{c\}$ & $\emptyset$ & $\{a,c\}$ & $\{b,c\}$ & $\emptyset$ 
+         & $\{a,b,c\}$ & $\{b\}$ & $\{a\}$ & $\{a,b\}$ \\
+      $\{a,b\}$ & $\emptyset$ & $\{b\}$ & $\{a\}$ & $\{a,b,c\}$ & $\emptyset$ 
+         & $\{a,c\}$ & $\{b,c\}$ & $\{c\}$ \\
+      $\{a,c\}$ & $\emptyset$ & $\{c\}$ & $\{a,b,c\}$ & $\{a\}$ & $\{b,c\}$ 
+         & $\{a,b\}$ & $\emptyset$ & $\{b\}$\\
+      $\{b,c\}$ & $\emptyset$ & $\{a,b,c\}$ & $\{c\}$ & $\{b\}$ & $\{a,c\}$
+         & $\emptyset$ & $\{a,b\}$ & $\{a\}$ \\
+      $\{a,b,c\}$ & $\emptyset$ & $\{b,c\}$ & $\{a,c\}$ & $\{a,b\}$ & $\{c\}$ 
+         & $\{a\}$ & $\{b\}$ & $\emptyset$\\
+   \end{tabular}}
+   \end{center}
+   
+   \begin{verbatim}
+
+   \end{verbatim}
+
    \end{enumerate}
 
    \item \textsc{A Checkerboard Game}
+      \begin{figure}[ht]
+      \scalebox{0.15}{\includegraphics{img/four_square_checker.png}}
+   \end{figure}
+
+   \noindent Our checkerboard has only four squares, numbered 1, 2, 3, and 4.
+   There is a single checker on the board, and it has four possible moves:
+
+   \begin{enumerate}
+      \item[V:] Move vertically; that is, move from 1 to 3, or from 3 to 1, or
+      from 2 to 4, or from 4 to 2. 
+      \item[H:] Move horizontally; that is, move from 1 to 2 or vice versa,
+      or from 3 to 4 or vice versa.
+      \item[D:] Move diagonally; that is, move from 2 to 3 or vice versa, or
+      move from 1 to 4 or vice versa.
+      \item[I:] Stay put.
+   \end{enumerate}
+
+   \noindent We may consider an operation on the set of these four moves, which
+   consists of performing moves successively. For example, if we move
+   horizontally and then vertically, we end up with the same result as if we
+   had moved diagonally:
+
+   \begin{gather*}
+      H * V = D
+   \end{gather*}
+
+   \noindent If we perform two horizontal moves in succession, we end up where
+   we started: $H*H=I$. And so on. If $G=\{V,D,H,I\}$, and $*$ is the operation
+   we have just described, write the table of $G$.
+
+   \begin{center}
+   \begin{tabular}{c|cccc}
+      $*$ & $I$ & $V$ & $H$ & $D$ \\ \hline
+      $I$ & $I$ & $V$ & $H$ & $D$ \\
+      $V$ & $V$ & $I$ & $D$ & $H$ \\
+      $H$ & $H$ & $D$ & $I$ & $V$ \\
+      $D$ & $D$ & $H$ & $V$ & $I$
+   \end{tabular}
+   \end{center}
+   
+   \noindent Granting associativity, explain why $\langle G,* \rangle$ is a
+   group.
+
+   \emph{Explanation} $\langle G,* \rangle$ is a group because
+   it has an identity element, $I$, and has an inverse for each element.
+   We can see that for every element $M \in G$, $M * I = I * M = M$.
+   Also, for every element $M$ we have an inverse $M^{-1} = M$.
+
+   
 
    \item \textsc{A Coin Game}
 
