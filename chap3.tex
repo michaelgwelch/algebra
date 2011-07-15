@@ -298,8 +298,8 @@ of A Book of Abstract Algebra.
    $A$ all the elements which are in $B$.
 
    \begin{figure}[ht]
-      \scalebox{.75}{\includegraphics{img/symmetric_diff.png}}
-      \caption{The colored area is $A \ominus B$}
+      \includegraphics{img/symdiff.pdf}
+      \caption{The shaded area is $A \ominus B$}
       \label{fig:symmdif}
    \end{figure}
 
@@ -309,7 +309,7 @@ of A Book of Abstract Algebra.
    $C$ be divided into seven regions as illustrated.
 
    \begin{figure}[ht]
-      \scalebox{.25}{\includegraphics{img/interlock_circles.png}}
+      \includegraphics{img/symdiff3.pdf}
    \end{figure}
 
    \begin{gather*}
@@ -401,7 +401,7 @@ of A Book of Abstract Algebra.
 
    \item \textsc{A Checkerboard Game}
       \begin{figure}[ht]
-      \scalebox{0.15}{\includegraphics{img/four_square_checker.png}}
+      \includegraphics{img/checker.pdf}
    \end{figure}
 
    \noindent Our checkerboard has only four squares, numbered 1, 2, 3, and 4.
@@ -503,15 +503,15 @@ of A Book of Abstract Algebra.
       \begin{proof}
          Assume there is a word $\mathbf{x}$ such that $\mathbf{x} \in
          S_t(\mathbf{a})$ and $\mathbf{x}\in S_t( \mathbf{b})$. 
-         We have
-         \begin{align*}
-	 S_t(\mathbf{a}) & = \{\mathbf{x} : d(\mathbf{a},\mathbf{x}) 
-	    \le \frac{1}{2}(m-1) \} \\
-         S_t(\mathbf{b}) & = \{\mathbf{x} : d(\mathbf{b},\mathbf{x}) 
-	    \le \frac{1}{2}(m-1) \} \\
-	    S_t(\mathbf{a}) \cap S_t(\mathbf{b}) & \ne \emptyset 
-	        && \text{Assumed}
-         \end{align*}
+	 This means that we need to flip at most $\frac{1}{2}(m-1)$ bits
+	 to transform $\mathbf{a}$ into $\mathbf{x}$, and at most
+	 $\frac{1}{2}(m-1)$ bits to tranform $\mathbf{x}$ into $\mathbf{b}$.
+	 This implies that we need to flip at most 
+	 $\frac{1}{2}(m-1) \times 2 = (m-1)$ bits to transform
+	 $\mathbf{a}$ into $\mathbf{b}$. However, we know that the 
+	 minimum distance between any two codewords is $m$. Therefore,
+	 our assumption that $\mathbf{x}$ exists is false and there is
+	 no common element between $S_t(\mathbf{a})$ and $S_t(\mathbf{b})$.
       \end{proof}
 
 \end{enumerate}

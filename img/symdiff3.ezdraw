@@ -1,0 +1,1200 @@
+{
+    "AAA_DKDQuicklookData" = <040b7374 7265616d 74797065 6481e803 84014084 8484134e 534d7574 61626c65 44696374 696f6e61 72790084 840c4e53 44696374 696f6e61 72790084 84084e53 4f626a65 63740085 84016901 92848484 084e5353 7472696e 67019584 012b1144 4b445061 67654f6e 65504446 44617461 86928484 840d4e53 4d757461 626c6544 61746100 8484064e 53446174 61009596 81bd2c84 085b3131 34353363 5d255044 462d312e 330a25c4 e5f2e5eb a7f3a0d0 c4c60a34 2030206f 626a0a3c 3c202f4c 656e6774 68203520 30205220 2f46696c 74657220 2f466c61 74654465 636f6465 203e3e0a 73747265 616d0a78 019595c9 6edb400c 86eff314 3c3a87ca c3d9e7d8 186981de 02eb0d84 a649001f 12bf3f50 72566b6b 1d08f042 8be4af8f 3fc71ff0 0c1f2007 076f703c 5d11a62b 207d8f4e fa60347d 0a4169ab 225c2738 fea41bfe 5c41d265 9d04ba03 3e7fc30b 28f82552 f6e99c7e 94703e51 592a44d7 377ef341 0f21c274 01d47a30 d606086a b0c66004 8a193f58 7a81e806 27b5d4a2 4510e3a0 a3ef692d 7f82f6db 32bd172c 4d9cb849 736130c1 aad0f25b a0b6afda 5cfd40ca bbb6727b 5ce65360 f56c13bc 6e442f70 66ee621b 908b6b40 846f0608 b0460a04 8135ad89 2040d666 7815106a c5803b1f c4c05350 5de42450 1a064477 55f635d0 f8b4b436 446a566a 773cb9bb e8812af1 268bf0ac a205cfda 3f82fd63 31e3691a 28e66cc6 5335f440 25d0b24a 37c1827d a6d3519a 4ca705a4 2c74aac6 0982abee 29a56b80 2c56e0b6 ac0a97ad 5a4a5794 ad790b34 85258b14 129c6594 b685bd83 e9fac796 d1e89485 405ce839 cb8ba065 e5645a55 c58b2ecb 52abbcd4 6f7b2bfb 3802f226 f32e4b40 65b83479 4159315e e0f80307 8ac2f802 07f500e3 3b3c8dd4 249f293b 8740d215 298b9630 f0197216 944167d0 cefd7305 11f981c8 c68bee58 ba73ad74 a2ed5463 5fd313f0 4cfc0d9e a483956f eb60f3cd 751412a8 98f2428b bd8344b2 b3a10584 198a7d09 7c7e2e24 5893592c 27a1efe8 9f8e6383 0982726b 9fec80d8 50615c26 99de6624 c4c1ddab a44c2501 e9c6d8a7 b135109b 06ebd820 331970f0 77c8e08a e46b36c5 2d8fff18 638387cc 5035d75a 4ec67421 3bfe9c8f d8d3ff24 f8b851e9 fb172bf1 494bbedf acf5f8d5 5a369d2a 3e6ce83a f55acf7f 012487b0 3a0a656e 64737472 65616d0a 656e646f 626a0a35 2030206f 626a0a36 30320a65 6e646f62 6a0a3220 30206f62 6a0a3c3c 202f5479 7065202f 50616765 202f5061 72656e74 20332030 2052202f 5265736f 75726365 73203620 30205220 2f436f6e 74656e74 73203420 30205220 2f4d6564 6961426f 78205b30 20302035 35392e32 38203738 332e3839 5d0a3e3e 0a656e64 6f626a0a 36203020 6f626a0a 3c3c202f 50726f63 53657420 5b202f50 4446202f 54657874 205d202f 436f6c6f 72537061 6365203c 3c202f43 73312037 20302052 202f4373 32203820 30205220 3e3e202f 45787447 53746174 650a3c3c 202f4773 31203130 20302052 202f4773 32203131 20302052 203e3e20 2f466f6e 74203c3c 202f4631 2e302039 20302052 203e3e20 3e3e0a65 6e646f62 6a0a3130 2030206f 626a0a3c 3c202f54 79706520 2f457874 47537461 7465202f 63612030 2e39203e 3e0a656e 646f626a 0a313120 30206f62 6a0a3c3c 202f5479 7065202f 45787447 53746174 65202f63 61203120 3e3e0a65 6e646f62 6a0a3132 2030206f 626a0a3c 3c202f4c 656e6774 68203133 20302052 202f4e20 33202f41 6c746572 6e617465 202f4465 76696365 52474220 2f46696c 74657220 2f466c61 74654465 636f6465 203e3e0a 73747265 616d0a78 018554cf 6b134114 fe366ea9 d022085a 6b0eb278 90224959 ab6845d4 36fd1162 6b0cdb1f b6459064 3349d66e 36ebee26 b5a588e4 e2d12ade 45eda107 ff801e7a f0642f4a 855a4528 deab2862 a1172df1 cd6e4cb6 a5eac0ce 7ef3de37 ef7d6f76 df000d72 d234f580 04e40dc7 52a21169 6c7c426a fc88008e a2094134 2555dbec 4e240641 8373f97b e7d87a0f 815b56c3 7bfb77b2 77ad9ad2 b69a0784 fd40e047 9ad92ab0 ef17710a 59120288 3cdfa129 c77408df e3d8f2ec 8f394e79 78c1b50f 2b3dc459 227c4035 2dce7f4d b853cd25 d3408348 3894f571 523e9cd7 8b94d71d 07696e66 c6c810bd 4f90a6bb cceeab62 a19c4ef6 0e90bd9d f47e4eb3 de3ec221 c20b19ad 3f46b88d 9ef58cd5 3fe261e1 a4e6c486 3d1c1835 f4f86015 b71aa9f8 35c2145f 104d27a2 5471d92e 0df198ae fd56f24a 82709038 ca646180 735a484f d74c6ef8 ba87057d 26d713af e2775651 e1798f13 67ded4dd ef45da02 af300e1d 0c1a0c9a 0d485010 45046198 b0504086 3c1a3134 b2723f23 ab061b93 7b327524 6abb7462 44b1417b 36dc3db7 51a4dd3c fe282271 9443b508 92fc41fe 2aafc94f e579f9cb 5cb0d856 f794ad9b 9abaf2e0 3bc5e599 b91a1ed7 d3c8e373 4d5e7c95 d4769357 4796ac79 7abc9aec 1a3fec57 9731e682 358fc473 b0fbf12d 5f95cc97 298c14c5 e355f3ea 4b84755a 3137df9f 6c7f3b3d e22ecf2e b5d673ad 898b3756 9b9767fd 6a48fbee aabc93e6 55f94f5e f5f1fc67 cdc463e2 29312676 8ae72189 97c52ef1 92d84bab 0be2606d c7089d95 8629d26d 91fa24d5 60609abc f52f5d3f 5b78bd46 7f0cf551 9419ccd2 5489f77f c22a6434 9db90e6f fa8fdbc7 fc17e4f7 8ae79f28 022f6ce0 c899ba6d 5371ef10 a165a56e 73ae0217 bfd17df0 b66e6ba3 7e38fc04 583cab16 ad52359f 20bc011c 76877a1e e82998d3 9696cd39 52872c9f 93bae9ca 6252cc50 db435252 d725d765 4b16b399 5562e976 d899d31d 6e1ca139 42f7c4a7 4a6593fa aff111b0 fdb052f9 f9ac52d9 7e4e1ad6 8197fa6f c0bcfd45 0a656e64 73747265 616d0a65 6e646f62 6a0a3133 2030206f 626a0a37 33370a65 6e646f62 6a0a3720 30206f62 6a0a5b20 2f494343 42617365 64203132 20302052 205d0a65 6e646f62 6a0a3134 2030206f 626a0a3c 3c202f4c 656e6774 68203135 20302052 202f4e20 31202f41 6c746572 6e617465 202f4465 76696365 47726179 202f4669 6c746572 202f466c 61746544 65636f64 65203e3e 0a737472 65616d0a 7801a556 095453d7 16bdefe5 252110e6 41408630 cf185020 800c610e 20f32088 4a4c0204 42086150 1027a458 818aa222 82134851 c482d50a 481d1051 1c288a0a 3817a4a8 28b558c5 09877f5f b042fbff 5affaff5 5fd6cbdb f79c73f7 396fdf93 ac03801c c6168904 28002055 9829f60d 63c62c8c 89a5c1e5 d78bcdc9 10314342 02718330 4dc8fbea f80a5ef7 03045fdc b0c2b9be 9aff3740 4c8908f3 84a1ed00 48519767 8a32e1b3 1bae5538 22318e07 2136e0f2 32380050 308873b8 199c5488 d70280e5 73b2c4d9 d0062fdc 0588401a c80315a0 01748001 300556c0 16380067 e00ebc81 3f080611 20062c01 1c900452 81182c07 79601d28 04c56033 d80e2ac1 5e500bea 4123380a 5ac04970 165c0057 c035d007 ee824130 029e8171 f01a4c22 08424664 11654403 d1458c10 0bc41661 20ae8837 12888421 31483c92 8808912c 240f598f 14236548 25528dd4 233f2227 90b3c825 a417b98d 0c21a3c8 9fc87b94 80525115 541b3546 e7a00c94 8906a011 e8623411 4d4773d1 0274135a 81d6a087 d166f42c 7a05ed43 07d167e8 04011064 086a043d 82158141 f0240413 62090904 316135a1 88504ea8 213412da 085d841b 8441c218 e11d46c2 94311a66 8539637e 5824c6c1 d2b1d558 0956891d c49ab14e ec063684 8d639f88 b2442da2 05d189c8 222e2426 1297130b 89e5c43a e271e279 621f7184 f89a4422 a9914c48 0e243f52 0c2999b4 925442da 4d6a22b5 937a49c3 a4093299 ac41b620 bb9083c9 6c7226b9 90bc937c 987c867c 9d3c427e 2b2523a5 2b652be5 23152b25 94ca972a 973a2475 5aeabad4 63a9498a 02c588e2 4409a670 29399452 4a2da58d 72953242 99945694 36917691 8e904e96 5e275d21 dd287d5e fa9ef44b 1919197d 19479950 19becc5a 990a9923 32176586 64de5195 a8e6544f 6a1c358b ba897a80 da4ebd4d 7d292b2b 6b2ceb2e 1b2b9b29 bb49b65e f69cec03 d9b772ca 72d6722c 39aedc1a b92ab966 b9eb72cf e529f246 f24cf925 f2b9f2e5 f2c7e4af ca8f2950 148c153c 15d80aab 15aa144e 280c284c 282a2bda 28062ba6 2a96281e 52bca4f8 4489ac64 ace4adc4 552a50da af744e69 5899a06c a0eca9cc 515eaf5c ab7c5e79 4485a462 a2c25249 562956f9 41a54765 5c554975 9e6a94ea 0ad52ad5 53aa836a 04356335 969a40ad 54eda85a bfdafb59 dab398b3 78b336ce 6a9c757d d61bf5d9 eaeeea3c f522f526 f53ef5f7 1a340d6f 8d148d2d 1a2d1af7 35314d73 cd50cde5 9a7b34cf 6b8ecd56 99ed3c9b 33bb68f6 d1d977b4 502d73ad 30ad955a fbb5bab5 26b475b4 7db545da 3bb5cf69 8fe9a8e9 b8eb24eb 6cd339ad 33aaabac ebaacbd7 dda67b46 f7294d95 c6a40968 15b44eda b89e969e 9f5e965e b55e8fde a4be897e a47ebe7e 93fe7d03 69038641 82c13683 0e837143 5dc30586 79860d86 778c2846 0ca324a3 1d465d46 6f8c4d8c a38d3718 b7183f31 51376199 e49a3498 dc339535 75334d37 ad31bd69 46326398 a598ed36 bb668e9a db992799 57995fb5 402dec2d f816bb2d 7a2d8996 8e9642cb 1acb012b aa15d32a dbaac16a c85acd3a d03adfba c5faf91c c339b173 b6cce99a f3896e47 17d06be9 776d946c fc6df26d da6cfeb4 35b7e5d8 56d9de9c 2b3bd767 ee9ab9ad 735fccb3 98c79bb7 67de2d3b 65bb0576 1bec3aec 3eda3bd8 8bed1bed 471d0c1d e21d7639 0c305418 218c12c6 4547a2a3 87e31ac7 938eef9c ec9d329d 8e3afde1 6ce59ce2 7cc8f9c9 7c93f9bc f9b5f387 5df45dd8 2ed52e83 ae34d778 d77dae83 6e7a6e6c b71ab787 ee06ee5c f73af7c7 4c336632 f330f3b9 07dd43ec 71dce38d a793e72a cf762f82 97af5791 578fb792 77a477a5 f7031f7d 9f449f06 9f715f3b df95beed 7e44bf00 bf2d7e03 2c6d1687 55cf1af7 77f05fe5 df19400d 080fa80c 7818681e 280e6c5b 802ef05f b075c1bd 20a32061 504b3008 66056f0d be1f6212 921ef273 28293424 b42af451 984d585e 5857b872 f8d2f043 e1af233c 224a23ee 469a4666 457644c9 47c545d5 47bd89f6 8a2e8b1e 5c3867e1 aa855762 3463f831 adb1e4d8 a8d8bad8 8945de8b b62f1a89 b38b2b8c eb5f6cb2 78c5e24b 4b349708 969c5a2a bf94bdf4 583c313e 3afe50fc 077630bb 863db18c b56cd7b2 718e2767 07e719d7 9dbb8d3b ca73e195 f11e27b8 2494253c 497449dc 9a389ae4 96549e34 c6f7e457 f25f24fb 25ef4d7e 93129c72 20e5b320 5ad0942a 951a9f7a 42a8244c 1176a6e9 a4ad48eb 1559880a 4583e94e e9dbd3c7 c501e2ba 0c246371 466ba60a fc73efce 32cdfa26 6b28db35 bb2afbed f2a8e5c7 5628ae10 aee8ce31 cfd998f3 38d727f7 fb95d84a ceca8e3c bdbc7579 43ab98ab aa5723ab 97adee58 63b0a660 cdc85adf b507d749 af4b59f7 4b3e3dbf 2cffd5fa e8f56d05 da056b0b 86bff1fd a6a150ae 505c38b0 c179c3de 6fb16ff9 dff66c9c bb71e7c6 4f45dca2 cbc5f4e2 f2e20f25 9c92cbdf d97c57f1 dde74d09 9b7a4aed 4bf76c26 6d166eee dfe2b6e5 60996259 6ed9f0d6 055b9bb7 d1b6156d 7bb57de9 f64be5f3 caf7ee90 de91b563 b022b0a2 75a7e1ce cd3b3f54 2655f655 795435ed d2dab571 d79bdddc ddd7f7b8 ef69dcab bdb778ef fb7dfc7d b7aa7dab 9b6b8c6b caf793f6 67ef7f54 1b55dbf5 3de3fbfa 3acdbae2 ba8f0784 07060f86 1decac77 a8af3fa4 75a8b401 6dc86a18 3d1c77f8 da0f5e3f b4365a35 5637a935 151f0147 b28e3cfd 31fec7fe a301473b 8e318e35 fe64f4d3 aee3cac7 8b9a91e6 9ce6f196 a496c1d6 98d6de13 fe273ada 9cdb8eff 6cfdf381 937a27ab 4ea99e2a 3d2d7dba e0f4e733 b96726da 45ed6367 13cf0e77 2cedb87b 6ee1b99b 9da19d3d e703ce5f bce073e1 5c17b3eb cc45978b 272f395d 3a719971 b9e58afd 95e66ebb eee3bfd8 fd72bcc7 bea7f9aa c3d5d66b 8ed7da7a e7f79ebe ee76fdec 0daf1b17 6eb26e5e e90beaeb ed8fecbf 35103730 788b7beb c96dc1ed 1777b2ef 4cde5d7b 8f78afe8 bec2fdf2 075a0f6a 7e35fbb5 69d07ef0 d490d750 f7c3f087 778739c3 cf7ecbf8 edc348c1 23d947e5 8f751fd7 3fb17d72 72d467f4 dad3454f 479e899e 4d8e15fe aef8fbae e7a6cf7f fac3fd8f eef185e3 232fc42f 3eff59f2 52e3e581 57f35e75 4c844c3c 789dfa7a f24dd15b 8db707df 31de75bd 8f7eff78 72f907f2 878a8f66 1fdb3e05 7cbaf739 f5f3e7e9 b9e565a8 641e41d4 ba33792b e00c0180 679a2847 cc4f4cca a431e184 c2a3b184 1c6b4b9a 2d9dce00 606ab6c0 a380ae2f 4fc813f3 39345f31 3b87e6cb 4e4d65d3 6cad6d69 21e2b404 bee03f4c 3e925dff c757aa20 0bce3592 4b117e53 79c2c870 f89c0fef 7bbc0c6f 1cc3b90b 51e7b2bd 022086d5 a2e65c9e 97f717fb 8304be0f 0b621f68 df9720f6 8984d815 e265fc4c 5604c4f0 26888482 207c7673 873c5ce1 b2a06088 9da0bd53 94e91106 b13fc4c6 19d9e138 a7843f99 ed1f02b1 31b47f4a 490bc063 f4e17c65 989b1411 0db10ec4 3eb9499e 415f3057 9c1586e7 859c48ad 48209913 dd610d8f 802fe001 21bcc580 0f672e1a 5c8b011b e448101b 4e60a970 4583139a 35bc6920 047ad340 028c15c0 3d21927d 532b1a48 94308d7e 614a83d1 5c68c1ed d33c7f59 f06c19d0 9b21e1b6 84dc4cc8 8833a4c2 1baf08df 8747254b 626672d8 023cde0a 88bed6c2 03024c07 b3c15818 1d0b0634 8c89d961 ee5ff05c f89c0f3f f4af99ac 3037e875 c5bc3006 9cbb0225 99a773f3 256ae075 4d299105 f367822c f8ce7855 d3390592 88e9379b aa6aa69a 1920e5cb 5b8c7ccd 3d538d99 5c3375c5 634661ae 2925d361 ee2915a7 349bc980 9f0bae45 8ce434a6 2ac7954b 828a8b25 27c7fea2 e43feba4 fd4d3ffc 34f970f2 4e042f21 124a4e7f 667534a8 41ae8433 0d5904bb 842f79af 7f72febd 1ba694f8 7b37e09d e42be906 1c4df582 2764134a d8a77b61 a61a781f 4d75d65f 3dfa5767 0960ad38 cfccdec0 39a7aac3 d54a94e0 ff763233 f7ff7b6f 098240be 25fd087d 0c4e3c87 e92fe90f 60c62fbf 06fa00fd 777a1fbd 1a7a9e75 e59d5407 b4fe92f6 4b807658 e1c4c5e9 a83eac35 ee06b52b 6fb36696 a94854be 2994b5a4 6eda9b2f 5ecae75c 2d1d9ff2 2ea9cb9b e489a6bd b887b721 e83500ff 02927551 7e0a656e 64737472 65616d0a 656e646f 626a0a31 35203020 6f626a0a 32393035 0a656e64 6f626a0a 38203020 6f626a0a 5b202f49 43434261 73656420 31342030 2052205d 0a656e64 6f626a0a 33203020 6f626a0a 3c3c202f 54797065 202f5061 67657320 2f4d6564 6961426f 78205b30 20302035 35392e32 38203738 332e3839 5d202f43 6f756e74 2031202f 4b696473 205b2032 20302052 205d203e 3e0a656e 646f626a 0a313620 30206f62 6a0a3c3c 202f5479 7065202f 43617461 6c6f6720 2f506167 65732033 20302052 202f5665 7273696f 6e202f31 2e34203e 3e0a656e 646f626a 0a313720 30206f62 6a0a3c3c 202f4c65 6e677468 20313820 30205220 2f4c656e 67746831 20373737 32202f46 696c7465 72202f46 6c617465 4465636f 6465203e 3e0a7374 7265616d 0a7801bd 59797854 55963fe7 2d55af2a a9a4962c 55496a4b 514b4842 a8848424 44f20855 49200423 41ac8a46 b2100c91 40c41085 160c0c88 04a451da 60a3a2f4 c2349b14 01b580d6 8e1a469d 76c176b4 4765a6b5 15db99e9 8cbd809f 0aa9eaf3 5e8548f2 b57efce1 e7bbdfb9 f79c73b7 f37ef79c 7bebddea 5eb5ba0d 34d00b2c d4353477 2d05f931 df43c587 ad9dcd5d 3159ff21 95335b7b ba6d3199 f700b0cb 9776ddd6 1993859f 00a8cdb7 2d5f33da df500ca0 faacbdad 7949ac1e 2e5359d4 4e8a988c d3a89cd4 ded97d77 4cd69fa0 3267f9ca d6d17a83 8d646367 f3dda3f3 c339926d 2b9a3bdb a8a4c71c a06c52d7 ca3bbb65 11cc362a 8bbb56b5 8db647aa 67df0424 6d1cac04 15dc0e4a 60404ba9 1140f999 da0c1cd5 4af5f42c c989dbb5 38b1ec22 e804595e 5cfb63b9 fc37fbaf dffdb2ed b23bee41 e12b52a8 aeb4974a 4556240b 201ea97e 38eec1b1 1ab91f65 7161a8cf 0ec31ca2 72a242a2 ecec5946 e8c5fdb0 93e84922 1696e136 5843b495 e8a744dc 187780a4 93b86d80 13c453b8 06d270ae 18c75917 2699ac46 759cf577 61549cd8 6b7dcff8 f16934d1 ea7d84a6 010da866 a9f1497c 02968015 7f094e5c 0bd5e0c1 3dc7b396 5b9ba8ea 007411f5 12b1728e 7860c092 6f7d1e73 c0c921f5 718185c3 67ac7ff2 e65acf7b c30c0e58 5f748739 2a5eb090 24265a07 cd7badbf 31df667d 9ee850ac ea6016b5 78c67ac0 bcdcbacb 12c63d03 d687cc61 a43e0fc6 8ad566ea fa8cb533 abdfbac4 2bd7cfeb 0f338706 ac2554bf 488cb316 15dbad85 e64fac79 eeb08024 e79ae759 277b5fb7 4ea28ed4 cc46833a 459d35c3 bccb5a4a 5516b3df 5d4a741a 0fe2a330 191f1d70 ceb59e22 965ef7f8 9cace2fe 30fee878 b5c7eb0c e35ab1a8 dad39f55 ed7666cd b33ab32a dd6ee217 bda2dca4 bc59394b 99afcc56 7a942ea5 5d99ae4c 12f48256 4810e205 b52008ca 301e1e28 b72a4ee3 21282758 0e1d1714 021fc6a7 48c99dc6 23b2f2c8 b3022730 020849e1 e887e4bc 0849613c 74422b71 c43ca390 3945188f 1c8fa98e 88564ee2 38b942cb 483c6594 03830203 7321840f 8415b039 a5a7dc58 ae9fa92b a9f47d5b d624d75c c9b3bffd 31a239d4 5f531f08 1d340743 f9121335 07af3437 5e61beb5 ec5e4d55 6d15d9d9 350bd61c efe9ea58 ea6f73f8 9b1cfe36 a2a6d0b6 9e7663a8 b7c5663b d6d12555 d842acab a9a5b55d 2a9bdb42 5d8e365f a8c3e1b3 1deb91fb 4da85e2a 55f7387c c760a97f 61e0d852 b1cd37d0 23f6f81d cdbee0f1 968a558d e3e6da3a 36d7aa8a 7f325785 34d82a69 ae16b9df 84b91aa5 ea1669ae 4669ae46 69ae16b1 459e4b7a 79ffb2fa 8a3bbbc9 3b6dfe65 35b690a7 3e34e786 8640c8d6 1cf48571 3f297dab 811f042d ff1c78f8 5e48e3f2 c00a107d 8fe87da9 8cdc18fd 947f19b4 91cee85f d919b4a8 27256222 e5653008 0fc0a370 1414f02b e23d702b 3c02af62 07c5f62d 7002de45 0b4ca1bd 978330cc 83d7301a 7d0b96c2 2fa87d37 bc080fc3 3188a73e 9d904cb5 3bd0195d 4bb2487c 0b6c8afe 0c264131 dc07cf41 098dba03 86a307a2 c7a97601 dc0807e1 10f5ff2d 3a98639c 21fa54f4 1310e006 1a7313d5 bc159d17 3d0a7ac8 810aa823 ed26781e 9decfbd1 7630c20c b2ee3178 02f6c10b f067dc88 27a2edd1 9ee8d9e8 47e4aa46 c8807a4a ebf0047e c41ee5ee 8b3e16fd df688490 f0c0649a b50976c1 cf69fca3 9406696b f5e3edd8 8dbbf061 46643632 27b8cd7c 6a648470 c8822a4a d5b42bdf 4f089c84 21f81b7c 859f3346 56cb76b3 67a285d1 bfd39e5d 436f29bd 491bf450 da426907 bdd36954 e0549c8d 75b80e7f 820fe3db cc64e646 26c0dcc5 dccd7cca ce676f61 d7b06f73 777203fc 76fe1145 5ce462f4 74f4e5e8 3b900a66 b81956c1 7a7abb17 e12c5c80 af91a5b1 32d08933 b0026fa5 d48b8f32 27711f9e 64ea7010 cf3207f1 0ff8317e 8e97189e 89679299 6ca69bd9 c51c625e 64de6097 b10fb33f 65ffc05e e466f20c bf8f3faf 702a3f88 b444b646 de88ce88 7e14fd92 b65801ec b4321530 1f164333 bd6d174c 837be92d 8e503a4a ab360467 e055397d 8c19300c 5f120a80 7a4cc37c aca5341f afc7a5b8 0cf7e229 4acfcbb6 7cc1d042 302a46c7 a432194c 3dd3c274 32bdcc3b 4c2f9bce 4e66e7b2 0dec514a afb0efb2 97d84b1c cf19b864 ae8a9b03 dbb94e6e 0fa5fddc afb801ee 4dbe849f c9cfe717 f1bdfc56 7e3bdbca bfc5bfab 58afd8a1 18507cae f80b6d8b f3942b95 db69755e 259f7d81 7cf99b87 c349647d 3eac8056 f4610bf4 d36aecc3 66e823ef 5a82f713 5e5de089 36b2ebd9 2a662a79 c3f3f023 f2d63db0 0eb6b2b7 c0bee87f b207e1f7 e429cb69 c85ef857 ae02ccfc 6e5a9d8d 3095bc68 34895993 b33c6e97 739223d3 6ea32d3f 233dcd64 4c4d494e 32e8755a 4d7c9c5a 2528153c c7320839 7e476593 2de46a0a 712e4775 75ae243b 9a49d17c 95a28942 d916aa1c df266493 fa3553d5 b89622b5 5c3aa1a5 186b298e b544adad 0cca7273 6c7e872d f4bacf61 0b63c30d 01e21ff0 3982b6d0 b0ccd7ca fc4e99d7 106fb753 079bdfd8 eeb385b0 c9e60f55 f6b4f7f9 9b7cb939 78522438 d4b939d2 c621429c 34700866 37afa30d 16664b2d fca13487 cf1f3239 88a73ad6 e96f5e12 aabb21e0 f7a5dbed 41d2916a 4180e6c8 cd591622 3b615bfc 12c7926d 61115a9a 24aef996 40886d0e 86982669 2c5d7628 d5e10ba5 ae3d6ffc 46bcc2f9 b75f5519 629c95cd 6d7d9521 b1691b81 2b894d92 d4bc9da4 9a7a1b0d cb6c0e06 42b879d4 08c9c60e b2543237 7626389b 3a6c2195 a3c2d1de d7d144e0 c282c040 9a98266f be21a80b 0c984493 2ce4e69c 34ae9f61 a7b73f99 3b2b7796 54ceb01b d7c7ca3f fd4b4cff bb41a934 ae1ffa90 ca9a0563 00a08480 630ed919 b2b5ca93 38c8d862 296b2b86 bed662c2 899e20d2 6b2e237b 668718f2 19d619e2 9d739a43 bdf557cc 68f7c58c 6beaf00d a84c69f2 215411a4 f64d7dda 525a296a af75d8fa 2ed269dd e418fef3 784df3a8 46e1d45e 04a9525a e8315f09 61f315be 473a2c9d f4d6ed46 47bbb4be 3df29a92 ec30faaf 52902c41 23d91c4a a203bc2e 600fd982 a4a05f93 39356150 d5058e21 ee088631 ba390c3e f349fa8d ca2ebe95 aa732457 5be6a3f9 49c8cd21 c5643b71 53726c95 3473a5e4 2bb63e5b df9c257d b64a5b3b 3913e794 4baa68eb 0be61182 f501c209 16d28c62 307d8c6d 0b064b69 9c3c691c ea42cdfb 823442c7 e80854ca aabc116a 3435870e 53d65517 b82110ea f5a58744 5f905681 dc77b02e 101a24cf 0d06a995 77cc52b2 78dd32e3 a8cdf964 b37732d5 17c446a1 df2ebd34 44b0af4f 1ab33ee0 b08706fb fad2fba4 788bc961 84890a71 541106a9 89047918 7beba82f 150e7bba bc067687 9dcc0a4a 984e2397 bee251f4 9bfdbb11 2e1ab39b 7a4e276b 8b64848b bf27844b ae05e1d2 6b4278c6 98a5e310 2e239b67 48085ff7 c3213c73 1cc2e5df 8db03866 3719398b ac156584 2bbe2784 675f0bc2 be6b42d8 3f66e938 842bc966 bf8470d5 0f8770f5 3884e77c 37c273c7 ec26236b c8dab932 c2f3be27 846baf05 e1f9d784 f0f56396 8e43b88e 6cbe5e42 f8861f0e e105e310 aeff6e84 178ed94d 46de48d6 2e94115e f43d217c d3b5201c b8268483 63968e43 b8816c0e 4a08df3c 86b0981e 82abf7e1 de09db2e 7cef1bf3 2d57414e bf94783d 547077c2 109148e4 259a4624 e96a896a f8456021 da4ddf64 0dd4fcca 3d4f3c7d 7d4c25d9 0b06f9e3 9ba5ef2e 9e744ad2 4d7c043a 49d5a3ca 6934caa7 f8107ec8 74b36a76 21fb21b7 84bb403f c42b00b8 b3f44dc8 d208e5b1 fb1e218f 0e652241 1b06384b 24c9c4b3 e7c2c011 01f1ca73 704a9e73 51f6291a 858745d9 53bd053a bbce4d54 c1ed085f fe23ffdc d7b3c35c ed25ba3b 204b87e8 8ae01dfe 21faa270 1c13308c 05623cc7 29e33965 3f0fea2a 95b667c8 38f4ce48 0994975f 78dd3bd5 503813a7 17e81cba a197f6b8 760cb25f f41982fb bf5ec17e 218f2592 cd16fe71 c884fde2 fc22ae92 bb89bfdd bcc2b2d6 b209b730 c264a1c1 74bbe91e d33d194f 9b78c8c4 442e23c1 64576698 e87e88b7 2626661a d48506de 665d6dcf 8cb7dfab 2c4e5999 99e04edc 602dce9c 54e590ec f88fe10b c3da8bc3 9f4079d9 4859f9b0 4e5f92a7 4f2d412a f525253a caa0d13b 75f61a31 8333c53b 75ae387d 82075449 4a0f9a38 8d56ed41 219932ba 29d36a51 fa30df00 8d45fa72 2c9a5e54 38cde5c8 542a940e e2edf9fa e424a522 1115a4b0 27dbe76e 7e6170c3 b405fdeb 4e56b9b8 67d98ad5 e8f9e2e3 35954f6f 6d295e92 c6265cce 3a89faae 953585f5 b7afdbb5 bd66f3e9 9eb3912f 7e7e786d 55dbbc22 ef4d1d07 655cbcd1 f7b8347e 0ff9c690 689d135f 9fdb96d5 9abb3a6b 75aea2df 853542b6 da989da4 61bff226 156ae8c7 be434cd2 156aefd5 68bce985 937865a1 5763ec77 fb7461ba a54b5417 4f59c958 b36c1b58 37535095 7f152a84 0d940f97 0f132817 463ed50e 6b257c24 6c64488a f2a69a5c a0e25d66 67a64b01 ac073856 984a7064 38ac1e48 731a3dc8 a192e0ca a3cc624f 27cc5c94 1158d9d9 1258da32 89dbb081 30c3468e 292c4849 4d29c88f 01a75016 5ab020ff 2a18a749 30d21715 2168c1e4 247060ca f95fc77b 2a9fdd71 f8e97d7a a721c395 d2366bd5 236d27fc 2e7e405c 81c91ffc a52aa7f2 8e7b237f fbd28da9 af6c2bbf e391bb7f d283f804 cbd88a77 dede7d77 c5da27bb 5e79e9e4 a6050566 ebb1ded7 23118295 bc9bee79 b93cfe31 e234708b 98a962d4 820619e6 79bd42a1 6414c82b 05fa0e57 aa99d571 fce76cbc 9263c398 fa34f66b 84c3ea30 068ef389 55093282 172f948d 90579553 51a62b91 5123e04a b64cc9e6 d669cf24 7aa7a24e 853a7b21 16e80a92 1d3ae697 91427c63 643bb3f3 91b7dfa6 4ff8ad23 774578bc 35c4eeb8 bcf8f1c8 cf24db10 2aa2e7b8 0cbacfb1 c16931bb 5a7fbf95 2989af34 dc64b8cd c0950af1 1a25c4ab 13131256 eb0d067d 42a24d6f 50822155 9d5a4886 658a699a 7b1312cc fad2448e 2bb4bd6c d6e894c5 692ba1d8 9659658f adf8c5e1 215aece1 f2115aed 4f2e5c59 69290cc8 66321962 4b4f6b6f a478f018 ada8625c ac852e53 e82ad6c6 67504ca8 8c94a195 f380229d 32c1148b 0d69b5b5 65d2724b 6bdd6818 b7ce6e03 05044b41 5290cf25 2731f6cc 49ee11fd 3a71e193 7b9eed6d dc9cf758 27f3d9c8 13d7e5e7 d62d3b83 fa4b91e1 a391bf6b b173cf0c cb6bf7f4 ffa25a54 b1ec5391 552e833d f2d26f23 ff7ee635 790d6ba3 1f700e7e 2fa4831b 0e882577 a561aae0 14dca680 e93ed882 f7ab9455 82daeeb6 17262424 b12f2b0b d3797721 c54a16b3 c152ac5b 99aa66ca d493bca9 59551e19 9891927b 6a16dcbd 36cf48db c4683c48 01210124 87c134a7 2bc39698 020ade65 4bb478d0 953cc903 1906e2a4 98408eb5 6aed1e74 a6b83d60 d65326c5 84bc5760 2c00a408 d8808d74 cd9f92ec 70b969d7 60be81c3 91093aed 74bd5d3f 1a16c949 29056cd5 73035ac7 ac4dbb07 d4336f5d d47102e3 23fff76a e4dcac75 386fc303 ebf7771f 7de2017e ef579b6e 9cda10f9 9fc8e59b 733d9f7e f252e46d f4d2d54c dc295cf2 f57ffd66 e38a97f7 3c7abf74 e787746f 25f97b2f 2442bd58 c4c79998 e2b8d2f8 12cd5ccd 8dcc22ae 857956a9 be477342 7346c332 2ad42494 4222a78a 6734f4b7 c3ca04a1 58753841 57a59561 a26df4bc e4e0e4f2 e4f1e436 481b6723 262b188a 58da06f5 86a2e9f6 422ecf7f 3e7053ae 79cacbbe cfb6eebe fc19dffb f8ecc889 c1d37b5a cfe11eec ffff234f d3df2060 a113f33a 3aa7183a d1e2e07d b1ae1a03 d88eecfd ec6eee11 f5017558 15562b3c 6a04a542 818ca052 51a60625 8fdb91e5 6c496ab5 534fba24 9e7752d4 625c1ccf aad49c82 c7380659 602c4a21 8c415145 d7310a95 9ae549fa 95a8d768 5253d3f8 bdb8576d 8ad7ecb3 6fbf956e 9b4df32f 186b4746 4cf3fd6d be4f2b7d 46284f2d 2b2fab1d 9143ba5c da0863a7 449e1c21 35f4d5c8 0da687b8 a1e09629 460a1949 c192821d 0a668fb6 dda22d2b 531251f8 37d29263 1c1a0ad0 c1da5907 b23bfe30 bcf92326 f9fd8747 4e3ff11a b3936990 3601b6f5 ebd9188e 54cba7f6 6ec28523 4e4df7ab 1ed82816 37681a74 1d4c87a6 43b796b9 cbae9ca3 a9d63166 c19ac859 0d84a15b b0a43271 16b7c079 d397257a 1d699355 c94e4f8a 296b7218 171fb7f7 2ca5579c 7f417a9f f9da2f6a 65e71e91 37fb916f 3679bd31 8d174c4e 854b69e4 b2914f13 b2690397 dc57f2d9 46947768 f259bbee 2a96b5db a4bb2f5a 758a74a9 cc426668 7de58ad5 151b238f e39167e7 7b7f3c6f 5d64f54b cc5dc874 8ad767d5 de51dc1a dc1cf9ef 915d6c9d 63fa8f77 e667444a 461a3a66 2f7eb2d4 3a728937 ecb9f9ae 6dc13c77 7651d381 1d771e26 af6888be cfdfc19f 073379ca 3171463a bf1bfb79 d64a3bcf 46dcc26f 35f0f502 7b9f59a7 4b56949a d9f8d264 9585b158 4cac9799 a1f5ead2 6c2aafc9 64b5edb3 77c400a8 1d1e7d7d 8a6af2de d879a71d 9683bb14 32529d06 578233dd 1597a2ca 074d9236 1ff5ba44 ad328324 1ed87c44 8663d5c6 f87c48d4 5326a429 f2e9d8a3 4c3adc28 c4a5208f e5926203 1d7502a6 3aa6a01c d97ae988 9b5e4001 62b7b95d 14e94576 0767c169 ba17ed67 06de8b5c fcebe7e7 eebccef2 62da4347 23bf8fc2 53e70f9f c22a0f7f 3ef2fee9 1dfb236f 46ce4422 91df1c08 3ef8d9e3 cf3dfa3a 1e46ffd9 3fcafb1f 6574cbdf 4677d1ff ec892365 1279500a dd321bc1 0469742f ef041769 916ed951 eea2a0ff 1d21505b 5957bb30 bbba6d79 4f5bf7b2 d666b985 5c4d199d 932012d5 11351175 11f512ed 247a9228 44344874 363afa10 0f633cd2 ef96f172 fe04b960 822ccd77 75ffc209 72d10479 fa0479d6 04b96282 3c5b92ff 01533923 7c0a656e 64737472 65616d0a 656e646f 626a0a31 38203020 6f626a0a 34383830 0a656e64 6f626a0a 31392030 206f626a 0a3c3c20 2f547970 65202f46 6f6e7444 65736372 6970746f 72202f41 7363656e 74203737 30202f43 61704865 69676874 20373137 202f4465 7363656e 74202d32 3330202f 466c6167 73203332 0a2f466f 6e744242 6f78205b 2d393531 202d3438 31203134 34352031 3132325d 202f466f 6e744e61 6d65202f 584d4650 4d542b48 656c7665 74696361 202f4974 616c6963 416e676c 6520300a 2f537465 6d562030 202f4176 67576964 7468202d 34343120 2f4d6178 57696474 68203135 3030202f 58486569 67687420 35323320 2f466f6e 7446696c 65322031 37203020 52203e3e 0a656e64 6f626a0a 32302030 206f626a 0a5b2035 35362035 35362035 35362035 35362035 35362035 35362035 35362030 20302030 20302030 20302030 20302030 20363637 20363637 20373232 205d0a65 6e646f62 6a0a3920 30206f62 6a0a3c3c 202f5479 7065202f 466f6e74 202f5375 62747970 65202f54 72756554 79706520 2f426173 65466f6e 74202f58 4d46504d 542b4865 6c766574 69636120 2f466f6e 74446573 63726970 746f720a 31392030 2052202f 57696474 68732032 30203020 52202f46 69727374 43686172 20343920 2f4c6173 74436861 72203637 202f456e 636f6469 6e67202f 4d616352 6f6d616e 456e636f 64696e67 0a3e3e0a 656e646f 626a0a32 31203020 6f626a0a 284d6163 204f5320 58203130 2e362e38 20517561 72747a20 50444643 6f6e7465 7874290a 656e646f 626a0a32 32203020 6f626a0a 28443a32 30313130 37313530 32313934 375a3030 27303027 290a656e 646f626a 0a312030 206f626a 0a3c3c20 2f50726f 64756365 72203231 20302052 202f4372 65617469 6f6e4461 74652032 32203020 52202f4d 6f644461 74652032 32203020 52203e3e 0a656e64 6f626a0a 78726566 0a302032 330a3030 30303030 30303030 20363535 33352066 200a3030 30303031 30373630 20303030 3030206e 200a3030 30303030 30373137 20303030 3030206e 200a3030 30303030 35303331 20303030 3030206e 200a3030 30303030 30303232 20303030 3030206e 200a3030 30303030 30363938 20303030 3030206e 200a3030 30303030 30383237 20303030 3030206e 200a3030 30303030 31393239 20303030 3030206e 200a3030 30303030 34393935 20303030 3030206e 200a3030 30303031 30343933 20303030 3030206e 200a3030 30303030 30393737 20303030 3030206e 200a3030 30303030 31303234 20303030 3030206e 200a3030 30303030 31303639 20303030 3030206e 200a3030 30303030 31393039 20303030 3030206e 200a3030 30303030 31393635 20303030 3030206e 200a3030 30303030 34393734 20303030 3030206e 200a3030 30303030 35313230 20303030 3030206e 200a3030 30303030 35313834 20303030 3030206e 200a3030 30303031 30313534 20303030 3030206e 200a3030 30303031 30313735 20303030 3030206e 200a3030 30303031 30343135 20303030 3030206e 200a3030 30303031 30363636 20303030 3030206e 200a3030 30303031 30373138 20303030 3030206e 200a7472 61696c65 720a3c3c 202f5369 7a652032 33202f52 6f6f7420 31362030 2052202f 496e666f 20312030 2052202f 4944205b 203c3263 61636633 36303130 65386634 62393961 37656437 38326237 65656536 64623e0a 3c326361 63663336 30313065 38663462 39396137 65643738 32623765 65653664 623e205d 203e3e0a 73746172 74787265 660a3130 3833350a 2525454f 460a8686>;
+    DKDChangeTimeStamp = "2011-07-14 21:19:45 -0500";
+    DKDCreateTimeStamp = "2011-07-14 20:35:38 -0500";
+    DKDDisplayGraphicDetails =     {
+        AngleFormatDisplayDetails =         {
+            AngleDirection = Right;
+            AngleForm = degrees;
+            AngleRotation = "Counter Clockwise";
+            PrecisionAngles = 2;
+        };
+        AnglesDisplaySpec =         {
+            ExampleValueDisplaySpec = "100.010002";
+            FieldWidthDisplaySpec = "62.000000";
+            FormDisplaySpec = Decimal;
+            PrecisionDisplaySpec = 2;
+            UnitsDisplaySpec = Punctuation;
+        };
+        AreaForm = Natural;
+        HelpTipDisplaySpec =         {
+            ExampleValueDisplaySpec = "100.010002";
+            FieldWidthDisplaySpec = "62.000000";
+            FormDisplaySpec = Decimal;
+            PrecisionDisplaySpec = 3;
+            UnitsDisplaySpec = Abbreviate;
+        };
+        InspectingSpecIndex = 0;
+        LengthsDisplaySpec =         {
+            ExampleValueDisplaySpec = "100.010002";
+            FieldWidthDisplaySpec = "62.000000";
+            FormDisplaySpec = Decimal;
+            PrecisionDisplaySpec = 2;
+            UnitsDisplaySpec = Nothing;
+        };
+        PercentDisplaySpec =         {
+            ExampleValueDisplaySpec = "1.010000";
+            FieldWidthDisplaySpec = "50.000000";
+            FormDisplaySpec = Decimal;
+            PrecisionDisplaySpec = 1;
+            UnitsDisplaySpec = Punctuation;
+        };
+        PercentFormatDisplayDetails =         {
+            PercentForm = Percent;
+            PrecisionPercents = 1;
+        };
+    };
+    DKDDocumentScale =     {
+        HighPrecisonAngles = NO;
+        ScaleOriginX = "0.000000";
+        ScaleOriginY = "0.000000";
+        ScalePlusDown = YES;
+        ScalePlusToRight = YES;
+        ScaleScale = "1.000000";
+        ScaleUnits = Inches;
+    };
+    DKDDocumentVersion = 1;
+    DKDEazyDrawVersion = "rev. 3.6.4";
+    DKDExportDoc =     {
+        BMPExporBackground = "No Background";
+        CSVStringEncoding = "Unicode (UTF8)";
+        DOSEPSPreview = NO;
+        DataExporBackground = "No Background";
+        DualRepresentation = NO;
+        EPSColorSpace = RGB;
+        EPSExporBackground = "No Background";
+        EPSLatexPsfrag = NO;
+        ExporBackground = "No Background";
+        ExportButtonDragFormat = File;
+        ExportButtonFileExtension = pdf;
+        ExportColorTable = "256 Best";
+        ExportCompresion = "1.000000";
+        ExportContent = "Just Graphics";
+        ExportExpand = "8.333333";
+        ExportFileExtension = pdf;
+        ExportImageAntialias = YES;
+        ExportImageInterpolation = Automatic;
+        ExportPath = "/Users/mgwelch/dev/github/courses/algebra/img";
+        ExportTransparentColor = Automatic;
+        GIFExporBackground = "White Background";
+        GIFFDither = NO;
+        HideExtension = NO;
+        ICNSExporBackground = "No Background";
+        ICOColorTable = "256 Best";
+        ICOExporBackground = "No Background";
+        IncludePictHeader = YES;
+        JPGExporBackground = "White Background";
+        KeynoteExporBackground = "No Background";
+        KeynoteExportMapping = "One Slide";
+        MirrorTextEncoding = 0;
+        PDFExporBackground = "No Background";
+        PDFPagination = "Single Page";
+        PDFXMirror = NO;
+        PDFYMirror = NO;
+        PNGColorSpace = RGBA;
+        PNGExporBackground = "White Background";
+        PNGInterlace = NO;
+        SVGCompress = NO;
+        SVGDOMIds = YES;
+        SVGEmbedImages = YES;
+        SVGFont = SVG;
+        SVGGlyphs = "System Font";
+        SVGProfile = "SVG 1.1";
+        SVGTidyFormatting = YES;
+        SWFCompress = NO;
+        TIFExporBackground = "No Background";
+        TIFFColorSpace = RGBA;
+        TIFFCompresionType = None;
+    };
+    DKDGrids =     {
+        DynamicSnapGrid = YES;
+        GuidesLayer = NO;
+        MajorGrid =         {
+            GridAboveGraphics = NO;
+            GridRGB =             {
+                Blue = "1.000000";
+                ColorSpace = NSCalibratedRGBColorSpace;
+                Green = "0.713726";
+                Opacity = "1.000000";
+                Red = "0.549020";
+            };
+            GridSpacingX = "72.000000";
+            GridSpacingY = "72.000000";
+            LinkGridToRulers = NO;
+            PrintLineWidth = "1.100000";
+            PrintsGrid = NO;
+            ShowsGrid = YES;
+            SnapsToGrid = NO;
+        };
+        MinorGrid =         {
+            GridAboveGraphics = NO;
+            GridRGB =             {
+                Blue = "0.874510";
+                ColorSpace = NSCalibratedRGBColorSpace;
+                Green = "0.854902";
+                Opacity = "1.000000";
+                Red = "0.745098";
+            };
+            GridSpacingX = "2.250000";
+            GridSpacingY = "2.250000";
+            LinkGridToRulers = NO;
+            PrintLineWidth = "0.850000";
+            PrintsGrid = NO;
+            ShowsGrid = YES;
+            SnapsToGrid = YES;
+        };
+        SnapEnds = NO;
+        SnapGuidelines = NO;
+        SnapRadiusGrid = "3.000000";
+        SnapSound = None;
+        SoftSnap = NO;
+    };
+    DKDHideExtension = YES;
+    DKDLayersList =     (
+                {
+            CloakLayerGuidelines = NO;
+            CloakLayerVertices = NO;
+            FullLayerScale =             {
+                HighPrecisonAngles = NO;
+                ScaleOriginX = "0.000000";
+                ScaleOriginY = "0.000000";
+                ScalePlusDown = YES;
+                ScalePlusToRight = YES;
+                ScaleScale = "1.000000";
+                ScaleUnits = Inches;
+            };
+            GraphicsList =             (
+                                {
+                    Bounds = "{{72, 72}, {72, 72}}";
+                    Class = DKDCircle;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    GraphicID = EA20FCC1;
+                    GraphicName = Circle;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = YES;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineRGB =                         {
+                            Blue = "0.000000";
+                            ColorSpace = NSCalibratedRGBColorSpace;
+                            Green = "0.000000";
+                            Opacity = "1.000000";
+                            Red = "0.000000";
+                        };
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    Locked = NO;
+                    MarkCenter = NO;
+                    ReversedPath = NO;
+                },
+                                {
+                    Bounds = "{{108, 72}, {72, 72}}";
+                    Class = DKDCircle;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    GraphicID = 58BC4DC1;
+                    GraphicName = Circle;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = YES;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineRGB =                         {
+                            Blue = "0.000000";
+                            ColorSpace = NSCalibratedRGBColorSpace;
+                            Green = "0.000000";
+                            Opacity = "1.000000";
+                            Red = "0.000000";
+                        };
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    Locked = NO;
+                    MarkCenter = NO;
+                    ReversedPath = NO;
+                },
+                                {
+                    Bounds = "{{90, 108}, {72, 72}}";
+                    Class = DKDCircle;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    GraphicID = 58DAB902;
+                    GraphicName = Circle;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = YES;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineRGB =                         {
+                            Blue = "0.000000";
+                            ColorSpace = NSCalibratedRGBColorSpace;
+                            Green = "0.000000";
+                            Opacity = "1.000000";
+                            Red = "0.000000";
+                        };
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    Locked = NO;
+                    MarkCenter = NO;
+                    ReversedPath = NO;
+                },
+                                {
+                    Bounds = "{{119.25, 85.5}, {13.5, 13.5}}";
+                    Class = DKDSquare;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    GraphicID = 719C5D02;
+                    GraphicName = Square;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = YES;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineRGB =                         {
+                            Blue = "1.000000";
+                            ColorSpace = NSCalibratedRGBColorSpace;
+                            Green = "1.000000";
+                            Opacity = "1.000000";
+                            Red = "1.000000";
+                        };
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    Locked = NO;
+                    MarkCenter = NO;
+                    ReversedPath = NO;
+                },
+                                {
+                    AllowTextLink = NO;
+                    Bounds = "{{119.25, 86.25}, {13.5, 12}}";
+                    Class = DKDCenterText;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    "Containing DKDGraphic" = 719C5D02;
+                    FlowAround = NO;
+                    GraphicID = EA5B1E02;
+                    GraphicName = "Centered Text";
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = NO;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    KeyedText = <62706c69 73743030 d4010203 0405085c 5d542474 6f705824 6f626a65 63747358 24766572 73696f6e 59246172 63686976 6572d106 0754726f 6f748001 af101409 0a11121e 1f202127 2d35393d 41444951 52555855 246e756c 6cd30b0c 0d0e0f10 5c4e5341 74747269 62757465 73562463 6c617373 584e5353 7472696e 67800380 13800251 32d31314 0c15191d 5a4e532e 6f626a65 63747357 4e532e6b 657973a3 16171880 07800980 0fa31a1b 1c800480 05800680 12574e53 436f6c6f 725f1010 4e535061 72616772 61706853 74796c65 564e5346 6f6e74d3 22230c24 2526574e 53576869 74655c4e 53436f6c 6f725370 61636542 30001004 8008d228 292a2b58 24636c61 73736573 5a24636c 6173736e 616d65a2 2b2c574e 53436f6c 6f72584e 534f626a 656374d4 2e2f0c30 31323334 5a4e5354 61625374 6f70735b 4e53416c 69676e6d 656e745f 10144e53 44656661 756c7454 6162496e 74657276 616c800a 1002800e 23404200 00000000 00d2130c 3638a137 800b800d d23a0c3b 3c5a4e53 4c6f6361 74696f6e 23404200 00000000 00800cd2 28293e40 a23f2c59 4e535465 78745461 62594e53 54657874 546162d2 28294243 a2432c57 4e534172 726179d2 28294548 a346472c 5f10174e 534d7574 61626c65 50617261 67726170 68537479 6c655f10 104e5350 61726167 72617068 5374796c 655f1017 4e534d75 7461626c 65506172 61677261 70685374 796c65d4 4a4b0c4c 4d4e4f50 564e5353 697a6556 4e534e61 6d65584e 5366466c 61677323 40240000 00000000 80108011 10105948 656c7665 74696361 d2282953 54a2542c 564e5346 6f6e74d2 28295657 a2572c5c 4e534469 6374696f 6e617279 d2282959 5ba25a2c 5f10124e 53417474 72696275 74656453 7472696e 675f1012 4e534174 74726962 75746564 53747269 6e671200 0186a05f 100f4e53 4b657965 64417263 68697665 72000800 11001600 1f002800 32003500 3a003c00 53005900 60006d00 74007d00 7f008100 83008500 8c009700 9f00a300 a500a700 a900ad00 af00b100 b300b500 bd00d000 d700de00 e600f300 f600f800 fa00ff01 08011301 16011e01 27013001 3b014701 5e016001 62016401 6d017201 74017601 78017d01 88019101 93019801 9b01a501 af01b401 b701bf01 c401c801 e201f502 0f021802 1f022602 2f023802 3a023c02 3e024802 4d025002 57025c02 5f026c02 71027402 89029e02 a3000000 00000002 01000000 00000000 5e000000 00000000 00000000 00000002 b5>;
+                    Locked = NO;
+                    MarkCenter = NO;
+                    RotateRadiansText = "0.000000";
+                    Tabs =                     (
+                                                {
+                            DefaultLengthTab = "36.000000";
+                            RangeLengthTab = 1;
+                            RangeLocationTab = 0;
+                            StopsTab =                             (
+                                                                {
+                                    PositionTabStop = "36.000000";
+                                    TypeTabStop = Left;
+                                }
+                            );
+                        }
+                    );
+                    TabsOnScreen = NO;
+                    TextFontStrokeWidth = "3.000000";
+                },
+                                {
+                    Bounds = "{{85.5, 90}, {18, 18}}";
+                    Class = DKDSquare;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    GraphicID = 6FEBEE02;
+                    GraphicName = Square;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = YES;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineRGB =                         {
+                            Blue = "1.000000";
+                            ColorSpace = NSCalibratedRGBColorSpace;
+                            Green = "1.000000";
+                            Opacity = "1.000000";
+                            Red = "1.000000";
+                        };
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    Locked = NO;
+                    MarkCenter = NO;
+                    ReversedPath = NO;
+                },
+                                {
+                    AllowTextLink = NO;
+                    Bounds = "{{85.5, 93}, {18, 12}}";
+                    Class = DKDCenterText;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    "Containing DKDGraphic" = 6FEBEE02;
+                    FlowAround = NO;
+                    GraphicID = 7FEBEE02;
+                    GraphicName = "Centered Text";
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = NO;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    KeyedText = <62706c69 73743030 d4010203 0405085c 5d542474 6f705824 6f626a65 63747358 24766572 73696f6e 59246172 63686976 6572d106 0754726f 6f748001 af101409 0a11121e 1f202127 2d35393d 41444951 52555855 246e756c 6cd30b0c 0d0e0f10 5c4e5341 74747269 62757465 73562463 6c617373 584e5353 7472696e 67800380 13800251 31d31314 0c15191d 5a4e532e 6f626a65 63747357 4e532e6b 657973a3 16171880 07800980 0fa31a1b 1c800480 05800680 12574e53 436f6c6f 725f1010 4e535061 72616772 61706853 74796c65 564e5346 6f6e74d3 22230c24 2526574e 53576869 74655c4e 53436f6c 6f725370 61636542 30001004 8008d228 292a2b58 24636c61 73736573 5a24636c 6173736e 616d65a2 2b2c574e 53436f6c 6f72584e 534f626a 656374d4 2e2f0c30 31323334 5a4e5354 61625374 6f70735b 4e53416c 69676e6d 656e745f 10144e53 44656661 756c7454 6162496e 74657276 616c800a 1002800e 23404200 00000000 00d2130c 3638a137 800b800d d23a0c3b 3c5a4e53 4c6f6361 74696f6e 23404200 00000000 00800cd2 28293e40 a23f2c59 4e535465 78745461 62594e53 54657874 546162d2 28294243 a2432c57 4e534172 726179d2 28294548 a346472c 5f10174e 534d7574 61626c65 50617261 67726170 68537479 6c655f10 104e5350 61726167 72617068 5374796c 655f1017 4e534d75 7461626c 65506172 61677261 70685374 796c65d4 4a4b0c4c 4d4e4f50 564e5353 697a6556 4e534e61 6d65584e 5366466c 61677323 40240000 00000000 80108011 10105948 656c7665 74696361 d2282953 54a2542c 564e5346 6f6e74d2 28295657 a2572c5c 4e534469 6374696f 6e617279 d2282959 5ba25a2c 5f10124e 53417474 72696275 74656453 7472696e 675f1012 4e534174 74726962 75746564 53747269 6e671200 0186a05f 100f4e53 4b657965 64417263 68697665 72000800 11001600 1f002800 32003500 3a003c00 53005900 60006d00 74007d00 7f008100 83008500 8c009700 9f00a300 a500a700 a900ad00 af00b100 b300b500 bd00d000 d700de00 e600f300 f600f800 fa00ff01 08011301 16011e01 27013001 3b014701 5e016001 62016401 6d017201 74017601 78017d01 88019101 93019801 9b01a501 af01b401 b701bf01 c401c801 e201f502 0f021802 1f022602 2f023802 3a023c02 3e024802 4d025002 57025c02 5f026c02 71027402 89029e02 a3000000 00000002 01000000 00000000 5e000000 00000000 00000000 00000002 b5>;
+                    Locked = NO;
+                    MarkCenter = NO;
+                    RotateRadiansText = "0.000000";
+                    Tabs =                     (
+                                                {
+                            DefaultLengthTab = "36.000000";
+                            RangeLengthTab = 1;
+                            RangeLocationTab = 0;
+                            StopsTab =                             (
+                                                                {
+                                    PositionTabStop = "36.000000";
+                                    TypeTabStop = Left;
+                                }
+                            );
+                        }
+                    );
+                    TabsOnScreen = NO;
+                    TextFontStrokeWidth = "3.000000";
+                },
+                                {
+                    Bounds = "{{119.25, 114.75}, {13.5, 13.5}}";
+                    Class = DKDSquare;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    GraphicID = E977FE02;
+                    GraphicName = Square;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = YES;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineRGB =                         {
+                            Blue = "1.000000";
+                            ColorSpace = NSCalibratedRGBColorSpace;
+                            Green = "1.000000";
+                            Opacity = "1.000000";
+                            Red = "1.000000";
+                        };
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    Locked = NO;
+                    MarkCenter = NO;
+                    ReversedPath = NO;
+                },
+                                {
+                    AllowTextLink = NO;
+                    Bounds = "{{119.25, 115.5}, {13.5, 12}}";
+                    Class = DKDCenterText;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    "Containing DKDGraphic" = E977FE02;
+                    FlowAround = NO;
+                    GraphicID = 0A77FE02;
+                    GraphicName = "Centered Text";
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = NO;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    KeyedText = <62706c69 73743030 d4010203 0405085c 5d542474 6f705824 6f626a65 63747358 24766572 73696f6e 59246172 63686976 6572d106 0754726f 6f748001 af101409 0a11121e 1f202127 2d35393d 41444951 52555855 246e756c 6cd30b0c 0d0e0f10 5c4e5341 74747269 62757465 73562463 6c617373 584e5353 7472696e 67800380 13800251 35d31314 0c15191d 5a4e532e 6f626a65 63747357 4e532e6b 657973a3 16171880 07800980 0fa31a1b 1c800480 05800680 12574e53 436f6c6f 725f1010 4e535061 72616772 61706853 74796c65 564e5346 6f6e74d3 22230c24 2526574e 53576869 74655c4e 53436f6c 6f725370 61636542 30001004 8008d228 292a2b58 24636c61 73736573 5a24636c 6173736e 616d65a2 2b2c574e 53436f6c 6f72584e 534f626a 656374d4 2e2f0c30 31323334 5a4e5354 61625374 6f70735b 4e53416c 69676e6d 656e745f 10144e53 44656661 756c7454 6162496e 74657276 616c800a 1002800e 23404200 00000000 00d2130c 3638a137 800b800d d23a0c3b 3c5a4e53 4c6f6361 74696f6e 23404200 00000000 00800cd2 28293e40 a23f2c59 4e535465 78745461 62594e53 54657874 546162d2 28294243 a2432c57 4e534172 726179d2 28294548 a346472c 5f10174e 534d7574 61626c65 50617261 67726170 68537479 6c655f10 104e5350 61726167 72617068 5374796c 655f1017 4e534d75 7461626c 65506172 61677261 70685374 796c65d4 4a4b0c4c 4d4e4f50 564e5353 697a6556 4e534e61 6d65584e 5366466c 61677323 40240000 00000000 80108011 10105948 656c7665 74696361 d2282953 54a2542c 564e5346 6f6e74d2 28295657 a2572c5c 4e534469 6374696f 6e617279 d2282959 5ba25a2c 5f10124e 53417474 72696275 74656453 7472696e 675f1012 4e534174 74726962 75746564 53747269 6e671200 0186a05f 100f4e53 4b657965 64417263 68697665 72000800 11001600 1f002800 32003500 3a003c00 53005900 60006d00 74007d00 7f008100 83008500 8c009700 9f00a300 a500a700 a900ad00 af00b100 b300b500 bd00d000 d700de00 e600f300 f600f800 fa00ff01 08011301 16011e01 27013001 3b014701 5e016001 62016401 6d017201 74017601 78017d01 88019101 93019801 9b01a501 af01b401 b701bf01 c401c801 e201f502 0f021802 1f022602 2f023802 3a023c02 3e024802 4d025002 57025c02 5f026c02 71027402 89029e02 a3000000 00000002 01000000 00000000 5e000000 00000000 00000000 00000002 b5>;
+                    Locked = NO;
+                    MarkCenter = NO;
+                    RotateRadiansText = "0.000000";
+                    Tabs =                     (
+                                                {
+                            DefaultLengthTab = "36.000000";
+                            RangeLengthTab = 1;
+                            RangeLocationTab = 0;
+                            StopsTab =                             (
+                                                                {
+                                    PositionTabStop = "36.000000";
+                                    TypeTabStop = Left;
+                                }
+                            );
+                        }
+                    );
+                    TabsOnScreen = NO;
+                    TextFontStrokeWidth = "3.000000";
+                },
+                                {
+                    Bounds = "{{148.5, 90}, {18, 18}}";
+                    Class = DKDSquare;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    GraphicID = 8C550F02;
+                    GraphicName = Square;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = YES;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineRGB =                         {
+                            Blue = "1.000000";
+                            ColorSpace = NSCalibratedRGBColorSpace;
+                            Green = "1.000000";
+                            Opacity = "1.000000";
+                            Red = "1.000000";
+                        };
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    Locked = NO;
+                    MarkCenter = NO;
+                    ReversedPath = NO;
+                },
+                                {
+                    AllowTextLink = NO;
+                    Bounds = "{{148.5, 93}, {18, 12}}";
+                    Class = DKDCenterText;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    "Containing DKDGraphic" = 8C550F02;
+                    FlowAround = NO;
+                    GraphicID = 9C550F02;
+                    GraphicName = "Centered Text";
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = NO;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    KeyedText = <62706c69 73743030 d4010203 0405085c 5d542474 6f705824 6f626a65 63747358 24766572 73696f6e 59246172 63686976 6572d106 0754726f 6f748001 af101409 0a11121e 1f202127 2d35393d 41444951 52555855 246e756c 6cd30b0c 0d0e0f10 5c4e5341 74747269 62757465 73562463 6c617373 584e5353 7472696e 67800380 13800251 33d31314 0c15191d 5a4e532e 6f626a65 63747357 4e532e6b 657973a3 16171880 07800980 0fa31a1b 1c800480 05800680 12574e53 436f6c6f 725f1010 4e535061 72616772 61706853 74796c65 564e5346 6f6e74d3 22230c24 2526574e 53576869 74655c4e 53436f6c 6f725370 61636542 30001004 8008d228 292a2b58 24636c61 73736573 5a24636c 6173736e 616d65a2 2b2c574e 53436f6c 6f72584e 534f626a 656374d4 2e2f0c30 31323334 5a4e5354 61625374 6f70735b 4e53416c 69676e6d 656e745f 10144e53 44656661 756c7454 6162496e 74657276 616c800a 1002800e 23404200 00000000 00d2130c 3638a137 800b800d d23a0c3b 3c5a4e53 4c6f6361 74696f6e 23404200 00000000 00800cd2 28293e40 a23f2c59 4e535465 78745461 62594e53 54657874 546162d2 28294243 a2432c57 4e534172 726179d2 28294548 a346472c 5f10174e 534d7574 61626c65 50617261 67726170 68537479 6c655f10 104e5350 61726167 72617068 5374796c 655f1017 4e534d75 7461626c 65506172 61677261 70685374 796c65d4 4a4b0c4c 4d4e4f50 564e5353 697a6556 4e534e61 6d65584e 5366466c 61677323 40240000 00000000 80108011 10105948 656c7665 74696361 d2282953 54a2542c 564e5346 6f6e74d2 28295657 a2572c5c 4e534469 6374696f 6e617279 d2282959 5ba25a2c 5f10124e 53417474 72696275 74656453 7472696e 675f1012 4e534174 74726962 75746564 53747269 6e671200 0186a05f 100f4e53 4b657965 64417263 68697665 72000800 11001600 1f002800 32003500 3a003c00 53005900 60006d00 74007d00 7f008100 83008500 8c009700 9f00a300 a500a700 a900ad00 af00b100 b300b500 bd00d000 d700de00 e600f300 f600f800 fa00ff01 08011301 16011e01 27013001 3b014701 5e016001 62016401 6d017201 74017601 78017d01 88019101 93019801 9b01a501 af01b401 b701bf01 c401c801 e201f502 0f021802 1f022602 2f023802 3a023c02 3e024802 4d025002 57025c02 5f026c02 71027402 89029e02 a3000000 00000002 01000000 00000000 5e000000 00000000 00000000 00000002 b5>;
+                    Locked = NO;
+                    MarkCenter = NO;
+                    RotateRadiansText = "0.000000";
+                    Tabs =                     (
+                                                {
+                            DefaultLengthTab = "36.000000";
+                            RangeLengthTab = 1;
+                            RangeLocationTab = 0;
+                            StopsTab =                             (
+                                                                {
+                                    PositionTabStop = "36.000000";
+                                    TypeTabStop = Left;
+                                }
+                            );
+                        }
+                    );
+                    TabsOnScreen = NO;
+                    TextFontStrokeWidth = "3.000000";
+                },
+                                {
+                    Bounds = "{{141.75, 126}, {13.5, 13.5}}";
+                    Class = DKDSquare;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    GraphicID = 830DCD12;
+                    GraphicName = Square;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = YES;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineRGB =                         {
+                            Blue = "1.000000";
+                            ColorSpace = NSCalibratedRGBColorSpace;
+                            Green = "1.000000";
+                            Opacity = "1.000000";
+                            Red = "1.000000";
+                        };
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    Locked = NO;
+                    MarkCenter = NO;
+                    ReversedPath = NO;
+                },
+                                {
+                    AllowTextLink = NO;
+                    Bounds = "{{141.75, 126.75}, {13.5, 12}}";
+                    Class = DKDCenterText;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    "Containing DKDGraphic" = 830DCD12;
+                    FlowAround = NO;
+                    GraphicID = A30DCD12;
+                    GraphicName = "Centered Text";
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = NO;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    KeyedText = <62706c69 73743030 d4010203 0405085c 5d542474 6f705824 6f626a65 63747358 24766572 73696f6e 59246172 63686976 6572d106 0754726f 6f748001 af101409 0a11121e 1f202127 2d35393d 41444951 52555855 246e756c 6cd30b0c 0d0e0f10 5c4e5341 74747269 62757465 73562463 6c617373 584e5353 7472696e 67800380 13800251 36d31314 0c15191d 5a4e532e 6f626a65 63747357 4e532e6b 657973a3 16171880 07800980 0fa31a1b 1c800480 05800680 12574e53 436f6c6f 725f1010 4e535061 72616772 61706853 74796c65 564e5346 6f6e74d3 22230c24 2526574e 53576869 74655c4e 53436f6c 6f725370 61636542 30001004 8008d228 292a2b58 24636c61 73736573 5a24636c 6173736e 616d65a2 2b2c574e 53436f6c 6f72584e 534f626a 656374d4 2e2f0c30 31323334 5a4e5354 61625374 6f70735b 4e53416c 69676e6d 656e745f 10144e53 44656661 756c7454 6162496e 74657276 616c800a 1002800e 23404200 00000000 00d2130c 3638a137 800b800d d23a0c3b 3c5a4e53 4c6f6361 74696f6e 23404200 00000000 00800cd2 28293e40 a23f2c59 4e535465 78745461 62594e53 54657874 546162d2 28294243 a2432c57 4e534172 726179d2 28294548 a346472c 5f10174e 534d7574 61626c65 50617261 67726170 68537479 6c655f10 104e5350 61726167 72617068 5374796c 655f1017 4e534d75 7461626c 65506172 61677261 70685374 796c65d4 4a4b0c4c 4d4e4f50 564e5353 697a6556 4e534e61 6d65584e 5366466c 61677323 40240000 00000000 80108011 10105948 656c7665 74696361 d2282953 54a2542c 564e5346 6f6e74d2 28295657 a2572c5c 4e534469 6374696f 6e617279 d2282959 5ba25a2c 5f10124e 53417474 72696275 74656453 7472696e 675f1012 4e534174 74726962 75746564 53747269 6e671200 0186a05f 100f4e53 4b657965 64417263 68697665 72000800 11001600 1f002800 32003500 3a003c00 53005900 60006d00 74007d00 7f008100 83008500 8c009700 9f00a300 a500a700 a900ad00 af00b100 b300b500 bd00d000 d700de00 e600f300 f600f800 fa00ff01 08011301 16011e01 27013001 3b014701 5e016001 62016401 6d017201 74017601 78017d01 88019101 93019801 9b01a501 af01b401 b701bf01 c401c801 e201f502 0f021802 1f022602 2f023802 3a023c02 3e024802 4d025002 57025c02 5f026c02 71027402 89029e02 a3000000 00000002 01000000 00000000 5e000000 00000000 00000000 00000002 b5>;
+                    Locked = NO;
+                    MarkCenter = NO;
+                    RotateRadiansText = "0.000000";
+                    Tabs =                     (
+                                                {
+                            DefaultLengthTab = "36.000000";
+                            RangeLengthTab = 1;
+                            RangeLocationTab = 0;
+                            StopsTab =                             (
+                                                                {
+                                    PositionTabStop = "36.000000";
+                                    TypeTabStop = Left;
+                                }
+                            );
+                        }
+                    );
+                    TabsOnScreen = NO;
+                    TextFontStrokeWidth = "3.000000";
+                },
+                                {
+                    Bounds = "{{119.25, 148.5}, {18, 18}}";
+                    Class = DKDSquare;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    GraphicID = D1566E12;
+                    GraphicName = Square;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = YES;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineRGB =                         {
+                            Blue = "1.000000";
+                            ColorSpace = NSCalibratedRGBColorSpace;
+                            Green = "1.000000";
+                            Opacity = "1.000000";
+                            Red = "1.000000";
+                        };
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    Locked = NO;
+                    MarkCenter = NO;
+                    ReversedPath = NO;
+                },
+                                {
+                    AllowTextLink = NO;
+                    Bounds = "{{119.25, 151.5}, {18, 12}}";
+                    Class = DKDCenterText;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    "Containing DKDGraphic" = D1566E12;
+                    FlowAround = NO;
+                    GraphicID = E1566E12;
+                    GraphicName = "Centered Text";
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = NO;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    KeyedText = <62706c69 73743030 d4010203 0405085c 5d542474 6f705824 6f626a65 63747358 24766572 73696f6e 59246172 63686976 6572d106 0754726f 6f748001 af101409 0a11121e 1f202127 2d35393d 41444951 52555855 246e756c 6cd30b0c 0d0e0f10 5c4e5341 74747269 62757465 73562463 6c617373 584e5353 7472696e 67800380 13800251 37d31314 0c15191d 5a4e532e 6f626a65 63747357 4e532e6b 657973a3 16171880 07800980 0fa31a1b 1c800480 05800680 12574e53 436f6c6f 725f1010 4e535061 72616772 61706853 74796c65 564e5346 6f6e74d3 22230c24 2526574e 53576869 74655c4e 53436f6c 6f725370 61636542 30001004 8008d228 292a2b58 24636c61 73736573 5a24636c 6173736e 616d65a2 2b2c574e 53436f6c 6f72584e 534f626a 656374d4 2e2f0c30 31323334 5a4e5354 61625374 6f70735b 4e53416c 69676e6d 656e745f 10144e53 44656661 756c7454 6162496e 74657276 616c800a 1002800e 23404200 00000000 00d2130c 3638a137 800b800d d23a0c3b 3c5a4e53 4c6f6361 74696f6e 23404200 00000000 00800cd2 28293e40 a23f2c59 4e535465 78745461 62594e53 54657874 546162d2 28294243 a2432c57 4e534172 726179d2 28294548 a346472c 5f10174e 534d7574 61626c65 50617261 67726170 68537479 6c655f10 104e5350 61726167 72617068 5374796c 655f1017 4e534d75 7461626c 65506172 61677261 70685374 796c65d4 4a4b0c4c 4d4e4f50 564e5353 697a6556 4e534e61 6d65584e 5366466c 61677323 40240000 00000000 80108011 10105948 656c7665 74696361 d2282953 54a2542c 564e5346 6f6e74d2 28295657 a2572c5c 4e534469 6374696f 6e617279 d2282959 5ba25a2c 5f10124e 53417474 72696275 74656453 7472696e 675f1012 4e534174 74726962 75746564 53747269 6e671200 0186a05f 100f4e53 4b657965 64417263 68697665 72000800 11001600 1f002800 32003500 3a003c00 53005900 60006d00 74007d00 7f008100 83008500 8c009700 9f00a300 a500a700 a900ad00 af00b100 b300b500 bd00d000 d700de00 e600f300 f600f800 fa00ff01 08011301 16011e01 27013001 3b014701 5e016001 62016401 6d017201 74017601 78017d01 88019101 93019801 9b01a501 af01b401 b701bf01 c401c801 e201f502 0f021802 1f022602 2f023802 3a023c02 3e024802 4d025002 57025c02 5f026c02 71027402 89029e02 a3000000 00000002 01000000 00000000 5e000000 00000000 00000000 00000002 b5>;
+                    Locked = NO;
+                    MarkCenter = NO;
+                    RotateRadiansText = "0.000000";
+                    Tabs =                     (
+                                                {
+                            DefaultLengthTab = "36.000000";
+                            RangeLengthTab = 1;
+                            RangeLocationTab = 0;
+                            StopsTab =                             (
+                                                                {
+                                    PositionTabStop = "36.000000";
+                                    TypeTabStop = Left;
+                                }
+                            );
+                        }
+                    );
+                    TabsOnScreen = NO;
+                    TextFontStrokeWidth = "3.000000";
+                },
+                                {
+                    Bounds = "{{96.75, 126}, {13.5, 13.5}}";
+                    Class = DKDSquare;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    GraphicID = CB700C22;
+                    GraphicName = Square;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = YES;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineRGB =                         {
+                            Blue = "1.000000";
+                            ColorSpace = NSCalibratedRGBColorSpace;
+                            Green = "1.000000";
+                            Opacity = "1.000000";
+                            Red = "1.000000";
+                        };
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    Locked = NO;
+                    MarkCenter = NO;
+                    ReversedPath = NO;
+                },
+                                {
+                    AllowTextLink = NO;
+                    Bounds = "{{96.75, 126.75}, {13.5, 12}}";
+                    Class = DKDCenterText;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    "Containing DKDGraphic" = CB700C22;
+                    FlowAround = NO;
+                    GraphicID = EB700C22;
+                    GraphicName = "Centered Text";
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = NO;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    KeyedText = <62706c69 73743030 d4010203 0405085c 5d542474 6f705824 6f626a65 63747358 24766572 73696f6e 59246172 63686976 6572d106 0754726f 6f748001 af101409 0a11121e 1f202127 2d35393d 41444951 52555855 246e756c 6cd30b0c 0d0e0f10 5c4e5341 74747269 62757465 73562463 6c617373 584e5353 7472696e 67800380 13800251 34d31314 0c15191d 5a4e532e 6f626a65 63747357 4e532e6b 657973a3 16171880 07800980 0fa31a1b 1c800480 05800680 12574e53 436f6c6f 725f1010 4e535061 72616772 61706853 74796c65 564e5346 6f6e74d3 22230c24 2526574e 53576869 74655c4e 53436f6c 6f725370 61636542 30001004 8008d228 292a2b58 24636c61 73736573 5a24636c 6173736e 616d65a2 2b2c574e 53436f6c 6f72584e 534f626a 656374d4 2e2f0c30 31323334 5a4e5354 61625374 6f70735b 4e53416c 69676e6d 656e745f 10144e53 44656661 756c7454 6162496e 74657276 616c800a 1002800e 23404200 00000000 00d2130c 3638a137 800b800d d23a0c3b 3c5a4e53 4c6f6361 74696f6e 23404200 00000000 00800cd2 28293e40 a23f2c59 4e535465 78745461 62594e53 54657874 546162d2 28294243 a2432c57 4e534172 726179d2 28294548 a346472c 5f10174e 534d7574 61626c65 50617261 67726170 68537479 6c655f10 104e5350 61726167 72617068 5374796c 655f1017 4e534d75 7461626c 65506172 61677261 70685374 796c65d4 4a4b0c4c 4d4e4f50 564e5353 697a6556 4e534e61 6d65584e 5366466c 61677323 40240000 00000000 80108011 10105948 656c7665 74696361 d2282953 54a2542c 564e5346 6f6e74d2 28295657 a2572c5c 4e534469 6374696f 6e617279 d2282959 5ba25a2c 5f10124e 53417474 72696275 74656453 7472696e 675f1012 4e534174 74726962 75746564 53747269 6e671200 0186a05f 100f4e53 4b657965 64417263 68697665 72000800 11001600 1f002800 32003500 3a003c00 53005900 60006d00 74007d00 7f008100 83008500 8c009700 9f00a300 a500a700 a900ad00 af00b100 b300b500 bd00d000 d700de00 e600f300 f600f800 fa00ff01 08011301 16011e01 27013001 3b014701 5e016001 62016401 6d017201 74017601 78017d01 88019101 93019801 9b01a501 af01b401 b701bf01 c401c801 e201f502 0f021802 1f022602 2f023802 3a023c02 3e024802 4d025002 57025c02 5f026c02 71027402 89029e02 a3000000 00000002 01000000 00000000 5e000000 00000000 00000000 00000002 b5>;
+                    Locked = NO;
+                    MarkCenter = NO;
+                    RotateRadiansText = "0.000000";
+                    Tabs =                     (
+                                                {
+                            DefaultLengthTab = "36.000000";
+                            RangeLengthTab = 1;
+                            RangeLocationTab = 0;
+                            StopsTab =                             (
+                                                                {
+                                    PositionTabStop = "36.000000";
+                                    TypeTabStop = Left;
+                                }
+                            );
+                        }
+                    );
+                    TabsOnScreen = NO;
+                    TextFontStrokeWidth = "3.000000";
+                },
+                                {
+                    AllowTextLink = NO;
+                    Bounds = "{{67.5, 69.75}, {19, 15}}";
+                    Class = DKDTextArea;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    FlowAround = NO;
+                    GraphicID = 797E2932;
+                    GraphicName = Text;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = NO;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    KeyedText = <62706c69 73743030 d4010203 0405085a 5b542474 6f705824 6f626a65 63747358 24766572 73696f6e 59246172 63686976 6572d106 0754726f 6f748001 af101409 0a11121e 1f202127 2d33373b 3f42474f 50535655 246e756c 6cd30b0c 0d0e0f10 5c4e5341 74747269 62757465 73562463 6c617373 584e5353 7472696e 67800380 13800251 41d31314 0c15191d 5a4e532e 6f626a65 63747357 4e532e6b 657973a3 16171880 07800980 0fa31a1b 1c800480 05800680 12574e53 436f6c6f 725f1010 4e535061 72616772 61706853 74796c65 564e5346 6f6e74d3 22230c24 2526574e 53576869 74655c4e 53436f6c 6f725370 61636542 30001004 8008d228 292a2b58 24636c61 73736573 5a24636c 6173736e 616d65a2 2b2c574e 53436f6c 6f72584e 534f626a 656374d3 2e0c2f30 31325a4e 53546162 53746f70 735f1014 4e534465 6661756c 74546162 496e7465 7276616c 800a800e 23404200 00000000 00d2130c 3436a135 800b800d d2380c39 3a5a4e53 4c6f6361 74696f6e 23404200 00000000 00800cd2 28293c3e a23d2c59 4e535465 78745461 62594e53 54657874 546162d2 28294041 a2412c57 4e534172 726179d2 28294346 a344452c 5f10174e 534d7574 61626c65 50617261 67726170 68537479 6c655f10 104e5350 61726167 72617068 5374796c 655f1017 4e534d75 7461626c 65506172 61677261 70685374 796c65d4 48490c4a 4b4c4d4e 564e5353 697a6556 4e534e61 6d65584e 5366466c 61677323 40240000 00000000 80108011 10105948 656c7665 74696361 d2282951 52a2522c 564e5346 6f6e74d2 28295455 a2552c5c 4e534469 6374696f 6e617279 d2282957 59a2582c 5f10124e 53417474 72696275 74656453 7472696e 675f1012 4e534174 74726962 75746564 53747269 6e671200 0186a05f 100f4e53 4b657965 64417263 68697665 72000800 11001600 1f002800 32003500 3a003c00 53005900 60006d00 74007d00 7f008100 83008500 8c009700 9f00a300 a500a700 a900ad00 af00b100 b300b500 bd00d000 d700de00 e600f300 f600f800 fa00ff01 08011301 16011e01 27012e01 39015001 52015401 5d016201 64016601 68016d01 78018101 83018801 8b019501 9f01a401 a701af01 b401b801 d201e501 ff020802 0f021602 1f022802 2a022c02 2e023802 3d024002 47024c02 4f025c02 61026402 79028e02 93000000 00000002 01000000 00000000 5c000000 00000000 00000000 00000002 a5>;
+                    Locked = NO;
+                    MarkCenter = NO;
+                    RotateRadiansText = "0.000000";
+                    Tabs =                     (
+                                                {
+                            DefaultLengthTab = "36.000000";
+                            RangeLengthTab = 1;
+                            RangeLocationTab = 0;
+                            StopsTab =                             (
+                                                                {
+                                    PositionTabStop = "36.000000";
+                                    TypeTabStop = Left;
+                                }
+                            );
+                        }
+                    );
+                    TabsOnScreen = NO;
+                    TextFontStrokeWidth = "3.000000";
+                },
+                                {
+                    AllowTextLink = NO;
+                    Bounds = "{{164.25, 69.75}, {19, 15}}";
+                    Class = DKDTextArea;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    FlowAround = NO;
+                    GraphicID = 19F08A32;
+                    GraphicName = Text;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = NO;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    KeyedText = <62706c69 73743030 d4010203 0405085a 5b542474 6f705824 6f626a65 63747358 24766572 73696f6e 59246172 63686976 6572d106 0754726f 6f748001 af101409 0a11121e 1f202127 2d33373b 3f42474f 50535655 246e756c 6cd30b0c 0d0e0f10 5c4e5341 74747269 62757465 73562463 6c617373 584e5353 7472696e 67800380 13800251 42d31314 0c15191d 5a4e532e 6f626a65 63747357 4e532e6b 657973a3 16171880 07800980 0fa31a1b 1c800480 05800680 12574e53 436f6c6f 725f1010 4e535061 72616772 61706853 74796c65 564e5346 6f6e74d3 22230c24 2526574e 53576869 74655c4e 53436f6c 6f725370 61636542 30001004 8008d228 292a2b58 24636c61 73736573 5a24636c 6173736e 616d65a2 2b2c574e 53436f6c 6f72584e 534f626a 656374d3 2e0c2f30 31325a4e 53546162 53746f70 735f1014 4e534465 6661756c 74546162 496e7465 7276616c 800a800e 23404200 00000000 00d2130c 3436a135 800b800d d2380c39 3a5a4e53 4c6f6361 74696f6e 23404200 00000000 00800cd2 28293c3e a23d2c59 4e535465 78745461 62594e53 54657874 546162d2 28294041 a2412c57 4e534172 726179d2 28294346 a344452c 5f10174e 534d7574 61626c65 50617261 67726170 68537479 6c655f10 104e5350 61726167 72617068 5374796c 655f1017 4e534d75 7461626c 65506172 61677261 70685374 796c65d4 48490c4a 4b4c4d4e 564e5353 697a6556 4e534e61 6d65584e 5366466c 61677323 40240000 00000000 80108011 10105948 656c7665 74696361 d2282951 52a2522c 564e5346 6f6e74d2 28295455 a2552c5c 4e534469 6374696f 6e617279 d2282957 59a2582c 5f10124e 53417474 72696275 74656453 7472696e 675f1012 4e534174 74726962 75746564 53747269 6e671200 0186a05f 100f4e53 4b657965 64417263 68697665 72000800 11001600 1f002800 32003500 3a003c00 53005900 60006d00 74007d00 7f008100 83008500 8c009700 9f00a300 a500a700 a900ad00 af00b100 b300b500 bd00d000 d700de00 e600f300 f600f800 fa00ff01 08011301 16011e01 27012e01 39015001 52015401 5d016201 64016601 68016d01 78018101 83018801 8b019501 9f01a401 a701af01 b401b801 d201e501 ff020802 0f021602 1f022802 2a022c02 2e023802 3d024002 47024c02 4f025c02 61026402 79028e02 93000000 00000002 01000000 00000000 5c000000 00000000 00000000 00000002 a5>;
+                    Locked = NO;
+                    MarkCenter = NO;
+                    RotateRadiansText = "0.000000";
+                    Tabs =                     (
+                                                {
+                            DefaultLengthTab = "36.000000";
+                            RangeLengthTab = 1;
+                            RangeLocationTab = 0;
+                            StopsTab =                             (
+                                                                {
+                                    PositionTabStop = "36.000000";
+                                    TypeTabStop = Left;
+                                }
+                            );
+                        }
+                    );
+                    TabsOnScreen = NO;
+                    TextFontStrokeWidth = "3.000000";
+                },
+                                {
+                    AllowTextLink = NO;
+                    Bounds = "{{148.5, 168.75}, {19, 15}}";
+                    Class = DKDTextArea;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    FlowAround = NO;
+                    GraphicID = AB90DB32;
+                    GraphicName = Text;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = NO;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    KeyedText = <62706c69 73743030 d4010203 0405085a 5b542474 6f705824 6f626a65 63747358 24766572 73696f6e 59246172 63686976 6572d106 0754726f 6f748001 af101409 0a11121e 1f202127 2d33373b 3f42474f 50535655 246e756c 6cd30b0c 0d0e0f10 5c4e5341 74747269 62757465 73562463 6c617373 584e5353 7472696e 67800380 13800251 43d31314 0c15191d 5a4e532e 6f626a65 63747357 4e532e6b 657973a3 16171880 07800980 0fa31a1b 1c800480 05800680 12574e53 436f6c6f 725f1010 4e535061 72616772 61706853 74796c65 564e5346 6f6e74d3 22230c24 2526574e 53576869 74655c4e 53436f6c 6f725370 61636542 30001004 8008d228 292a2b58 24636c61 73736573 5a24636c 6173736e 616d65a2 2b2c574e 53436f6c 6f72584e 534f626a 656374d3 2e0c2f30 31325a4e 53546162 53746f70 735f1014 4e534465 6661756c 74546162 496e7465 7276616c 800a800e 23404200 00000000 00d2130c 3436a135 800b800d d2380c39 3a5a4e53 4c6f6361 74696f6e 23404200 00000000 00800cd2 28293c3e a23d2c59 4e535465 78745461 62594e53 54657874 546162d2 28294041 a2412c57 4e534172 726179d2 28294346 a344452c 5f10174e 534d7574 61626c65 50617261 67726170 68537479 6c655f10 104e5350 61726167 72617068 5374796c 655f1017 4e534d75 7461626c 65506172 61677261 70685374 796c65d4 48490c4a 4b4c4d4e 564e5353 697a6556 4e534e61 6d65584e 5366466c 61677323 40240000 00000000 80108011 10105948 656c7665 74696361 d2282951 52a2522c 564e5346 6f6e74d2 28295455 a2552c5c 4e534469 6374696f 6e617279 d2282957 59a2582c 5f10124e 53417474 72696275 74656453 7472696e 675f1012 4e534174 74726962 75746564 53747269 6e671200 0186a05f 100f4e53 4b657965 64417263 68697665 72000800 11001600 1f002800 32003500 3a003c00 53005900 60006d00 74007d00 7f008100 83008500 8c009700 9f00a300 a500a700 a900ad00 af00b100 b300b500 bd00d000 d700de00 e600f300 f600f800 fa00ff01 08011301 16011e01 27012e01 39015001 52015401 5d016201 64016601 68016d01 78018101 83018801 8b019501 9f01a401 a701af01 b401b801 d201e501 ff020802 0f021602 1f022802 2a022c02 2e023802 3d024002 47024c02 4f025c02 61026402 79028e02 93000000 00000002 01000000 00000000 5c000000 00000000 00000000 00000002 a5>;
+                    Locked = NO;
+                    MarkCenter = NO;
+                    RotateRadiansText = "0.000000";
+                    Tabs =                     (
+                                                {
+                            DefaultLengthTab = "36.000000";
+                            RangeLengthTab = 1;
+                            RangeLocationTab = 0;
+                            StopsTab =                             (
+                                                                {
+                                    PositionTabStop = "36.000000";
+                                    TypeTabStop = Left;
+                                }
+                            );
+                        }
+                    );
+                    TabsOnScreen = NO;
+                    TextFontStrokeWidth = "3.000000";
+                }
+            );
+            HideDimensions = NO;
+            LayerColorMod =             {
+                DKDOnColorMod = NO;
+                DKDOpacityColorMod = "0.500000";
+                DKDTintColorColorMod =                 {
+                    ColorSpace = NSDeviceWhiteColorSpace;
+                    Opacity = "1.000000";
+                    White = "0.500000";
+                };
+                DKDTintFractionColorMod = "0.500000";
+            };
+            LayerLock = NO;
+            LayerName = Paper;
+            LayerState = Active;
+        }
+    );
+    DKDPagesSpec =     {
+        CanvasBorder =         {
+            Blue = "0.533333";
+            ColorSpace = NSCalibratedRGBColorSpace;
+            Green = "0.533333";
+            Opacity = "1.000000";
+            Red = "0.549020";
+        };
+        CanvasColor =         {
+            Blue = "0.925490";
+            ColorSpace = NSCalibratedRGBColorSpace;
+            Green = "0.925490";
+            Opacity = "1.000000";
+            Red = "0.941176";
+        };
+        CanvasMargin = "0.000000";
+        DetailsDrawerWidth = "200.000000";
+        DisplayAttributesBar = YES;
+        DisplayRulers = YES;
+        LayersDrawerWidth = "200.000000";
+        NumberAcrossFirst = YES;
+        PagesAcross = 1;
+        PagesDown = 1;
+        PagesSpecBackgroundRGB =         {
+            ColorSpace = NSDeviceWhiteColorSpace;
+            Opacity = "1.000000";
+            White = "1.000000";
+        };
+        PagesSpecPrintBackground = NO;
+        ShowPageBreaks = NO;
+    };
+    DKDPrintInfo =     {
+        BottomMargin = "40.000000";
+        Copies = 1;
+        FallBackPaperSizeHeight = "841.890015";
+        FallBackPaperSizeWidth = "595.280029";
+        FirstPage = 1;
+        HorizontalPagination = 2;
+        HorizontallyCentered = YES;
+        LastPage = "-1";
+        LeftMargin = "18.000000";
+        MustCollate = YES;
+        Orientation = "";
+        PaperName = "iso-a4";
+        PaperSizeHeight = "841.890015";
+        PaperSizeWidth = "595.280029";
+        PreviewPageNumber = 1;
+        PrintAllPages = YES;
+        PrintJobDisposition = NSPrintSpoolJob;
+        PrintSavePath = "";
+        PrintScalingFactor = "1.000000";
+        PrinterName = "Canon iP4300";
+        ReversePageOrder = NO;
+        RightMargin = "18.000000";
+        TopMargin = "18.000000";
+        VerticalPagination = "";
+        VerticallyCentered = YES;
+        XPrintMirror = NO;
+        YPrintMirror = NO;
+    };
+    DKDSaveTimeStamp = "2011-07-14 21:19:47 -0500";
+    DKDTablet =     {
+        PenMax = "25.000000";
+        PenMin = "0.500000";
+        PenPressureFactor = "0.500000";
+    };
+    DKDTimeFormat =     {
+        "Field 0 Include" = Weekday;
+        "Field 0 Type" = Long;
+        "Field 1 Include" = Month;
+        "Field 1 Type" = Short;
+        "Field 2 Include" = Day;
+        "Field 2 Type" = Number;
+        "Field 3 Include" = Year;
+        "Field 3 Type" = Long;
+        "Include GMT" = NO;
+        "Include Title" = YES;
+        IncludeDate = YES;
+        IncludeTime = YES;
+        "Seperator 0" = " - ";
+        "Seperator 1" = ". ";
+        "Seperator 2" = ", ";
+        "Seperator 3" = "  ";
+        "Time Seperator" = ":";
+        TimeAfterDate = YES;
+        "Twelve Hour Clock" = YES;
+        "Used Once" = YES;
+    };
+    DKDToolbarSelectedButtonPairs =     (
+        "ColorTextToolbarItemIdentifier_0",
+                (
+            "HSB_000020"
+        ),
+        "ColorStrokeToolbarItemIdentifier_0",
+                (
+            "HSB_0000FF"
+        ),
+        "ColorFillToolbarItemIdentifier_0",
+                (
+            "HSB_0000B0"
+        ),
+        "GradientToolbarItemIdentifier_0",
+                (
+                        {
+                BurstPath =                 (
+                );
+                BurstRect = "{{0.25, 0.25}, {0.5, 0.5}}";
+                EndGradientRGB =                 {
+                    Blue = "1.000000";
+                    ColorSpace = NSCalibratedRGBColorSpace;
+                    Green = "1.000000";
+                    Opacity = "1.000000";
+                    Red = "1.000000";
+                };
+                GradientAngle = "0.000000";
+                GradientCompositeOperation = "Source Over";
+                GradientFillClass = DKDHorizontalGradientFill;
+                GradientGradientConvergence =                 {
+                    FinishGradient = "100.00000";
+                    GradientConvergence = Linear;
+                    StartGradient = "0.00000";
+                };
+                GradientImagePercent = "1.000000";
+                GradientOverlap = "1.000000";
+                GradientRadius = "0.000000";
+                LevelsOfGradient = 100;
+                StartGradientRGB =                 {
+                    Blue = "0.000000";
+                    ColorSpace = NSCalibratedRGBColorSpace;
+                    Green = "0.000000";
+                    Opacity = "1.000000";
+                    Red = "0.000000";
+                };
+                SymmetryAngle = "0.000000";
+            }
+        ),
+        "PatternForToolbarItemIdentifier_0",
+                (
+            "Toolbar_02"
+        ),
+        "ChartingMenuToolbarIdentifier_0",
+                (
+            "Right Fat Arrow",
+            "Right Fat Arrow",
+            "Right Box Arrow",
+            "Right Tear Off",
+            "Right Brace",
+            "Right Drum",
+            Folder,
+            "Bilateral Octagon",
+            "Rounded Rectangle",
+            "Right Point",
+            "Right Trapezoid",
+            "Up Parallelogram",
+            Parallelogram,
+            "Right Flame Arrow",
+            "Right Nose Rectangle",
+            "Right Rivet"
+        ),
+        "StellateMenuToolbarIdentifier_0",
+                (
+            "Equilateral Polygon",
+            "Equilateral Polygon",
+            "Free Equilateral Polygon",
+            "Crossing Star",
+            "Star - simple star",
+            "Smooth Free Star",
+            "Stagger Star",
+            "Smooth Stagger Star",
+            Spokes
+        ),
+        "MathMenuToolbarIdentifier_0",
+                (
+            "Parabola (y = x**2), a centered fixed parabola",
+            "Parabola (y = x**2), a centered fixed parabola",
+            "Cubic (y = x**3), Adjustable",
+            "Quartic (y = x**4), a centered fixed fourth order curve",
+            "One over X (y = 1 / x) for x > 0.0",
+            "Natural Exponential (y = e**x), x > 0",
+            "Tangent (y = tan(x))",
+            "Hyperbolic Tangent (y = tanh(x))",
+            "Gaussian - The \"Bell Shaped\" probability curve",
+            "Square Wave",
+            "Sine (or Cosine) wave form, y = sin(x)"
+        ),
+        "TechnicalMenuToolbarIdentifier_0",
+                (
+            "Orthogonal Path",
+            "Orthogonal Path",
+            Autoline,
+            "Right Dimension",
+            "Right External Dimension",
+            "Report Dimension",
+            "Rectangle Text Bubble",
+            Wall,
+            "Free Wall",
+            Cog,
+            "Tick Marks"
+        )
+    );
+    DKDWindowState =     {
+        CursorMode = Nothing;
+        DocCenter = "{145.487, 157.637}";
+        DocumentFileName = "/Users/mgwelch/dev/github/courses/algebra/img/symdiff3.ezdraw";
+        DrawersOnMainView = YES;
+        GDetailsLayersDrawerEdgePreference = Auto;
+        GraphicDetailsEdge = 0;
+        GraphicDetailsOpen = YES;
+        LayerActiveAbove = NO;
+        LayerOpen = NO;
+        LayerSelect = "Active Only";
+        LayersDrawerEdgePreference = Auto;
+        WindowLocation = "253 202 947 676 0 0 1440 878 ";
+        ZoomPercent = "675.000000";
+    };
+    DocumentCompression = None;
+    IndependentLayers = NO;
+    NumberColorsToListInContextMenu = 12;
+    NumberPairColorsToListInContextMenu = 6;
+}

@@ -1,0 +1,847 @@
+{
+    "AAA_DKDQuicklookData" = <040b7374 7265616d 74797065 6481e803 84014084 8484134e 534d7574 61626c65 44696374 696f6e61 72790084 840c4e53 44696374 696f6e61 72790084 84084e53 4f626a65 63740085 84016901 92848484 084e5353 7472696e 67019584 012b1144 4b445061 67654f6e 65504446 44617461 86928484 840d4e53 4d757461 626c6544 61746100 8484064e 53446174 61009596 81e92584 075b3937 3035635d 25504446 2d312e33 0a25c4e5 f2e5eba7 f3a0d0c4 c60a3420 30206f62 6a0a3c3c 202f4c65 6e677468 20352030 2052202f 46696c74 6572202f 466c6174 65446563 6f646520 3e3e0a73 74726561 6d0a7801 7554498e 1b310cbc eb153c26 87704451 eb316324 01721b8c 7f6064b2 003e4cfc 7f20a5b6 28d96807 86b76a91 2c168b7a a7177a27 cf997ed3 d3e12274 ba90e07f cbbed4a8 f8556bd0 141a5d4e f4f40d07 7e5ec8e3 95b2279c a0bf3fe8 ad9f7278 f7ef712e f4731232 7b2f547c 615f72a1 33a0ca39 67408993 66215161 29a90251 ce213520 ca31a5ea 8a17d688 47279258 38e18372 2d1c6ab9 0172e4d8 7446514e 9ea3c6d0 a3466e97 636549c0 ac7c8e99 4354141b 14738c0c 06718b6a 5c32d866 cd5c6202 c7543897 0e807c4a ea24b78d e25db1aa 83a2319a 8071b6a8 d598b3d4 459425a0 41d1ad3a 1492c45e 1318266e ad2d114f f46bd25e caba37aa 81538cd2 c51dc29d a117c79a 429dc22d 60d09c51 269c3b51 8bac4131 39eb9844 020755bd 11e58172 4159a1a1 a9eb24c0 1101ba8f 01404aa9 9d24909b 31798cb0 26e436e5 2660ca8d a83b4b58 ee659c51 7e78ab4f 7b27dde8 233a9377 6b35b402 bdc704a6 2053c6ae f81e3dc3 f881bebb 6d6d0eaf db56787a 3d609fb0 41787dea 5f052ea8 8d4eb0fe f0b5a56a 7d1dccd7 2d73f6ea 612d4344 1a2b78cd b0f903c6 b66776d8 c25742e3 eb6ec2e6 ec2d7e02 33dec216 49b8c1b8 8de3d89a 517f01bb de3697ee d033bdf6 0bc73d16 c8f66390 d804b225 32122486 0c126b19 6f3a9594 aee29940 a2a10bbc f499465c 514ecc77 d6df0456 75f3efe4 d8af996b eea5c6b5 ba5bc0ae b34d9e1d 7a950786 c2edd5af 59dcb91e 17f37ff4 7a3e9274 9f75a779 2c386646 c7333d7d 15f6b0e0 f18d3e7c fe48c73f f4e5b8dd f23bd11d 5c799f44 4a7e90e5 796579f9 07ef663b 790a656e 64737472 65616d0a 656e646f 626a0a35 2030206f 626a0a35 38370a65 6e646f62 6a0a3220 30206f62 6a0a3c3c 202f5479 7065202f 50616765 202f5061 72656e74 20332030 2052202f 5265736f 75726365 73203620 30205220 2f436f6e 74656e74 73203420 30205220 2f4d6564 6961426f 78205b30 20302035 35392e32 38203738 332e3839 5d0a3e3e 0a656e64 6f626a0a 36203020 6f626a0a 3c3c202f 50726f63 53657420 5b202f50 4446202f 54657874 205d202f 436f6c6f 72537061 6365203c 3c202f43 73322038 20302052 202f4373 31203720 30205220 3e3e202f 45787447 53746174 650a3c3c 202f4773 31203130 20302052 202f4773 32203131 20302052 203e3e20 2f466f6e 74203c3c 202f4631 2e302039 20302052 203e3e20 3e3e0a65 6e646f62 6a0a3130 2030206f 626a0a3c 3c202f54 79706520 2f457874 47537461 7465202f 63612030 2e39203e 3e0a656e 646f626a 0a313120 30206f62 6a0a3c3c 202f5479 7065202f 45787447 53746174 65202f63 61203120 3e3e0a65 6e646f62 6a0a3132 2030206f 626a0a3c 3c202f4c 656e6774 68203133 20302052 202f4e20 31202f41 6c746572 6e617465 202f4465 76696365 47726179 202f4669 6c746572 202f466c 61746544 65636f64 65203e3e 0a737472 65616d0a 7801a556 095453d7 16bdefe5 252110e6 41408630 cf185020 800c610e 20f32088 4a4c0204 42086150 1027a458 818aa222 82134851 c482d50a 481d1051 1c288a0a 3817a4a8 28b558c5 09877f5f b042fbff 5affaff5 5fd6cbdb f79c73f7 396fdf93 ac03801c c6168904 28002055 9829f60d 63c62c8c 89a5c1e5 d78bcdc9 10314342 02718330 4dc8fbea f80a5ef7 03045fdc b0c2b9be 9aff3740 4c8908f3 84a1ed00 48519767 8a32e1b3 1bae5538 22318e07 2136e0f2 32380050 308873b8 199c5488 d70280e5 73b2c4d9 d0062fdc 0588401a c80315a0 01748001 300556c0 16380067 e00ebc81 3f080611 20062c01 1c900452 81182c07 79601d28 04c56033 d80e2ac1 5e500bea 4123380a 5ac04970 165c0057 c035d007 ee824130 029e8171 f01a4c22 08424664 11654403 d1458c10 0bc41661 20ae8837 12888421 31483c92 8808912c 240f598f 14236548 25528dd4 233f2227 90b3c825 a417b98d 0c21a3c8 9fc87b94 80525115 541b3546 e7a00c94 8906a011 e8623411 4d4773d1 0274135a 81d6a087 d166f42c 7a05ed43 07d167e8 04011064 086a043d 82158141 f0240413 62090904 316135a1 88504ea8 213412da 085d841b 8441c218 e11d46c2 94311a66 8539637e 5824c6c1 d2b1d558 0956891d c49ab14e ec063684 8d639f88 b2442da2 05d189c8 222e2426 1297130b 89e5c43a e271e279 621f7184 f89a4422 a9914c48 0e243f52 0c2999b4 925442da 4d6a22b5 937a49c3 a4093299 ac41b620 bb9083c9 6c7226b9 90bc937c 987c867c 9d3c427e 2b2523a5 2b652be5 23152b25 94ca972a 973a2475 5aeabad4 63a9498a 02c588e2 4409a670 29399452 4a2da58d 72953242 99945694 36917691 8e904e96 5e275d21 dd287d5e fa9ef44b 1919197d 19479950 19becc5a 990a9923 32176586 64de5195 a8e6544f 6a1c358b ba897a80 da4ebd4d 7d292b2b 6b2ceb2e 1b2b9b29 bb49b65e f69cec03 d9b772ca 72d6722c 39aedc1a b92ab966 b9eb72cf e529f246 f24cf925 f2b9f2e5 f2c7e4af ca8f2950 148c153c 15d80aab 15aa144e 280c284c 282a2bda 28062ba6 2a96281e 52bca4f8 4489ac64 ace4adc4 552a50da af744e69 5899a06c a0eca9cc 515eaf5c ab7c5e79 4485a462 a2c25249 562956f9 41a54765 5c554975 9e6a94ea 0ad52ad5 53aa836a 04356335 969a40ad 54eda85a bfdafb59 dab398b3 78b336ce 6a9c757d d61bf5d9 eaeeea3c f522f526 f53ef5f7 1a340d6f 8d148d2d 1a2d1af7 35314d73 cd50cde5 9a7b34cf 6b8ecd56 99ed3c9b 33bb68f6 d1d977b4 502d73ad 30ad955a fbb5bab5 26b475b4 7db545da 3bb5cf69 8fe9a8e9 b8eb24eb 6cd339ad 33aaabac ebaacbd7 dda67b46 f7294d95 c6a40968 15b44eda b89e969e 9f5e965e b55e8fde a4be897e a47ebe7e 93fe7d03 69038641 82c13683 0e837143 5dc30586 79860d86 778c2846 0ca324a3 1d465d46 6f8c4d8c a38d3718 b7183f31 51376199 e49a3498 dc339535 75334d37 ad31bd69 46326398 a598ed36 bb668e9a db992799 57995fb5 402dec2d f816bb2d 7a2d8996 8e9642cb 1acb012b aa15d32a dbaac16a c85acd3a d03adfba c5faf91c c339b173 b6cce99a f3896e47 17d06be9 776d946c fc6df26d da6cfeb4 35b7e5d8 56d9de9c 2b3bd767 ee9ab9ad 735fccb3 98c79bb7 67de2d3b 65bb0576 1bec3aec 3eda3bd8 8bed1bed 471d0c1d e21d7639 0c305418 218c12c6 4547a2a3 87e31ac7 938eef9c ec9d329d 8e3afde1 6ce59ce2 7cc8f9c9 7c93f9bc f9b5f387 5df45dd8 2ed52e83 ae34d778 d77dae83 6e7a6e6c b71ab787 ee06ee5c f73af7c7 4c336632 f330f3b9 07dd43ec 71dce38d a793e72a cf762f82 97af5791 578fb792 77a477a5 f7031f7d 9f449f06 9f715f3b df95beed 7e44bf00 bf2d7e03 2c6d1687 55cf1af7 77f05fe5 df19400d 080fa80c 7818681e 280e6c5b 802ef05f b075c1bd 20a32061 504b3008 66056f0d be1f6212 921ef273 28293424 b42af451 984d585e 5857b872 f8d2f043 e1af233c 224a23ee 469a4666 457644c9 47c545d5 47bd89f6 8a2e8b1e 5c3867e1 aa855762 3463f831 adb1e4d8 a8d8bad8 8945de8b b62f1a89 b38b2b8c eb5f6cb2 78c5e24b 4b349708 969c5a2a bf94bdf4 583c313e 3afe50fc 077630bb 863db18c b56cd7b2 718e2767 07e719d7 9dbb8d3b ca73e195 f11e27b8 2494253c 497449dc 9a389ae4 96549e34 c6f7e457 f25f24fb 25ef4d7e 93129c72 20e5b320 5ad0942a 951a9f7a 42a8244c 1176a6e9 a4ad48eb 1559880a 4583e94e e9dbd3c7 c501e2ba 0c246371 466ba60a fc73efce 32cdfa26 6b28db35 bb2afbed f2a8e5c7 5628ae10 aee8ce31 cfd998f3 38d727f7 fb95d84a ceca8e3c bdbc7579 43ab98ab aa5723ab 97adee58 63b0a660 cdc85adf b507d749 af4b59f7 4b3e3dbf 2cffd5fa e8f56d05 da056b0b 86bff1fd a6a150ae 505c38b0 c179c3de 6fb16ff9 dff66c9c bb71e7c6 4f45dca2 cbc5f4e2 f2e20f25 9c92cbdf d97c57f1 dde74d09 9b7a4aed 4bf76c26 6d166eee dfe2b6e5 60996259 6ed9f0d6 055b9bb7 d1b6156d 7bb57de9 f64be5f3 caf7ee90 de91b563 b022b0a2 75a7e1ce cd3b3f54 2655f655 795435ed d2dab571 d79bdddc ddd7f7b8 ef69dcab bdb778ef fb7dfc7d b7aa7dab 9b6b8c6b caf793f6 67ef7f54 1b55dbf5 3de3fbfa 3acdbae2 ba8f0784 07060f86 1decac77 a8af3fa4 75a8b401 6dc86a18 3d1c77f8 da0f5e3f b4365a35 5637a935 151f0147 b28e3cfd 31fec7fe a301473b 8e318e35 fe64f4d3 aee3cac7 8b9a91e6 9ce6f196 a496c1d6 98d6de13 fe273ada 9cdb8eff 6cfdf381 937a27ab 4ea99e2a 3d2d7dba e0f4e733 b96726da 45ed6367 13cf0e77 2cedb87b 6ee1b99b 9da19d3d e703ce5f bce073e1 5c17b3eb cc45978b 272f395d 3a719971 b9e58afd 95e66ebb eee3bfd8 fd72bcc7 bea7f9aa c3d5d66b 8ed7da7a e7f79ebe ee76fdec 0daf1b17 6eb26e5e e90beaeb ed8fecbf 35103730 788b7beb c96dc1ed 1777b2ef 4cde5d7b 8f78afe8 bec2fdf2 075a0f6a 7e35fbb5 69d07ef0 d490d750 f7c3f087 778739c3 cf7ecbf8 edc348c1 23d947e5 8f751fd7 3fb17d72 72d467f4 dad3454f 479e899e 4d8e15fe aef8fbae e7a6cf7f fac3fd8f eef185e3 232fc42f 3eff59f2 52e3e581 57f35e75 4c844c3c 789dfa7a f24dd15b 8db707df 31de75bd 8f7eff78 72f907f2 878a8f66 1fdb3e05 7cbaf739 f5f3e7e9 b9e565a8 641e41d4 ba33792b e00c0180 679a2847 cc4f4cca a431e184 c2a3b184 1c6b4b9a 2d9dce00 606ab6c0 a380ae2f 4fc813f3 39345f31 3b87e6cb 4e4d65d3 6cad6d69 21e2b404 bee03f4c 3e925dff c757aa20 0bce3592 4b117e53 79c2c870 f89c0fef 7bbc0c6f 1cc3b90b 51e7b2bd 022086d5 a2e65c9e 97f717fb 8304be0f 0b621f68 df9720f6 8984d815 e265fc4c 5604c4f0 26888482 207c7673 873c5ce1 b2a06088 9da0bd53 94e91106 b13fc4c6 19d9e138 a7843f99 ed1f02b1 31b47f4a 490bc063 f4e17c65 989b1411 0db10ec4 3eb9499e 415f3057 9c1586e7 859c48ad 48209913 dd610d8f 802fe001 21bcc580 0f672e1a 5c8b011b e448101b 4e60a970 4583139a 35bc6920 047ad340 028c15c0 3d21927d 532b1a48 94308d7e 614a83d1 5c68c1ed d33c7f59 f06c19d0 9b21e1b6 84dc4cc8 8833a4c2 1baf08df 8747254b 626672d8 023cde0a 88bed6c2 03024c07 b3c15818 1d0b0634 8c89d961 ee5ff05c f89c0f3f f4af99ac 3037e875 c5bc3006 9cbb0225 99a773f3 256ae075 4d299105 f367822c f8ce7855 d3390592 88e9379b aa6aa69a 1920e5cb 5b8c7ccd 3d538d99 5c3375c5 634661ae 2925d361 ee2915a7 349bc980 9f0bae45 8ce434a6 2ac7954b 828a8b25 27c7fea2 e43feba4 fd4d3ffc 34f970f2 4e042f21 124a4e7f 667534a8 41ae8433 0d5904bb 842f79af 7f72febd 1ba694f8 7b37e09d e42be906 1c4df582 2764134a d8a77b61 a61a781f 4d75d65f 3dfa5767 0960ad38 cfccdec0 39a7aac3 d54a94e0 ff763233 f7ff7b6f 098240be 25fd087d 0c4e3c87 e92fe90f 60c62fbf 06fa00fd 777a1fbd 1a7a9e75 e59d5407 b4fe92f6 4b807658 e1c4c5e9 a83eac35 ee06b52b 6fb36696 a94854be 2994b5a4 6eda9b2f 5ecae75c 2d1d9ff2 2ea9cb9b e489a6bd b887b721 e83500ff 02927551 7e0a656e 64737472 65616d0a 656e646f 626a0a31 33203020 6f626a0a 32393035 0a656e64 6f626a0a 38203020 6f626a0a 5b202f49 43434261 73656420 31322030 2052205d 0a656e64 6f626a0a 31342030 206f626a 0a3c3c20 2f4c656e 67746820 31352030 2052202f 4e203320 2f416c74 65726e61 7465202f 44657669 63655247 42202f46 696c7465 72202f46 6c617465 4465636f 6465203e 3e0a7374 7265616d 0a780185 54cf6b13 4114fe36 6ea9d022 085a6b0e b2789022 4959ab68 45d436fd 11626b0c db1fb645 90643349 d66e36eb ee26b5a5 88e4e2d1 2ade45ed a107ff80 1e7af064 2f4a855a 4528deab 2862a117 2df1cd6e 4cb6a5ea c0ce7ef3 de37ef7d 6f76df00 0d72d234 f58004e4 0dc752a2 11696c7c 426afc88 008ea209 41342555 dbec4e24 06418373 f97be7d8 7a0f815b 56c37bfb 77b277ad 9ad2b69a 0784fd40 e0479ad9 2ab0ef17 710a5912 02883cdf a129c774 08dfe3d8 f2ec8f39 4e7978c1 b50f2b3d c459227c 40352dce 7f4db853 cd25d340 83483894 f571523e 9cd78b94 d71d0769 6e66c6c8 10bd4f90 a6bbccee ab62a19c 4ef60e90 bd9df47e 4eb3de3e c221c20b 19ad3f46 b88d9ef5 8cd53fe2 61e1a4e6 c4863d1c 1835f4f8 6015b71a a9f835c2 145f104d 27a25471 d92e0df1 98aefd56 f24a8270 9038ca64 6180735a 484fd74c 6ef8ba87 057d26d7 13afe277 5651e179 8f1367de d4ddef45 da02af30 0e1d0c1a 0c9a0d48 50104504 6198b050 40863c1a 3134b272 3f23ab06 1b937b32 75246abb 746244b1 417b36dc 3db751a4 dd3cfe28 22719443 b50892fc 41fe2aaf c94fe579 f9cb5cb0 d856f794 ad9b9aba f2e03bc5 e599b91a 1ed7d3c8 e3734d5e 7c95d476 93574796 ac797abc 9aec1a3f ec579731 e682358f c473b0fb f12d5f95 cc97298c 14c5e355 f3ea4b84 755a3137 df9f6c7f 3b3de22e cf2eb5d6 73ad898b 37569b97 67fd6a48 fbeeaabc 93e655f9 4f5ef5f1 fc67cdc4 63e22931 26768ae7 218997c5 2ef192d8 4bab0be2 606dc708 9d958629 d26d91fa 24d56060 9abcf52f 5d3f5b78 bd467f0c f5519419 ccd25489 f77fc22a 64349db9 0e6ffa8f dbc7fc17 e4f78ae7 9f28022f 6ce0c899 ba6d5371 ef10a165 a56e73ae 0217bfd1 7df0b66e 6ba37e38 fc04583c ab16ad52 359f20bc 011c7687 7a1ee829 98d39696 cd395287 2c9f93ba e9ca6252 cc50db43 5252d725 d7654b16 b3995562 e976d899 d31d6e1c a13942f7 c4a74a65 93faaff1 11b0fdb0 52f9f9ac 52d97e4e 1ad68197 fa6fc0bc fd450a65 6e647374 7265616d 0a656e64 6f626a0a 31352030 206f626a 0a373337 0a656e64 6f626a0a 37203020 6f626a0a 5b202f49 43434261 73656420 31342030 2052205d 0a656e64 6f626a0a 33203020 6f626a0a 3c3c202f 54797065 202f5061 67657320 2f4d6564 6961426f 78205b30 20302035 35392e32 38203738 332e3839 5d202f43 6f756e74 2031202f 4b696473 205b2032 20302052 205d203e 3e0a656e 646f626a 0a313620 30206f62 6a0a3c3c 202f5479 7065202f 43617461 6c6f6720 2f506167 65732033 20302052 202f5665 7273696f 6e202f31 2e34203e 3e0a656e 646f626a 0a313720 30206f62 6a0a3c3c 202f4c65 6e677468 20313820 30205220 2f4c656e 67746831 20353632 34202f46 696c7465 72202f46 6c617465 4465636f 6465203e 3e0a7374 7265616d 0a7801bd 587d7414 d515bff7 cdccee64 434a1282 d9246c66 b6c3e66b 13435031 81d40cc9 6e4c0809 8100dd0d 4476936c 4c52a229 8620f440 23952a0b a296820a 16a51f56 a09421e1 e0042a8d 16db7aaa 2deaa96d ada796fa d19e9ee6 d80ff1a8 984cefcc 262be1a8 873f38ce db3bf7f3 bd77dfef bd7d336f fad6ad8f 40120c00 078dcde1 de0eb0ae 993a31b5 ad27dc1b d3534788 cf6aebef 9363ba90 07c0aded e8bdb527 a68bdf05 70b86e5d bb71a27e ea5b00ec dece48b8 3de6878f 89cfeb24 434cc7eb 89cfeeec e9bb33a6 a79e203e 6deded6d 13fed4d7 49177bc2 774ef40f a62edf16 ee89c4e2 67527f30 bbf7f63b fa26f4b5 c4f37ad7 4526e231 40f9fd0e 90ac1cdc 0e09f035 b0038364 2a2d00f6 7f385cc0 93d7f4d3 d55e98b8 7bcdf4f2 0b90225a fa9afafb 2dfe4bf7 cf5efd20 f2716ee2 83e28764 48988c37 b92d7f3c 9f5246f2 8f263e18 f758f5e8 c6e9d0e4 d5a196a8 82e80622 af77a113 06f00978 80e87122 0eba7007 6c24da4e f408111f 970e9136 8c3b0679 513d851b 211317a9 89bcb43c 2d43723a 12a59775 b49d3820 fdc9f9e6 69cca0d9 3b8f1983 4990b0d0 818fe363 d00e12fe 083cb809 6a200ff7 0de5af95 42e43a04 bd440344 9c75473c 34983d57 3a8385e0 e191eae4 40368f27 a5bf9714 496f97e8 0c07a567 73759ed8 33d9a4a9 d3a511d7 01e9e7ae 5ba53344 4762aec3 f9147152 3ae45a2b edced671 dfa0f41d 978e54e7 c1185bef a2aa27a5 9efcbd52 7b89e55f bc576747 06a532f2 af5413a5 79a56ee9 06d75b52 71ae2e22 e945aec5 5241c98b d26caa48 613235ea 5153a459 aeddd27c 7265bbfc b9f3894e e361dc0f 05b87fd0 b3483a45 220d77a8 36bf74af 8edf18aa c92bf1e8 b8499d57 93b737bf 26d793bf 58f2e457 e7e692bc f2d7f6bb edabec0b ed73ed5e 7b9e3dc7 eeb667d9 d3c45431 59fc9238 4d7488a2 68d7f127 831592ed 341e810a 82e5c890 6813051d 7f4a46fe 341eb58c 479f1279 918920a6 e9c65f69 f122a4e9 78e444b2 299170d2 6649361d 8f0ec54c 47558937 25de7224 3353a61b dd81a1c8 60116878 9f6e836d d7f45738 2b526f4a 29abf67d d62d6479 26efdecf be9ce8d2 f6d63505 b4c3aea0 36d7140c 577032dc 39297c26 ef5b4fae 48a5d75b b76ce350 7f6f7787 3fa2f843 8a3f4214 d276f477 3ab58156 593ededd 6b3a648d cb09b5b6 759a3c1c d17a9588 4feb567c f2f17eab de65ee0e d3ddaff8 8e43877f 79e07887 1af10df6 abfd7e25 ec0b0eb5 56ae6b99 d2d7f678 5feb2a3f a5af4ab3 b175665f ad56bdcb fa6a31dd ad665f2d 665f2d66 5fad6aab d5973978 7f5753e5 1d7db43a 657f579d ace53569 b54b9b03 9a1c0efa 747c828c bef5208c 40b2f034 e4090390 c9178304 60fc89e8 35938faf 30de117e 05c9e33d c67fb805 34a9c326 b1f18a72 1881fb60 3f1c031b 3c49721e dc020fc3 f3d84dff edd57002 5ec56cb8 96f65e1e 74580c2f a061bc04 1df0438a ef836761 0f1c8769 54a70766 9277177a 8c4da4ab 24b7c2dd c6f76136 94c2b7e1 6928a356 77c1a871 c81822ef 32580187 e108d5ff 0d2aec38 3fc3f8a9 f11688b0 94dabc9b 3c2f198b 8d63900a 8550098d 64bd1bce a0877bcd e804272c a0ec1e85 c7e0203c 03ffc2ad 78c2e834 fa8d73c6 795aaa4e 98054d54 36e3093c cf1de3bf 6d3c6afc d3182724 f2a0807a 0dc16ef8 01b57f8c ca086dad 7efc1af6 e16edcc3 54b6959d e0b709e9 e3638443 3edc4ca5 8676e57b 09816138 0bff850f f15de6e4 92b93eee 39e306e3 7f900875 344a7324 11e8a772 0f955d34 a6d368c3 3958858d b819bf8b 7bf01556 c056b000 dbc0ee64 ef700ddc 6a6e23f7 0a7f073f 28ec141e b6258e5f 304e1bbf 327e0fe9 e08255b0 0eb6d0e8 9e8573f0 1e7c841c b5350b3d b8002bf1 162a03b8 9f0de341 1c668d38 82e7d861 7c03dfc4 77f12213 d8343693 79591fdb cd8eb067 d96fb92e 6e0ff708 f7067781 bf4960c2 41e16d9b c7fee7f1 d6f1ede3 bf351618 e78d0f68 8b15c14d 3353090d b006c234 da5eb81e be49a338 4ae518cd da59780e 9eb7ca9b 380b46e1 03420130 1533712e d65369c0 25d8815d 78004f51 3963e5f2 3ea38960 092c85a5 b359ac89 b5b21e36 c07ecf06 b82cae80 5bc43573 c7a8fc9a 7b95bbc8 5de4057e 063f93bf 99af859d 7c0fbf8f ca13fc93 fc20ff3b a14cb849 6810560a 03c27661 27d726bc 24bc6adb 62db651b b4bd6bfb 376d8b8b edb7db77 d2ec3c4f 6bf6195a cb9f5c3c cea6ece7 c26dd086 3e6c85bd 341b0731 0c515a5d ed782fe1 d50b7946 0bb785bb 99cda1d5 7006be41 ab751f6c 86eddc6a 3868fc91 3b0c7fa0 95623eaf 07e0c77c 25b88487 6876b6c2 1c5a4513 45cd2fc8 cfcbcdf1 cc56beec 9669cb9f 959599e1 4cbf6666 da8cd494 e4a46989 8e04d16e 13788e21 14fa95ea 90ace584 343e47a9 a9293275 254c86f0 258610fd 9565ad7a 6a8c269b f5c2e49a 12a95264 c765916a 2c528d47 62b25c0e e54585b2 5f91b517 7d8aac63 f3d200c9 f7f994a0 ac8d5a72 bd253f60 c94924bb dd5441f6 3b3b7db2 8621d9af 55f77746 fd215f51 210eab04 87a3a8d0 dc385448 341bd6a0 2abc9936 58a83223 fc5aa6e2 f36b190a c9e4e33c fe70bbd6 b834e0f7 65b9dd41 b2916959 80fa282a ecd2284f d831ad5d 69dfa1ab d01a32a5 f0ea80c6 85831a0b 996da578 b574c5a7 a56f7adb f9893a29 f9775ee2 d498a73a 1c89566b 6a680781 6baa2153 0bef24ad ae49a666 d9b66040 c36d1349 98397653 a666bab1 678227d4 2d6b094a a5d219ed 0e11b8b0 2c3098a9 665a9baf 068d81c1 0c35c352 8a0a879d 5b16b869 f4c3450b 8b169a7c 81dbb925 c6fffead 98fde511 933bb79c fd2bf1ba 657100d0 4440a9a5 3c35b9cd ea44a164 4bcd5ba4 14a26da5 84135d41 a4617651 3e551aa3 35c37934 c1531bd6 069a26d3 e8f4c592 0b75fb06 133232ad 87506590 e243d1e4 f9345314 9facc8d1 0bf4b40e 29a3ff9a 6a094f58 6c9ee40b 603acd89 8eaf150d c39372bf f9b0f4d0 a83b9d4a a739bffd d69c92ae 38fd9718 4837a131 73d6d2e8 01de1870 6b72900c f4365958 a7434263 e038e2ae a08ec636 1d7cae61 7a47e5d6 dc42ee42 73a975f9 a87f528a 0ac950e0 26e9da42 b99a7aae 36d78a1c 95a3b5ed 51b95aee a4c5c47b 2c4e8e48 34584c08 36050827 584e3daa c1acb818 0906e753 3bc5663b 5485c2a3 416aa17b a205e296 a9788c82 e614d2c3 94cb690c 2c0d6803 be2c4df5 05691668 f98e3406 b4115ab9 c1204595 c433a58c 37773927 729e4b39 971490ff ba582bf4 ee32404d 04a351b3 cda680e2 d646a2d1 aca8f97f 8be93ac2 e50675c2 a0831962 42aee340 23d525a6 b8b3ac39 702b6e4a 2b68627a 3d2de9c9 1545efec 9f8ff0bc 78de54f3 46ca769e 8570e955 42b8ec4a 109e7f45 082f8867 3a05e172 ca798189 f057be38 846f9a82 70c5e723 acc6f3a6 241752b6 aa8570e5 5542b8ea 4a10f65d 11c2fe78 a65310ae a69cfd26 c2377f71 08d74c41 b8f6f311 5e14cf9b 92aca36c 1759082f be4a08d7 5f09c20d 5784f092 78a65310 6ea49c97 98082ffd e2105e36 05e1a6cf 4778793c 6f4a7205 65bbdc42 78e55542 f8ab5782 70e08a10 0ec6339d 827033e5 1c34115e 154758cd d2e0d27d 78e0b26d 17aefac6 bcfa12c8 e94d4948 854a6125 64133d44 eae4779c 6974baf8 12e90be9 253976b8 067ae71e 411fe995 00fc393a bf71f41d a822f66d 462ca607 2891984c 1fbbce11 993ac9dc eb3af044 40b2fd75 38453500 567a4f51 2b02f139 25d7a5b8 5372892a f95dfac7 7f139efe a84ae7eb 2fd2399f 5acfa6ec be42fd30 70d029e6 35b5b106 03d889dc bddc43fc c38e430e 3d4177d8 f21c0876 9b0d9998 90403707 d805dc89 1c2fa739 1c9e54b2 a5098227 95021213 052ec1c1 db044c64 c801cbb6 8b3a06d5 047af5b5 25383881 b427d5d4 a4a4f4f4 4ce1001e 70644c4b 3ae8de79 0b9dec33 1ade73d6 8f8d6534 f823be77 aa7d4ea8 482faf28 af1f2b1f 2b4f29ab c094d4b2 32faa594 15df73ad 7773721d 3da1f991 2c8d3f1b bce75ae7 84812303 7736e89d 88bd27b9 bcdc4e54 32075b5a a0051371 c675a870 6e4e416e d71ba3db ceb399af ed193bfd d80bec01 d6ccb68f 6de0da3e aa427dbc c6429de6 49e04972 d059360f b6aaa5cd 49cd29dd ac3ba93b 6513dbe0 b6d726d5 a4309728 4de7a519 8461ae98 9dce12b3 7345be24 ab6b7a89 92599030 d393774d 467e818e 6b86dcfd 1d34c486 f7ccf134 24bf5f3f fade2854 8c558ca6 96158f95 99632b99 53b5514d 75660a62 86c79663 77f25e14 32452f82 17e9b87f d75d3402 9c7be3bc 1baecfcd 51dc2997 889c5b36 cf19769b fd9a18cf 4776764b f56deb2b b78e7f0f 8f3ed550 72ffe2cd e3eb7fc1 3620eb51 97e4d77f bdb42db8 6dfc2f63 bbb946e5 c6fb1f98 3b6bbc6c acb9bb6a cde3f3a5 b18bc28c 7dab36ec 0816e77a e7850eed bae327b4 2aaccb88 d0b9f6d3 2e8e8cb3 c14377a4 133a7d1a a2cb46df 2ca17949 d3f23abf b726b2b6 3fd2d7d5 16b6222c 37ddd288 64a239c6 c44532c4 65a4ffc3 549dfe0b 00ff07b9 c5eec70a 656e6473 74726561 6d0a656e 646f626a 0a313820 30206f62 6a0a3331 39380a65 6e646f62 6a0a3139 2030206f 626a0a3c 3c202f54 79706520 2f466f6e 74446573 63726970 746f7220 2f417363 656e7420 37373020 2f436170 48656967 68742037 3137202f 44657363 656e7420 2d323330 202f466c 61677320 33320a2f 466f6e74 42426f78 205b2d39 3531202d 34383120 31343435 20313132 325d202f 466f6e74 4e616d65 202f5a4f 53544b45 2b48656c 76657469 6361202f 4974616c 6963416e 676c6520 300a2f53 74656d56 2030202f 41766757 69647468 202d3434 31202f4d 61785769 64746820 31353030 202f5848 65696768 74203532 33202f46 6f6e7446 696c6532 20313720 30205220 3e3e0a65 6e646f62 6a0a3230 2030206f 626a0a5b 20363637 20363637 205d0a65 6e646f62 6a0a3920 30206f62 6a0a3c3c 202f5479 7065202f 466f6e74 202f5375 62747970 65202f54 72756554 79706520 2f426173 65466f6e 74202f5a 4f53544b 452b4865 6c766574 69636120 2f466f6e 74446573 63726970 746f720a 31392030 2052202f 57696474 68732032 30203020 52202f46 69727374 43686172 20363520 2f4c6173 74436861 72203636 202f456e 636f6469 6e67202f 4d616352 6f6d616e 456e636f 64696e67 0a3e3e0a 656e646f 626a0a32 31203020 6f626a0a 284d6163 204f5320 58203130 2e362e38 20517561 72747a20 50444643 6f6e7465 7874290a 656e646f 626a0a32 32203020 6f626a0a 28443a32 30313130 37313530 32313835 315a3030 27303027 290a656e 646f626a 0a312030 206f626a 0a3c3c20 2f50726f 64756365 72203231 20302052 202f4372 65617469 6f6e4461 74652032 32203020 52202f4d 6f644461 74652032 32203020 52203e3e 0a656e64 6f626a0a 78726566 0a302032 330a3030 30303030 30303030 20363535 33352066 200a3030 30303030 39303133 20303030 3030206e 200a3030 30303030 30373032 20303030 3030206e 200a3030 30303030 35303136 20303030 3030206e 200a3030 30303030 30303232 20303030 3030206e 200a3030 30303030 30363833 20303030 3030206e 200a3030 30303030 30383132 20303030 3030206e 200a3030 30303030 34393830 20303030 3030206e 200a3030 30303030 34303834 20303030 3030206e 200a3030 30303030 38373436 20303030 3030206e 200a3030 30303030 30393632 20303030 3030206e 200a3030 30303030 31303039 20303030 3030206e 200a3030 30303030 31303534 20303030 3030206e 200a3030 30303030 34303633 20303030 3030206e 200a3030 30303030 34313230 20303030 3030206e 200a3030 30303030 34393630 20303030 3030206e 200a3030 30303030 35313035 20303030 3030206e 200a3030 30303030 35313639 20303030 3030206e 200a3030 30303030 38343537 20303030 3030206e 200a3030 30303030 38343738 20303030 3030206e 200a3030 30303030 38373138 20303030 3030206e 200a3030 30303030 38393139 20303030 3030206e 200a3030 30303030 38393731 20303030 3030206e 200a7472 61696c65 720a3c3c 202f5369 7a652032 33202f52 6f6f7420 31362030 2052202f 496e666f 20312030 2052202f 4944205b 203c3039 35393735 31396234 34616538 66303930 38366531 35356136 31663238 33373e0a 3c303935 39373531 39623434 61653866 30393038 36653135 35613631 66323833 373e205d 203e3e0a 73746172 74787265 660a3930 38380a25 25454f46 0a8686>;
+    DKDChangeTimeStamp = "2011-07-14 21:18:48 -0500";
+    DKDCreateTimeStamp = "2011-07-14 20:35:38 -0500";
+    DKDDisplayGraphicDetails =     {
+        AngleFormatDisplayDetails =         {
+            AngleDirection = Right;
+            AngleForm = degrees;
+            AngleRotation = "Counter Clockwise";
+            PrecisionAngles = 2;
+        };
+        AnglesDisplaySpec =         {
+            ExampleValueDisplaySpec = "100.010002";
+            FieldWidthDisplaySpec = "62.000000";
+            FormDisplaySpec = Decimal;
+            PrecisionDisplaySpec = 2;
+            UnitsDisplaySpec = Punctuation;
+        };
+        AreaForm = Natural;
+        HelpTipDisplaySpec =         {
+            ExampleValueDisplaySpec = "100.010002";
+            FieldWidthDisplaySpec = "62.000000";
+            FormDisplaySpec = Decimal;
+            PrecisionDisplaySpec = 3;
+            UnitsDisplaySpec = Abbreviate;
+        };
+        InspectingSpecIndex = 0;
+        LengthsDisplaySpec =         {
+            ExampleValueDisplaySpec = "100.010002";
+            FieldWidthDisplaySpec = "62.000000";
+            FormDisplaySpec = Decimal;
+            PrecisionDisplaySpec = 2;
+            UnitsDisplaySpec = Nothing;
+        };
+        PercentDisplaySpec =         {
+            ExampleValueDisplaySpec = "1.010000";
+            FieldWidthDisplaySpec = "50.000000";
+            FormDisplaySpec = Decimal;
+            PrecisionDisplaySpec = 1;
+            UnitsDisplaySpec = Punctuation;
+        };
+        PercentFormatDisplayDetails =         {
+            PercentForm = Percent;
+            PrecisionPercents = 1;
+        };
+    };
+    DKDDocumentScale =     {
+        HighPrecisonAngles = NO;
+        ScaleOriginX = "0.000000";
+        ScaleOriginY = "0.000000";
+        ScalePlusDown = YES;
+        ScalePlusToRight = YES;
+        ScaleScale = "1.000000";
+        ScaleUnits = Inches;
+    };
+    DKDDocumentVersion = 1;
+    DKDEazyDrawVersion = "rev. 3.6.4";
+    DKDExportDoc =     {
+        BMPExporBackground = "No Background";
+        CSVStringEncoding = "Unicode (UTF8)";
+        DOSEPSPreview = NO;
+        DataExporBackground = "No Background";
+        DualRepresentation = NO;
+        EPSColorSpace = RGB;
+        EPSExporBackground = "No Background";
+        EPSLatexPsfrag = NO;
+        ExporBackground = "No Background";
+        ExportButtonDragFormat = File;
+        ExportButtonFileExtension = pdf;
+        ExportColorTable = "256 Best";
+        ExportCompresion = "1.000000";
+        ExportContent = "Just Graphics";
+        ExportExpand = "8.333333";
+        ExportFileExtension = pdf;
+        ExportImageAntialias = YES;
+        ExportImageInterpolation = Automatic;
+        ExportPath = "/Users/mgwelch/dev/github/courses/algebra/img";
+        ExportTransparentColor = Automatic;
+        GIFExporBackground = "White Background";
+        GIFFDither = NO;
+        HideExtension = NO;
+        ICNSExporBackground = "No Background";
+        ICOColorTable = "256 Best";
+        ICOExporBackground = "No Background";
+        IncludePictHeader = YES;
+        JPGExporBackground = "White Background";
+        KeynoteExporBackground = "No Background";
+        KeynoteExportMapping = "One Slide";
+        MirrorTextEncoding = 0;
+        PDFExporBackground = "No Background";
+        PDFPagination = "Single Page";
+        PDFXMirror = NO;
+        PDFYMirror = NO;
+        PNGColorSpace = RGBA;
+        PNGExporBackground = "White Background";
+        PNGInterlace = NO;
+        SVGCompress = NO;
+        SVGDOMIds = YES;
+        SVGEmbedImages = YES;
+        SVGFont = SVG;
+        SVGGlyphs = "System Font";
+        SVGProfile = "SVG 1.1";
+        SVGTidyFormatting = YES;
+        SWFCompress = NO;
+        TIFExporBackground = "No Background";
+        TIFFColorSpace = RGBA;
+        TIFFCompresionType = None;
+    };
+    DKDGrids =     {
+        DynamicSnapGrid = YES;
+        GuidesLayer = NO;
+        MajorGrid =         {
+            GridAboveGraphics = NO;
+            GridRGB =             {
+                Blue = "1.000000";
+                ColorSpace = NSCalibratedRGBColorSpace;
+                Green = "0.713726";
+                Opacity = "1.000000";
+                Red = "0.549020";
+            };
+            GridSpacingX = "72.000000";
+            GridSpacingY = "72.000000";
+            LinkGridToRulers = NO;
+            PrintLineWidth = "1.100000";
+            PrintsGrid = NO;
+            ShowsGrid = YES;
+            SnapsToGrid = NO;
+        };
+        MinorGrid =         {
+            GridAboveGraphics = NO;
+            GridRGB =             {
+                Blue = "0.874510";
+                ColorSpace = NSCalibratedRGBColorSpace;
+                Green = "0.854902";
+                Opacity = "1.000000";
+                Red = "0.745098";
+            };
+            GridSpacingX = "9.000000";
+            GridSpacingY = "9.000000";
+            LinkGridToRulers = NO;
+            PrintLineWidth = "0.850000";
+            PrintsGrid = NO;
+            ShowsGrid = YES;
+            SnapsToGrid = YES;
+        };
+        SnapEnds = NO;
+        SnapGuidelines = NO;
+        SnapRadiusGrid = "3.000000";
+        SnapSound = None;
+        SoftSnap = NO;
+    };
+    DKDHideExtension = YES;
+    DKDLayersList =     (
+                {
+            CloakLayerGuidelines = NO;
+            CloakLayerVertices = NO;
+            FullLayerScale =             {
+                HighPrecisonAngles = NO;
+                ScaleOriginX = "0.000000";
+                ScaleOriginY = "0.000000";
+                ScalePlusDown = YES;
+                ScalePlusToRight = YES;
+                ScaleScale = "1.000000";
+                ScaleUnits = Inches;
+            };
+            GraphicsList =             (
+                                {
+                    Bounds = "{{125.999, 72}, {54.001, 72}}";
+                    Class = DKDBezier;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    DkBezierPath =                     (
+                                                {
+                            BezierPathElement = MoveToElement;
+                            PositionPoint =                             {
+                                X = "126.001007";
+                                Y = "76.813354";
+                            };
+                        },
+                                                {
+                            BezierPathElement = CurveToElement;
+                            Control1Point =                             {
+                                X = "128.666016";
+                                Y = "78.353867";
+                            };
+                            Control2Point =                             {
+                                X = "131.175797";
+                                Y = "80.264107";
+                            };
+                            PositionPoint =                             {
+                                X = "133.455841";
+                                Y = "82.544159";
+                            };
+                        },
+                                                {
+                            BezierPathElement = CurveToElement;
+                            Control1Point =                             {
+                                X = "147.514725";
+                                Y = "96.603027";
+                            };
+                            Control2Point =                             {
+                                X = "147.514725";
+                                Y = "119.396973";
+                            };
+                            PositionPoint =                             {
+                                X = "133.455841";
+                                Y = "133.455841";
+                            };
+                        },
+                                                {
+                            BezierPathElement = CurveToElement;
+                            Control1Point =                             {
+                                X = "131.175842";
+                                Y = "135.735855";
+                            };
+                            Control2Point =                             {
+                                X = "128.665985";
+                                Y = "137.646149";
+                            };
+                            PositionPoint =                             {
+                                X = "126.001007";
+                                Y = "139.186661";
+                            };
+                        },
+                                                {
+                            BezierPathElement = CurveToElement;
+                            Control1Point =                             {
+                                X = "139.766678";
+                                Y = "147.144958";
+                            };
+                            Control2Point =                             {
+                                X = "157.676987";
+                                Y = "145.234680";
+                            };
+                            PositionPoint =                             {
+                                X = "169.455841";
+                                Y = "133.455841";
+                            };
+                        },
+                                                {
+                            BezierPathElement = CurveToElement;
+                            Control1Point =                             {
+                                X = "183.514709";
+                                Y = "119.396973";
+                            };
+                            Control2Point =                             {
+                                X = "183.514709";
+                                Y = "96.603027";
+                            };
+                            PositionPoint =                             {
+                                X = "169.455841";
+                                Y = "82.544159";
+                            };
+                        },
+                                                {
+                            BezierPathElement = CurveToElement;
+                            Control1Point =                             {
+                                X = "157.677048";
+                                Y = "70.765343";
+                            };
+                            Control2Point =                             {
+                                X = "139.766602";
+                                Y = "68.855026";
+                            };
+                            PositionPoint =                             {
+                                X = "125.998993";
+                                Y = "76.813354";
+                            };
+                        },
+                                                {
+                            BezierPathElement = ClosePathElement;
+                        },
+                                                {
+                            BezierPathElement = MoveToElement;
+                            PositionPoint =                             {
+                                X = "126.001007";
+                                Y = "76.813354";
+                            };
+                        }
+                    );
+                    GraphicID = B75014F1;
+                    GraphicName = Bezier;
+                    GraphicStyle =                     {
+                        DrawsFill = YES;
+                        DrawsLine = NO;
+                        FillRGB =                         {
+                            Blue = "0.800000";
+                            ColorSpace = NSCalibratedRGBColorSpace;
+                            Green = "0.800000";
+                            Opacity = "1.000000";
+                            Red = "0.800000";
+                        };
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    Locked = NO;
+                    MarkCenter = NO;
+                    ReversedPath = NO;
+                },
+                                {
+                    Bounds = "{{72, 72}, {54.001, 72}}";
+                    Class = DKDBezier;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    DkBezierPath =                     (
+                                                {
+                            BezierPathElement = MoveToElement;
+                            PositionPoint =                             {
+                                X = "82.544159";
+                                Y = "82.544159";
+                            };
+                        },
+                                                {
+                            BezierPathElement = CurveToElement;
+                            Control1Point =                             {
+                                X = "68.485275";
+                                Y = "96.603027";
+                            };
+                            Control2Point =                             {
+                                X = "68.485275";
+                                Y = "119.396973";
+                            };
+                            PositionPoint =                             {
+                                X = "82.544159";
+                                Y = "133.455841";
+                            };
+                        },
+                                                {
+                            BezierPathElement = CurveToElement;
+                            Control1Point =                             {
+                                X = "94.323006";
+                                Y = "145.234711";
+                            };
+                            Control2Point =                             {
+                                X = "112.233345";
+                                Y = "147.144958";
+                            };
+                            PositionPoint =                             {
+                                X = "126.001007";
+                                Y = "139.186646";
+                            };
+                        },
+                                                {
+                            BezierPathElement = CurveToElement;
+                            Control1Point =                             {
+                                X = "123.333984";
+                                Y = "137.646133";
+                            };
+                            Control2Point =                             {
+                                X = "120.824173";
+                                Y = "135.735886";
+                            };
+                            PositionPoint =                             {
+                                X = "118.544159";
+                                Y = "133.455841";
+                            };
+                        },
+                                                {
+                            BezierPathElement = CurveToElement;
+                            Control1Point =                             {
+                                X = "104.485275";
+                                Y = "119.396973";
+                            };
+                            Control2Point =                             {
+                                X = "104.485275";
+                                Y = "96.603027";
+                            };
+                            PositionPoint =                             {
+                                X = "118.544159";
+                                Y = "82.544159";
+                            };
+                        },
+                                                {
+                            BezierPathElement = CurveToElement;
+                            Control1Point =                             {
+                                X = "120.824173";
+                                Y = "80.264122";
+                            };
+                            Control2Point =                             {
+                                X = "123.333984";
+                                Y = "78.353844";
+                            };
+                            PositionPoint =                             {
+                                X = "125.999001";
+                                Y = "76.813354";
+                            };
+                        },
+                                                {
+                            BezierPathElement = CurveToElement;
+                            Control1Point =                             {
+                                X = "112.233421";
+                                Y = "68.855064";
+                            };
+                            Control2Point =                             {
+                                X = "94.322968";
+                                Y = "70.765305";
+                            };
+                            PositionPoint =                             {
+                                X = "82.544159";
+                                Y = "82.544159";
+                            };
+                        },
+                                                {
+                            BezierPathElement = ClosePathElement;
+                        },
+                                                {
+                            BezierPathElement = MoveToElement;
+                            PositionPoint =                             {
+                                X = "82.544159";
+                                Y = "82.544159";
+                            };
+                        }
+                    );
+                    GraphicID = DA31E2F1;
+                    GraphicName = Bezier;
+                    GraphicStyle =                     {
+                        DrawsFill = YES;
+                        DrawsLine = NO;
+                        FillRGB =                         {
+                            Blue = "0.800000";
+                            ColorSpace = NSCalibratedRGBColorSpace;
+                            Green = "0.800000";
+                            Opacity = "1.000000";
+                            Red = "0.800000";
+                        };
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    Locked = NO;
+                    MarkCenter = NO;
+                    ReversedPath = NO;
+                },
+                                {
+                    Bounds = "{{72, 72}, {72, 72}}";
+                    Class = DKDCircle;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    GraphicID = EA20FCC1;
+                    GraphicName = Circle;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = YES;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineRGB =                         {
+                            Blue = "0.000000";
+                            ColorSpace = NSCalibratedRGBColorSpace;
+                            Green = "0.000000";
+                            Opacity = "1.000000";
+                            Red = "0.000000";
+                        };
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    Locked = NO;
+                    MarkCenter = NO;
+                    ReversedPath = NO;
+                },
+                                {
+                    Bounds = "{{108, 72}, {72, 72}}";
+                    Class = DKDCircle;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    GraphicID = 58BC4DC1;
+                    GraphicName = Circle;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = YES;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineRGB =                         {
+                            Blue = "0.000000";
+                            ColorSpace = NSCalibratedRGBColorSpace;
+                            Green = "0.000000";
+                            Opacity = "1.000000";
+                            Red = "0.000000";
+                        };
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    Locked = NO;
+                    MarkCenter = NO;
+                    ReversedPath = NO;
+                },
+                                {
+                    AllowTextLink = NO;
+                    Bounds = "{{63, 72}, {19, 15}}";
+                    Class = DKDTextArea;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    FlowAround = NO;
+                    GraphicID = C88D7F32;
+                    GraphicName = Text;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = NO;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    KeyedText = <62706c69 73743030 d4010203 0405085a 5b542474 6f705824 6f626a65 63747358 24766572 73696f6e 59246172 63686976 6572d106 0754726f 6f748001 af101409 0a11121e 1f202127 2d33373b 3f42474f 50535655 246e756c 6cd30b0c 0d0e0f10 5c4e5341 74747269 62757465 73562463 6c617373 584e5353 7472696e 67800380 13800251 41d31314 0c15191d 5a4e532e 6f626a65 63747357 4e532e6b 657973a3 16171880 07800980 0fa31a1b 1c800480 05800680 12574e53 436f6c6f 725f1010 4e535061 72616772 61706853 74796c65 564e5346 6f6e74d3 22230c24 2526574e 53576869 74655c4e 53436f6c 6f725370 61636542 30001004 8008d228 292a2b58 24636c61 73736573 5a24636c 6173736e 616d65a2 2b2c574e 53436f6c 6f72584e 534f626a 656374d3 2e0c2f30 31325a4e 53546162 53746f70 735f1014 4e534465 6661756c 74546162 496e7465 7276616c 800a800e 23404200 00000000 00d2130c 3436a135 800b800d d2380c39 3a5a4e53 4c6f6361 74696f6e 23404200 00000000 00800cd2 28293c3e a23d2c59 4e535465 78745461 62594e53 54657874 546162d2 28294041 a2412c57 4e534172 726179d2 28294346 a344452c 5f10174e 534d7574 61626c65 50617261 67726170 68537479 6c655f10 104e5350 61726167 72617068 5374796c 655f1017 4e534d75 7461626c 65506172 61677261 70685374 796c65d4 48490c4a 4b4c4d4e 564e5353 697a6556 4e534e61 6d65584e 5366466c 61677323 40240000 00000000 80108011 10105948 656c7665 74696361 d2282951 52a2522c 564e5346 6f6e74d2 28295455 a2552c5c 4e534469 6374696f 6e617279 d2282957 59a2582c 5f10124e 53417474 72696275 74656453 7472696e 675f1012 4e534174 74726962 75746564 53747269 6e671200 0186a05f 100f4e53 4b657965 64417263 68697665 72000800 11001600 1f002800 32003500 3a003c00 53005900 60006d00 74007d00 7f008100 83008500 8c009700 9f00a300 a500a700 a900ad00 af00b100 b300b500 bd00d000 d700de00 e600f300 f600f800 fa00ff01 08011301 16011e01 27012e01 39015001 52015401 5d016201 64016601 68016d01 78018101 83018801 8b019501 9f01a401 a701af01 b401b801 d201e501 ff020802 0f021602 1f022802 2a022c02 2e023802 3d024002 47024c02 4f025c02 61026402 79028e02 93000000 00000002 01000000 00000000 5c000000 00000000 00000000 00000002 a5>;
+                    Locked = NO;
+                    MarkCenter = NO;
+                    RotateRadiansText = "0.000000";
+                    Tabs =                     (
+                                                {
+                            DefaultLengthTab = "36.000000";
+                            RangeLengthTab = 1;
+                            RangeLocationTab = 0;
+                            StopsTab =                             (
+                                                                {
+                                    PositionTabStop = "36.000000";
+                                    TypeTabStop = Left;
+                                }
+                            );
+                        }
+                    );
+                    TabsOnScreen = NO;
+                    TextFontStrokeWidth = "3.000000";
+                },
+                                {
+                    AllowTextLink = NO;
+                    Bounds = "{{171, 72}, {19, 15}}";
+                    Class = DKDTextArea;
+                    CloakGuidelines = NO;
+                    CloakVertices = NO;
+                    FlowAround = NO;
+                    GraphicID = F7DC3042;
+                    GraphicName = Text;
+                    GraphicStyle =                     {
+                        DrawsFill = NO;
+                        DrawsLine = NO;
+                        LineCapStyle = Square;
+                        LineJoinStyle = Miter;
+                        LineWidth = "1.000000";
+                        MiterLimit = 10;
+                        StrokePosition = Front;
+                        WindingRule = "Non-Zero";
+                    };
+                    GridRef =                     {
+                        GridRefActive = NO;
+                        GridRefPosition = "Top Left";
+                        GridRefX = "0.000000";
+                        GridRefY = "0.000000";
+                    };
+                    KeyedText = <62706c69 73743030 d4010203 0405085a 5b542474 6f705824 6f626a65 63747358 24766572 73696f6e 59246172 63686976 6572d106 0754726f 6f748001 af101409 0a11121e 1f202127 2d33373b 3f42474f 50535655 246e756c 6cd30b0c 0d0e0f10 5c4e5341 74747269 62757465 73562463 6c617373 584e5353 7472696e 67800380 13800251 42d31314 0c15191d 5a4e532e 6f626a65 63747357 4e532e6b 657973a3 16171880 07800980 0fa31a1b 1c800480 05800680 12574e53 436f6c6f 725f1010 4e535061 72616772 61706853 74796c65 564e5346 6f6e74d3 22230c24 2526574e 53576869 74655c4e 53436f6c 6f725370 61636542 30001004 8008d228 292a2b58 24636c61 73736573 5a24636c 6173736e 616d65a2 2b2c574e 53436f6c 6f72584e 534f626a 656374d3 2e0c2f30 31325a4e 53546162 53746f70 735f1014 4e534465 6661756c 74546162 496e7465 7276616c 800a800e 23404200 00000000 00d2130c 3436a135 800b800d d2380c39 3a5a4e53 4c6f6361 74696f6e 23404200 00000000 00800cd2 28293c3e a23d2c59 4e535465 78745461 62594e53 54657874 546162d2 28294041 a2412c57 4e534172 726179d2 28294346 a344452c 5f10174e 534d7574 61626c65 50617261 67726170 68537479 6c655f10 104e5350 61726167 72617068 5374796c 655f1017 4e534d75 7461626c 65506172 61677261 70685374 796c65d4 48490c4a 4b4c4d4e 564e5353 697a6556 4e534e61 6d65584e 5366466c 61677323 40240000 00000000 80108011 10105948 656c7665 74696361 d2282951 52a2522c 564e5346 6f6e74d2 28295455 a2552c5c 4e534469 6374696f 6e617279 d2282957 59a2582c 5f10124e 53417474 72696275 74656453 7472696e 675f1012 4e534174 74726962 75746564 53747269 6e671200 0186a05f 100f4e53 4b657965 64417263 68697665 72000800 11001600 1f002800 32003500 3a003c00 53005900 60006d00 74007d00 7f008100 83008500 8c009700 9f00a300 a500a700 a900ad00 af00b100 b300b500 bd00d000 d700de00 e600f300 f600f800 fa00ff01 08011301 16011e01 27012e01 39015001 52015401 5d016201 64016601 68016d01 78018101 83018801 8b019501 9f01a401 a701af01 b401b801 d201e501 ff020802 0f021602 1f022802 2a022c02 2e023802 3d024002 47024c02 4f025c02 61026402 79028e02 93000000 00000002 01000000 00000000 5c000000 00000000 00000000 00000002 a5>;
+                    Locked = NO;
+                    MarkCenter = NO;
+                    RotateRadiansText = "0.000000";
+                    Tabs =                     (
+                                                {
+                            DefaultLengthTab = "36.000000";
+                            RangeLengthTab = 1;
+                            RangeLocationTab = 0;
+                            StopsTab =                             (
+                                                                {
+                                    PositionTabStop = "36.000000";
+                                    TypeTabStop = Left;
+                                }
+                            );
+                        }
+                    );
+                    TabsOnScreen = NO;
+                    TextFontStrokeWidth = "3.000000";
+                }
+            );
+            HideDimensions = NO;
+            LayerColorMod =             {
+                DKDOnColorMod = NO;
+                DKDOpacityColorMod = "0.500000";
+                DKDTintColorColorMod =                 {
+                    ColorSpace = NSDeviceWhiteColorSpace;
+                    Opacity = "1.000000";
+                    White = "0.500000";
+                };
+                DKDTintFractionColorMod = "0.500000";
+            };
+            LayerLock = NO;
+            LayerName = Paper;
+            LayerState = Active;
+        }
+    );
+    DKDPagesSpec =     {
+        CanvasBorder =         {
+            Blue = "0.533333";
+            ColorSpace = NSCalibratedRGBColorSpace;
+            Green = "0.533333";
+            Opacity = "1.000000";
+            Red = "0.549020";
+        };
+        CanvasColor =         {
+            Blue = "0.925490";
+            ColorSpace = NSCalibratedRGBColorSpace;
+            Green = "0.925490";
+            Opacity = "1.000000";
+            Red = "0.941176";
+        };
+        CanvasMargin = "0.000000";
+        DetailsDrawerWidth = "200.000000";
+        DisplayAttributesBar = YES;
+        DisplayRulers = YES;
+        LayersDrawerWidth = "200.000000";
+        NumberAcrossFirst = YES;
+        PagesAcross = 1;
+        PagesDown = 1;
+        PagesSpecBackgroundRGB =         {
+            ColorSpace = NSDeviceWhiteColorSpace;
+            Opacity = "1.000000";
+            White = "1.000000";
+        };
+        PagesSpecPrintBackground = NO;
+        ShowPageBreaks = NO;
+    };
+    DKDPrintInfo =     {
+        BottomMargin = "40.000000";
+        Copies = 1;
+        FallBackPaperSizeHeight = "841.890015";
+        FallBackPaperSizeWidth = "595.280029";
+        FirstPage = 1;
+        HorizontalPagination = 2;
+        HorizontallyCentered = YES;
+        LastPage = "-1";
+        LeftMargin = "18.000000";
+        MustCollate = YES;
+        Orientation = "";
+        PaperName = "iso-a4";
+        PaperSizeHeight = "841.890015";
+        PaperSizeWidth = "595.280029";
+        PreviewPageNumber = 1;
+        PrintAllPages = YES;
+        PrintJobDisposition = NSPrintSpoolJob;
+        PrintSavePath = "";
+        PrintScalingFactor = "1.000000";
+        PrinterName = "Canon iP4300";
+        ReversePageOrder = NO;
+        RightMargin = "18.000000";
+        TopMargin = "18.000000";
+        VerticalPagination = "";
+        VerticallyCentered = YES;
+        XPrintMirror = NO;
+        YPrintMirror = NO;
+    };
+    DKDSaveTimeStamp = "2011-07-14 21:18:51 -0500";
+    DKDTablet =     {
+        PenMax = "25.000000";
+        PenMin = "0.500000";
+        PenPressureFactor = "0.500000";
+    };
+    DKDTimeFormat =     {
+        "Field 0 Include" = Weekday;
+        "Field 0 Type" = Long;
+        "Field 1 Include" = Month;
+        "Field 1 Type" = Short;
+        "Field 2 Include" = Day;
+        "Field 2 Type" = Number;
+        "Field 3 Include" = Year;
+        "Field 3 Type" = Long;
+        "Include GMT" = NO;
+        "Include Title" = YES;
+        IncludeDate = YES;
+        IncludeTime = YES;
+        "Seperator 0" = " - ";
+        "Seperator 1" = ". ";
+        "Seperator 2" = ", ";
+        "Seperator 3" = "  ";
+        "Time Seperator" = ":";
+        TimeAfterDate = YES;
+        "Twelve Hour Clock" = YES;
+        "Used Once" = YES;
+    };
+    DKDToolbarSelectedButtonPairs =     (
+        "ColorTextToolbarItemIdentifier_0",
+                (
+            "HSB_000020"
+        ),
+        "ColorStrokeToolbarItemIdentifier_0",
+                (
+            "HSB_000020"
+        ),
+        "ColorFillToolbarItemIdentifier_0",
+                (
+            "HSB_0000B0"
+        ),
+        "GradientToolbarItemIdentifier_0",
+                (
+                        {
+                BurstPath =                 (
+                );
+                BurstRect = "{{0.25, 0.25}, {0.5, 0.5}}";
+                EndGradientRGB =                 {
+                    Blue = "1.000000";
+                    ColorSpace = NSCalibratedRGBColorSpace;
+                    Green = "1.000000";
+                    Opacity = "1.000000";
+                    Red = "1.000000";
+                };
+                GradientAngle = "0.000000";
+                GradientCompositeOperation = "Source Over";
+                GradientFillClass = DKDHorizontalGradientFill;
+                GradientGradientConvergence =                 {
+                    FinishGradient = "100.00000";
+                    GradientConvergence = Linear;
+                    StartGradient = "0.00000";
+                };
+                GradientImagePercent = "1.000000";
+                GradientOverlap = "1.000000";
+                GradientRadius = "0.000000";
+                LevelsOfGradient = 100;
+                StartGradientRGB =                 {
+                    Blue = "0.000000";
+                    ColorSpace = NSCalibratedRGBColorSpace;
+                    Green = "0.000000";
+                    Opacity = "1.000000";
+                    Red = "0.000000";
+                };
+                SymmetryAngle = "0.000000";
+            }
+        ),
+        "PatternForToolbarItemIdentifier_0",
+                (
+            "Toolbar_02"
+        ),
+        "ChartingMenuToolbarIdentifier_0",
+                (
+            "Right Fat Arrow",
+            "Right Fat Arrow",
+            "Right Box Arrow",
+            "Right Tear Off",
+            "Right Brace",
+            "Right Drum",
+            Folder,
+            "Bilateral Octagon",
+            "Rounded Rectangle",
+            "Right Point",
+            "Right Trapezoid",
+            "Up Parallelogram",
+            Parallelogram,
+            "Right Flame Arrow",
+            "Right Nose Rectangle",
+            "Right Rivet"
+        ),
+        "StellateMenuToolbarIdentifier_0",
+                (
+            "Equilateral Polygon",
+            "Equilateral Polygon",
+            "Free Equilateral Polygon",
+            "Crossing Star",
+            "Star - simple star",
+            "Smooth Free Star",
+            "Stagger Star",
+            "Smooth Stagger Star",
+            Spokes
+        ),
+        "MathMenuToolbarIdentifier_0",
+                (
+            "Parabola (y = x**2), a centered fixed parabola",
+            "Parabola (y = x**2), a centered fixed parabola",
+            "Cubic (y = x**3), Adjustable",
+            "Quartic (y = x**4), a centered fixed fourth order curve",
+            "One over X (y = 1 / x) for x > 0.0",
+            "Natural Exponential (y = e**x), x > 0",
+            "Tangent (y = tan(x))",
+            "Hyperbolic Tangent (y = tanh(x))",
+            "Gaussian - The \"Bell Shaped\" probability curve",
+            "Square Wave",
+            "Sine (or Cosine) wave form, y = sin(x)"
+        ),
+        "TechnicalMenuToolbarIdentifier_0",
+                (
+            "Orthogonal Path",
+            "Orthogonal Path",
+            Autoline,
+            "Right Dimension",
+            "Right External Dimension",
+            "Report Dimension",
+            "Rectangle Text Bubble",
+            Wall,
+            "Free Wall",
+            Cog,
+            "Tick Marks"
+        )
+    );
+    DKDWindowState =     {
+        CursorMode = Nothing;
+        DocCenter = "{158.27, 143.98}";
+        DocumentFileName = "/Users/mgwelch/dev/github/courses/algebra/img/symdiff.ezdraw";
+        DrawersOnMainView = YES;
+        GDetailsLayersDrawerEdgePreference = Auto;
+        GraphicDetailsEdge = 0;
+        GraphicDetailsOpen = YES;
+        LayerActiveAbove = NO;
+        LayerOpen = NO;
+        LayerSelect = "Active Only";
+        LayersDrawerEdgePreference = Auto;
+        WindowLocation = "372 154 947 676 0 0 1440 878 ";
+        ZoomPercent = "225.000000";
+    };
+    DocumentCompression = None;
+    IndependentLayers = NO;
+    NumberColorsToListInContextMenu = 12;
+    NumberPairColorsToListInContextMenu = 6;
+}
