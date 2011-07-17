@@ -451,18 +451,317 @@ of A Book of Abstract Algebra.
    
 
    \item \textsc{A Coin Game}
+   \begin{figure}[ht]
+      \includegraphics{img/coingame.pdf}
+   \end{figure}
+
+   Imagine two coins on a table, at positions $A$ and $B$. In this game there
+   are eight possible moves:
+
+   \begin{table}[ht]
+   \begin{tabular}{rlcrl}
+    $M_1$:&Flip over the coin at $A$. &\verb=   =& $M_5$:&Flip coin at $A$; then switch.\\
+    $M_2$:&Flip over the coin at $B$. &\verb=   =& $M_6$:&Flip coin at $B$; then switch.\\
+    $M_3$:&Flip over both coins. &\verb=   =& $M_7$:&Flip both coins; then switch.\\
+    $M_4$:&Switch the coins.     &\verb=   =& $I$:&Do not change anything.
+   \end{tabular}
+   \end{table}
+
+
+   We may consider an operation on the set $\{I, M_1,\ldots,M_7\}$, which
+   consists of performing any two moves in succession.  For example, if we
+   switch coins, then flip over the coin at $A$, this is the same as first
+   flipping over the coin at $B$ then switching:
+
+   $$ M_4 * M_1 = M_2 * M_4 = M_6 $$
+
+   If $G = \{I,M_1,\ldots,M_7\}$ and $*$ is the operation we have just
+   described, write the table of $\langle G,* \rangle$.
+
+   \begin{table}[ht]
+   \begin{tabular}{c|cccccccc}
+     $*$ & $I$ & $M_1$ & $M_2$ & $M_3$ & $M_4$ & $M_5$ & $M_6$ & $M_7$ \\ \hline
+     $I$ & $I$ & $M_1$ & $M_2$ & $M_3$ & $M_4$ & $M_5$ & $M_6$ & $M_7$\\
+     $M_1$ & $M_1$ & $I$ & $M_3$ & $M_2$ & $M_5$ & $M_4$ & $M_7$ & $M_6$\\
+     $M_2$ & $M_2$ & $M_3$ & $I$ & $M_1$ & $M_6$ & $M_7$ & $M_4$ & $M_5$\\
+     $M_3$ & $M_3$ & $M_2$ & $M_1$ & $I$ & $M_7$ & $M_6$ & $M_5$ & $M_4$\\
+     $M_4$ & $M_4$ & $M_6$ & $M_5$ & $M_7$ & $I$ & $M_2$ & $M_1$ & $M_3$\\
+     $M_5$ & $M_5$ & $M_7$ & $M_4$ & $M_6$ & $M_1$ & $M_3$ & $I$ & $M_2$\\
+     $M_6$ & $M_6$ & $M_4$ & $M_7$ & $M_5$ & $M_2$ & $I$ & $M_3$ & $M_1$\\
+     $M_7$ & $M_7$ & $M_5$ & $M_6$ & $M_4$ & $M_3$ & $M_1$ & $M_2$ & $I$\\
+   \end{tabular}
+   \end{table}
+
+   Granting associativity, explain why $\langle G,* \rangle$ is a group.
+   Is it commutative? If not, show why not.
+
+   \noindent \textsc{Solution} It is a group because $I$ is an identity 
+   element, and we can see from the table that every element has an
+   inverse. However, the operation is not commutative. There are at least
+   a dozen counter-examples, here is but one: $M_1*M_7=M_6\ne M_5=M7*M1$.
 
    \item \textsc{Groups in Binary Codes}
+   \noindent The most basic way of transmitting information is to code it into
+   strings of 0s and 1s, such as 0010111, 1010011, etc. Such strings are called
+   \emph{binary words}, and the number of 0s and 1s in any binary word is
+   called its \emph{length}. All information may be coded in this fashion.
+
+   When information is transmitted, it is sometimes received incorrectly.
+   One of the most important purposes of coding theory is to find ways of
+   \emph{detecting errors}, and \emph{correcting} errors of transimission.
+
+   If a word $\mathbf{a}=a_1 a_2 \cdots a_n$ is sent, but a word
+   $\mathbf{b}=b_1 b_2 \cdots b_n$ is received (where the $a_i$ and $b_i$
+   are 0s or 1s), then the \emph{error pattern} is the word
+   $\mathbf{e}=e_1 e_2 \cdots e_n$ where
+%
+   \begin{gather*}
+      e_i =
+         \begin{cases}
+	    0, & \text{if $a_i = b_i$} \\
+	    1, & \text{if $1_i \ne b_i$}
+	 \end{cases}
+   \end{gather*}
+
+   \noindent With this motivation, we define an operation of \emph{adding}
+   words, as follows: If $\mathbf{a}$ and $\mathbf{b}$ are both of length $l$,
+   we add them according to the rules
+   %
+   \begin{align*}
+      0 + 0 &= 0   &   1 + 1 & = 0   &   0 + 1 & = 1   &   1 + 1 & = 0
+   \end{align*}
+
+   \newcommand{\mbf}[1]{\ensuremath{\mathbf{#1}}}
+   \noindent If \mbf{a} and \mbf{b} are both of length \emph{n}, we add them by
+   \emph{adding corresponding digits}. That is (let us introduce commas for
+   convenience),
+   %
+   \begin{gather*}
+     (a_1,a_2,\ldots,a_n) + (b_1,b_2,\ldots,b_n) = (a_1+b_1, a_2+b_2,
+     \ldots,a_n+b_n)
+   \end{gather*}
+
+   \noindent Thus, the sum of \mbf{a} and \mbf{b} is the error pattern 
+   \mbf{e}.
+
+   For example,
+   %
+   \begin{table}[ht]
+      \begin{tabular}{cc}
+         \begin{tabular}{r}
+	    0010110 \\
+	   +0011010 \\ \hline
+	   =0001100
+	 \end{tabular} & 
+	 \begin{tabular}{r}
+	    10100111 \\
+	   +11110111 \\ \hline
+	   =01010000
+	 \end{tabular}
+      \end{tabular}
+   \end{table}
+
+   The symbol $\mathbb{B}^n$ will designate the set of all the binary words
+   of length $n$. We will prove that the operation of word addition has the
+   following properties on $\mathbb{B}^n$: 
+   
+   \begin{enumerate}[1.]
+      \item It is commutative.
+      \item It is associative.
+      \item There is an identity element for word addition.
+      \item Every word has an inverse under word addition.
+   \end{enumerate}
+
+   First, we verify the commutative law for words of length 1:
+   \begin{gather*}
+      0+1=1=1=1+1
+   \end{gather*}
+
+   \noindent \textbf{1} Show that $(a_1,a_2,\ldots,a_n) + (b_1,b_2,\ldots,b_n)
+   = (b_1,b_2,\ldots,b_n) + (a_1,a_2,\ldots,a_n)$.
+   
+   \begin{proof}
+   This is easy to show by using the commutativity property of words
+   of length 1.
+      \begin{align*}
+              & \Blank (a_1,a_2,\ldots,a_n) + (b_1,b_2,\ldots,b_n) \\
+	      & = (a_1+b_1,a_2+b_2,\ldots,a_n+b_n) \\
+	      & = (b_1+a_1,b_2+a_2,\ldots,b_n+a_n) \\
+	      & = (b_1,b_2,\ldots,b_n) + (a_1,a_2,\ldots,a_n) \qedhere
+      \end{align*}
+   \end{proof}
+
+   \noindent \textbf{2} To verify the associative law, we first verify
+   it for words of length 1:
+   \begin{gather*}
+      1 + (1 + 1) = 1 + 0 = 1 = 0 + 1 = (1 + 1) + 1 \\
+      1 + (1 + 0) = 1 + 1 = 0 = 0 + 0 = (1 + 1) + 0
+   \end{gather*}
+
+   \noindent Check the remaining six cases.
+   \begin{proof}
+      \begin{gather*}
+	 0 + (0 + 0) = 0 + 0 = 0 = 0 + 0 = (0 + 0) + 0 \\
+	 0 + (0 + 1) = 0 + 1 = 1 = 0 + 1 = (0 + 0) + 1 \\
+	 0 + (1 + 0) = 0 + 1 = 1 = 1 + 0 = (0 + 1) + 0 \\
+	 0 + (1 + 1) = 0 + 0 = 0 = 1 + 1 = (0 + 1) + 1 \\
+         1 + (0 + 0) = 1 + 0 = 1 = 1 + 0 = (1 + 0) + 0 \\
+	 1 + (0 + 1) = 1 + 1 = 0 = 1 + 1 = (1 + 0) + 1 \qedhere
+      \end{gather*}
+   \end{proof}
+
+   \noindent \textbf{3} Show that $(a_1,\ldots,a_n)+[(b_1,\ldots,b_n)+
+   (c_1,\ldots,c_n)]=[(a_1,\ldots,a_n)+(b_1,\ldots,b_n)]+(c_1,\ldots,c_n)$.
+   \begin{proof}
+      \begin{align*}
+         & \Blank (a_1,\ldots,a_n)+[(b_1,\ldots,b_n)+(c_1,\ldots,c_n)] \\
+	 & = (a_1,\ldots,a_n)+[(b_1+c_1),\ldots,(b_n+c_n)] \\
+	 & = [a_1+(b_1+c_1),\ldots,a_n+(b_n+c_n)] \\
+	 & = [(a_1+b_1)+c_1,\ldots,(a_n+b_n)+c_n] \\
+	 & = [(a_1+b_1),\ldots,(a_n+b_n)]+(c_1,\ldots,c_n)\\
+	 & = [(a_1,\ldots,a_n)+(b_1,\ldots,b_n)]+(c_1,\ldots,c_n) \qedhere
+      \end{align*}
+   \end{proof}
+
+   \noindent \textbf{4} The identity element of $\mathbb{B}^n$, that is,
+   the identity element for adding words of length $n$, is: 
+   $\mbf{z} = z_1 z_2 \cdots z_n$ where $z_i = 0$.
+
+   \noindent \textbf{5} The inverse, with respect to word addition, of any
+   word $(a_1,\ldots,a_n)$ is: itself.
+
+   \noindent \textbf{6} Show that $a+b=a-b$ [where $a-b=a+(-b)$]. (Well, 
+   unfortunately $(-b)$ is not defined. I will assume it means 
+   $(-b_1,\ldots,-b_n)$ where $-0 = 0$ and $-1 = -1$.
+   \begin{proof}
+      First we show it to be true for words of length 1.
+      \begin{gather*}
+         0 + 0 = 0 = 0 + (-0) = 0 - 0 \\
+	 0 + 1 = 1 = 0 + (-1) = 0 - 1 \\
+	 1 + 0 = 1 = 1 + (-0) = 1 - 0 \\
+	 1 + 1 = 0 = 1 + (-1) = 1 - 1 
+      \end{gather*}
+
+      Now we will show for words of length $n$.
+      \begin{align*}
+         & \Blank (a_1,\ldots, a_n) + (b_1,\ldots,b_n) \\
+	 & = (a_1+b_1,\ldots,a_n+b_n) \\
+	 & = (a_1-b_1,\ldots,a_n-b_n) \\
+	 & = (a_1,\ldots,a_n) + (-b_1,\ldots,-b_n) \\
+	 & = (a_1,\ldots,a_n) - (b_1,\ldots,b_n) \qedhere
+      \end{align*}
+   \end{proof}
+
+   \noindent \textbf{7} If $a+b=c$, show that $a=b+c$.
+
+   The proof is shown in figure~\ref{fig:f7proof}.
+   
+   \begin{figure}
+      \caption{The proof for F7: If $a+b=c$ then $a=b+c$.}
+      \label{fig:f7proof}
+      \begin{align*}
+         a + b & = c \\
+	 a + (b + b) & = c + b \\
+	 a + z & = c + b \\
+	 a & = b + c \qed
+      \end{align*}
+   \end{figure}
 
    \item \textsc{Theory of Coding: Maximum Likelihood Decoding}
+   See text pp.\ 34,35 for introductory material.
 
-      \noindent 1.Verify
+   Let $C_1$ contain the codewords listed in table~\ref{tab:c1codewords}.
+   
+   \begin{table}
+   \caption{The codewords for $C_1$ of section G.}
+   \label{tab:c1codewords}
+   \begin{tabular}{ccc} 
+      \mbf{c} & $c_1 + c_3$ & $c_1 + c_2 + c_3$ \\ \hline
+      00000  & 0 & 0 \\
+      00111  & 1 & 1 \\
+      01001  & 0 & 1 \\
+      01110  & 1 & 0 \\
+      10011  & 1 & 1 \\
+      10100  & 0 & 0 \\
+      11010  & 1 & 0 \\
+      11101  & 0 & 1 \\
+   \end{tabular}
+   \end{table}
+
+      \noindent 1. Verify that every codeword $a_1 a_2 a_3 a_4 a_5$ in
+      $C_1$ satisifies the following two parity-check equations:
+      $a_4=a_1+a_3$; $a_5=a_1+a_2+a_3$. 
+
+      This can be verified by inspecting table~\ref{tab:c1codewords} where
+      the values for the equations are shown for each codeword along
+      with the codeword.
+
+
       
-      \noindent 2. Let
+      \noindent 2. Let $C_2$ be the following code in $\mathbb{B}^6$. The
+      first three positions are the information positions, and every codeword 
+      $a_1 a_2 a_3 a_4 a_5 a_6$ satisifies the parity-check equations
+      $a_4 = a_2$, $a_5 = a_1 + a_2$ and $a_6 = a_1 + a_2 + a_3$.
+
+      \begin{enumerate}[(a)]
+         \item List the codewords of $C_2$.
+
+
+	 \Solution The codewords are as follows:
+	 \begin{table}[ht]
+	    \begin{tabular}{l}
+	       000000 \\
+	       001001 \\
+	       010111 \\
+	       011110 \\
+	       100011 \\
+	       101010 \\
+	       110100 \\
+	       111101
+	    \end{tabular}
+	 \end{table}
+
+         \item Find the minimum distance of the code $C_2$.
+
+	 \noindent \Solution The minimum distance is 2.
+      \end{enumerate}
       
-      \noindent 3. Design
-      
-      \noindent 4. Decode
+      \noindent 3. Design a code in $\mathbb{B}^4$ where the first
+      two positions are information positions. Give the parity-check
+      equations, list the codewords, and find the minimum distance.
+
+      \noindent \Solution My code uses the equations $a_3=a_2$ and
+      $a_4 = a_1 + a_2$. The code words are listed below. The minimum
+      distance is 2.
+      \begin{table}[ht]
+      \begin{tabular}{l}
+        0000 \\
+	0111 \\
+	1001 \\
+	1110
+      \end{tabular}
+      \end{table}
+
+      If \mbf{a} and \mbf{b} are any two words, let $d(\mbf{a},\mbf{b})$
+      denote the distance between \mbf{a} and \mbf{b}. To \emph{decode}
+      a received word \mbf{x} (which may contain errors of transmission) means
+      to find the codeword closes to \mbf{x}, that is, the codeword \mbf{a}
+      such that $d(\mbf{a},\mbf{x})$ is a minimum. This is called
+      \emph{maximum-likelihood decoding}.
+\begin{verbatim}
+\end{verbatim}
+      \noindent 4. Decode the following words in $C_1$: 11111, 00101,
+      11000, 10011, 10001, and 10111.
+
+      \noindent \Solution The decoded words are 11101, 00111, 11010, 10011,
+      10011, and (10011 or 00111).
+
+      You may have noticed that the last two words in part 4 had ambigous
+      decodings [welch: I can't find a second decoding for the second to last
+      codeword in part 4]: for example, 10111 may be decoded as either
+      10011 or 00111. This situation is clearly unsatisfactory. We shall see
+      next what conditions will ensure that every word can be decoded into
+      only \emph{one} possible codeword.
 
       In the remaining exercises, let $C$ be a code in $\mathbb{B}^n$,
       let $m$ denote the minimum distance in $C$, and let 
@@ -513,6 +812,42 @@ of A Book of Abstract Algebra.
 	 our assumption that $\mathbf{x}$ exists is false and there is
 	 no common element between $S_t(\mathbf{a})$ and $S_t(\mathbf{b})$.
       \end{proof}
+
+      \noindent 7. Deduce from part 6 that if there are $t$ or fewer errors
+      of transmission in a codeword, the received word will be decoded 
+      correctly.
+
+      \begin{proof}
+      By design we have a sphere of radius $t$ around every codeword.
+      We know from part 6 that no two spheres have elements in common.
+      If there are $t$ or fewer errors in a transmission, then the
+      received word will be in the sphere surrounding the sent word and
+      no other sphere. Therefore, we can correctly decode the received
+      word to be the codeword in the sphere.
+      \end{proof}
+
+      \noindent 8. Let $C_2$ be the code described in part 2. Using the
+      results of parts 5 and 7, explain why two errors in any codeword
+      can always be detected, and why one error in any
+      codeword can always be corrected.
+
+      \noindent \Solution I claim that the author is incorrect in his claims.
+      It is readily apparent that the minimum distance of $C_2$ is 2. This
+      can be seen by looking at the first two elements 000000 and 001001.
+      Since two errors in transmission can change 000000 into 001001, the claim
+      that 2 errors can always be detected is false. Likewise, one error
+      in transmission can transform 000000 into 001000. This error can
+      be detected but it cannot be corrected. Therefore, both claims are
+      false.
+
+      Now, let's assume for the sake of this exercise that the minimum
+      distance of $C_2$ is 3. Then the author's claims follow directly
+      from parts 5-7. If there are 2 errors or less they will always 
+      be detected because by part 5 it's impossible for the received
+      word to be a codeword. If there is 1 error or less then the received
+      word will fall within a sphere of radius of $t=1/2(3-1)=1$ and therefore
+      be readily correctable (by parts 6 and 7).
+     
 
 \end{enumerate}
 \end{document}
