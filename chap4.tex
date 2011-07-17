@@ -1,0 +1,69 @@
+\documentclass[twoside]{amsart}
+\usepackage{amssymb,latexsym}
+\usepackage{xspace}
+\usepackage{enumerate}
+\usepackage{graphics}
+\newcommand{\Rationals}{\mathbb{Q}{}}
+\newcommand{\Reals}{\mathbb{R}{}}
+\newcommand{\Integers}{\mathbb{Z}{}}
+\newcommand{\Solution}{\textsc{Solution}\xspace}
+\newcommand{\Problem}{\textsc{Problem}\xspace}
+\newcommand{\Blank}{\mathrel{\phantom{=}}}
+\newcommand{\ltrue}{\top}
+\newcommand{\lfalse}{\bot}
+\begin{document}
+\title{Answers to Chapter 3 Exercises - A Book of Abstract Algebra}
+\author{Michael Welch}
+\date{\today}
+\maketitle
+
+This document contains selected answers to exercises from chapter 4
+of A Book of Abstract Algebra.
+
+Remark on notation. In the exercises in this document, the exponential
+notation $a^n$ is used in the following sense: if $a$ is any element of
+a group $G$, then $a^2$ means $aa$, and $a^3$ means $aaa$, and, in
+general, $a^n$ is the product of $n$ factors of $a$, for any positive
+integer $n$.
+
+\begin{enumerate}[A.]
+   \item \textsc{Solving Equations in Groups}
+
+   \noindent Let $a$, $b$, $c$, and $x$ be elements of a group $G$. In each of
+   the following, solve for $x$ in terms of $a$, $b$, and $c$.
+
+   \noindent   1. $axb = c$
+      \begin{align*}
+         axb & = c \\
+	 a^{-1}axb & = a^{-1}c \\
+	 xbb^{-1} & = a^{-1}cb^{-1} \\
+	 x & = a^{-1}cb^{-1}
+      \end{align*}
+
+   \noindent   2. $x^2b = xa^{-1}c$
+      \begin{align*}
+         x^2b & = xa^{-1}c    \\
+	 x^2bb^{-1} & = xa^{-1}cb^{-1} \\
+	 x^2        & = xa^{-1}cb^{-1} \\
+	 x^{-1}x^2  & = x^{-1}xa^{-1}cb^{-1}\\
+	 x^{-1}xx   & = a^{-1}cb^{-1} \\
+	 x          & = a^{-1}cb^{-1}
+      \end{align*}
+
+   Solve simultaneously:
+
+   \noindent 3. $x^2a = bxc^{-1}$ and $acx = xac$
+   \begin{align*}
+      acx & = xac      & \text{Given} \\
+      xacx & = x^2ac   & \text{Multiply by $x$} \\
+      xacxc^{-1} & = x^2a \\
+      xacxc^{-1} & = bxc^{-1} & \text{Substitute} \\
+      xacx       & = bx  \\
+      xac        & = b  \\
+      x          & = bc^{-1}a^{-1}
+   \end{align*}
+
+
+
+\end{enumerate}
+\end{document}
