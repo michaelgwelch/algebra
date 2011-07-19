@@ -63,7 +63,275 @@ integer $n$.
       x          & = bc^{-1}a^{-1}
    \end{align*}
 
+   \noindent 4. $ax^2=b$ and $x^3=e$
+   \begin{align*}
+      ax^2 & = b     & \text{Given} \\
+      ax^3 & = bx    & \text{Multiply, on right, by x} \\
+      a    & = bx    & \text{Subst other given} \\
+      x    & = ab^{-1}
+   \end{align*}
 
+   \noindent 5. $x^2 = a^2$ and $x^5 = e$
+   \begin{align*}
+      x^2 & = a^2   & \text{Given} \\
+      x^2 x^2 & = a^2 x^2 & \text{Multiply on right by $x^2$}\\
+      x^4     & = a^4     & \text{Because $x^2 = a^2$.}\\
+      x^5     & = a^4x \\
+      e       & = a^4x \\
+      x       & = (a^4)^{-1}
+   \end{align*}
+
+   \noindent 6. $(xax)^3 = bx$ and $x^2 a = (xa)^{-1}$.
+   \begin{align}
+      (xax)^3  & = bx \\
+      xaxxaxxax & = bx \\
+      x^2a      & = (xa)^{-1} \\
+      xxaxa     & = e  & \text{from 3} \\
+      xaxxa     & = e  & \text{from 3} \\
+      e xxax    & = bx & \text{subst 5 into 2} \\
+      exxaxa    & = bxa & \text{mult by a on right} \\
+      ee        & = bxa & \text{subst 4 into 7} \\
+      b^{-1}    & = xa \\
+      b^{-1}a^{-1} & = x  \\
+      x & = (ab)^{-1}
+   \end{align}
+
+   \item \textsc{Rules of Algebra in Groups}
+   For each of the following rules, either prove that it is true in 
+   every group $G$, or give a counterexample to show that it is false in 
+   some groups. (All the counterexamples you need may be found in the group
+   of matrices $\{I,A,B,C,D,K\}$ described on page 28.)
+
+   The matrices from page 28 and the matrix multiplication table
+   are recreated in figure~\ref{tab:matrices} and table~\ref{tab:matmult}
+   respectively.
+
+   \begin{figure}
+   \caption{The matrices of $G$.}
+   \label{tab:matrices}
+   \begin{align*}
+     I & = \left( \begin{array}{rr} 
+              1 & 0 \\ 
+	      0 & 1
+	   \end{array} \right) & 
+     A & = \left( \begin{array}{rr}
+              0 & 1 \\
+	      1 & 0
+	   \end{array} \right)  &
+     B & = \left( \begin{array}{rr}
+              0 & 1 \\
+	      -1 & -1
+	   \end{array}  \right) \\ \\
+     C & = \left( \begin{array}{rr}
+              -1 & -1 \\
+	       0 &  1
+	   \end{array} \right) &
+     D & = \left( \begin{array}{rr}
+              -1 & -1 \\
+	       1 &  0
+	   \end{array} \right) &
+     K & = \left( \begin{array}{rr}
+               1 &  0 \\
+	      -1 & -1
+	   \end{array} \right)
+   \end{align*}
+   \end{figure}
+
+   \begin{table}
+   \caption{Matrix multiplication of the matrices in $G$}
+   \label{tab:matmult}
+   \begin{tabular}{c|cccccc}
+     $*$ & $I$ & $A$ & $B$ & $C$ & $D$ & $K$ \\ \hline
+     $I$ & $I$ & $A$ & $B$ & $C$ & $D$ & $K$ \\
+     $A$ & $A$ & $I$ & $C$ & $B$ & $K$ & $D$ \\
+     $B$ & $B$ & $K$ & $D$ & $A$ & $I$ & $C$ \\
+     $C$ & $C$ & $D$ & $K$ & $I$ & $A$ & $B$ \\
+     $D$ & $D$ & $C$ & $I$ & $K$ & $B$ & $A$ \\
+     $K$ & $K$ & $B$ & $A$ & $D$ & $C$ & $I$
+   \end{tabular}
+   \end{table}
+   
+   \noindent 1. If $x^2=e$, then $x=e$.
+
+   \noindent \Solution This rule is false. A counter example is
+   $A*A=I$ yet $A\ne I$.
+
+   \noindent 2. If $x^2=a^2$ then $x=a$.
+
+   \noindent \Solution This rule is false. A counter example is $A*A=I=I*I$
+   yet $A \ne I$.
+
+   \noindent 3. $(ab)^2 = a^2b^2$.
+
+   \noindent \Solution This rule is false. A counter example is given
+   by letting $a=A$ and $b=B$. $(AB)^2=C^2=I \ne D = ID = A^2B^2$.
+
+   \noindent 4. If $x^2=x$, then $x=e$.
+
+   \noindent \Solution This rule is true.
+   \begin{proof}
+      \begin{align*}
+         x^2 & = x \\
+	 xx  & = x \\
+	 xxx^{-1} & = xx^{-1} \\
+	 xe       &= e \\
+	 x        & = e \qedhere
+      \end{align*}
+   \end{proof}
+
+   \noindent 5. For every $x \in G$, there is some $y \in G$ such that
+   $x = y^2$. (This is the same as saying that every element of $G$ has
+   a ``square root''.)
+
+   \noindent \Solution This rule is false. In the group G in
+   figure~\ref{tab:matrices}, it is clear that the matrices 
+   $A$, $C$, and $K$ do not have a ``square root''.
+
+   \noindent 6. For any two elements $x$ and $y$ in $G$, there is an element
+   $z$ in $G$ such that $y=xz$.
+
+   \noindent \Solution. This rule is true.
+   \begin{proof}
+   We want to make the equality $y=xz$ hold. Since $G$ is a group we know
+   that $x$ has an inverse. So we can write $z=x^{-1}y$. Also since
+   $G$ is a group we know that $x^{-1}y$ is defined and unique. Therefore,
+   $z$ exists.
+   \end{proof}
+
+   \item \textsc{Elements That Commute}
+
+   \noindent If $a$ and $b$ are in $G$ and $ab=ba$, we say that $a$ and $b$ 
+   \emph{commute}. Assming that $a$ and $b$ commute, prove the following:
+
+   \noindent 1. $a^{-1}$ and $b^{-1}$ commute.
+   \begin{proof}
+      \begin{align*}
+         a^{-1}b^{-1} & = (ba)^{-1} && \text{Theorem 3} \\
+	              & = (ab)^{-1} && \text{Given $a,b$ commute} \\
+		      & = b^{-1}a^{-1} && \text{Theorem 3} \qedhere
+      \end{align*}
+   \end{proof}
+
+   \noindent 2. $a$ and $b^{-1}$ commute. (\textsc{Hint}: First show
+   that $a=b^{-1}ab$.
+   \begin{proof}
+   Since $ab=ba$, it is true that $ba=ab$ and $b^{-1}ba=b^{-1}ab$. This
+   can be reduced and we have that $a=b^{-1}ab$. Finally, we can
+   multiply by $b^{-1}$ on both sides to get $ab^{-1}=b^{-1}a$.
+   \end{proof}
+
+   \noindent 3. $a$ commutes with $ab$.
+   \begin{proof}
+   We know that $a(ab) = a(ba)$ by commutativity, and $a(ba)=(ab)a$ by
+   associativity. So we have $a(ab)=(ab)a$.
+   \end{proof}
+
+   \noindent 4. $a^2$ commutes with $b^2$.
+   \begin{proof}
+      \begin{align*}
+         a^2b^2 & = (aa)(bb) && \text{Definition}\\
+	        & = a(a(bb)) && \text{Associativity}\\
+		& = a((ab)b) && \text{Associativity}\\
+		& = a((ba)b) && \text{Commutativity Given} \\
+		& = a(b(ab)) && \text{Associativity} \\
+		& = a(b(ba)) && \text{Commutativity Given} \\
+		& = (ab)(ba) && \text{Associativity} \\
+		& = (ba)(ba) && \text{Commutativity} \\
+		& = b(a(ba)) && \text{Associativity} \\
+		& = b((ab)a) && \text{Associativity} \\
+		& = b((ba)a) && \text{Commutativity} \\
+		& = b(b(aa)) && \text{Associativity} \\
+		& = (bb)(aa) && \text{Associativity} \\
+		& = b^2a^2   && \text{Definition} \qedhere
+      \end{align*}
+   \end{proof}
+
+   \noindent 5. $xax^{-1}$ commutes with $xbx^{-1}$, for any $x\in G$.
+   \begin{proof}
+   \begin{align*}
+      xax^{-1}xbx^{-1} & = xabx^{-1} \\
+                       & = xbax^{-1} && \text{Commutativity} \\
+		       & = x(be)ax^{-1} && \text{Identity} \\
+		       & = x(b(x^{-1}x)ax^{-1} && \text{Inverses}\\
+		       & = xbx^{-1}xax^{-1} && \text{Associativity}\qedhere
+   \end{align*}
+   \end{proof}
+
+   \noindent 6. $ab=ba$ iff $aba^{-1}=b$.
+   \begin{proof}
+   First we will assume $ab=ba$. Given this we can derive
+   $abe=aba^{-1}a=ba$ and this can be reduced to $aba^{-1}=b$.
+   It is trivial to reverse: $aba^{-1}=b$, therefore $aba^{-1}a=ba$,
+   therefore $ab=ba$.
+   \end{proof}
+   
+   \noindent 7. $ab=ba$ iff $aba^{-1}b^{-1}=e$.
+   \begin{proof}
+   Assume $ab=ba$. Then we know (by 6) that $aba^{-1}=b$. Therefore,
+   $aba^{-1}b^{-1}=e$. The reverse direction is trivial.
+   \end{proof}
+
+   \item \textsc{Group Elements and Their Inverses}
+
+   \noindent Let $G$ be a group. Let $a$, $b$, $c$ denote elements of
+   $G$, and let $e$ be the neutral element of $G$.
+
+   \noindent 1. Prove that if $ab=e$, then $ba=e$.
+   \begin{proof}
+      \begin{align*}
+         ab & = e && \text{Given} \\
+	 bab & = be && \\
+	 bab & = a^{-1}e && \text{Theorem 2}\\
+	 ba  & = a^{-1}eb^{-1} \\
+	 ba  & = a^{-1}b^{-1} \\
+	 ba  & = a^{-1}a && \text{Theorem 2} \\
+	 ba  & = e \qedhere
+      \end{align*}
+   \end{proof}
+
+   \noindent 2. Prove that if $abc=e$, then $cab=e$ and $bca=e$.
+   \begin{proof}
+   We are given that $abc=e$. By associativity we have $(ab)c=e$.
+   By D1 we have that $c(ab)=cab=e$. We can do this one more time:
+   $(ca)b=e$ and therefore $b(ca)=bca=e$.
+   \end{proof}
+
+   \noindent 3. State a generalization of 1 and 2
+   
+   \noindent \Solution If $a_1 a_2 \cdots a_{n-2} a_{n-1} a_n=e$ then 
+   $a_n a_1 a_2 \cdots a_{n-2} a_{n-1}=e$. We have proven it for
+   $n=2,3$. We can group the first
+   $n-1$ elements in parentheses. We then let $a$ equal these terms
+   and $b=a_n$ and then apply D1 to get the desired
+   result.
+
+   \noindent Prove the following:
+
+   \noindent 4. If $xay=a^{-1}$, then $yax=a^{-1}$.
+   \begin{proof}
+      \begin{align*}
+         xay  & = a^{-1} \\
+	 xaya & = e \\
+	 axay & = e && \text{D3} \\
+	 yaxa & = e && \text{D3} \\
+	 yax  & = a^{-1}
+      \end{align*}
+   \end{proof}
+
+   \noindent 5. Let $a$, $b$, $c$ each be equal to its own inverse.
+   If $ab=c$, then $bc=a$ and $ca=b$.
+   \begin{proof}
+      \begin{align*}
+         ab & = c    && \text{Given} \\
+	 abc^{-1} & = e \\
+	 abc      & = e && \text{Given $c=c^{-1}$} \\
+	 cab      & = e && \text{D1}\\
+	 ca       & = b^{-1} \\ 
+	 ca       & = b  && \text{Given $b=b^{-1}$}\\
+	 bc       & = a^{-1} && \text{From third line}\\
+	 bc       & = a      && \text{Given $a=a^{-1}$} \qedhere
+      \end{align*}
+   \end{proof}
 
 \end{enumerate}
 \end{document}
