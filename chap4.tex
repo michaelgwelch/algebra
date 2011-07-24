@@ -12,7 +12,7 @@
 \newcommand{\ltrue}{\top}
 \newcommand{\lfalse}{\bot}
 \begin{document}
-\title{Answers to Chapter 3 Exercises - A Book of Abstract Algebra}
+\title{Answers to Chapter 4 Exercises - A Book of Abstract Algebra}
 \author{Michael Welch}
 \date{\today}
 \maketitle
@@ -201,7 +201,7 @@ integer $n$.
    \item \textsc{Elements That Commute}
 
    \noindent If $a$ and $b$ are in $G$ and $ab=ba$, we say that $a$ and $b$ 
-   \emph{commute}. Assming that $a$ and $b$ commute, prove the following:
+   \emph{commute}. Assuming that $a$ and $b$ commute, prove the following:
 
    \noindent 1. $a^{-1}$ and $b^{-1}$ commute.
    \begin{proof}
@@ -299,7 +299,7 @@ integer $n$.
    \noindent 3. State a generalization of 1 and 2
    
    \noindent \Solution If $a_1 a_2 \cdots a_{n-2} a_{n-1} a_n=e$ then 
-   $a_n a_1 a_2 \cdots a_{n-2} a_{n-1}=e$. We have proven it for
+   $a_n a_1 a_2 \cdots a_{n-2} a_{n-1}=e$. We have proved it for
    $n=2,3$. We can group the first
    $n-1$ elements in parentheses. We then let $a$ equal these terms
    and $b=a_n$ and then apply D1 to get the desired
@@ -330,6 +330,45 @@ integer $n$.
 	 ca       & = b  && \text{Given $b=b^{-1}$}\\
 	 bc       & = a^{-1} && \text{From third line}\\
 	 bc       & = a      && \text{Given $a=a^{-1}$} \qedhere
+      \end{align*}
+   \end{proof}
+   
+   \noindent 6. If $abc$ is its own inverse, then $bca$ is its own inverse,
+   and $cab$ is its own inverse.
+   \begin{proof}
+      \begin{align*}
+         abc & = (abc)^{-1}     \\
+	 abc(abc) & = e  \\
+	 a(bca)bc & = e  \\
+	 (bca)bc & = a^{-1} \\
+	 (bca)b  & = a^{-1}c^{-1} \\
+	 bca     & = a^{-1}c^{-1}b^{-1} \\
+	 bca     & = a^{-1}(bc)^{-1} \\
+	 bca     & = (bca)^{-1} \qedhere
+      \end{align*}
+   \end{proof}
+   And similarly.
+   \begin{proof}
+      \begin{align*}
+         abc(abc) & = e \\
+	 ab(cab)c & = e \\
+	 ab(cab)  & = c^{-1} \\
+	 b(cab)   & = a^{-1}c^{-1} \\
+	 cab      & = b^{-1}a^{-1}c^{1} \\
+	          & = (ba)^{-1}c^{-1}   \\
+		  & = (c(ba))^{-1} \\
+		  & = (cba) ^{-1} \qedhere
+      \end{align*}
+   \end{proof}
+
+   \noindent 7. Let $a$ and $b$ each be each be equal to their own inverse.
+   Then $ba$ is the inverse of $ab$.
+   \begin{proof}
+      \begin{align*}
+        a & = a^{-1}       && \text{Given} \\
+	b & = b^{-1}       && \text{Given} \\
+        ba & = b^{-1}a^{-1}  && \text{Subst} \\
+           & = (ab)^{-1} && \text{Theorem 3}  \qedhere
       \end{align*}
    \end{proof}
 
