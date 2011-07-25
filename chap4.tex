@@ -371,6 +371,360 @@ integer $n$.
            & = (ab)^{-1} && \text{Theorem 3}  \qedhere
       \end{align*}
    \end{proof}
+   
+   \noindent 8. $a=a^{-1}$ iff $aa=e$. (That is, $a$ is its own inverse iff
+   $a^2 = e$.)
+   The first case:
+   \begin{proof}
+      \begin{align*}
+            & \Blank       && \text{First case} \\
+         a  & = a^{-1}     && \text{Given} \\
+	 aa & = a^{-1}a    && \text{Mult by $a$} \\
+	 aa & = e \\
+	    & \Blank       && \text{Second case} \\
+	 aa & = e          && \text{Given}\\
+	 aaa^{-1} & =  a^{-1} && \text{Mult by $a^{-1}$}\\   
+	 a  & = a^{-1}     && \qedhere
+      \end{align*}
+   \end{proof}
 
+   \noindent 9. Let $c=c^{-1}$. Then $ab=c$ iff $abc=e$.
+   \begin{proof}
+      \begin{align*}
+            & \Blank      && \text{First case} \\
+         ab & = c         && \text{Given} \\
+	 ab & = c^{-1}    && \text{Substitute} \\
+	 abc & = c^{-1}c  && \text{Mult by $c$} \\
+	 abc & = e        \\
+	     & \Blank     && \text{Second case} \\
+	 abc & = e        && \text{Given} \\
+	 abcc^{-1} & = c^{-1} && \text{Mult by $c^{-1}$} \\
+	 abc & = c^{-1}   \\
+	 abc & = c        && \text{Substitute} \qedhere
+      \end{align*}
+   \end{proof}
+
+   \item \textsc{Counting Elements and Their Inverses}
+
+   \noindent Let $G$ be a finite group, and let $S$ be the set of all the
+   elements of $G$ which are \emph{not} equal to their own inverse. That is, $S
+   = \{ x \in G : x \ne x^{-1} \}$. The set $S$ can be divided up into pairs so
+   that each element is paired off with its own inverse. (See
+   figure~\ref{fig:chap4E}.) Prove the following:
+
+   \begin{figure}
+   \caption{The set $S$ for exercise E.}
+   \label{fig:chap4E}
+   \scriptsize{\begin{verbatim}
+
+   \end{verbatim}}
+   \includegraphics{img/chap4e.pdf}
+   \end{figure}
+
+   \noindent 1. In any finite group $G$, the number of elements not equal to 
+   their own inverse is an even number.
+   \begin{proof}
+   The proof is trivial. The question is talking about the number of elements
+   in $S$. The elements in $S$ can be paired off with their inverses. Therefore,
+   there are $n$ pairs of elements. Therefore, there are $2n$ elements, which
+   is always an even number.
+   \end{proof}
+
+   \noindent 2. The number of elements of $G$ equal to their own inverse is
+   odd or even, depending on whether the number of elements in $G$ is odd
+   or even.
+   \begin{proof}
+   Let the number of elements in $G$ be an even number, $2m$. From E1 we know
+   that the number of elements not equal to their inverse is some even number, 
+   $2n$. Therefore, the number of elements equal to their inverse is 
+   $2m - 2n = 2(m-n)$ which is always even.
+
+   Next consider that the number of elements in $G$ is some odd number
+   $2m + 1$. Then the number of elements equal to their inverse is
+   $(2m + 1) - 2n = 2(m-n) + 1$ which is always an odd number.
+   \end{proof}
+
+   \noindent 3. If the order of $G$ is even, there is at least one element
+   $x$ in $G$ such that $x \ne e$ and $x = x^{-1}$.
+
+   \begin{proof}
+   The number of elements in $G$ is even. From E1 we know that the number of
+   elements in $G$ that are equal to their own inverse is even. So we know
+   that one of the elements that is equal to its own inverse is $e$. That gives
+   us 1 element. Since the number of such elements is even, there must be at
+   least one other $x$ in $G$ such that $x = x^{-1}$ and this element must not
+   be equal to $e$ or we would still only have an odd number of such elements.
+   \end{proof}
+
+   \noindent In parts 4 to 6, let $G$ be a finite \emph{abelian} group, 
+   say, $G = \{ \epsilon, a_1, a_2, \ldots , a_n\}$. Prove the following:
+
+   \noindent 4. $(a_1a_2\cdots a_n)^2 = e$
+   \begin{proof}
+      We can expand $(a_1a_2 \cdots a_n)^2$ to $(a_1a_2\cdots a_na_1a_2 \cdots
+      a_n)$. Then we can use commutative property to place each element next to
+      it's inverse (either itself if it is equal to it's own inverse, or
+      another elemtn that is its inverse). Now that every element is place next
+      to it's inverse we can simplify the entire expression to $e$.
+   \end{proof}
+
+   \noindent 5. If there is no element $x \ne e$ in $G$ such that
+   $x=x^{-1}$, then $a_1a_2 \cdots a_n = e$.
+   \begin{proof}
+   First observe that $G$ must have an odd number of elements. (If it
+   had an even number of elements, then by E3 there must be an element
+   $x \ne e$ such that $x=x^{-1}$. In that case the stated assumption
+   does not hold.) We know that one of the elements is $e$. That leaves
+   an even number of elements each of which must have an inverse in $G$.
+   We can use the commutative property to place each element next to
+   it's inverse, and then simplify to $e$.
+   \end{proof}
+
+   \noindent 6. If there is exactly one $x \ne e$ in $G$ such that
+   $x=x^{-1}$, then $a_1a_2 \cdots a_n = x$.
+
+   \begin{proof}
+   Observe that there must be an even number of elements. There is
+   $e$ and $x$ and then an even number of elements that are not 
+   equal to their own inverse (by E1). By commuatitive property, we
+   can align all the pairs next to each other and they all simplify to
+   $e$. That leaves $x$.
+   \end{proof}
+
+   \item \textsc{Constructing Small Groups}
+
+   \noindent In each of the following, let $G$ be any group. Let $e$ denote 
+   the neutral element of $G$.
+
+   \noindent 1. If $a,b$ are any elements of $G$, prove each of the 
+   following:
+
+   \begin{enumerate}[(a)]
+      \item If $a^2 = a$, then $a=e$.
+      \begin{proof}
+      \begin{align*}
+         a^2 & = a && \text{Given} \\
+	 aa  & = a && \\
+	 aaa^{-1} & = aa^{-1} \\
+	 a   & = e \qedhere
+      \end{align*}
+      \end{proof}
+      
+      \item If $ab=a$, then $b=e$.
+      \begin{proof}
+         \begin{align*}
+	    ab & = a   && \text{Given} \\
+	    ab & = ae  && \text{Neutral element} \\
+	    b & = e    && \text{Theorem 1} \qedhere
+	 \end{align*}
+      \end{proof}
+
+      \item If $ab=b$, then $a=e$.
+      \begin{proof}
+         \begin{align*}
+	    ab & = b   && \text{Given} \\
+	    ab & = eb  && \text{Neutral element} \\
+	    a  & = e   && \text{Theorem 1} \qedhere
+	 \end{align*}
+      \end{proof}
+
+      \noindent 2. Explain why every row of a group table must contain each
+      element of the group exactly once. (\textsc{Hint}: Suppose $x$
+      appears twice in the row of $a$:
+
+      \begin{table}[ht]
+      \begin{tabular}{c|ccccc}
+               & $\cdots$ & $y_1$    & $\cdots$ & $y_2$    & $\cdots$ \\ \hline
+      $\vdots$ &          & $\vdots$ &          & $\vdots$ &          \\
+             a & $\cdots$ & $x$      & $\cdots$ &  $x$     &          \\
+      \end{tabular}
+      \end{table}
+      Now use the cancellation law for groups.)
+
+      \begin{proof}
+      As the hint suggests, let's assume that $x$ appears twice. Then we
+      have $ay_1 = x = ay_2$. By the cancellation law for groups we
+      have $y_1=y_2$ which contradicts are assumption that $y_1$ and
+      $y_2$ where distinct elements in $G$. Therefore, every element
+      of $G$ must show up in each row exactly once.
+      \end{proof}
+
+      \noindent 3. There is \emph{exactly one group} on any set of three
+      distinct elements, say the set $\{e,a,b\}$. Indeed, keeping in mind
+      parts 1 and 2 above, there is only one way of completing the following
+      table. Do so! \emph{You need not prove associativity.}
+
+      \begin{center}
+      \begin{tabular}{c|ccc}
+           & e & a & b \\ \hline
+         e & e & a & b \\
+	 a & a & b & e \\
+	 b & b & e & a
+      \end{tabular}
+      \end{center}
+
+      \tiny \begin{verbatim}
+
+      \end{verbatim}
+      \normalsize
+
+      \noindent 4. There is exactly one group $G$ of four elements, say
+      $G = \{e,a,b,c\}$, satisfying the additional property that
+      $xx = e$ for every $x \in G$. Using only part 1 above, complete
+      the following group table of $G$:
+
+      \tiny \begin{verbatim}
+
+      \end{verbatim} \normalsize
+      \begin{center}
+      \begin{tabular}{c|cccc}
+           & e & a & b & c \\ \hline
+	 e & e & a & b & c \\
+	 a & a & e & c & b \\
+	 b & b & c & e & a \\
+	 c & c & b & a & e
+      \end{tabular}
+      \end{center}
+      \tiny \begin{verbatim}
+
+      \end{verbatim} \normalsize
+
+      \noindent 5. There is exactly one group $G$ of four elements, say
+      $G = \{e,a,b,c\}$, such that $xx=e$ for some $x\ne e$ in $G$, and
+      $yy \ne e$ for some $y \in G$ (say, $aa=e$ and $bb\ne e$). Complete
+      the group table of $G$, as in the preceding exercise.
+      \tiny \begin{verbatim}
+
+      \end{verbatim} \normalsize
+      \begin{center}
+      \begin{tabular}{c|cccc}
+           & e & a & b & c \\ \hline
+	 e & e & a & b & c \\
+	 a & a & e & c & b \\
+	 b & b & c & a & e \\
+	 c & c & b & e & a
+      \end{tabular}
+      \end{center}
+      \tiny \begin{verbatim}
+
+      \end{verbatim} \normalsize
+
+      \noindent 6. Use Exercise E3 to explain why the groups in parts 4
+      and 5 are the only possible groups of four elements (except for
+      renaming the elements with different symbols).
+
+      \begin{proof}
+      By inspection. Hard to explain. There are only 9 positions
+      up for grabs. The constraints from part 3 constrain the choices.
+      \end{proof}
+
+      \item \textsc{Direct Products of Groups}
+
+      \noindent If $G$ and $H$ are any two groups, their
+      \emph{direct product} is a new group, denoted by $G \times H$,
+      and defined as follows: $G \times H$ consists of all the ordered
+      pairs $(x,y)$ where $x$ is in $G$ and $y$ is in $H$. That is,
+
+      \[ 
+         G \times H = \{(x,y) : x \in G \text{ and } y \in H \} 
+      \] 
+
+      The operation of $G \times H$ consists of multiplying corresponding
+      components:
+
+      \[ 
+         (x,y)\cdot(x',y') = (xx',yy') 
+      \]
+
+      If $G$ and $H$ are denoted additively, it is customary to denote
+      $G \times H$ additively:
+
+      $$ (x,y)+(x',y') = (x+x',y+y') $$
+
+      \noindent 1. Prove that $G \times H$ is a group by proving
+      the three group axioms, ($G1$) to ($G3$):
+      \begin{enumerate}[(G1)]
+         \item \begin{align*}
+	    (x_1,y_1)[(x_2,y_w)(x_3,y_3)] & = (x_1,y_1)(x_2x_3,y_2y_3) \\
+	                                  & = (x_1x_2x_3,y_1y_2y_3) \\
+	    [(x_1,y_1)(x_2,y_2)](x_3,y_3) & = (x_1x_2,y_1y_2)(x_3,y_3) \\
+	                                  & = (x_1x_2x_3,y_1y_2y_3)
+	 \end{align*}
+
+	 \item Let $e_G$ be the identity element of $G$, and $e_H$
+	 be the identity element of $H$. The identity element of
+	 $G \times H$ is $(e_G,e_H)$:
+	 \begin{align*}
+	    (x,y)(e_G,e_H) & = (xe_G,ye_H)  \\
+	                   & = (x,y)
+	 \end{align*}
+
+	 \item For each $(a,b)\in G \times H$, the inverse of $(a,b)$
+	 is $(a^{-1},b^{-1})$:
+	 \begin{align*}
+	    (a,b)(a^{-1},b^{-1}) & = (aa^{-1},bb^{-1}) \\
+	                         & = (e_G,e_H)
+	 \end{align*}
+      \end{enumerate}
+
+      \noindent 2. List the elements of $\mathbb{Z}_2 \times \mathbb{Z}_3$,
+      and write the operation table. (\textsc{Note}: There are six
+      elements, each of which is an ordered pair. The notation is additive.)
+      
+      \Solution Remember that $\mathbb{Z}_2 = \{0,1\}$ and $\mathbb{Z}_3 =
+      \{0,1,2\}$. This means $\mathbb{Z}_2 \times \mathbb{Z}_3 =
+      \{(0,0), (0,1), (0,2), (1,0), (1,1), (1,2)\}$.
+
+      \tiny \begin{verbatim}
+      
+      \end{verbatim}\normalsize
+      \begin{center}
+      \begin{tabular}{c|cccccc}
+        +   & (0,0) & (0,1) & (0,2) & (1,0) & (1,1) & (1,2) \\ \hline
+      (0,0) & (0,0) & (0,1) & (0,2) & (1,0) & (1,1) & (1,2) \\
+      (0,1) & (0,1) & (0,2) & (0,0) & (1,1) & (1,2) & (1,0) \\
+      (0,2) & (0,2) & (0,0) & (0,1) & (1,2) & (1,0) & (1,1) \\
+      (1,0) & (1,0) & (1,1) & (1,2) & (0,0) & (0,1) & (0,2) \\
+      (1,1) & (1,1) & (1,2) & (1,0) & (0,1) & (0,2) & (0,0) \\
+      (1,2) & (1,2) & (1,0) & (1,1) & (0,2) & (0,0) & (0,1) 
+      \end{tabular}
+      \end{center}
+      \tiny \begin{verbatim}
+      
+      \end{verbatim}\normalsize
+
+      \noindent 3. If $G$ and $H$ are abelian, prove that $G \times H$
+      is abelian.
+
+      \begin{proof}
+      \begin{align*}
+         (x,y)(x',y') & = (xx',yy') \\
+	 (x',y')(x,y) & = (x'x,y'y) \\
+	              & = (xx',yy') && \text{Commutativity on $G$ and $H$}
+		      \qedhere
+      \end{align*}
+      \end{proof}
+
+      \noindent 4. Suppose the groups $G$ and $H$ both have the following
+      property:
+      \begin{figure}[ht]
+          \emph{Every element of the group is its own inverse}
+      \end{figure}
+
+      Prove that $G\times H$ has this property.
+
+      \begin{proof}
+         \begin{align*}
+	    (a,b)(a,b) & = (aa,bb)  \\
+	               & = (aa^{-1},bb^{-1}) && \text{Given} \\
+		       & = (e_G,e_H) \qedhere
+	 \end{align*}
+      \end{proof}
+
+   \end{enumerate}
 \end{enumerate}
+
+
+
+
 \end{document}
