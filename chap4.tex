@@ -614,8 +614,27 @@ integer $n$.
       renaming the elements with different symbols).
 
       \begin{proof}
-      By inspection. Hard to explain. There are only 9 positions
-      up for grabs. The constraints from part 3 constrain the choices.
+      By E1 we know that the number of elements not equal to their
+      own inverse is an even number. Since $e$ is always in our group,
+      that leaves 2 choices: 0 elements not equal to their own
+      inverse, or 2 elements not equal to their own inverse. 
+      
+      The first case is handled by part 4. Every element is
+      equal to their own inverse. That leaves only 6 pairs to
+      figure out $ab,ac,ba,bc,ca,cb$. In each case we are constrained
+      by what we learned in F1. $ab$ must equal $c$, $ac$ must equal $b$
+      etc.
+
+      The second case is handled by part 5. We choose 2 elements (besides
+      $e$ to not be equal to their inverse and 1 to be equal to its
+      inverse).  We chose $a$ to be the one equal to its inverse. That
+      requires $ab=c$ and $ac=b$. We know $ba$ must be $c$ or $e$,
+      $bb$ can be $a$ or $c$ and $bc$ must be $a$ or $e$. We can
+      choose these in any way as long as we maitain the constraints.
+      However, the results are always the ``same'' in that they only
+      amount to relabeling our elements with different symbols.
+
+      FURTHER AND BETTER ANALYSIS FOR PROOF REQUIRED
       \end{proof}
 
       \item \textsc{Direct Products of Groups}
@@ -722,6 +741,73 @@ integer $n$.
       \end{proof}
 
    \end{enumerate}
+
+   \item \textsc{Power and Roots of Group Elements}
+
+   \noindent Let $G$ be a group, and $a,b\in G$. For any positive 
+   integer $n$ we define $a^n$ by
+
+   \[
+      a^n = \underbrace{aaa\cdots a}_{n\text{ factors}}
+   \]
+
+   If there is an element $x \in G$ such that $a = x^2$, we say that
+   $a$ has a square root in $G$. Similarly, if $a = y^3$ for some
+   $y \in G$, we say $a$ has a cube root in $G$. In general, $a$ has
+   an $n$th root in $G$ if $a=z^n$ for some $z \in G$. Prove the following:
+
+   \noindent 1. $(bab^{-1})^n = ba^nb^{-1}$, for every positive integer $n$.
+   Prove by induction. 
+   \begin{proof}
+   First we prove it for $n=1$:
+      \begin{align*}
+         (bab^{-1})^1 & = bab^{-1} \\
+	              & = ba^1b^{-1}
+      \end{align*}
+
+   Next we assume that it is true for $n=k$ and show that it is
+   true for $n=k+1$.
+      \begin{align*}
+         (bab^{-1})^{k+1} & = (bab^{-1})^k(bab^{-1}) \\
+	                  & = (ba^kb^{-1})(bab^{-1}) && \text{By induction}\\
+			  & = ba^kb^{-1}bab^{-1} \\
+			  & = ba^kab^{-1} \\
+			  & = ba^{k+1}b^{-1} \qedhere
+      \end{align*}
+   \end{proof}
+
+   \noindent 2. If $ab = ba$, then $(ab)^n = a^nb^n$ for every positive 
+   integer $n$. Prove by induction.
+   \begin{proof}
+   First the case when $n=1$:
+      \begin{align*}
+         (ab)^1 & = ab \\
+                & = a^1b^1
+      \end{align*}
+
+   Next we assume it holds for $n=k$ and show that it holds for
+   $n=k+1$.
+      \begin{align*}
+         (ab)^{k+1} & = (ab)^k(ab) \\
+	            & = (a^kb^k)(ab) && \text{By induction} \\
+		    & = a^{k+1}b^{k+1} && \text{commutativity $k$ times}
+		        \qedhere
+      \end{align*}
+   \end{proof}
+
+   \noindent 3. If $xax=e$, then $(xa)^{2n} = a^n$.
+
+   \begin{proof}
+      \begin{align*}
+         xax & = e        && \text{Given} \\
+	 (xa)^{2n} & = \underbrace{(xa)(xa)\cdots (xa)}_{2n \text{ factors}}\\
+	           & = 
+		   \underbrace{(xaxa)(xaxa)\cdots(xaxa)}_{n \text{ factors}}\\
+		   & = \underbrace{(a)(a)\cdots(a)}_{n \text{ factors}} 
+		       && \text{Substitute $xax=e$} \\
+		   & = a^n \qedhere
+      \end{align*}
+   \end{proof}
 \end{enumerate}
 
 
