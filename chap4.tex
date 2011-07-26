@@ -808,6 +808,64 @@ integer $n$.
 		   & = a^n \qedhere
       \end{align*}
    \end{proof}
+
+   \noindent 4. If $a^3=e$, then $a$ has a square root.
+
+   \begin{proof}
+      \begin{align*}
+         a^3 & = e       && \text{Given} \\
+	 a^3a^{-1}a^{-1} & = a^{-1}a^{-1}  \\
+	                 & \Blank && \text{Let $b=a^{-1}$}\\
+	 a               & = b^2 && \text{Therefore square root of $a=b$} 
+	                     \qedhere
+      \end{align*}
+   \end{proof}
+
+   \noindent 5. If $a^2=e$, then $a$ has a cube root.
+
+   \begin{proof}
+      \begin{align*}
+         a^2   & = e     && \text{Given} \\
+	 a^3   & = a     && \text{The cube root of $a$ is $a$}\qedhere
+      \end{align*}
+   \end{proof}
+
+   \noindent 6. If $a^{-1}$ has a cube root, so does $a$.
+
+   \begin{proof}
+      Let $b$ be the cube root of $a$.
+      \begin{align*}
+         a^{-1}   & = b^3        && \text{Given}\\
+	 a^{-1}b^{-1}b^{-1}b^{-1} & = e \\
+	 b^{-1}b^{-1}b^{-1} & = a 
+      \end{align*}
+      The cube root of $a$ is $b^{-1}$.
+   \end{proof}
+
+   \noindent 7. If $x^2ax=a^{-1}$, then $a$ has a cube root. 
+
+   \begin{proof}
+      \begin{align*}
+	 xxax      & = a^{-1} \\
+	 xa a^{-1} xax & = a^{-1} \\
+         xaxxaxxax & = a^{-1} \\
+	 (xax)^3 & = a^{-1}
+      \end{align*}
+      The cube root of $a^{-1}$ is $xax$. By H6 we know that $a$ has
+      a cube root.
+   \end{proof}
+
+   \noindent 8. If $xax=b$, then $ab$ has a square root.
+
+   \begin{proof}
+      \begin{align*}
+         xax & = b \\
+	 axax & = ab \\
+	 (ax)^2 & = ab
+      \end{align*}
+      The square root of $ab$ is $ax$.
+   \end{proof}
+
 \end{enumerate}
 
 
