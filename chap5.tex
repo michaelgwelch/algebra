@@ -1,0 +1,219 @@
+\documentclass[twoside]{amsart}
+\usepackage{amssymb,latexsym}
+\usepackage{xspace}
+\usepackage{enumerate}
+\usepackage{graphics}
+\newcommand{\Rationals}{\mathbb{Q}{}}
+\newcommand{\Reals}{\mathbb{R}{}}
+\newcommand{\Integers}{\mathbb{Z}{}}
+\newcommand{\solution}{\textsc{Solution}\xspace}
+\newcommand{\problem}{\textsc{Problem}\xspace}
+\newcommand{\Blank}{\mathrel{\phantom{=}}}
+\newcommand{\ltrue}{\top}
+\newcommand{\lfalse}{\bot}
+\begin{document}
+\title{Answers to Chapter 5 Exercises - A Book of Abstract Algebra}
+\author{Michael Welch}
+\date{\today}
+\maketitle
+
+This document contains selected answers to exercises from chapter 5
+of A Book of Abstract Algebra.
+
+
+\begin{enumerate}[A.]
+   \item \textsc{Recognizing Subgroups}
+
+   \noindent In parts 1--6 below, determine whether or not $H$ is a
+   subgroup of $G$. (Assume that the operation of $H$ is the same as
+   that of $G$.)
+
+   \textbf{Instructions} If $H$ is a subgroup of $G$, show that
+   both conditions in the definition of ``subgroup'' are satisfied.
+   If $H$ \emph{is not} a subgroup of $G$, explain which condition
+   fails.
+  
+
+   \noindent 1. $G = \langle \mathbb{R},+ \rangle,\, H = 
+   \{\log a : a \in \mathbb{Q}, a > 0 \}$.
+
+   \noindent \solution $H$ is a subgroup of $G$:
+   \begin{enumerate}[(i)]
+      \item Assume $\log a, \log b \in H$. Since $a,b$ are rational numbers
+      there are numbers $m_1,n_1,m_2,n_2$ such that $a = m_1/n_1, b = m_2/n_2$.
+      So we have 
+      \begin{align*}
+         \log a + \log b & = \log \frac{m_1}{n_1} + \log \frac{m_2}{n_2} \\
+	                 & = \log m_1 - \log n_1 + \log m_2 - \log n_2 \\
+			 & = \log m_1m_2 - \log n_1n_2 \\
+			 & = \log \frac{m_1m_2}{n_1n_2}
+      \end{align*}
+
+      Since $\displaystyle \frac{m_1m_2}{n_1n_2} \in \mathbb{Q}$ 
+      we have that $H$ is closed with respect to addition.
+
+      \item Assume $\log a \in H$. Again we know that there are numbers
+      $m,n$ such that $a = m/n$. So we have
+      \begin{align*}
+         - \log a & = - \log \frac{m}{n} \\
+	          & = - (\log m - \log n) \\
+		  & = \log n - \log m \\
+		  & = \log \frac{n}{m}
+      \end{align*}
+
+      Since $\displaystyle \frac{n}{m} \in \mathbb{Q}$ we have that 
+      $H$ is closed with respect to inverses.
+   \end{enumerate}
+
+   \noindent 2. $G = \langle \mathbb{R}, + \rangle,\, H = 
+   \{ \log n : n \in \mathbb{Z}, n > 0\}$.
+
+   \noindent \solution It is rather easy to show that $H$ is closed
+   with respect to addition (following a procedure similar to the
+   previous example). However, it is not closed with respect to
+   inverses:
+      \begin{align*}
+         - \log n & = - \log \frac{n}{1} \\
+	          & = - (\log n - \log 1) \\
+		  & = \log 1 - \log n \\
+		  & = \log \frac{1}{n}
+      \end{align*}
+
+   Since $\displaystyle \frac{1}{n} \not \in \mathbb{Z}$, $H$ is
+   not closed with respect to inverses.
+
+   \noindent 3. $G = \langle \mathbb{R},+ \rangle,\, H = 
+   \{ x \in \mathbb{R} : \tan x \in \mathbb{Q}\}$. \textsc{Hint}:
+   Use the following formula from trigonometry:
+   \[
+      \tan (x+y) = \frac {\tan x + \tan y}{1 - \tan x \tan y}
+   \]
+
+   \noindent \solution Assume $x,y \in \mathbb{R}$ and $\tan x,
+   \tan y \in \mathbb{Q}$. We know that $x+y \in \mathbb{R}$.
+   We need to check that $\tan (x+y) \in \mathbb{Q}$. Choose 
+   $m_1,n_1,m_2,n_2 \in \mathbb{Z}$ such that $\tan x = m_1/n_1$
+   and $\tan y = m_2/n_2$.
+   \begin{align*}
+      \tan (x + y) & = \frac {\tan x + \tan y}{1 - \tan x \tan y}\\
+                   & = \frac {m_1/n_1 + m_2/n_2}{1 - m_1m_2/n_1n_2} \\
+   \end{align*}
+
+   This shows us that $H$ is not closed with respect to addition. If
+   $\tan x \tan y = 1$ then we have $\displaystyle \tan (x+y) =
+   \frac{\tan x + \tan y}{0} \not \in \mathbb{Q}$.
+
+   \noindent 4. $G = \langle \mathbb{R}^*,\cdot \rangle,\, H =
+   \{2^n3^m : m,n \in \mathbb{Z}\}$.   
+   
+   \noindent \solution 
+   \begin{enumerate}[(i)]
+      \item Assume that we have two numbers $2^{n_1}3^{m_1}, 2^{n_2}3^{m_2} \in
+      H$.  $2^{n_1}3^{m_1}\cdot 2^{n_2}3^{m_2} = 2^{n_1+n_2}3^{m_1+m_2}$, and
+      $n_1+n_2,m_1+m_2 \in \mathbb{Z}$. So $H$ is closed with respect to
+      multiplication.
+
+      \item Assume that we have a number $2^n3^m \in H$. Then
+      $1/2^n3^m = 2^{-n}3^{-m}$, and $-n, -m \in \mathbb{Z}$. So
+      $H$ is closed with respect to multiplicative inverses.
+   \end{enumerate}
+
+   \noindent 5. $G = \langle \mathbb{R} \times \mathbb{R},+ \rangle,\, H =
+   \{ (x,y) : y = 2x\}$.
+
+   \noindent \solution 
+   
+   \begin{enumerate}[(i)]
+      \item Assume we have two tuples $(x_1,y_1),(x_2,y_2) \in H$. Then
+      $(x_1,y_1)+(x_2,y_2) = (x_1+x_2,y_1+y_2)$. Since we know that $y_1 =
+      2x_1$ and $y_2 = 2x_2$ we have $y_1+y_2 = 2x_1 + 2x_2 = 2(x_1+x_2)$.
+      Therefore, $H$ is closed with respect to addition.
+
+      \item Assume we have a tuple $(x,y)\in H$. The inverse is
+      $(-x,-y)$. We know $y=2x$, so we have $-y = -2x = 2 \cdot -x$.
+      Therefore, $H$ is closed with respect to inverses.
+
+   \end{enumerate}
+
+   \noindent 6. $ G =\langle \mathbb{R} \times \mathbb{R}, + \rangle,\, H=
+   \{(x,y) : x^2 + y^2 > 0\}$.
+
+   \noindent \solution 
+   \begin{enumerate}[(i)]
+      \item Assume we have two tuples $(x_1,y_1),(x_2,y_2)\in H$. Then
+      $(x_1,y_1) + (x_2,y_2) = (x_1+x_2,y_1+y_2)$. $(x_1+x_2)^2 +
+      (y_1+y_2)^2 = x_1^2 + 2x_1x_2 + x_2^2 + y_1^2 + 2y_1y_2 + y_2^2$.
+      We can find values of $x_1,x_2,y_1,y_2$ such that 
+      $ x_1^2 + 2x_1x_2 + x_2^2 + y_1^2 + 2y_1y_2 + y_2^2 = 0$. For example,
+      choose the tuples $(-\frac{1}{4},\frac{1}{4})$ and $(\frac{1}{4},
+      - \frac{1}{4})$. When we add them together we get $(0,0)$. 
+      $0^2 + 0^2 \not > 0$.
+      Therefore, $H$ is not closed with respect to addition.
+   \end{enumerate}
+
+   \noindent 7. Let $C$ and $D$ be sets, with $C \subseteq D$. Prove
+   that $P_C$ is a subgroup of $P_D$. (See Chapter 3, Exercise C.)
+   As a reminder the operation on $P_D$ is the \emph{symmetric difference},
+   $\ominus$.
+
+   \noindent \solution  $\langle P_C,\ominus \rangle$ is a subgroup of
+   $\langle P_D,\ominus \rangle$.
+   
+   \begin{enumerate}[(i)]
+      \item Assume we have two sets $A,B \in P_C$. We know $P_C = \{ A' : A'
+      \subseteq C\}$. Therefore, $A \subseteq C$ and $B \subseteq C$. If we
+      remove any elements from $A$ or $B$ it is obvious the result is also a
+      subset of $C$. Next I need to mention that the union of any two subsets
+      of $C$ is also a subset of $C$.  We have $A \ominus B = (A - B) \cup (B -
+      A)$. Since $A-B\subseteq C$ and $B-A\subseteq C$ and $(A-B)\cup (B-A)
+      \subseteq C$ we have that $P_C$ is closed with respect to $\ominus$.
+
+
+      \item From Chapter 3 Exercise C we know that the inverse of A is A. 
+      Therefore $\langle P_C, \ominus \rangle$ is closed with respect
+      to inverses.
+   \end{enumerate}
+
+   \item \textsc{Subgroups of Functions}
+
+   \noindent In each of the following, show that $H$ is a subgroup of $G$.
+
+   \noindent 1. \problem $G = \langle \mathcal{F}(\mathbb{R}), + \rangle,\, H=
+   \{ f \in \mathcal{F}(\mathbb{R}) : f(x) = 0 \text{ for every } 
+   x \in [0,1]\}$.
+
+   \noindent \solution We will show $H$ is a subgroup of $G$.
+   
+   \begin{enumerate}[(i)]
+      \item Assume we have $f,g \in H$; then $f(x) = 0$ for $x \in [0,1]$ and
+      $g(x) = 0$ for $x \in [0,1]$. So $[f+g](x) = f(x) + g(x) = 0 + 0 = 0$ for
+      $x \in [0,1]$. Thus $f+g \in H$.
+
+      \item If $f \in H$, then $f(x) = 0$ for $x \in [0,1]$. Thus,
+      $[-f](x)=-f(x)=-0=0$ for $x \in [0,1]$. So $-f \in H$.
+
+   \end{enumerate}
+
+   \noindent 2. \problem $G = \langle \mathcal{F}(\mathbb{R}), + \rangle,\, H =
+   \{ f \in \mathcal{F}(\mathbb{R}) : f(-x) = -f(x)\}$.
+
+   \noindent \solution We will show $H$ is a subgroup of $G$.
+
+   \begin{enumerate}[(i)]
+      \item Suppose $f,g\in H$; then $f(-x) = -f(x)$ and $g(-x) = -g(x)$.
+      So $[f+g](-x) = f(-x) + g(-x) = -f(x) - g(x) = -(f(x) + g(x)) = 
+      - [f+g](x)$. Thus, $f+g\in H$.
+
+      \item Suppose $f \in H$; then $f(-x)= -f(x)$. Thus 
+      $[-f](-x) = -f(-x) = -(-f(x)) = f(x)$. Thus, $f\in H$.
+   \end{enumerate}
+
+   \noindent \problem 3. $G=\langle \mathcal{F}(\mathbb{R}),+\rangle,\, H=
+   \{ f \in \mathcal{F}(\mathbb{R}) : f \text{ is periodic of period $\pi$}\}$
+
+\end{enumerate}
+
+
+
+
+\end{document}
