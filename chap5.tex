@@ -208,12 +208,303 @@ of A Book of Abstract Algebra.
       $[-f](-x) = -f(-x) = -(-f(x)) = f(x)$. Thus, $f\in H$.
    \end{enumerate}
 
-   \noindent \problem 3. $G=\langle \mathcal{F}(\mathbb{R}),+\rangle,\, H=
+   \noindent 3. \problem  $G=\langle \mathcal{F}(\mathbb{R}),+\rangle,\, H=
    \{ f \in \mathcal{F}(\mathbb{R}) : f \text{ is periodic of period $\pi$}\}$
 
+   \noindent \textsc{Remark:} A function $f$ is said to be \emph{periodic}
+   of period $a$ if there is a number $a$, called the period of $f$,
+   such that $f(x) = f(x+na)$ for every $x \in \mathbb{R}$ and 
+   $n \in \mathbb{Z}$.
+
+   \noindent \solution 
+   
+   \begin{enumerate}[(i)]
+      \item  Suppose $f,g \in H$; then $f(x) = f(x+na)$ and 
+      $g(x) = g(x+na)$ for every $x \in \mathbb{R}$ and $n \in \mathbb{Z}$.
+      So $[f+g](x) = f(x) + g(x) = f(x + na) + g(x+na)$ which equals
+      $[f+g](x + na)$ for all $x\in \mathbb{R}$ and $n \in \mathbb{Z}$. 
+      Thus, $f+g \in H$.
+   \end{enumerate}
+
+   \noindent 4. \problem $G = \langle \mathcal{F}(\mathbb{R}),+\rangle,\, H=
+   \{ f \in \mathcal{F}(\mathbb{R}) : \int_0^1 f(x) dx = 0\}$
+
+   \noindent \solution 
+   \begin{enumerate}[(i)]
+      \item Suppose $f,g \in H$; then $\int_0^1 f(x) dx = 0$ and
+      $\int_0^1 g(x)dx = 0$. So $[f+g](x) = f(x) + g(x)$ and
+      $\int_0^1 (f(x)+g(x)) dx = \int_0^1 f(x)dx + \int_0^1 g(x)dx = 0$.
+      Thus, $f+g \in H$.
+
+      \item Suppose $f \in H$; then $[-f](x) = -f(x)$ and
+      $\int_0^1 -f(x)dx = -\int_0^1 f(x) dx = -0 = 0$. Thus, $-f \in H$.
+   \end{enumerate}
+
+   \noindent 5. \problem $G = \langle \mathcal{F}(\mathbb{R}),+\rangle,\, H =
+   \{ f \in \mathcal{F}(\mathbb{R}) : df/dx \text{ is constant}\}$
+
+   \noindent \solution 
+   \begin{enumerate}[(i)]
+      \item Suppose $f,g \in H$; then $[f+g](x) = f(x) + g(x)$, and
+      $df/dx = k_1$ and $dg/dx = k_2$ and 
+      $d(f+g)/dx = df/dx + dg/dx = k_1 + k_2 = k_3$. So $k_3$ is a constant
+      and $f+g\in H$.
+
+      \item Suppose $f \in H$; then $[-f](x) = -f(x)$, and
+      $d(-f)/dx = -df/dx = -k$. Thus, $-f \in H$.
+   \end{enumerate}
+
+   \noindent 6. \problem $G=\langle \mathcal{F}(\mathbb{R}),+\rangle,\, H =
+   \{ f \in \mathcal{F}(\mathbb{R}) : f(x) \in \mathbb{Z}$ for every
+   $x \in \mathbb{R}\}$.
+
+   \noindent \solution 
+   \begin{enumerate}[(i)]
+      \item Suppose $f,g \in H$; then $f(x)\in\mathbb{Z}$ and
+      $g(x)\in\mathbb{Z}$ for every $x\in\mathbb{R}$. So
+      $[f+g](x)=f(x)+g(x)$ and $f(x)+g(x) \in \mathbb{Z}$ for every
+      $x \in \mathbb{R}$.
+
+      \item Suppose $f \in H$; then $[-f](x)=-f(x)$. But $-f(x) \in 
+      \mathbb{Z}$ for every $x \in \mathbb{R}$.
+   \end{enumerate}
+
+   \item \textsc{Subgroups of Abelian Groups}
+
+   \noindent In the following exercises, let $G$ be an abelian group.
+
+   \noindent 1. If $H=\{x \in G : x = x^{-1}\}$, that is, $H$ consists of
+   all the elements of $G$ which are their own inverses, prove that $H$
+   is a subgroup of $G$.
+
+   \noindent \solution Suppose $x,y \in H$; then $x=x^{-1}$ and $y=y^{-1}$.
+   So $xy = x^{-1}y^{-1} = (yx)^{-1} = (xy)^{-1}$. Thus $xy \in H$; and
+   by definition $x^{-1} \in H$.
+
+   \noindent 2. Let $n$ be a fixed integer, and let $H=\{x \in G
+   : x^n = e\}$. Prove that $H$ is a subgroup of $G$.
+
+   \noindent \solution 
+   \begin{enumerate}[(i)]
+      \item Suppose $x,y\in H$ then $x^n=e$ and $y^n=e$ and
+	 \begin{align*}
+	 (xy)^n & = \underbrace{(xy)(xy)(xy)\cdots (xy)}_{n \text{ factors}}\\
+	        & = \underbrace{xxx\cdots x}_{n\text{ factors}}
+		    \underbrace{yyy\cdots y}_{n\text{ factors}}
+		    && \text{Commutative property} \\
+		& = e
+	 \end{align*}
+      \item Supose $x\in H$ then $x^n = e$. Let's check if the inverse is
+      in $H$.  
+      \begin{align*}
+          e & = x^n \\
+	  e & = \underbrace{xx\cdots x}_{n\text{ factors}} \\
+	  x^{-1} & = \underbrace{xx\cdots x}_{n-1\text{ factors}}\\
+	  \underbrace{x^{-1}x^{-1}\cdots x^{-1}}_{n\text{ factors}} & = e \\
+	  (x^n)^{-1} & = e
+      \end{align*}
+
+      Therefore $(x^n)^{-1} \in H$.
+   \end{enumerate}
+
+   \noindent 3. Let $H=\{x\in G : x = y^2 \text{ for some } y \in G\}$;
+   that is, let $H$ be the set of all the elements of $G$ which
+   have a square root. Prove that $H$ is a subgroup of $G$.
+
+   \noindent \solution
+   \begin{enumerate}[(i)]
+      \item Suppose $a,b \in H$ then there are two elements $x,y\in G$
+      such that $a=x^2, b=y^2$. 
+      \begin{align*}
+         ab & = x^2y^2 \\
+	    & = xxyy   \\
+	    & = xyxy   && \text{By commutativity} \\
+	    & = (xy)^2
+      \end{align*}
+      Therefore, $ab$ has a square root and $ab \in H$.
+
+      \item Suppose $x \in H$. Then $x=y^2$ for some $y \in G$. 
+      \begin{align*}
+         x & = y^2 \\
+	 x^{-1} & = (y^2)^{-1} \\
+	        & = (yy)^{-1} \\
+		& = y^{-1}y^{-1} \\
+		& = (y^{-1})^2
+      \end{align*}
+      Therefore $x^{-1}$ has an inverse and since $y^{-1}\in G$ 
+      we have $x^{-1} \in H$.
+   \end{enumerate}
+
+   \noindent 4. Let $H$ be a subgroup of $G$, and let 
+   $K = \{x \in G : x^2 \in H\}$. Prove that $K$ is a subgroup of $G$.
+
+   \noindent \solution 
+   \begin{enumerate}[(i)]
+      \item Suppose $x,y \in K$. Therefore $x,y\in G$, and $x^2,y^2 \in H$.
+      Since $G$ is group we know $xy \in G$. Since $H$ is a group we
+      have that $x^2y^2 \in H$. But $x^2y^2 = xxyy = (xy)^2$ (by commutativity).
+      Since $xy\in G$ and $(xy)^2 \in H$ we have that $xy \in K$ (by
+      the definition of $K$.
+
+      \item Suppose $x \in K$. Therefore $x \in G, x^2 \in H$. Since
+      $G$ and $H$ are groups we have that $x^{-1} \in G$ and 
+      $(x^2)^{-1} \in H$. But $(x^2)^{-1} = x^{-1}x^{1} = (x^{-1})^2$.
+      Since $x^{-1} \in G$ and $(x^{-1})^2 \in H$, we have
+      $x^{-1} \in K$.
+   \end{enumerate}
+   
+
+   \noindent 5. Let $H$ be a subgroup of $G$, and let $K$ consist of all
+   the elements $x$ in $G$ such that some power of $x$ is in $H$.
+   That is, $K = \{x \in G : \text{ for some integer } n > 0,\,
+   x^n \in H \}$. Prove that $K$ is a subgroup of $G$.
+
+   \noindent \solution 
+   \begin{enumerate}[(i)]
+      \item Suppose $x,y \in K$. Then there are two numbers $m,n$ such that
+      $x^m, y^n \in H$. Since H is a group it is closed to multiplication (and
+      exponentiation). Therefore, $(x^m)^n, (y^n)^m \in H$. Set q = mn. Then
+      $(xy)^q = (xy)^{mn} = x^{mn}y^{mn} = (x^m)^n(y^n)^m \in H$. Therefore $xy
+      \in K$. (The step $(xy)^{mn}$ to $(x^{mn}y^{mn})$ relies on commutativty.)
+
+      \item Suppose $x \in K$. Then we know $x^n \in H$ for some $n$. Since
+      $H$ is a group $(x^n)^{-1} \in H$. Therfore, $(x^{-1})^n \in H$.
+      Therefore $x^{-1} \in K$.
+   \end{enumerate}
+
+   \noindent 6. Suppose $H$ and $K$ are subroupgs of $G$, and define 
+   $HK$ as follows
+   \[
+      HK = \{ xy : x \in H \text{ and } y \in K \}
+   \]
+   Prove that $HK$ is a subgroup of $G$.
+
+   \noindent \solution
+   \begin{enumerate}[(i)]
+      \item Suppose $a,b \in HK$. Then there are elements $x_1,x_2 \in H$
+      and $y_1,y_2 \in K$ such that $a=x_1y_1$ and $b=x_2y_2$.
+      Therefore, $ab = x_1y_1x_2y_2$ which equals $(x_1x_2)(y_1y_2)$
+      by commutativity. Since $H$ and $G$ are groups 
+      $x_1x_2 \in H$ and $y_1y_2 \in G$. Therefore $x_1x_2y_1y_2 \in HK$.
+
+      \item Suppose $xy \in HK$. Therefore $x,x^{-1} \in H$ and
+      $y,y^{-1} \in G$. Therefore $x^{-1}y^{-1} in HK$. 
+      But $x^{-1}y^{-1} = (yx)^{-1} = (xy)^{-1} \in HK$.
+   \end{enumerate}
+
+   \noindent 7. Explain why parts 4--6 are not true if $G$ is not abelian.
+   \noindent \solution Each of the proof relied on re-ordering factors
+   (using commutativity) to prove an identity. Without those steps
+   the proof cannot be made.
+
+   \item \textsc{Subgroups of an Arbitrary Group}
+
+   \noindent Let $G$ be a group.
+
+   \noindent 1. If $H$ and $K$ are subgroups of a group $G$, 
+   prove that $H \cap K$ is a subgroup of $G$. (Remember, that
+   $x\in H\cap K \text{ iff } x \in H \text{ and } x \in K$.)
+
+   \noindent \solution 
+   \begin{enumerate}[(i)]
+      \item Suppose $x,y \in H \cap K$. Therefore, $x,y \in H$ and
+      $x,y\in K$. Since $H$ and $K$ are both groups we know
+      $xy \in H$ and $xy \in K$. So $xy \in H \cap K$.
+
+      \item Suppose $x \in H \cap K$. Therefore $x$ is in both $H,K$. 
+      Therefore $x^{-1}$ is in both $H,K$; and so $x^{-1} \in H \cap K$.
+   \end{enumerate}
+
+   \noindent 2. Let $H$ and $K$ be subgroups of $G$. Prove that
+   if $H \subseteq K$, then $H$ is a subgroup of $K$.
+
+   \noindent \solution Um, this seems like its true by definition.
+   We know that $H$ is a group and that it's a subset of $K$.
+   Therefore $H$ is a subgroup of $K$. Right? I mean $H$ is
+   closed with respect to it's operation since it's a group. And
+   it's closed with respect to inverses since it's a group. And
+   it's a subset of $K$. That's the definition in paragraph 1 of
+   this chapter.
+
+   \noindent 3. By the \emph{center} of a group $G$ we mean the set of
+   all the elements of $G$ which commute with every element of $G$,
+   that is,
+   \[
+       C = \{ a\in G : ax = xa \text{ for every } x \in G\}
+   \]
+   Prove that $C$ is a subgroup of $G$.
+   
+   \noindent \solution 
+   \begin{enumerate}[(i)]
+      \item Suppose $a,b \in C$. This means $ax=xa$ and $bx=xb$ for every $x
+      \in G$.  Choose any $x\in G$:
+      \begin{align*}
+         abx & = axb && \text{Given $bx=xb$} \\
+	     & = xab && \text{Given $ax=xa$} 
+      \end{align*}
+      So $ab \in C$.
+
+      \item Suppose $a \in C$. This means $ax=xa$ for every $x\in G$.
+      Choose any $x\in G$.
+      \begin{align*}
+         ax & = xa \\
+	 axa^{-1} & = xaa^{-1} \\
+	 axa^{-1} & = x \\
+	 a^{-1}axa^{-1} & = a^{-1}x \\
+	 xa^{-1} & = a^{-1}x
+      \end{align*}
+      Therefore $a^{-1} \in C$.
+   \end{enumerate}
+
+   \noindent 4. Let $C' = \{ a\in G : (ax)^2 = (xa)^2 
+   \text{ for every } x \in G\}$.  Prove that $C'$ is a subgroup of $G$.
+
+   \noindent \solution
+   \begin{enumerate}[(i)]
+      \item Suppose $a,b \in C'$. Then $(ax)^2=(xa)^2$ and $(bx)^2=(xb)^2$
+      for every $x \in G$. Choose any $x \in G$ and recall $ab \in G$.
+      \begin{align*}
+         (abx)^2 & = abxabx \\
+	         & = axbaxb && \text{commutativity} \\
+		 & = xabxab && \text{commutativity} \\
+		 & = (xab)^2
+      \end{align*}
+      Therefore $ab \in C'$.
+
+      \item Suppose $a \in C'$. Then $ax=xa$ for all $x \in G$.
+      \begin{align*}
+         (ax)^2 & = (xa)^2 \\
+	 axax   & = xaxa \\
+	 aaxx   & = xxaa \\
+	 aaxxa^{-1}a^{-1} & = xx\\
+	 xxa^{-1}a^{-1} & = a^{-1}a^{-1}xx \\
+	 xa^{-1}xa^{-1} & = a^{-1}xa^{-1}x \\
+	 (xa^{-1})^2    & = (a^{-1}x)^2
+      \end{align*}
+      Therefore $a^{-1} \in C'$.
+   \end{enumerate}
+
+   \noindent 5. Let $G$ be a \emph{finite} group, and let S be a nonempty 
+   subset of $G$. Suppose $S$ is closed with respect to 
+   multiplication. Prove that $S$ is a subgroup of $G$. (\textsc{Hint:} It
+   remains to prove that $S$ contains $e$ and is closed with respect
+   to inverses. Let $S=\{a_1,\ldots,a_n\}$. If $a_i \in S$, consider
+   the \emph{distinct} elements $a_ia_1,a_ia_2,\ldots,a_ia_n$.)
+
+   \noindent \solution
+   \begin{proof}
+   Suppose $S=\{a_1,\ldots,a_n\}$. And choose some $a_i \in S$. Consider
+   the elements $a_ia_1,a_ia_2,\ldots,a_ia_n$. Assume those elements
+   are not distinct. Then there is some $m,n$ such that $a_ia_m=a_ia_n$ 
+   which implies $a_m=a_n$. But we assumed the original elements were
+   all distinct. Therefore the elements $a_ia_1,a_ia_2,\ldots,a_ia_n$
+   must all be distinct. Let's call that set $S'$.
+   Since the size of $S$ and size of $S'$ are the same then one of the
+   elements $a_m$ must have mapped $a_ia_m$ to $a_i$, and therefore
+   $a_m=e$. Since there is an inverse, and again since both sets are
+   the same size there must be an inverse for each element.
+   \end{proof}
+
 \end{enumerate}
-
-
-
 
 \end{document}
