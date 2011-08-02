@@ -501,9 +501,41 @@ of A Book of Abstract Algebra.
    must all be distinct. Let's call that set $S'$.
    Since the size of $S$ and size of $S'$ are the same then one of the
    elements $a_m$ must have mapped $a_ia_m$ to $a_i$, and therefore
-   $a_m=e$. Since there is an inverse, and again since both sets are
+   $a_m=e$. Since there is a neutral element, and again since both sets are
    the same size there must be an inverse for each element.
    \end{proof}
+
+   \noindent 6. Let $G$ be a group and $f : G \rightarrow G$ a function.
+   A \emph{period} of $f$ is any element $a$ in $G$
+   such that $f(x) = f(ax)$ for every $x \in G$. Prove: The set of
+   all the periods of $f$ is a subgroup of $G$.
+
+   \noindent \solution 
+   \begin{enumerate}[(i)]
+      \item Suppose $a,b$ are periods of $f$. Then $f(x)=f(ax)$ and
+      $f(x)=f(bx)$ for all elements $x\in G$. The elements $bx \in G$
+      for all values of $x \in G$. Therefore $f(bx) = f(abx)$ for
+      all $x \in G$. So we have $f(x)=f(abx)$ for all $x \in G$.
+      Therefore $ab$ is a period of $f$.
+
+      \item Suppose $a$ is a period of $f$. Then $f(x)=f(ax)$ for
+      all $x$ in $G$.
+
+      TODO
+      \begin{align*}
+         f(x) & = f(ax) \\
+	 f(x) & = f(aax) \\
+	 f(a^{-1}x) & = \\
+      \end{align*}
+
+   \end{enumerate}
+
+   \noindent 7. Let $H$ be a subgroup of $G$, and let $K = \{
+      x \in G : xax^{-1} \in H \text{ iff } a \in H \}$. Prove:
+      \begin{enumerate}[(a)]
+         \item $K$ is a subgroup of $G$.
+	 \item $H$ is a subgroup of $K$.
+      \end{enumerate}
 
 \end{enumerate}
 
