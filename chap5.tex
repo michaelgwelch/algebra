@@ -1256,6 +1256,102 @@ $b^2ab^2$\\
    is of minimum weight. Therefore no such word $\mathbf{y}$ exists.
    \end{proof}
 
+   \noindent 6a. If $\mathbf{x}$ and $\mathbf{y}$ have even weight,
+   so does $\mathbf{x}=\mathbf{y}$
+
+   \noindent
+   \begin{proof}
+   There are two cases:  $\mathbf{x}$ and $\mathbf{y}$ have a 1 in the 
+   same position in an 1) even number of locations or 2) an odd number of 
+   locations.
+   \begin{enumerate}[(1)]
+      \item In this case $\mathbf{x}$ has an even number of 1s
+      in positions that $\mathbf{y}$ doesn't and vice versa. In
+      each location where they both have a 1 the sum is 0. In each location
+      where one has a 1 and the other doesn't the sum is 1. In the
+      remaining positions they both have a 0 and the sume is 0. Since
+      each word has an even number of positions that will sum to 1, there is an
+      even number of 1s in the sum of the words.
+
+      \item In this case $\mathbf{x}$ has an odd number of 1s
+      in positions that $\mathbf{y}$ doesn't and vice versa. Two 
+      odd number of locations makes an even number of locations where
+      the sum will have a 1. 
+   \end{enumerate} 
+   In both cases we end up with an even number of 1s in the sum and
+   therefore the sum has even weight.
+   \end{proof}
+
+   \noindent 6b. If $\mathbf{x}$ and $\mathbf{y}$ have odd weight,
+   $\mathbf{x}+\mathbf{y}$ has even weight.
+   
+   \noindent \solution Proof sketch. Follow a similar line of reasoning
+   as 6a by using 2 cases and seeing that there will always be an even
+   number of 1s in the result.
+
+   \vspace{10pt}
+   \noindent 6c. If $\mathbf{x}$ has odd and $\mathbf{y}$ has even weight,
+   then $\mathbf{x}+\mathbf{y}$ has odd weight.
+   
+   \noindent \solution Use same technique as before.
+
+   \noindent 7. In any group code, either all the words have even weight,
+   or half the words have even weight and half the words have odd 
+   weight. (Use part 6 in your proof.)
+
+   \noindent 
+   \begin{proof}
+   Assume the generator matrix contains only words of even weight. Then
+   by 6 we know that ever word generated will have even weight.
+
+   Now assume that the generator has at least one word of odd weight. 
+   Then we know the result is not all even words. 
+   Assume that there are $n$ odd words and $m$ even words.
+   Let's consider one odd word and add it in turn to every word 
+   in the group (including itself). We know from Chapter 4 F2 that every row
+   of a table must include every element of the group one time.
+
+   So here is what we expect. Adding the odd word to $n$ odd words
+   results in $n$ even words. Adding the odd word to $m$ even words
+   results in $m$ odd words. The total number of words is $n+m$.
+   Since we said we started with $n$ odd words and the number of odd
+   words in this row is $m$ and each element must be in the row,
+   we know that $n=m$. The total number of words is $n+m = 2n = 2m$.
+   Therefore half the words are even and half are odd.
+   \end{proof}
+
+   \noindent 8. $\mathbf{H}(\mathbf{x}+\mathbf{y})=0$ if and only
+   if $\mathbf{Hx}=\mathbf{Hy}$, where $\mathbf{H}$ denotes the parity-check
+   matrix of a code in $\mathbb{B}^n$ and $\mathbf{x}$ and $\mathbf{y}$
+   are any two words in $\mathbb{B}^n$.
+
+   \begin{proof}
+   First let's assume that $\mathbf{Hx}=\mathbf{Hy}$. We know
+   from linear algebra that $\mathbf{H}(\mathbf{x}+\mathbf{y})=
+   \mathbf{Hx}+\mathbf{Hy}$. By our assumption we know that
+   $\mathbf{Hx}+\mathbf{Hy}=0$ (We either have the case $0+0=0$
+   or $1+1=0$). Therefore $\mathbf{H}(\mathbf{x}+\mathbf{y})
+   =0$.
+
+   Next let's assume that $\mathbf{H}(\mathbf{x}+\mathbf{y})=0$. This
+   tells us that $\mathbf{Hx}+\mathbf{Hy}=0$. There are 4 possible
+   value combinations:
+   \begin{center}
+   \begin{tabular}{cc|c}
+   $\mathbf{Hx}$ & $\mathbf{Hy}$ & $\mathbf{Hx}+\mathbf{Hy}$ \\\hline
+   0 & 0 & 0 \\
+   0 & 1 & 1 \\
+   1 & 0 & 1 \\
+   1 & 1 & 0
+   \end{tabular}
+   \end{center}
+   Only two result in a value of 0 and in both cases $
+   \mathbf{Hx}=\mathbf{Hy}$.
+   \end{proof}
+
+
+
+
 
 
 \end{enumerate}
