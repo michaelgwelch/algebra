@@ -594,7 +594,11 @@ of A Book of Abstract Algebra.
       whether the sequence contains exactly three $a$'s.
 
       \noindent \solution $A=\{a,b,c,d\}$. The states are 
-      $S=\{s_0,s_1,s_2,s_3,s_n\}$. The table of the next-state function
+      $S=\{s_0,s_1,s_2,s_3,s_n\}$. We can think of $s_0$ as the state
+      when 0 $a$'s have been seen, $s_1$ means 1 $a$ has been seen,
+      $s_2$ means two, $s_3$ means three (the desired number) and 
+      $s_n$ means more than 3 have been seen (too many).
+      The table of the next-state function
       is
 
       \vspace{5pt}
@@ -609,12 +613,349 @@ of A Book of Abstract Algebra.
 	    $s_n$ & $s_n$ & $s_n$ & $s_n$ & $s_n$
 	 \end{tabular}
       \end{center}
+      \vspace{5pt}
 
       The state diagram is as follows (with State 3 as the only final
       state).
       \begin{center}
-      \scalebox{.15}{\includegraphics{img/chap6h1.png}}
+      \scalebox{.2}{\includegraphics{img/chap6h1.png}}
       \end{center}
+
+      \item The same conditions pertain as in part 1, but the machine
+      determines if the sequence contains \emph{at least} three $a$'s.
+
+      \noindent \solution Again $A=\{a,b,c,d\}$. The set of states is
+      $\{s_0,s_1,s_2,s_3\}$ where the states have the same meaning
+      as before except $s_3$ means we have detected 3 or more $a$'s.
+      The next-state function is
+      \vspace{5pt}
+      \begin{center}
+         \begin{tabular}{c|cccc}
+	    Present & \\
+	    State &   a   &   b   &   c   &   d   \\ \hline
+	    $s_0$ & $s_1$ & $s_0$ & $s_0$ & $s_0$ \\
+	    $s_1$ & $s_2$ & $s_1$ & $s_1$ & $s_1$ \\
+	    $s_2$ & $s_3$ & $s_2$ & $s_2$ & $s_2$ \\
+	    $s_3$ & $s_3$ & $s_3$ & $s_3$ & $s_3$ 
+	 \end{tabular}
+      \end{center}
+      \vspace{5pt}
+      The state diagram is as follows (with State 3 as the only final
+      state).
+      \begin{center}
+      \scalebox{.2}{\includegraphics{img/chap6h2.png}}
+      \end{center}
+
+      \item The input alphabet consists of the digits 0, 1, 2, 3, 4.
+      The machine adds the digits of an input sequence: the addition
+      is modulo 5. the sum is to be given by the machine's state
+      after the last digit is read.
+
+      \vspace{5pt}
+      \noindent \solution $A=\{0,1,2,3,4\}$ and $S=\{s_0,s_1,s_2,s_3,s_4\}$.
+      The next-state function is
+      \vspace{5pt}
+      \begin{center}
+         \begin{tabular}{c|ccccc}
+	    Present & \\
+	    State &   0   &   1   &   2   &   3   &   4   \\ \hline
+	    $s_0$ & $s_0$ & $s_1$ & $s_2$ & $s_3$ & $s_4$ \\
+	    $s_1$ & $s_1$ & $s_2$ & $s_3$ & $s_4$ & $s_0$ \\
+	    $s_2$ & $s_2$ & $s_3$ & $s_4$ & $s_0$ & $s_1$ \\
+	    $s_3$ & $s_3$ & $s_4$ & $s_0$ & $s_1$ & $s_2$ \\
+	    $s_4$ & $s_4$ & $s_0$ & $s_1$ & $s_2$ & $s_3$
+	 \end{tabular}
+      \end{center}
+      \vspace{5pt}
+
+      The diagram was not done. Trivial.
+
+      \item The machine tells whether or not an incoming sequence of
+      0's and 1's ends with 111.
+
+      \noindent \solution $A=\{0,1\}$, $S=\{s_0,s_1,s_2,s_3\}$.
+      The next-state function is
+      \vspace{5pt}
+      \begin{center}
+         \begin{tabular}{c|cc}
+	    Present & \\
+	    State &   0   &   1   \\ \hline
+	    $s_0$ & $s_0$ & $s_1$ \\
+	    $s_1$ & $s_1$ & $s_2$ \\
+	    $s_2$ & $s_2$ & $s_3$ \\
+	    $s_3$ & $s_3$ & $s_0$ 
+	 \end{tabular}
+      \end{center}
+      \vspace{5pt}
+      The state diagram is as follows (with State 3 as the only final
+      state).
+      \begin{center}
+      \scalebox{.2}{\includegraphics{img/chap6h4.png}}
+      \end{center}
+
+      \item If $M$ is a machine whose next-state function is $\alpha$,
+      define $\bar{\alpha}$ as follows: If $\textbf{x}$ is an input
+      sequence and the machine (in state $s_i$) begins reading
+      $\mathbf{x}$, then $\bar{\alpha}(s_i,\mathbf{x})$ is the state of
+      the machine after the last symbol of $\mathbf{x}$ is read.
+      For instance, if $M_1$ is the machine of the example given above, then 
+      $\bar{\alpha}(s_0,11010)=s_1$. (The machine [ed. described in text]
+      is in $s_0$ before the first symbol is read; each 1 alters the state,
+      but the 0s do not. Thus, after the last 0 is read, the machine is
+      in state $s_1$.)
+
+      \begin{enumerate}[(a)]
+         \item For the machine $M_1$, give $\bar{\alpha}(s_0,\mathbf{x})$
+	 for all three digit sequences $\mathbf{x}$.
+
+         \noindent \solution 
+	 \begin{center}
+	 \begin{tabular}{cc}
+	    $\mathbf{x}$ & $\bar{\alpha}(s_0,\mathbf{x})$ \\ \hline
+	             000 & $s_0$ \\
+		     001 & $s_1$ \\
+		     010 & $s_1$ \\
+		     011 & $s_0$ \\
+		     100 & $s_1$ \\
+		     101 & $s_0$ \\
+		     110 & $s_0$ \\
+		     111 & $s_1$
+	 \end{tabular}
+	 \end{center}
+
+	 \item For the machine of part 1, give $\bar{\alpha}(s_i,\mathbf{x})$
+	 for each state $s_i$ and every two-letter sequence $\mathbf{x}$.
+
+         \begin{center}
+	 \begin{tabular}{c|ccccc}
+	    $\mathbf{x}$ & $\bar{\alpha}(s_0,\mathbf{x})$
+	       & $\bar{\alpha}(s_1,\mathbf{x})$
+	       & $\bar{\alpha}(s_2,\mathbf{x})$
+               & $\bar{\alpha}(s_3,\mathbf{x})$
+               & $\bar{\alpha}(s_n,\mathbf{x})$\\ \hline
+	              aa & $s_2$ & $s_3$ & $s_n$ & $s_n$ & $s_n$ \\
+	              ab & $s_1$ & $s_2$ & $s_3$ & $s_n$ & $s_n$ \\
+	              ac & $s_1$ & $s_2$ & $s_3$ & $s_n$ & $s_n$ \\
+	              ad & $s_1$ & $s_2$ & $s_3$ & $s_n$ & $s_n$ \\
+	              ba & $s_1$ & $s_2$ & $s_3$ & $s_n$ & $s_n$ \\
+	              bb & $s_0$ & $s_1$ & $s_2$ & $s_3$ & $s_n$ \\
+	              bc & $s_0$ & $s_1$ & $s_2$ & $s_3$ & $s_n$ \\
+	              bd & $s_0$ & $s_1$ & $s_2$ & $s_3$ & $s_n$ \\
+	              ca & $s_1$ & $s_2$ & $s_3$ & $s_n$ & $s_n$ \\
+	              cb & $s_0$ & $s_1$ & $s_2$ & $s_3$ & $s_n$ \\
+	              cc & $s_0$ & $s_1$ & $s_2$ & $s_3$ & $s_n$ \\
+	              cd & $s_0$ & $s_1$ & $s_2$ & $s_3$ & $s_n$ \\
+		      da & $s_1$ & $s_2$ & $s_3$ & $s_n$ & $s_n$ \\
+		      db & $s_0$ & $s_1$ & $s_2$ & $s_3$ & $s_n$ \\
+		      dc & $s_0$ & $s_1$ & $s_2$ & $s_3$ & $s_n$ \\
+		      dd & $s_0$ & $s_1$ & $s_2$ & $s_3$ & $s_n$ 
+	 \end{tabular}
+	 \end{center}
+
+      \end{enumerate}
+
+      \item With each input sequence $\mathbf{x}$ we associate a function 
+      $T_x : S \to S$ called a \emph{state transition function}, defined
+      as follows:
+      \[
+         T_x(s_i) = \bar{\alpha}(s_i,\mathbf{x})
+      \]
+
+      \noindent For the machine $M_1$ of the example, if $\mathbf{x}=11010$,
+      $T_x$ is given by
+      \begin{align*}
+         T_x(s_0) &= s_1   &   T_x(s_1) &= s_0 
+      \end{align*}
+
+      \begin{enumerate}[(a)]
+	 \item Describe the transition function $T_x$ for the machine $M_1$ and
+	 the following sequences $\mathbf{x}=01001$, $\mathbf{x}=10011$, and
+	 $\mathbf{x}=01010$.
+
+	 \noindent \solution 
+	 For $\mathbf{x} = 01001$:
+	 \begin{align*}
+	     T_x(s_0) &= s_0 & T_x(s_1) &= s_1
+	 \end{align*}   
+	 
+	 For $\mathbf{x} = 10011$:
+	 \begin{align*}
+	     T_x(s_0) &= s_1 & T_x(s_1) &= s_0
+	 \end{align*}   
+
+	 For $\mathbf{x} = 01010$:
+	 \begin{align*}
+	     T_x(s_0) &= s_0 & T_x(s_1) &= s_1
+	 \end{align*}   
+
+	 As we can see, $T_x(s_0)=s_0$ when weight of $\mathbf{x}$ is even
+	 otherwise $T_x(s_0)=s_1$.
+
+	 \item Explain why $M_1$ has only two \emph{distinct} transition
+	 functions. [\textsc{Note}: Two functions $f$ and $g$ are equal
+	 if $f(x)=g(x)$ for every $x$; otherwise they are distinct.]
+	 
+	 \solution As Part 5 implied and we saw in (a) right above here,
+	 the defining characteristic of $T_x$ is the weight of $\mathbf{x}$.
+	 It is either even or odd. All even weight values of $\mathbf{x}$
+	 generate one function, and all odd weight values of $\mathbf{x}$
+	 generate another.
+
+	 \item For the machine of part 1, describe the transition function
+	 $T_x$ for the following $\mathbf{x}$: $\mathbf{x}=abbca$,
+	 $\mathbf{x}=babac$, $\mathbf{x}=ccbaa$.
+	 \begin{center}
+	 \begin{tabular}{c|ccccc}
+	    $\mathbf{x}$ & $T_x(s_0)$ & $T_x(s_1)$ & $T_x(s_2)$ & $T_x(s_3)$
+	        & $T_x(s_n)$ \\ \hline
+		abbca    & $s_2$ & $s_3$ & $s_n$ & $s_n$ & $s_n$ \\
+		babac    & $s_2$ & $s_3$ & $s_n$ & $s_n$ & $s_n$ \\
+		ccbaa    & $s_2$ & $s_3$ & $s_n$ & $s_n$ & $s_n$ 
+	 \end{tabular}
+	 \end{center}
+
+	 \item How many \emph{distinct} transition functions are there
+	 for the machine of part 3?
+
+	 \solution The number of distinct machines is 5. The defining 
+	 characteristic is the sum of the input sequence $\mathbf{x}$
+	 modulo 5. Each sum (0, 1, 2, 3, 4) generates a distinct 
+	 transition function. For example, if the sum is 0, then
+	 the transition function is the identity function: $T_x(s_i)=s_i$.
+	 If the sum is 2, then the transition function is increment by
+	 2 (modulo 5): $T_x(s_i) = s_{i+2}$.
+
+      \end{enumerate}
+
+   \end{enumerate}
+
+   \item \textsc{Automata, Semigroups, and Groups}
+
+   By a \emph{semigroup} we mean a set $A$ with an associative operation.
+   (There does not need to be an identity element, nor do elements
+   necessarily have inverses.) Every group is a semigroup,
+   though the converse is clearly false. With every semigroup $A$
+   we associate an automaton $M=M(A)$ called the 
+   \emph{automaton of the semigroup} $A$. The alphabet of $M$ is $A$,
+   the set of states also is $A$, and the next state function is
+   $\alpha(s,a)=sa$ [or $\alpha(s,a)=s+a$ if the operation of the semigroup
+   is denoted additively].
+
+   \begin{enumerate}[1]
+      \item Describe $M(\mathbb{Z}_4)$. That is, give the table of the 
+      next-state function, as well as its state diagram.
+      
+      \solution $A=\{0,1,2,3\}$, $S=\{0,1,2,3\}$. The next-state
+      function is:
+      \begin{center}
+      \begin{tabular}{c|cccc}
+          Present \\
+	  State &  0  &  1  &  2  &  3 \\ \hline
+	    0   &  0  &  1  &  2  &  3 \\
+	    1   &  1  &  2  &  3  &  0 \\
+	    2   &  2  &  3  &  0  &  1 \\
+	    3   &  3  &  0  &  1  &  2
+      \end{tabular}
+      \end{center}
+
+      The state diagram is:
+      \begin{center}
+      \scalebox{.2}{\includegraphics{img/chap6I1.png}}
+      \end{center}
+
+      \item Describe $M(S_3)$.
+
+      \noindent \solution I assume $S_3$ is the set $\{s_1,s_2,s_3\}$.
+      So $A = S_3$ and $S=S_3$. The next-state function is
+
+      \begin{center}
+      \begin{tabular}{c|ccc}
+          Present \\
+	  State &  $s_1$    &  $s_2$   &  $s_3$ \\ \hline
+	 $s_1$  &  $s_1s_1$ & $s_1s_2$ & $s_1s_3$ \\
+	 $s_2$  &  $s_2s_1$ & $s_2s_2$ & $s_2s_3$ \\
+	 $s_3$  &  $s_3s_1$ & $s_3s_2$ & $s_3s_3$
+      \end{tabular}
+      \end{center}
+
+      [Update: Chapter 7 finally defines $S_3$. Come back to work on 
+      this assignment.]
+
+      \vspace{10pt}
+      \hspace{.25in} If $M$ is a machine and $S$ is the set of states of $M$,
+      the \emph{state transition functions} of $M$ are functions
+      from $S$ to $S$. In the next exercise you will be asked to show
+      that $T_y \circ T_x = T_{xy}$; that is, the composite of 
+      two transition functions is a transition function. Since the
+      composition of functions is associative $[f \circ (g \circ h) =
+      (f \circ g) \circ h]$, it follows that the set of all transition
+      functions, with the operation $\circ$, is a \emph{semigroup}.
+      It is denoted by $\gamma(M)$ [ed. Actually the text uses a
+      different symbol but I have no idea what symbol it is so I'm
+      using gamma.] and called the \emph{semigroup of the machine} $M$.
+
+      \item Prove that $T_{xy}=T_y \circ T_x$
+      \begin{proof}
+	  \begin{align*}
+             T_{xy} &= \bar{\alpha}(s_i,\mathbf{x}\mathbf{y})\\
+	     T_y \circ T_x &= T_y(T_x(s_i)) \\
+	                   &= T_y(\bar{\alpha}(s_i,\mathbf{x})) \\
+			   &= \bar{\alpha}(\bar{\alpha}(s_i,\mathbf{x}),
+			       \mathbf{y}) \\
+			   &= \bar{\alpha}(s_i,\mathbf{xy}) 
+			       &&\text{Definition of $\bar{\alpha}$}. \qedhere
+	  \end{align*}
+      \end{proof}
+
+      \item Let $M_1$ be the machine of the example in exercise H above.
+      Give the table of the semigroup $\gamma(M_1)$. Does $\gamma(M_1)$
+      have an identity element? Is $\gamma(M_1)$ a group?
+
+      \noindent \solution Recall from H5b that $M_1$ has only two distinct
+      transtion functions. I will call them $T_0$ for the transition function
+      on a sequence with an even number of 1s; and $T_1$ for the transition
+      function on a sequence with an odd number of 1s. The table is then
+
+      \begin{center}
+      \begin{tabular}{c|cc}
+         $\circ$ & $T_0$ & $T_1$ \\ \hline
+	   $T_0$ & $T_0$ & $T_1$ \\
+	   $T_1$ & $T_1$ & $T_0$ 
+      \end{tabular}
+      \end{center}
+
+      $T_0$ is the identity element of $\gamma(M_1)$ and 
+      $\gamma(M_1)$ is a group as both functions have an inverse:
+      $T_0^{-1}=T_0$ and $T_1^{-1}=T_1$.
+
+      \item Let $M_2$ be the machine of Exercise H3. How many \emph{distinct}
+      functions are there in $\gamma(M_2)$? Give the table of 
+      $\gamma(M_2)$. Is $\gamma(M_2)$ a group? (Why?)
+
+      \solution From H5d we know that there are 5 distinct functions. I
+      will call them $T_0, T_1, T_2, T_3, T_4$ where the subscript
+      indicates the sum of the sequence modulo 5. The table is then:
+
+      \begin{center}
+      \begin{tabular}{c|ccccc}
+         $\circ$ & $T_0$ & $T_1$ & $T_2$ & $T_3$ & $T_4$ \\ \hline
+	  $T_0$  & $T_0$ & $T_1$ & $T_2$ & $T_3$ & $T_4$ \\
+	  $T_1$  & $T_1$ & $T_2$ & $T_3$ & $T_4$ & $T_0$ \\
+	  $T_2$  & $T_2$ & $T_3$ & $T_4$ & $T_0$ & $T_1$ \\
+	  $T_3$  & $T_3$ & $T_4$ & $T_0$ & $T_1$ & $T_2$ \\
+	  $T_4$  & $T_4$ & $T_0$ & $T_1$ & $T_2$ & $T_3$
+      \end{tabular}
+      \end{center}
+
+      It turns out $\gamma(M_2)$ is a group. The identity element
+      is $T_0$. The inverse is given by $T_i^{-1} = T_{0+(-i)}$
+      (where the addition in the subscript is obviously modulo 5).
+
+      \item Find the table of $\gamma(M)$ if $M$ is the machine whose
+      state diagram is
+
+      \solution The diagram has errors. It is not clear what the
+      correct diagram is.
    \end{enumerate}
 \end{enumerate}
 
