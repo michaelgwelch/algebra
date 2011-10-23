@@ -7,7 +7,7 @@
 \usepackage{fitch}
 \newcommand{\Rationals}{\mathbb{Q}{}}
 \newcommand{\Reals}{\ensuremath{\mathbb{R}}\xspace}
-\newcommand{\Integers}{\mathbb{Z}{}}
+\newcommand{\Integers}{\ensuremath{\mathbb{Z}{}}\xspace}
 \newcommand{\solution}{\textsc{Solution}\xspace}
 \newcommand{\problem}{\textsc{Problem}\xspace}
 \newcommand{\Blank}{\mathrel{\phantom{=}}}
@@ -1163,7 +1163,87 @@ of A Book of Abstract Algebra.
 
 	 \hspace{.15in}Therefore, $G$ is a subgroup of $S_A$.
 
-	 \item 
+	 \item If $f$ is a permutation of $A$ and $a \in A$, we say that $f$
+	 \emph{moves} $a$ if $f(a) \ne a$. Let $A$ be an infinite set, and
+	 let $G$ be the subset of $S_A$ which consists of all the permutations
+	 $f$ of $A$ which move \emph{only a finite number of elements} of $A$.
+	 Prove that $G$ is a subgroup of $S_A$.
+
+	 \solution Let $f,g \in G$. Then $f$ and $g$ move only a finite 
+	 number of elements. Assume $f$ moves the elements $a_1, a_2, \dots,
+	 a_n$ and $g$ moves the elements $b_1, b_2, \dots, b_m$. Then for
+	 any element $x \in A$ which is not in $\{a_1, a_2, \dots, a_n, b_1,
+	 b_2, \dots, b_m\}$ we have
+	 
+	 \begin{align*}
+	    [f \circ g](x) &= f(g(x)) \\
+	                   &= f(x)    \\
+			   &= x
+	 \end{align*}
+
+	 Hence, at most $[f \circ g]$ moves the finite set of elements
+	 $\{a_1, a_2, \dots, a_n, b_1, b_2, \dots b_m\}$. Therefore,
+	 $[f\circ g] \in G$ and $G$ is closed with respect to $\circ$.
+
+	 Next, assume $f \in G$. Then $f$ moves a finites number of elements.
+	 Assume it contains the following moves:
+	 \begin{align*}
+	    f & = \begin{pmatrix}
+		      a_1 & a_2 & \cdots & a_n  \\
+		      b_1 & b_2 & \cdots & b_n 
+		  \end{pmatrix} \\
+	 \end{align*}
+
+	 Then $f^{-1}$ is the function
+	 \begin{align*}
+	    f & = \begin{pmatrix}
+		      b_1 & b_2 & \cdots & b_n \\
+		      a_1 & a_2 & \cdots & a_n  
+		  \end{pmatrix} \\
+	 \end{align*}
+
+	 and $f^{-1}$ only moves a finite number of elements. Therefore
+	 $G$ is closed with respect to inverses.
+
+	 \hspace{.15in}Therefore $G$ is a subgroup of $S_A$.
+
+	 \item Let $A$ be a \emph{finite} set, and $B$ a subset of $A$.
+	 Let $G$ be the subset of $S_A$ consisting of all the permutations 
+	 $f$ of $A$ such that $f(x) \in B$ for every $x \in B$. Prove that
+	 $G$ is a subgroup of $S_A$.
+
+	 \solution Assume $f,g \in G$. Then for every $x \in B$ we have
+	 $f(x) \in B$ and $g(x) \in B$. So now take any $x \in B$.
+	 Then $g(x) \in B$ and $f(g(x)) \in B$. Therefore $[f \circ g] \in G$.
+	 Therefore $G$ is closed with respect to $\circ$.
+	 
+	 Again assume that $f \in G$. Then $f(x) \in B$ if $x \in B$.
+	 Since $A$ is finite we know that $B$ is finite. And we know that
+	 $f$ is bijective and has an inverse $f^{-1}$. Since it is bijective
+	 (like all permutations) we know that
+	 if $x \in B$ then $f^{-1}(x) \in B$.
+	 Therefore $f^{-1}$ is in $G$
+	 and $G$ is closed with respect to inverses. Therefore $G$ is
+	 a subgroup of $S_A$.
+         
+
+	 \item Given an example to show that the conclusion of part 3
+	 is not necessarily true if $A$ is an infinite set.
+
+	 \solution Let $A$ be \Integers. Let $B$ be $\Integers^+$. So
+	 we have $B \subset A$. Let $f$ be the function $f(x) = x + 1$
+	 For any value $x \in B$ we know $f(x) \in B$ (adding 1 to any
+	 positive integer results in a positive integer). However, the inverse
+	 of $f$ is $f^{-1}(x) = x - 1$. Now look at $f^{-1}(1) = 0$ and
+	 we have a case where $x \in B$ but $f^{-1}(x) \notin B$.
+	 Therefore $f^{-1} \notin G$ and therefore $G$ is not closed
+	 with respect to inverses and is not a subgroup of $S_A$.
+
+
+	 The key difference is that the function $f$ is bijective in $A$
+	 but not in $B$.
+
+	    
 
       \end{enumerate}
  

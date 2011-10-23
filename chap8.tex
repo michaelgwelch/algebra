@@ -1,0 +1,402 @@
+\documentclass[twoside]{amsart}
+\usepackage{amssymb,latexsym}
+\usepackage{amsfonts}
+\usepackage{xspace}
+\usepackage{enumerate}
+\usepackage{graphics}
+\usepackage{fitch}
+\newcommand{\Rationals}{\mathbb{Q}{}}
+\newcommand{\Reals}{\ensuremath{\mathbb{R}}\xspace}
+\newcommand{\Integers}{\ensuremath{\mathbb{Z}{}}\xspace}
+\newcommand{\solution}{\textsc{Solution}\xspace}
+\newcommand{\problem}{\textsc{Problem}\xspace}
+\newcommand{\Blank}{\mathrel{\phantom{=}}}
+\newcommand{\ltrue}{\top}
+\newcommand{\lfalse}{\bot}
+\newcommand{\fOfg}{\ensuremath{f \circ g}\xspace}
+\newcommand{\gOff}{\ensuremath{g \circ f}\xspace}
+\newcommand{\eps}{\ensuremath{\epsilon}\xspace}
+\begin{document}
+\title{Answers to Chapter 8 Exercises - A Book of Abstract Algebra}
+\author{Michael Welch}
+\date{\today}
+\maketitle
+
+This document contains selected answers to exercises from chapter 8
+of A Book of Abstract Algebra.
+
+
+\begin{enumerate}[A.]
+   \item \textsc{Practice in Multiplying and Factoring Permutations}
+   \begin{enumerate}[1]
+      \item Compute each of the following products in $S_9$. (Write your
+      answer as a single permutation.)
+
+      \begin{enumerate}[(a)]
+         \item (145)(37)(682)
+
+	 \solution \[ \begin{pmatrix}
+	                 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+			 4 & 6 & 7 & 5 & 1 & 8 & 3 & 2 & 9
+	              \end{pmatrix} \]
+
+	 \item (17)(628)(9354)
+	 
+	 \solution \[
+	              \begin{pmatrix}
+	                 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+			 7 & 8 & 5 & 9 & 4 & 2 & 1 & 6 & 3
+		      \end{pmatrix}
+		   \]
+
+	 \item (71825)(36)(49)
+
+	 \solution \[
+	              \begin{pmatrix}
+	                 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+			 8 & 5 & 6 & 9 & 7 & 3 & 1 & 2 & 4
+		      \end{pmatrix}
+	           \]
+	 
+	 \item (12)(347)
+
+	 \solution \[
+	              \begin{pmatrix}
+	                 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+			 2 & 1 & 4 & 7 & 5 & 6 & 3 & 8 & 9
+		      \end{pmatrix}
+	           \]
+
+	 \item (147)(1678)(74132)
+
+	 \solution \[
+	              \begin{pmatrix}
+	                 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+			 3 & 8 & 2 & 6 & 5 & 1 & 7 & 4 & 9
+		      \end{pmatrix}
+	           \]
+
+	 \item (6148)(2345)(12493)
+
+	 \solution \[
+	              \begin{pmatrix}
+	                 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+			 3 & 5 & 4 & 9 & 2 & 1 & 7 & 6 & 8
+		      \end{pmatrix}
+	           \]
+      \end{enumerate}
+
+      \item Write each of the following permutations in $S_9$ as a product
+      of disjoint cycles.
+
+      \begin{enumerate}[(a)]
+         \item \[
+	          \begin{pmatrix}
+		      1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+		      4 & 9 & 2 & 5 & 1 & 7 & 6 & 8 & 3
+		  \end{pmatrix}
+	       \]
+
+	 \solution (145)(293)(67)
+
+         \item \[
+	          \begin{pmatrix}
+		      1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+		      7 & 4 & 9 & 2 & 3 & 8 & 1 & 6 & 5
+		  \end{pmatrix}
+	       \]
+
+	 \solution (17)(24)(395)(68)
+	 
+         \item \[
+	          \begin{pmatrix}
+		      1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+		      7 & 9 & 5 & 3 & 1 & 2 & 4 & 8 & 6
+		  \end{pmatrix}
+	       \]
+
+	 \solution (17435)(296)
+
+      \end{enumerate}
+
+      \item Express each of the following as a product of transpostions
+      in $S_8$.
+
+      \begin{enumerate}[(a)]
+         \item (137428) = (18)(12)(14)(17)(13)
+
+	 \item (416)(8235) = (46)(41)(85)(83)(82)
+
+	 \item (123)(456)(1574) = (13)(12)(46)(45)(14)(17)(15)
+
+	 \item $\pi = \begin{pmatrix}
+	                 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+			 3 & 1 & 4 & 2 & 8 & 7 & 6 & 5
+	              \end{pmatrix}$ = (1342)(58)(67) which
+		      can be rewritten (12)(14)(13)(58)(67)
+      \end{enumerate}
+
+      \item If $\alpha = (3714)$, $\beta = (123)$, and $\gamma = (24135)$
+      in $S_7$, express each of the following as a product of disjoint cycles:
+
+      \begin{enumerate}[(a)]
+         \item $\alpha^{-1}\beta$
+
+	 \solution First of all $\alpha = 
+	    \begin{pmatrix}
+	       1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+	       4 & 2 & 7 & 3 & 5 & 6 & 1
+	    \end{pmatrix}$ and therefore $\alpha^{-1} = 
+	    \begin{pmatrix}
+	       1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+	       7 & 2 & 4 & 1 & 5 & 6 & 3
+	    \end{pmatrix}$, which can be rewritten as (4173). So notice
+	    that to find the inverse of a permutation we just need to arrange
+	    the cycle in reverse order. Now we need to calculate
+	    $\alpha^{-1}\beta$: (4173)(123)
+
+	    \[ \alpha^{-1}\beta = 
+	       \begin{pmatrix}
+	          1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+		  2 & 4 & 7 & 1 & 5 & 6 & 3
+	       \end{pmatrix}
+	    \]
+
+	    Now we can find disjoint cycles: (124)(37)
+
+	    \item $\gamma^{-1}\alpha = (53142)(3714)$
+	    This can be rewritten as (125374).
+
+	    \item $\alpha^2\beta = (3714)(3714)(123)$.
+	    This can be rewritten as (12)(47)
+
+	    \item $\beta^2\alpha\gamma = (123)(123)(3714)(24135)$.
+	    This can be rewritten as (1735)
+
+	    \item $\gamma^4 = (24135)(24135)(24135)(24135)$.
+	    This can be rewritten as (14253).
+
+	    \item $\gamma^3\alpha^{-1}$ = (24135)(24135)(24135)(4173).
+	    This can be rewritten as $(12345)\circ(4173) = (174235)$.
+
+	    \item $\beta^{-1}\gamma = (31)(24135)$.
+	    This can be rewritten as (2435).
+
+	    \item $\alpha^{-1}\gamma^2\alpha = (4173)(21543)(3714)$.
+	    This can be rewritten as (14275).
+      \end{enumerate}
+
+      \item In $S_5$, write (12345) in five different ways as a cycle, 
+      and in five different ways as a product of transpositions.
+
+      \solution The cycles are (12345), (23451), (34512), (45123),
+      (51234). The products are (15)(14)(13)(12), (21)(25)(24)(23),
+      (32)(31)(35)(34), (43)(42)(41)(45), (54)(53)(52)(51).
+
+      \item In $S_6$, express each of the following as a square of a 
+      cycle (that is, express as $\alpha^2$ where $\alpha$ is a cycle):
+
+      \begin{enumerate}[(a)]
+         \item (132). This is the square of (123).
+	 \item (12345). This is the square of (14253).
+	 \item (13)(24). This is the square of (1234).
+      \end{enumerate}
+
+
+   \end{enumerate}
+
+   \item \textsc{Powers of Permutations}
+
+   \noindent If $\pi$ is a permutation, we write $\pi \circ \pi = \pi^2$,
+   $\pi \circ \pi \circ \pi = pi^3$, etc. The convenience of this notation
+   is evident.
+
+   \begin{enumerate}[1]
+      \item Compute $\alpha^{-1}, \alpha^2, \alpha^3, \alpha^4, \alpha^5$
+      where
+      \begin{enumerate}[(a)]
+         \item $\alpha=(123)$: $\alpha^{-1}=(321)$, $\alpha^2=(132)=
+	 \alpha^{-1}$,
+	 $\alpha^3=\eps$, $\alpha^4=\alpha$, $\alpha^5=\alpha^2$.
+
+	 \item $\alpha=(1234)$: $\alpha^{-1}=(4321)$, $\alpha^2=(13)(24)$,
+	 $\alpha^3=(1432)=\alpha^{-1}$, $\alpha^4=\eps$, $\alpha^5=\alpha$.
+
+	 \item $\alpha=(123456)$: $\alpha^{-1}=(654321)$ 
+	 $\alpha^2=(135)(246)$, $\alpha^3=(14)(25)(36)$, $\alpha^4=
+	 (153)(264)$, $\alpha^5=(165432)=\alpha^{-1}$
+      \end{enumerate}
+
+      \vspace{5pt}
+      \noindent In the following problems, let $\alpha$ be a cycle
+      of length $s$, say $\alpha = (a_1a_2\dots a_s)$.
+      \vspace{5pt}
+
+      \item Describe all the \emph{distinct} powers of $\alpha$. How
+      many are there? Note carefully the connection with addition of
+      integers modulo $s$ (page 27).
+
+      \noindent \solution I think the answer is there are $s$ \emph{distinct}
+      powers of $\alpha$: $\alpha$ and \eps are always included. So if 
+      $s$ is 2 then that's all you have.
+      \begin{proof}
+      The first power of $\alpha$ is $\alpha$, it takes $a_1$ to $a_2$. 
+      The second power of $\alpha$
+      is going to take $a_1$ to $a_3$. The third power of $\alpha$ is going
+      to take $a_1$ to $a_4$. The $(s-1)^{th}$ power of $\alpha$ is going to
+      take $a_1$ to $a_{1+s-1} = a_s$. Finally the $s^{th}$ power of $\alpha$
+      will take $a_1$ to $a_1$. So by this we have shown that there must
+      be at least $s$ \emph{distinct} powers of $\alpha$.
+
+      However we can expand this by looking at what happens to all of 
+      the elements for each power.
+
+      \begin{align*}
+          \alpha &= \begin{pmatrix}
+	               a_1 & a_2 & a_3 & \cdots & a_{s-1} & a_s \\
+		       a_2 & a_3 & a_4 & \cdots & a_s & a_{s-1}
+	            \end{pmatrix} \\
+	  \alpha^2 &= \begin{pmatrix}
+	                 a_1 & a_2 & a_3 & \cdots & a_{s-1} & a_s \\
+		         a_3 & a_4 & a_5 & \cdots & a_1 & a_{2}
+	              \end{pmatrix} \\
+		   &\vdots  \\
+	  \alpha^{s-1} &= \begin{pmatrix}
+	                      a_1 & a_2 & a_3 & \cdots & a_{s-1} & a_s \\
+		              a_s & a_1 & a_2 & \cdots & a_{s-2}& a_{s-1}
+	                  \end{pmatrix} \\
+	  \alpha^s &= \begin{pmatrix}
+	                 a_1 & a_2 & a_3 & \cdots & a_{s-1} & a_s \\
+		         a_1 & a_2 & a_3 & \cdots & a_{s-1} & a_s
+	              \end{pmatrix}		  
+      \end{align*}
+      As you can see there are $s$ distinct powers. 
+
+      The connection with addition module $s$ is easier to see if we
+      define $\alpha$ to be $(a_0 a_1 a_2 \dots a_{s-2} a_{s-1}$. As 
+      you can see $\alpha$ is still lenght $s$. Each power $n$ of $\alpha$
+      has the affect of taking some $a_i$ to $a_j$ where $j=i+n$ modulo $s$.
+
+      If we relabel $a_s$ as $a_0$ this is exactly modulo arithmetic and
+      $a_s$ even shows up in the same position that $a_0$ normally would.
+      \end{proof}
+
+      \item Find the inverse of $\alpha$ and show that $\alpha^{-1} =
+      \alpha^{s-1}$. 
+
+      \noindent \solution $\alpha^{-1} = (a_s a_{s-1} a_{s-2} \dots a_3 a_2 
+      a_1)$.
+      So we can see that this maps every element 
+      $a_i$ to $a_j$ where $j=i-1$ (modulo s, so that $a_1$ is taken to
+      $a_s$). And we know that the $(s-1)^{th}$ power moves every 
+      $a_i$ to $a_j$ where $j=i+s-1=i-1$.
+
+      \noindent Prove each of the following:
+
+      \item $\alpha^2$ is a cycle iff $s$ is odd.
+
+      \noindent \solution. Assume that $s$ is odd. Then we have that
+      every element $a_i$ for $i+2 <= s$ is taken to 
+      $a_{i+2}$. 
+      This account for all of
+      the elements except for $a_{s-1}$ and $a_s$. These are taken
+      to $a_1$ and $a_2$ respectively. So we have the cycle
+      $(a_1 a_3 a_5 \dots a_{s-2} a_s a_2 a_4 \dots a_{s-3} a_{s-1})$.
+
+      However if $s$ is even then we get the composition of
+      two cycles $(a_1 a_3 \dots a_{s-3} a_{s-1})\circ (a_2 a_4 a_6 \dots
+      a_{s-2} a_s$).
+
+      So next assume that $\alpha^2$ is a cycle. We know that if $s$
+      is even then $\alpha^2$ is not a cycle. Therefore $s$ must be odd.
+
+      \item If $s$ is odd, $\alpha$ is the square of some cycle of 
+      length $s$. (Find it. \textsc{Hint}: Show $\alpha = \alpha^{s+1}$.
+
+      \noindent \solution We know that $\alpha = \alpha^{s+1}$ as we've
+      repeatedly seen evidence of this. We know that $\alpha^s$ takes
+      $a_1$ to $a_1$ and in general takes $a_i$ to $a_i$. So $\alpha^s=
+      eps$. Therefore, $\alpha^{s+1} = \alpha^s \alpha = \eps \alpha 
+      = \alpha$.
+
+      \hspace{0.15in} Since $s$ is odd we can rewrite it in terms of some $t$ as
+      $2t+1$ (where $t=(s-1)/2$) and we can rewrite $s+1$ as $2t+2$.
+      So we can rewrite $\alpha$ as $\alpha^{s+1}=\alpha^{2t+2}
+      =\alpha^{t+1}\alpha^{t+1}$. So $\alpha$ can be rewritten
+      as $\alpha = \beta^2$ where $\beta=\alpha^{t+1}=\alpha^{((s-1)/2)+1)}$.
+
+      \item If $s$ is even, say $s=2t$, then $\alpha^2$ is the product
+      of two cycles of length $t$. (Find them.)
+
+      \noindent \solution We know thta $\alpha^2$ takes
+      $a_i$ to $a_j$ where $j=i+2$ modulo $s$. With this information it's
+      possible to identify the two cycles as
+      $(a_1 a_3 a_5 \dots a_{s-3} a_{s-1})$ and 
+      $(a_2 a_4 a_6 \dots a_{s-2} a_{s})$.
+
+      \item If $s$ is a multiple of $k$, say $s=kt$, then $\alpha^k$ is
+      the product of $k$ cycles of length $t$.
+
+      \noindent \solution Proceed as in part 6. We know that
+      $a_i$ is taken to $a_j$ where $j=i+k$ module $s$. Therefore
+      we will have $k$ cycles: $(a_1 a_{1+k} \dots a_{s-k+1})$,
+      $(a_2 a_{2+k} \dots a_{s-k+2})$, $\ldots$, 
+      $(a_k a_{k+k} \dots a_s)$.
+
+      \item If $s$ is a prime number, every power of $\alpha$ is a cycle.
+
+      \noindent \solution Let's assume that there exists an $n$ such that
+      when $s$ is prime $\alpha^n$ is the product of $m$ distinct cycles.
+      Then the cycles would look like
+
+      \begin{tabular}{c}
+      $(a_1 a_{1+n} a_{1+2n} \dots a_{s-2n+1} a_{s-n+1})$ \\
+      $(a_2 a_{2+n} a_{2+2n} \dots a_{s-2n+2} a_{s-n+2})$ \\
+      $\vdots$ \\
+      $(a_m a_{m+n} a_{m+2n} \dots a_{s-2n+m} a_{s-n+m})$
+      \end{tabular}
+
+      And we would end up with $m$ cycles each of length $s/m$. But
+      this contradicts are assumption that $s$ is prime and therefore
+      not divisible by $m$. Therefore $m$ must be 1.
+
+   \end{enumerate}
+
+   \item \textsc{Even and Odd Permutations}
+
+   \begin{enumerate}[1]
+       \item Determine which of the following permutations is even, and
+       which is odd.
+
+       \begin{enumerate}[(a)]
+          \item $\pi = \begin{pmatrix}
+	                  1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+			  7 & 4 & 1 & 5 & 6 & 2 & 3 & 8
+	               \end{pmatrix}$
+
+	  \noindent \solution $\pi = (173)(2456) = (13)(17)(26)(25)(24)$
+	  therefore $\pi$ is odd.
+
+	  \item (71864) \solution This is equivalent to (74)(76)(78)(71), thus
+	  it is even.
+
+	  \item (12)(76)(345) \solution Even: (12)(76)(35)(34).
+
+	  \item (1276)(3241)(7812)
+	  \noindent \solution Odd: (16)(17)(12)(31)(34)(32)(72)(71)(78)
+
+	  \item (123)(2345)(1357) \solution even + odd + odd = even:
+	  (13) (12) (25) (24) (23) (17) (15) (13).
+
+       \end{enumerate}
+       \noindent Prove each of the following
+
+       \item \begin{enumerate}[(a)]
+	  \item The product
+       \end{enumerate}
+
+   \end{enumerate}
+ 
+\end{enumerate}
+
+\end{document}
