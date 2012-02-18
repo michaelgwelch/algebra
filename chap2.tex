@@ -5,6 +5,8 @@
 \newcommand{\Reals}{\mathbb{R}{}}
 \newcommand{\Integers}{\mathbb{Z}{}}
 \newcommand{\Solution}{\textsc{Solution}\xspace}
+\newcommand{\brk}{\vspace{5pt}}
+\newcommand{\noindsol}{\noindent\Solution}
 \newcommand{\Problem}{\textsc{Problem}\xspace}
 \newcommand{\Blank}{\mathrel{\phantom{=}}}
 \newcommand{\ltrue}{\top}
@@ -38,42 +40,48 @@ is not an integer.) Thus, $\Integers$ is not closed under $*$.
 % #1
 \item $a*b = \sqrt{|ab|}$, on the set $\Rationals$. 
 
-\Solution This is not an operation on $\Rationals$. Here is a counter
+\brk
+\noindsol This is not an operation on $\Rationals$. Here is a counter
 example: $2*1 = \sqrt{|2 \cdot 1|} = \sqrt{2}$. The result is in irrational
-number, and therefore $\Rationals$ is not closer under $*$.
+number, and therefore $\Rationals$ is not closed under $*$.
+\brk
 
 
 % #2
 \item $a*b = a \ln b$, on the set $\{x \in \Reals  : x > 0\}$. 
 
-\Solution This is not an operation because it is not closed. A counter 
-example is obtained by choosing $a=1$ and $b=0.5$: 
-$1 \cdot 0.5 = \ln 0.5 \approx -0.693 < 0$. 
+\brk
+\noindsol This is not an operation because it is not closed. A
+counter example is obtained by choosing $a=1$ and $b=0.5$: $1 * 0.5 = \ln 0.5
+\approx -0.693 < 0$. 
+\brk
 
 
 % #3
 \item $a*b$ is a root of the equation $x^2 - a^2 b^2 = 0$, on the set $\Reals$.
 
-
-\Solution This is not an operation because it is not uniquely defined.
-$2*2$ is a root of the equation $x^2 - 2^2 2^2 = 0$, where $x = \pm 4$.
-
+\brk
+\noindsol This is not an operation because it is not uniquely defined.
+If we pick $a=2,b=2$ then we have $x^2 - 2^2 2^2 = 0$. The roots of that
+equation are $x = \pm 4$. This means that $a*b$ is not uniquely defined, 
+therefore $*$ is not an operation.
+\brk
 
 % #4
 \item Subtraction, on the set $\Integers$.
 
-\Solution This is an operation. It is defined for all pairs 
-${(a,b) | a,b \in \Integers}$, it is uniquely defined for each pair, and it
+\brk
+\noindsol This is an operation. It is defined for all pairs 
+$\{(a,b) : a,b \in \Integers\}$, it is uniquely defined for each pair, and it
 is closed.
-
+\brk
 
 % #5
 \item Subtraction, on the set $\{ n \in \Integers : n \ge 0\}$.
 
-\Solution This is not an operation because it is not closed:
+\brk
+\noindsol This is not an operation because it is not closed:
 $4*10 = 4 - 10 = -4 < 0$.
-
-
 
 \end{enumerate}
 
@@ -89,7 +97,7 @@ not
    \item every $x \in \Reals$ has an inverse with respect to $*$.
 \end{enumerate}
 
-\textbf{Instructions} For (1), computer $x * y$ and $y * x$, and verify whether
+\textbf{Instructions} For (1), compute $x * y$ and $y * x$, and verify whether
 or not they are equal. For (2), compute $x * (y * z)$ and $(x * y) * z)$, and
 verify whether or not they are equal. For (3), first solve the equation
 $x * e = x$ for $e$; if the equation caonnot be solved, there is no identity
@@ -154,12 +162,11 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
 
    \begin{enumerate}
       
-      \item The operation is not commutative as we can see from
-            (1) and (2) below:
+      \item The operation is not commutative: 
       \begin{align*}
          x * y & = x + 2y - xy \\
 	 y * x & = y + 2x - yx \\
-	       & = 2x + y - xy \notag
+	       & = 2x + y - xy 
       \end{align*}
 
 
@@ -184,8 +191,8 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
 	e(2-x) & = 0           \notag \\
 	     e & = 0 \quad\text{(when $x \ne 2$)} \notag 
       \end{align*}
-      We need to check what happens when $x = 0$: we have 
-      $0*e=0+2e-0e$ which reduces to $0 = 2e$ and again we get $e = 0$.
+      We need to check what happens when $x = 2$: we have 
+      $2*e=2=2+2e-2e$ which reduces to $0 = 0$. So $e=0$.
       Now we must check that $x*e=e*x=x$
       \begin{align*}
          e * x & = e + 2x - ex      \\
@@ -357,7 +364,7 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
 	             &= \max(x, \max(y,z)) \\
 		     &=
 		     \begin{cases}
-		        \max(x, y), \text{if $y >= z$;} \\
+		        \max(x, y), \text{if $y \ge z$;} \\
 			\max(x, z), \text{otherwise.}
 		     \end{cases} \\
 		     & =
@@ -370,13 +377,13 @@ $x*x'=x'*x=e$. If this checks, $x'$ is the inverse of $x$.
 	             & = \max(\max(x,y), z) \\
 		     & =
 		     \begin{cases}
-		        \max(x,z), \text{if $x >= y$;} \\
+		        \max(x,z), \text{if $x \ge y$;} \\
 			\max(y,z), \text{otherwise.}
 		     \end{cases} \\
 		     & =
 		     \begin{cases}
-		        x, & \text{if $x >= y \land x >= z$;} \\
-			y, & \text{if $x < y \land y >= z$;} \\
+		        x, & \text{if $x \ge y \land x \ge z$;} \\
+			y, & \text{if $x < y \land y \ge z$;} \\
 			z, & \text{otherwise.}
 		     \end{cases}
       \end{align*}
@@ -708,7 +715,7 @@ Let $A$ be the two-element set $A = \{a,b\}$.
    is the first equation and s is the second equation.
 %
    \begin{align*}
-      f \land s & = x \land (\lnot y \lor z) \land \lnot 
+      f \land \lnot s & = x \land (\lnot y \lor z) \land \lnot 
                        (x \land \lnot y \land \lnot z))\\
          & = (x \land \lnot y \lor x \land z) \land 
 	     (\lnot x \lor y \lor z) \\
@@ -983,14 +990,9 @@ Let $A$ be the two-element set $A = \{a,b\}$.
    of $O_6$ is $a$ because $a *_6 a = a$ and $b *_6 a = a *_6 b = b$.
    The identity element of $O_7$ is $a$. We can check that $a *_7 a = a$ and
    $b *_7 a = a *_7 b = a$. The identity element of $O_9$ is $b$.
-   $a *_9 b = b *_9 a = a$ and $b *_9 b = b$.
+   $a *_9 b = b *_9 a = a$ and $b *_9 b = b$. (These results are
+   validated using boolean algebra in figure~\ref{fig:bool_ids}.)
 
-   See table~\ref{fig:bool_ids} for a list of these results. The table shows
-   how the identity can be calculated using boolean algebra (where $a$ =
-   \verb=false= and $b$ = \verb=true=). The second column shows the boolean
-   equation for the specified operation. The thrid column states the 
-   equation that must be solved to find the identity element, by solving
-   for $y$. The fourth column shows the actual cases that proves the result.
    \begin{figure}
       \caption{List of identity elements for binary operations. In the figure
       $e_n$ corresponds to the identity element for $O_n$. For each operation
