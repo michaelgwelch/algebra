@@ -392,10 +392,170 @@ of A Book of Abstract Algebra.
        \noindent Prove each of the following
 
        \item \begin{enumerate}[(a)]
-	  \item The product
+	  \item The product of two even permutations is even.
+
+	  \noindent \solution Assume we have two even permutations. Then
+	  we know that we can write them as the product of $2m$ and $2n$
+	  tranpositions for some $m,n >= 0$. Therefore the product of 
+	  these two permutations can be written as the product of $2m 
+	  + 2n = 2(m+n)$ transpositions. Therefore the product is even.
+
+	  \item The product of two odd permutations is even.
+
+	  \noindent \solution The two odd permutations can be written
+	  as the product of $2m+1$ and $2n+1$ transpotitions for $m,n>=0$.
+	  The product of these permutations can therefore be written
+	  as the product of $(2m+1)+(2n+1)= 2m+2n+2 = 2(m+n+1)$ transpositions.
+	  Therefore the product is even.
+
+	  \item The product of an even permutation and an odd permutation
+	  is odd.
+
+	  \noindent \solution The two permutations can be written as
+	  the product of $2m$ tranpositions and $2n+1$ transpositions
+	  respectively. Therefore their product can be written
+	  as the product of $2m+2n+1=2(m+n) + 1$ transpositions which
+	  is an odd number. Therefore, the product is odd.
+	  
        \end{enumerate}
 
+       \item 
+       \begin{enumerate}[(a)]
+
+          \item A cycle of length $l$ is even if $l$ is odd.
+
+	  \noindent \solution As shown on p83 we have the following
+	  equality:
+	  \[
+	      (a_1a_2\cdots a_r) = (a_ra_{r-1})(a_ra_{r-2})\cdots
+	                          (a_ra_3)(a_ra_2)(a_ra_1)
+	  \]
+
+	  We can see that a cycle of length $r$ can be written
+	  as the product of $r-1$ transpositions. Therefore, if
+	  the cycle has a length that is odd the cycle will be even 
+	  (e.g. If the cycle has a length $l$ that is odd, then $l$
+	  can be written as $2m+1$ for some $m$. This cycle can
+	  then be written as the product of $l-1=(2m+1)-1=2m$ 
+	  transpositions which is even).
+
+	  \item A cycle of length $l$ is odd if $l$ is even.
+
+	  \noindent \solution Same solution as part 1 except starting
+	  with $l$ is even.
+       \end{enumerate}
+
+       \item 
+       \begin{enumerate}[(a)]
+          \item If $\alpha$ and $\beta$ are cycles of length $l$ and $m$,
+	  respectively, then $\alpha \beta$ is even or odd depending
+	  on whether $l+m-2$ is even or odd.
+
+	  \noindent \solution $\alpha$ and $\beta$ can each be written
+	  as the product of $l-1$ and $m-1$ transpositions, respectively.
+	  So their product can be written as the product of $(l-1)+(m-1)
+	  = l+m-2$ transpositions. Therefore if this number is even the
+	  product is even, if it is odd the product is odd.
+
+	  \item If $\pi = \beta_1 \cdots \beta_r$, where each $\beta_i$
+	  is a cycle of length $l_i$, then $\pi$ is even or odd
+	  depending on whether $l_1 + l_2 + \dots + l_r - r$ is even or odd.
+
+	  \noindent \solution Proceed as in the previous part. Each
+	  $\beta_i$ can be written as the product of $l_i - 1$ transpositions.
+	  Therefore $\pi$ is written as the product of $q$ transpositions
+	  where $q$ is calculated as:
+	  \[
+	     q = \sum_{i=1}^{r} (l_i - 1) = l_1 + l_2 + \dots + l_r - r
+	  \]
+
+       \end{enumerate}
+
+
+       
+
    \end{enumerate}
+
+   \item \textsc{Disjoint Cycles}
+
+   \noindent In each of the following, let $\alpha$ and $\beta$ be disjoint
+   cycles, say
+
+   \begin{align*}
+      \alpha &= (a_1a_2 \dots a_s) & && \beta &= (b_1b_2\dots b_r)
+   \end{align*}
+
+   \noindent Prove parts 1-3:
+
+   \begin{enumerate}[1]
+      \item For every positive integer $n$, $(\alpha \beta)^n =
+      \alpha^n\beta^n$.
+
+      \noindent \solution We can expand $(\alpha \beta)^n$:
+
+      \begin{align*}
+         (\alpha \beta)^n &= \underbrace{(\alpha \beta)(\alpha \beta) \cdots
+	     (\alpha \beta)}_{n \text{ times}}
+      \end{align*}
+
+      Now, since disjoint cycles are commutative we can rearrange all
+      of the terms to be
+
+      \begin{align*}
+         (\alpha \beta)^n &= \underbrace{\alpha \alpha \cdots 
+	    \alpha}_{n \text{ times}} \underbrace{\beta \beta \cdots 
+	    \beta}_{n \text{ times}} \\
+		          &= \alpha^n \beta ^n
+      \end{align*}
+
+      \item If $\alpha \beta = \eps$, then $\alpha = \eps$ and
+      $\beta = \eps$.
+
+      \noindent \solution See the discussion of disjoint cycles on p82.
+      We know that $\alpha$ moves the $a$'s while $\beta$ moves the $b$'s.
+      Assume that $\alpha$ is not $\eps$. Then there is some $h$ and
+      some $k$ such that $\alpha$ moves $a_h$ to $a_k$. And therefore
+      $\alpha \beta$ does the same. But we know that $\alpha \beta = \eps$
+      which is contradicted by our assumption. Therefore $\alpha=\eps$.
+      By the same argument $\beta=\eps$.
+
+      \item If $(\alpha \beta)^t = \eps$, then $\alpha^t = \eps$ and
+      $\beta^t = \eps$.
+
+      \noindent \solution First, we can use part 1 to note that
+      $(\alpha \beta)^t = \alpha^t \beta^t$. Let $\gamma = \alpha^t$ and
+      $\psi = \beta^t$. Then we have the fact that $\gamma \psi = \eps$.
+      By part 2 we have the fact that $\gamma = \eps$ and $\psi = \eps$.
+      Therefore $\alpha^t = \eps$ and $\beta^t = \eps$.
+
+      \item Find a transposition $\gamma$ such that $\alpha \beta \gamma$ is
+      a cycle.
+
+      \noindent \solution Choose some $a_i$ and some $b_j$ and let
+      $\gamma = (a_ib_j)$. To illustrate let's set $\gamma = (a_1b_1)$.
+      Then $\alpha \beta \gamma = b_1 a_2 a_3 \cdots a_s a_1 b_2 b_3
+      \cdots b_r)$.
+
+      \item Let $\gamma$ be the same transposition as in the preceeding 
+      exercise. Show that $\alpha \gamma \beta$ and $\gamma \alpha \beta$
+      are cycles.
+
+      \noindent \solution $\alpha \gamma \beta =
+      (a_1 a_2 \cdots a_s)(a_1b_1)(b_1 b_2 \cdots b_t)$ which can be
+      expanded to $(a_1 b_1 b_2 \cdots b_t a_2 \cdots a_s)$.
+
+      \noindent \solution $\gamma \alpha \beta = (a_1b_1)(a_1 a_2 \cdots a_s)
+      (b_1 b_2 \cdots b_t)$ which can be expanded to 
+      $(a_1 a_2 \cdots a_s b_1 b_2 \cdots b_t)$.
+
+      \item Let $\alpha$ and $\beta$ be cycles of odd length (not disjoint).
+      Prove that if $\alpha^2 = \beta^2$, then $\alpha = \beta$.
+
+      \noindent \solution Trivial. Prove by contradiction. Assume 
+      $\alpha \ne \beta$.
+
+   \end{enumerate}
+   
  
 \end{enumerate}
 
