@@ -392,10 +392,500 @@ of A Book of Abstract Algebra.
        \noindent Prove each of the following
 
        \item \begin{enumerate}[(a)]
-	  \item The product
+	  \item The product of two even permutations is even.
+
+	  \noindent \solution Assume we have two even permutations. Then
+	  we know that we can write them as the product of $2m$ and $2n$
+	  tranpositions for some $m,n >= 0$. Therefore the product of 
+	  these two permutations can be written as the product of $2m 
+	  + 2n = 2(m+n)$ transpositions. Therefore the product is even.
+
+	  \item The product of two odd permutations is even.
+
+	  \noindent \solution The two odd permutations can be written
+	  as the product of $2m+1$ and $2n+1$ transpotitions for $m,n>=0$.
+	  The product of these permutations can therefore be written
+	  as the product of $(2m+1)+(2n+1)= 2m+2n+2 = 2(m+n+1)$ transpositions.
+	  Therefore the product is even.
+
+	  \item The product of an even permutation and an odd permutation
+	  is odd.
+
+	  \noindent \solution The two permutations can be written as
+	  the product of $2m$ tranpositions and $2n+1$ transpositions
+	  respectively. Therefore their product can be written
+	  as the product of $2m+2n+1=2(m+n) + 1$ transpositions which
+	  is an odd number. Therefore, the product is odd.
+	  
        \end{enumerate}
 
+       \item 
+       \begin{enumerate}[(a)]
+
+          \item A cycle of length $l$ is even if $l$ is odd.
+
+	  \noindent \solution As shown on p83 we have the following
+	  equality:
+	  \[
+	      (a_1a_2\cdots a_r) = (a_ra_{r-1})(a_ra_{r-2})\cdots
+	                          (a_ra_3)(a_ra_2)(a_ra_1)
+	  \]
+
+	  We can see that a cycle of length $r$ can be written
+	  as the product of $r-1$ transpositions. Therefore, if
+	  the cycle has a length that is odd the cycle will be even 
+	  (e.g. If the cycle has a length $l$ that is odd, then $l$
+	  can be written as $2m+1$ for some $m$. This cycle can
+	  then be written as the product of $l-1=(2m+1)-1=2m$ 
+	  transpositions which is even).
+
+	  \item A cycle of length $l$ is odd if $l$ is even.
+
+	  \noindent \solution Same solution as part 1 except starting
+	  with $l$ is even.
+       \end{enumerate}
+
+       \item 
+       \begin{enumerate}[(a)]
+          \item If $\alpha$ and $\beta$ are cycles of length $l$ and $m$,
+	  respectively, then $\alpha \beta$ is even or odd depending
+	  on whether $l+m-2$ is even or odd.
+
+	  \noindent \solution $\alpha$ and $\beta$ can each be written
+	  as the product of $l-1$ and $m-1$ transpositions, respectively.
+	  So their product can be written as the product of $(l-1)+(m-1)
+	  = l+m-2$ transpositions. Therefore if this number is even the
+	  product is even, if it is odd the product is odd.
+
+	  \item If $\pi = \beta_1 \cdots \beta_r$, where each $\beta_i$
+	  is a cycle of length $l_i$, then $\pi$ is even or odd
+	  depending on whether $l_1 + l_2 + \dots + l_r - r$ is even or odd.
+
+	  \noindent \solution Proceed as in the previous part. Each
+	  $\beta_i$ can be written as the product of $l_i - 1$ transpositions.
+	  Therefore $\pi$ is written as the product of $q$ transpositions
+	  where $q$ is calculated as:
+	  \[
+	     q = \sum_{i=1}^{r} (l_i - 1) = l_1 + l_2 + \dots + l_r - r
+	  \]
+
+       \end{enumerate}
+
+
+       
+
    \end{enumerate}
+
+   \item \textsc{Disjoint Cycles}
+
+   \noindent In each of the following, let $\alpha$ and $\beta$ be disjoint
+   cycles, say
+
+   \begin{align*}
+      \alpha &= (a_1a_2 \dots a_s) & && \beta &= (b_1b_2\dots b_r)
+   \end{align*}
+
+   \noindent Prove parts 1-3:
+
+   \begin{enumerate}[1]
+      \item For every positive integer $n$, $(\alpha \beta)^n =
+      \alpha^n\beta^n$.
+
+      \noindent \solution We can expand $(\alpha \beta)^n$:
+
+      \begin{align*}
+         (\alpha \beta)^n &= \underbrace{(\alpha \beta)(\alpha \beta) \cdots
+	     (\alpha \beta)}_{n \text{ times}}
+      \end{align*}
+
+      Now, since disjoint cycles are commutative we can rearrange all
+      of the terms to be
+
+      \begin{align*}
+         (\alpha \beta)^n &= \underbrace{\alpha \alpha \cdots 
+	    \alpha}_{n \text{ times}} \underbrace{\beta \beta \cdots 
+	    \beta}_{n \text{ times}} \\
+		          &= \alpha^n \beta ^n
+      \end{align*}
+
+      \item If $\alpha \beta = \eps$, then $\alpha = \eps$ and
+      $\beta = \eps$.
+
+      \noindent \solution See the discussion of disjoint cycles on p82.
+      We know that $\alpha$ moves the $a$'s while $\beta$ moves the $b$'s.
+      Assume that $\alpha$ is not $\eps$. Then there is some $h$ and
+      some $k$ such that $\alpha$ moves $a_h$ to $a_k$. And therefore
+      $\alpha \beta$ does the same. But we know that $\alpha \beta = \eps$
+      which is contradicted by our assumption. Therefore $\alpha=\eps$.
+      By the same argument $\beta=\eps$.
+
+      \item If $(\alpha \beta)^t = \eps$, then $\alpha^t = \eps$ and
+      $\beta^t = \eps$.
+
+      \noindent \solution First, we can use part 1 to note that
+      $(\alpha \beta)^t = \alpha^t \beta^t$. Let $\gamma = \alpha^t$ and
+      $\psi = \beta^t$. Then we have the fact that $\gamma \psi = \eps$.
+      By part 2 we have the fact that $\gamma = \eps$ and $\psi = \eps$.
+      Therefore $\alpha^t = \eps$ and $\beta^t = \eps$.
+
+      \item Find a transposition $\gamma$ such that $\alpha \beta \gamma$ is
+      a cycle.
+
+      \noindent \solution Choose some $a_i$ and some $b_j$ and let
+      $\gamma = (a_ib_j)$. To illustrate let's set $\gamma = (a_1b_1)$.
+      Then $\alpha \beta \gamma = b_1 a_2 a_3 \cdots a_s a_1 b_2 b_3
+      \cdots b_r)$.
+
+      \item Let $\gamma$ be the same transposition as in the preceeding 
+      exercise. Show that $\alpha \gamma \beta$ and $\gamma \alpha \beta$
+      are cycles.
+
+      \noindent \solution $\alpha \gamma \beta =
+      (a_1 a_2 \cdots a_s)(a_1b_1)(b_1 b_2 \cdots b_t)$ which can be
+      expanded to $(a_1 b_1 b_2 \cdots b_t a_2 \cdots a_s)$.
+
+      \noindent \solution $\gamma \alpha \beta = (a_1b_1)(a_1 a_2 \cdots a_s)
+      (b_1 b_2 \cdots b_t)$ which can be expanded to 
+      $(a_1 a_2 \cdots a_s b_1 b_2 \cdots b_t)$.
+
+      \item Let $\alpha$ and $\beta$ be cycles of odd length (not disjoint).
+      Prove that if $\alpha^2 = \beta^2$, then $\alpha = \beta$.
+
+      \noindent \solution Trivial. Prove by contradiction. Assume 
+      $\alpha \ne \beta$.
+
+   \end{enumerate}
+
+   \item \textsc{Conjugate Cycles}
+
+   \noindent Prove each of the following in $S_n$:
+
+   \begin{enumerate}[1]
+       \item Let $\alpha = (a_1, \ldots , a_s)$ be a cycle and let $\pi$
+       be a permutation in $S_n$. Then $\pi \alpha \pi^{-1}$ is the cycle
+       $(\pi (a_1), \ldots , \pi (a_s))$.
+
+       \noindent \solution Trivial actually, once you see the pattern.
+       Let's see what $\pi \alpha \pi^{-1} (\pi(a_1))$ equals. Let's
+       rewrite this so it's clear what is going on: 
+       $\pi(\alpha(\pi^{-1}(\pi(a_1))))$. This is easily reduced because
+       the innermost term is applying $\pi$ to $a_1$ but right after
+       that we undo the result by applying $\pi^{-1}$ which leaves us
+       back with $a_1$. So we've reduced the equation to $\pi(\alpha(a_1))$.
+       This easily reduces (by defn of $\alpha$) to $\pi(a_2)$. To recap:
+       \begin{align*}
+           \pi \alpha \pi^{-1} (\pi(a_1)) &= \pi(\alpha(\pi^{-1}(\pi(a_1)))) \\
+                   &= \pi(\alpha(a_1)) \\
+                   &= \pi(a_2)
+       \end{align*}
+
+       So using the same technique we find out that 
+       $\pi \alpha \pi^{-1}(\pi(a_2))=\pi(a_3)$ and so on all the way
+       to $\pi \alpha \pi^{-1}(\pi(a_s))=\pi(a_1)$. This gives us the cycle
+       $(\pi(a_1),\dots,\pi(a_s))$.
+
+\vspace{5pt}
+       \noindent If $\alpha$ is any cycle and $\pi$ is any permutation,
+       $\pi\alpha\pi^{-1}$ is called a \emph{conjugate} of $\alpha$. In
+       the following parts, let $\pi$ denote any permutation in $S_n$.
+\vspace{5pt}
+
+       \item Conclude from part 1: Any two cycles of the same length are 
+       conjugates of each other.
+
+       \noindent \solution Let $\alpha=(a_1,\dots,a_s)$ and $\beta=
+       (b_1,\dots,b_s)$ be two cycles of the same length, $s$. If $\beta$
+       is a conjugate of $\alpha$ then we should be able to find some
+       permutation $\pi$ such that $\beta=\pi \alpha \pi^{-1}$. This
+       is actually trivial. Select $\pi$ to be the following:
+
+       \begin{center}
+       \begin{tabular}{cc}
+           $x$ & $\pi(x)$ \\
+           $a_1$ & $b_1$ \\
+           $a_2$ & $b_2$ \\
+           \vdots & \vdots \\
+           $a_s$ & $b_s$ \\
+       \end{tabular}
+       \end{center}
+
+       Now we have $\pi \alpha \pi^{-1}$ is the cycle (by part 1):
+       $(\pi(a_1), \pi(a_2), \dots, \pi(a_s)) = (b_1, b_2, \dots, b_s) = 
+       \beta$.
+       Therefore we have shown that $\beta$ is a conjugate of $\alpha$.
+
+       \item If $\alpha$ and $\beta$ are disjoint cycles, then
+       $\pi\alpha\pi^{-1}$ and $\pi\beta\pi{-1}$ are disjoint cycles.
+
+       \noindent \solution First let's expand the terms:
+       $\alpha'=\pi\alpha\pi^{-1}=(a'_1,\dots,a'_s)=(\pi(a_1), \dots,
+       \pi(a_s))$ and $\beta'=\pi\beta\pi^{-1}=(b'_1,\dots,b'_s)=(\pi(b_1),
+       \dots, \pi(b_s))$.  Assume that $i^{th}$ element in $\alpha'$ is the
+       same value as the $j^{th}$ element in $\beta'$. Then we'd have the fact
+       that $a'_i=b'_j=\pi(a_i)=\pi(b_j)$. But for that to be the case we'd
+       have to have the fact that $a_i=b_j$. But this contradicts our
+       assumption that $\alpha$ and $\beta$ are disjoint. We conclude that
+       $\alpha'$ and $\beta'$ must also be disjoint.
+
+       \item Let $\sigma$ be a product $a_1 \cdots a_t$ of $t$ disjoint cycles
+       of lengths $l_1,\dots,l_t$, respectively. Them $\pi\sigma\pi^{-1}$
+       is also a product of $t$ disjoint cycles of lengths $l_1,\dots,l_t$.
+
+       \noindent \solution Also, trivial. Can be seen by inspection.
+       $\pi\sigma\pi^{-1}=\pi a_1 a_2 \cdots a_t \pi^{-1}$ There will
+       be $l_1$ values from the output of $\pi^{-1}$ that are in $a_1$.
+       When we feed the output of $a_1$ thru $\pi$ we will get a new
+       cycle of length $l_1$.
+       Likewise there will be $l_i$ values from the output of $\pi^{-1}$
+       that are in the cycle $a_i$. And if you feed these values thru
+       $\pi$ you'll get a new cycle of length $l_i$. And since the inputs
+       to $\pi$ from each of these cycles is disjoint, the output must
+       be as well. Therefore, we can see we'll have the same number of
+       disjoint cycles with the same lengths. Also note that some
+       values in the output of $\pi^{-1}$ may not be in any of the cycles of
+       $\sigma$ which means they are left unchanged by $\sigma$. Moreover,
+       these values will then be fed direclty into $\pi$ which will
+       return the original values. So the values that are not in the
+       cycles of $\sigma$ are unchanged by $\pi\sigma\pi^{-1}$.
+
+       \item Let $\alpha_1$ and $\alpha_2$ be cycles of the same length.
+       Let $\beta_1$ and $\beta_2$ be cycles of the same length. Let $\alpha_1$
+       and $\beta_1$ be disjoint, and let $\alpha_2$ and $\beta_2$ be 
+       disjoint. There is a permutation $\pi \in S_n$ such that
+       $\alpha_1 \beta_1 = \pi \alpha_2 \beta_2 \pi^{-1}$.
+
+       \noindent \solution Let us define $\alpha_1 = (a_{1,1}, a_{1,2}, 
+       \ldots , a_{1,s_\alpha})$, $\alpha_2 = (a_{2,1}, a_{2,2},
+       \ldots, a_{2,s_\alpha})$, $\beta_1 = (b_{1,1}, \ldots , 
+       b_{1,s_\beta})$, and $\beta_2 = (b_{2,1}, \ldots, b_{2,s_\beta})$.
+       We will pick $\pi$ to be the following:
+
+       \begin{center}
+       \begin{tabular}{c|c}
+          $x$              &   $\pi(x)$         \\ \hline
+          $a_{2,1}$        &   $a_{1,1}$        \\
+          $\vdots$         &   $\vdots$         \\
+          $a_{2,s_\alpha}$ &   $a_{1,s_\alpha}$ \\
+          $b_{2,1}$        &   $b_{1,1}$        \\
+          $\vdots$         &   $\vdots$         \\
+          $b_{2,s_\beta}$ &   $b_{1,s_\beta}$ \\
+       \end{tabular}
+       \end{center}
+
+       Now let's see what happens when we calculate
+       $\pi\alpha_2\beta_2\pi^{-1}$ of different values starting
+       with $\alpha_{1,1}$. 
+
+       \begin{align*}
+           \pi\alpha_2\beta_2\pi^{-1}(a_{1,1}) &= 
+                   \pi\alpha_2\beta_2(a_{2,1}) \\
+               &=  \pi\alpha_2(a_{2,1}) && \text{$\beta_2$ doesn't affect any
+                        $\alpha_2$ values.}\\
+               &=  \pi(a_{2,2})          \\
+               &=  a_{1,2}
+       \end{align*}
+
+       Using the same process we find that $\pi\alpha_2\beta_2
+       \pi^{-1}(a_{1,2}) = a_{1,3}$. If we continue with this
+       we'll see that we get the cycle $\alpha_1$. Next we pick
+       $b_{1,1}$ and get out $b_{1,2}$ and we see that we get the
+       cycle $\beta_1$. Any values that are not in any of the cycles
+       will go thru the function unchanged. So we demonstrate
+       that there is a $\pi$ to make the equation true.
+
+   \end{enumerate}
+
+
+   \item \textsc{Order of Cycles}
+
+   \begin{enumerate}[1]
+
+      \item Prove in $S_n$: if $\alpha = (a_1, \ldots, a_s)$ is a cycle
+      of length $s$, then $\alpha^s = \epsilon$, $\alpha^{2s}=\epsilon$,
+      and $\alpha^{3s}=\epsilon$. Is $\alpha^k = \epsilon$ for any positive
+      integer $k < s$? (Explain.)
+
+      \noindent \solution We've proven this before. It's obvious. If
+      you apply $\alpha$ to $a_i$ you get $a_{i+1}$. If you apply it
+      $s$ times you get $a_i$. If you apply $\alpha$ to $a_i$ $s$ times you
+      get $a_i$. So $\alpha^s=\alpha^{2s}=\alpha^{3}=\epsilon$.
+
+\vspace{10pt}
+      If $\alpha$ is any permutation, the lease positive integer $n$
+      such that $\alpha^n=\epsilon$ is called the \emph{order} of
+      $\alpha$.
+\vspace{10pt}
+
+      \item  Prove in $S_n$: If $\alpha=(a_1,\ldots,a_s)$ is any cycle 
+      of length $s$, the order of $\alpha$ is $s$.
+
+      \noindent \solution By Part 1 we know that $\alpha^s=\epsilon$, therefore
+      we know the order of $\alpha$ is less than or equal to $s$. If we
+      pick any $n$ such that $n<s$ we get a function that takes $a_i$ to
+      $a_{i+n}$ which is not equal to $\epsilon$. Therefore the order is $s$.
+
+      \item Find the order of each of the following permutations:
+
+      \begin{enumerate}[(a)]
+          \item (12)(345)
+
+          \noindent \solution The answer is $2*3=6$. This can be seen by 
+          noticing that every power of 2 causes the first cycle to 
+          become $\epsilon$ for the values of $1$ and $2$. The same
+          happens for every power of 3 and the second cycle. The 
+          least common multiple of 2 and 3 is 6. Also the two cycles
+          are disjoint.
+
+          \item (12)(3456) 
+          \noindent \solution The answer is 4.
+
+          \item (1234)(56789)
+          \noindent \solution The answer is 20.
+      \end{enumerate}
+
+      \item What is the order of $\alpha\beta$, if $\alpha$ and $\beta$
+      are disjoint cycles of lengths 4 and 6, respectively. (Explain why.
+      Use the fact that disjoint cycles commute.)
+
+      \noindent \solution The answer is 12.  Because the least common 
+      multiple of 4 and 6 is 12.  Ok, to see this remember that 
+      $(\alpha\beta)^12=\alpha^12\beta^12$. $alpha^12=\epsilon$ and 
+      $\beta^12=\epsilon$.
+
+      \item What is the order of $\alpha\beta$, if $\alpha$ and $\beta$
+      are disjoint cycles of length $r$ and $s$, respectively.
+      (Venture a guess, explain, but do not attempt a rigourous proof.)
+
+      \noindent \solution The answer is the least common multiple of 
+      $r$ and $s$, which is obvious and doesn't need a proof. 
+      Hmm, I maybe am missing something. This seems pretty obvious.
+   \end{enumerate}
+
+   \item \textsc{Even/Odd Permutations in Subgroups of $S_n$}
+
+   Prove each of the following in $S_n$:
+   \begin{enumerate}[1]
+       \item Let $\alpha_1,\ldots,\alpha_r$ be distinct even
+       permutations, and $\beta$ an odd permutation. Then
+       $\alpha_1\beta,\ldots,\alpha_r\beta$ are $r$ \emph{distinct}
+       odd permutations. (See Exercise C2.)
+
+       \noindent \solution By C2 we know each is odd. Next let's assume
+       that 2 of them are the same. So we have $\alpha_i\beta
+       = \alpha_j\beta$. But we can then say $\alpha_i\beta\beta^{-1}
+       = \alpha_j\beta\beta^{-1}$. And this reduces to $\alpha_i=\alpha_j$.
+       This contradicts the statement in the problem that
+       we started with distinct permutations. Therefore, it must
+       be the case that none of the resulting permutations can be the
+       same.
+
+       \item If $\beta_1,\ldots,\beta_r$ are distinct odd permutations,
+       then $\beta_1\beta_1, \beta_1\beta_2, \ldots, \beta_1\beta_r$ are
+       $r$ \emph{distinct} even permutations.
+
+       \noindent \solution Again by C2 we know they are even. We'll use
+       the same proof by contradiction technique. Assume they are not
+       all distinct. Then we have for some $i$ and some $j$ the fact
+       that $\beta_1\beta_i=\beta_1\beta_j$ and therefore
+       $\beta_1^{-1}\beta_1\beta_i=\beta_1^{-1}\beta_1\beta_j$, which
+       means that $\beta_i=\beta_j$ which contradicts our assumption.
+       Therefore, they must all be distinct.
+
+       \item In $S_n$, there are the same number of odd permutations as even
+       permutations. (\textsc{Hint}: Use part 1 to prove that the number of
+       even permutations is $\le$ the number of odd permutations.
+       Use part 2 to prove the reverse of the inequality.)
+
+       \noindent \solution Assume there are $r$ even permutations. Then the
+       rest, assume there are $t$ of them, must be odd. But by part 1, we know
+       that we have to have at least $r$ odd permutations. 
+       Therefore $t \ge r$ or  $r \le t$.
+
+       Assuming that we have $t$ odd permutations, then by part 2
+       we know that we have at least $t$ even permutations. So we
+       have $r \ge t$. So we have $r \le t$ and $r \ge t$. Therefore $r=t$.
+
+       \item The set of all even permutations is a subgroup of $S_n$.
+       (It is denoted by $A_n$ and is called the \emph{alternating group}
+       on $n$ symbols.)
+
+       \noindent \solution We must show that the subgroup $A_n$ is closed
+       with respect to $\circ$ and with respect to function inverses.
+       We know from C2 that the product of two even permutations is even,
+       so $A_n$ is closed with respect to $\circ$. Next we use some logic
+       from p85. If a permuation, $\pi$, is even then it's inverse,
+       $\pi^{-1}$ must be even as well. For if it were odd, then if
+       we mulitply them we would get an odd permutation (by C2) for 
+       $\epsilon$. Therefore $\pi^{-1}$ must be even and therefore
+       $A_n$ is closed with respect to function inverses. Therefore,
+       $A_n$ is a subgroup of $S_n$.
+
+       \item Let $H$ be any subgroup of $S_n$. $H$ either contains only
+       even permutations, or $H$ contains the same number of odd as even
+       permutations. (Use parts 1 and 2.)
+
+       \noindent \solution So we know it's possible from part 4 for a subgroup
+       to have only even permutations. So this proof boils down to the fact
+       that if there is at least one odd permutation then there must
+       be an equal number of even and odd permutations. The proof follows the
+       same as \#3 except the distinct permutations used are on the
+       subgroup not on the group.
+
+   \end{enumerate}
+
+   \item \textsc{Generators of $A_n$ and $S_n$}
+
+   Remember that in any group $G$, a set $S$ of elements of $G$ is
+   said to \emph{generate} $G$ if every element of $G$ can
+   be expressed as a product of elements in $S$ and inverses of elements
+   in $S$. (See page 47.)
+
+   \begin{enumerate}[1]
+      \item Prove that the set $T$ of all the transpositions in $S_n$
+      generates $S_n$.
+
+      \noindent \solution The set $T$ of all the transpositions is 
+      \[\{(12),(13),\ldots,(1n),(23),\ldots,(2n),\ldots,((n-1)n)\}\]
+
+      Any permutation in $S_n$ can be written as a product of disjoint
+      cycles. So we will prove that every cycle in $S_n$ can be generated by
+      $T$.
+
+      Pick a cycle, $\alpha$, at random from $S_n$ and say it equals
+      $(a_1,\ldots,a_s)$. This cycle can be produced by the product
+      of the transpositions:
+       \[(a_1a_s),(a_1a_{s-1}),\ldots,(a_1a_3),
+      (a_1a_2) \]
+
+      So now, pick any permutation, $\pi$, at random from $S_n$. Factor
+      it into disjoint cycles. Factor each cycle into transpositions
+      as just proved you could do. You have now generated $\pi$
+      from elements in $T$.
+
+      \item Prove that the set $T_1=\{(12),(13),\ldots,(1n)\}$
+      generates $S_n$.
+
+      \noindent \solution Again, we will prove that $T_1$ generates
+      any cycle in $S_n$ and therefore generates $S_n$. Choose
+      any cycle, $\alpha=(1,a_1,\ldots,a_s)$ that contains the value 1
+      and arrange the terms so 1 comes first. Now we can generate
+      this cycle with $(1a_s)(1a_{s-1})\ldots(1a_2)(1a_1)$.
+
+      Now pick any cycle $\alpha=(a_1a_2\ldots a_s)$ that does not contain
+      the value 1 anywhere. Then this cycle can be generated by
+      $(1a_1)(1a_s)(1a_{s-1})\ldots(1a_2)(1a_1)$.
+
+      So we have shown that no matter what cycle we pick we can generate
+      it with elements from $T_1$ alone. So like previous part, any 
+      permutation can be factored down to disjoint cycles and each cycle
+      factored down to transpositions from $T_1$.
+
+
+
+   \end{enumerate}
+
+
+   
  
 \end{enumerate}
 
