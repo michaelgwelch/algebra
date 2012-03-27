@@ -21,6 +21,10 @@
 \newcommand{\blank}{\vspace{5pt}}
 \newcommand{\ind}{\hspace{.35in}}
 \newcommand{\degree}{\ensuremath{^\circ}}
+\newcommand{\real}{\mathop{\mathrm{real}}}
+\newcommand{\img}{\mathop{\mathrm{img}}}
+\newcommand{\first}{\mathop{\mathrm{first}}}
+\newcommand{\second}{\mathop{\mathrm{second}}}
 \begin{document}
 \title{Answers to Chapter 9 Exercises - A Book of Abstract Algebra}
 \author{Michael Welch}
@@ -393,6 +397,228 @@ of A Book of Abstract Algebra.
 
 
 	\end{enumerate}
+
+   \item \textsc{Separating Groups into Isomorphism Classes}
+
+   Each of the following is a set of four groups. In each set,
+   determine which groups are isomorphic to which others. Prove
+   your answers, and use Exercise A3 where convenient.
+   \blank
+
+   \begin{enumerate}[1]
+      \item $\mathbb{Z}_4, \mathbb{Z}_2 \times \mathbb{Z}_2,
+      P_2, V$ [$P_2$ denotes the group of subsets of a two-element
+      set. $V$ denotes the group of the four complext numbers
+      $\{i, -i, 1, -1\}$ with respect to multiplication.]
+
+      \blank \noindent \solution $\mathbb{Z}_4 \niso \mathbb{Z}_2
+      \times \mathbb{Z}_2$, because the every element in the latter
+      is its own inverse which is not the case with the former. 
+      $\mathbb{Z}_4 \niso P_2$, for the same reason.
+
+      $\mathbb{Z}_4 \iso V$. I like this one. This one is easy to
+      see if we think of the complex numbers in $V$ in polar
+      coordinates and remember that the multiplication of 
+      complex numbers represented in polar coordinates is done by
+      multiplying the magnitures (1 in this case for each) and
+      adding the angles. If one does this it is easy to see
+      that the function $f : \mathbb{Z}_4 \to V$ is isomorphic:
+      \[
+         f = 
+         \begin{pmatrix}
+            0 & 1 & 2 & 3 \\
+            1 & i & -1 & -i 
+         \end{pmatrix}
+      \]
+
+
+      \begin{center}
+         \begin{tabular}{cc}
+            \begin{tabular}{c|cccc}
+               + & 0 & 1 & 2 & 3 \\ \hline
+               0 & 0 & 1 & 2 & 3 \\
+               1 & 1 & 2 & 3 & 0 \\
+               2 & 2 & 3 & 0 & 1 \\
+               3 & 3 & 0 & 1 & 2
+            \end{tabular} &
+            \begin{tabular}{c|cccc}
+               *  &  1 &  i & -1 & -i \\ \hline
+               1  &  1 &  i & -1 & -i \\
+               i  &  i & -1 & -i &  1 \\
+               -1 & -1 & -i &  1 &  i \\
+               -i & -i &  1 &  i & -1
+            \end{tabular}
+         \end{tabular}
+      \end{center}
+      \blank
+
+      $\mathbb{Z}_2 \times \mathbb{Z}_2 \iso P_2$. This one is easy
+      to see if you think of a $1$ in the second position of the
+      tuple corresponding to having $a$ in a subset and a $1$ in the
+      first position of the tuple corresponding to having $b$ in a
+      subset. We then get that $f : \mathbb{Z}_2 \times \mathbb{Z}_2
+      \to P_2$ is isomorphic.
+
+      \[
+         f =
+            \begin{pmatrix}
+               (0,0)     & (0,1) & (1,0) & (1,1) \\
+               \emptyset & \{a\} & \{b\} & \{a,b\}
+            \end{pmatrix}
+      \]
+
+      $\mathbb{Z}_2 \times \mathbb{Z}_2 \niso V$. The former
+      has the property that each element is its own inverse. The
+      latter doesn't have this property.
+
+      $P_2 \niso V$. The former has the property that each element
+      is its own inverse. The latter doesn't have this property.
+
+      \blank
+      \item $S_3, \mathbb{Z}_6, \mathbb{Z}_3 \times \mathbb{Z}_2,
+      \mathbb{Z}_7^*$ ($\mathbb{Z}_7^*$ denotes the group
+      $\{1,2,3,4,5,6\}$ with multiplication modulo 7. The product
+      modulo 7 of $a$ and $b$ is the remainder of $ab$ after
+      division by 7.)
+   \end{enumerate}
+
+   \item \textsc{Isomorphism of Infinite Groups}
+   \begin{enumerate}[1]
+      \item Let $E$ designate the group of all the even integers, with
+      respect to addition. Prove that $\mathbb{Z} \iso E$.
+
+      \blank \noindent \solution Let $f : \mathbb{Z} \to E$ be the function
+      $f(x) = 2x$. $f$ is injective:
+
+      \setcounter{equation}{0}
+      \begin{align}
+         f(a) &= f(b)      && \text{Assume} \\
+         2a   &= 2b \\
+          a   &= b    
+      \end{align}
+
+      Therfore, we have shown $f(a)=f(b) \implies a=b$. We can also
+      see that $f$ is surjective as every $y \in E$ is equal to $f(x)$
+      for $x = y/2$. Finally, we must show that $f(a+b)=f(a)+f(b)$.
+
+      \setcounter{equation}{0}
+      \begin{align}
+         f(a+b) &= 2(a+b) \\
+                &= 2a + 2b \\
+                &= f(a) + f(b)
+      \end{align}
+
+      Therefore, $f$ is isomorphic and $\mathbb{Z} \iso E$.
+      \blank
+      \item Let $G$ be the group $\{10^n : n \in \mathbb{Z}\}$ with respect
+      to multiplication. Prove that $G \iso \mathbb{Z}$.
+
+      \blank \noindent \solution Let $f : G \to \mathbb{Z}$ be the function
+      $f(x) = 10^x$.
+
+      $f$ is injective:
+      \begin{align*}
+         f(a) &= f(b) && \text{Assume} \\
+         10^a &= 10^b  \\ 
+         \log_{10}(10^a) &= \log_{10}(10^b) \\
+            a &= b
+      \end{align*}
+
+      We have shown $f(a)=f(b) \implies a = b$.
+
+      $f$ is surjective because for any $y \in G$, $ y= f(x)$ for
+      $x = \log_{10}(y)$. Finally we must show $f(a+b)=f(a)f(b)$ (note
+      the operation for $a$ and $b$ is addition, but the operation for
+      $f(a)$ and $f(b)$ is multiplicaiton).
+
+      \begin{align*}
+         f(a+b) &= 10^{a+b} \\
+                &= 10^a 10^b \\
+                &= f(a)f(b)
+      \end{align*}
+
+      Therefore $f$ is an isomorphism.
+      
+      \blank 
+      \item Prove that $\mathbb{C} \iso \mathbb{R} \times \mathbb{R}$.
+
+      \blank \noindent \solution  This one is trivial. 
+      Let $f(x) = (\real(x),\img(y))$. Where $\real$ returns the real 
+      part of $x$ and $\img$ returns the imaginary part of $x$.
+
+      $f$ is injective.
+      \begin{align*}
+         f(a) &= f(b)  && \text{Assume} \\
+         (\real(a),\img(a)) &= (\real(b),\img(b)) \\
+          \real(a) &= \real(b) \\
+          \img(a) &= \img(b)  \\
+          a &= b
+      \end{align*}
+
+      $f$ is surjective because for any $y \in \mathbb{R} \times \mathbb{R}$,
+      we have $y = f(x)$ for $x = \first(y) + \second(y)i$.
+
+      Finally,
+      \begin{align*}
+         f(a + b) &= (\real(a + b), \img(a + b))  \\
+                  &= (\real(a),\img(a)) + (\real(b),\img(b)) \\
+                  &= f(a) + f(b)
+      \end{align*}
+
+      \item We have seen in the text that $\Reals$ is isomorphic to 
+      $\Reals^{pos}$. Prove that $\Reals$ is \emph{not} isomorphic
+      to $\Reals^*$ (the multiplicative group of the nonzero real numbers).
+      (\textsc{Hint}: Consider the properties of the number $-1$ in
+      $\Reals^*$. Does $\Reals$ have any element with those properties?)
+
+
+      \blank \noindent \solution In an isomorphism we know from previous
+      exercises that we must map the identity element from one group
+      to the identity element of another group. So in this case
+      we'd need to map $1 \in \Reals^*$ to $0 \in \Reals$. The
+      element $-1 \in \Reals^*$ has the property that it is the only
+      non-identity element that is it's own inverse. We can see
+      that the only elements that are there own inverses is given by
+      the equations
+      \begin{align*}
+         x &= 1/x \\ 
+         x^2 &= 1 \\
+         x &= \pm 1
+      \end{align*}
+
+      No element in $\Reals$ has this property. We can find all
+      of the elements that are their own inverses by solving the 
+      equation $x = -x$.
+      \begin{align*}
+          x &= -x \\
+          2x &= 0 \\
+          x &= 0
+      \end{align*}
+
+      We already know that 0 is the identity element in $\Reals$. Therefore
+      there is no element in $\Reals$ that shares the properties with
+      $-1 \in \Reals^*$. Therefore $\Reals^* \niso \Reals$.
+
+      \blank
+      \item Prove that $\Integers$ is not isomorphic to $\mathbb{Q}$.
+
+      \blank \noindent \solution It is the case that $\Integers$ is
+      generated by the two elements $1, -1 \in \Integers$ (0 = 1 + (-1);
+      any positive integer, $x$, is generated by $x$ additions of 1;
+      any negative integer, $y$, is generated by $y$ additions of $-1$.)
+
+      There are no two elements in $\mathbb{Q}$ that have this property.
+      This is easy to ``see'' but I'm having trouble proving it. Assume
+      you had two elements. Let's say they have denominators $n_1, n_2$.
+      Now try to generate a rational number that has a denominator much
+      larger.
+
+      For example let's say you chose 1/2 and 1/3. Now try to generate
+      1/1000000. This is not possible because 1/1000000 is much more
+      ``fine-grained'' than 1/2 or 1/3.
+
+
+   \end{enumerate}
 
 \end{enumerate}
 
