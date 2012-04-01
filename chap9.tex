@@ -25,6 +25,7 @@
 \newcommand{\img}{\mathop{\mathrm{img}}}
 \newcommand{\first}{\mathop{\mathrm{first}}}
 \newcommand{\second}{\mathop{\mathrm{second}}}
+\newcommand{\abs}{\mathop{\mathrm{abs}}}
 \begin{document}
 \title{Answers to Chapter 9 Exercises - A Book of Abstract Algebra}
 \author{Michael Welch}
@@ -37,366 +38,366 @@ of A Book of Abstract Algebra.
 
 \begin{enumerate}[A.]
    \item \textsc{Isomorphism Is an Equivalence Relation among Groups}
-	The following three facts about isomorphism are true for all groups:
+   The following three facts about isomorphism are true for all groups:
 
-	\blank
-	\begin{enumerate}[(i)]
-	   \item Every group is isomorphic to itself.
-		\item If $G_1 \iso G_2$, then $G_2 \iso G_1$.
-		\item If $G_1 \iso G_2$ and $G_2 \iso G_3$, then $G_1 \iso G_3$.
-	\end{enumerate}
-	\blank
+   \blank
+   \begin{enumerate}[(i)]
+      \item Every group is isomorphic to itself.
+      \item If $G_1 \iso G_2$, then $G_2 \iso G_1$.
+      \item If $G_1 \iso G_2$ and $G_2 \iso G_3$, then $G_1 \iso G_3$.
+   \end{enumerate}
+   \blank
 
-	Fact (i) asserts that for any group $G$, there exists an isomorphism 
-	from $G$ to $G$.
+   Fact (i) asserts that for any group $G$, there exists an isomorphism 
+   from $G$ to $G$.
 
-	Fact (ii) asserts that, if there is an isomorphism $f$ from $G_1$ to
-	$G_2$, there must be some isomorphism from $G_2$ to $G_1$. Well, the
-	inverse of $f$ is such an isomorphism.
+   Fact (ii) asserts that, if there is an isomorphism $f$ from $G_1$ to
+   $G_2$, there must be some isomorphism from $G_2$ to $G_1$. Well, the
+   inverse of $f$ is such an isomorphism.
 
-	Fact (iii) asserts that, if there are isomorphisms $f : G_1 \to G_2$ and
-	$g : G_2 \to G_3$, there must be an isomorphism from $G_1$ to $G_3$. One can
-	easily guess that $g \circ f$ is such an isomorphism. The details of
-	(i), (ii), and (iii) are left as exercises.
-	\blank
+   Fact (iii) asserts that, if there are isomorphisms $f : G_1 \to G_2$ and
+   $g : G_2 \to G_3$, there must be an isomorphism from $G_1$ to $G_3$. One can
+   easily guess that $g \circ f$ is such an isomorphism. The details of
+   (i), (ii), and (iii) are left as exercises.
+   \blank
 
    \begin{enumerate}[1]
-	
-	\item Let $G$ be any group. If $\epsilon : G \to G$ is the identity
-	function, $\epsilon(x) = x$, show that $\epsilon$ is an isomorphism.
+   
+   \item Let $G$ be any group. If $\epsilon : G \to G$ is the identity
+   function, $\epsilon(x) = x$, show that $\epsilon$ is an isomorphism.
 
-	\blank \noindent \solution To show this, we must show that
-	$\epsilon$ is a bijective function and that the property
-	$\epsilon(ab)=\epsilon(a)\epsilon(b)$.
+   \blank \noindent \solution To show this, we must show that
+   $\epsilon$ is a bijective function and that the property
+   $\epsilon(ab)=\epsilon(a)\epsilon(b)$.
 
-	It is injective because if $\epsilon(a)=\epsilon(b)$ then we know
-	$a=b$. It is surjective because for any $y$ I know $x = [\epsilon(y)]^{-1}$
-	for $x=y$. Therefore it is bijective.
+   It is injective because if $\epsilon(a)=\epsilon(b)$ then we know
+   $a=b$. It is surjective because for any $y$ I know $x = [\epsilon(y)]^{-1}$
+   for $x=y$. Therefore it is bijective.
 
-	The isomorphic property is trivial to show. 
-	\begin{align*}
-	    \epsilon(ab) &= ab && \text{Definition of identity} \\
-		              &= \epsilon(a)\epsilon(b) && \text{Defn of identity twice}
-	\end{align*}
+   The isomorphic property is trivial to show. 
+   \begin{align*}
+       \epsilon(ab) &= ab && \text{Definition of identity} \\
+                    &= \epsilon(a)\epsilon(b) && \text{Defn of identity twice}
+   \end{align*}
 
-	\item Let $G_1$ and $G_2$ be groups, and $f: G_1 \to G_2$ an isomorphism.
-	Show that $f^{-1} : G_2 \to G_1$ is an isomorphism. [\textsc{Hint}:
-	Review the discussion of inverse functions at the end of Chapter 6. Then,
-	for arbitrary elements $c, d \in G_2$, there exist $a, b \in G_1$ such
-	that $c = f(a)$ and $d = f(b)$. Note that $a = f^{-1}(c)$ and 
-	$b = f^{-1}(d)$. Show that $f^{-1}(cd)=f^{-1}(c)f^{-1}(d)$.]
+   \item Let $G_1$ and $G_2$ be groups, and $f: G_1 \to G_2$ an isomorphism.
+   Show that $f^{-1} : G_2 \to G_1$ is an isomorphism. [\textsc{Hint}:
+   Review the discussion of inverse functions at the end of Chapter 6. Then,
+   for arbitrary elements $c, d \in G_2$, there exist $a, b \in G_1$ such
+   that $c = f(a)$ and $d = f(b)$. Note that $a = f^{-1}(c)$ and 
+   $b = f^{-1}(d)$. Show that $f^{-1}(cd)=f^{-1}(c)f^{-1}(d)$.]
 
    \blank \noindent \solution Since $f$ is bijective we know that
-	$f^{-1}$ is bijective. We know that $f(ab)=f(a)f(b)=cd$. Therefore
-	$f^{-1}(cd)=ab=f^{-1}(c)f^{-1}(d)$. Therefore $f^{-1}$ is an isomorphism.
+   $f^{-1}$ is bijective. We know that $f(ab)=f(a)f(b)=cd$. Therefore
+   $f^{-1}(cd)=ab=f^{-1}(c)f^{-1}(d)$. Therefore $f^{-1}$ is an isomorphism.
 
-	\item Let $G_1$, $G_2$, and $G_3$ be groups, and let $f: G_1 \to G_2$ and
-	$g:G_2 \to G_3$ be isomorphisms. Prove that $g \circ f : G_1 \to G_3$ is
-	an isomorphism.
+   \item Let $G_1$, $G_2$, and $G_3$ be groups, and let $f: G_1 \to G_2$ and
+   $g:G_2 \to G_3$ be isomorphisms. Prove that $g \circ f : G_1 \to G_3$ is
+   an isomorphism.
 
-	\blank \noindent \solution The function $g \circ f$ is injective:
-	Assume $(g \circ f)(a) = (g \circ f)(b)$. Then $g(f(a)) = g(f(b))$. But
-	since $g$ is bijective we know that $f(a)=f(b)$. And since $f$ is
-	bijective we know that $a=b$. Therefore $g \circ f$ is injective.
+   \blank \noindent \solution The function $g \circ f$ is injective:
+   Assume $(g \circ f)(a) = (g \circ f)(b)$. Then $g(f(a)) = g(f(b))$. But
+   since $g$ is bijective we know that $f(a)=f(b)$. And since $f$ is
+   bijective we know that $a=b$. Therefore $g \circ f$ is injective.
 
-	\ind The function $g \circ f$ is surjective. Choose some element $y \in G_3$.
-	Since $g$ is surjective we know there exist some $x \in G_2$ with
-	the value $x = g^{-1}(y)$. Likewise, because $f$ is surjective
-	we know there is some $z \in G_1$ with the value $z = f^{-1}(x)$. 
-	Therefore $g \circ f$ is surjective and therefore it is bijective.
+   \ind The function $g \circ f$ is surjective. Choose some element $y \in G_3$.
+   Since $g$ is surjective we know there exist some $x \in G_2$ with
+   the value $x = g^{-1}(y)$. Likewise, because $f$ is surjective
+   we know there is some $z \in G_1$ with the value $z = f^{-1}(x)$. 
+   Therefore $g \circ f$ is surjective and therefore it is bijective.
 
-	Now we must show that $(g \circ f)(ab) = (g\circ f)(a)(g\circ f)(b)$.
-	\begin{align}
-		(g \circ f)(ab) &= g(f(ab))   \\
-		                &= g(f(a)f(b))  && \text{$f$ is isomorphic (1)} \\
-							 &= g(f(a)) g(f(b)) && \text{$g$ is isomorphic (2)} \\
-							 &= (g \circ f)(a) (g\circ f)(b)
-	\end{align}
+   Now we must show that $(g \circ f)(ab) = (g\circ f)(a)(g\circ f)(b)$.
+   \begin{align}
+      (g \circ f)(ab) &= g(f(ab))   \\
+                      &= g(f(a)f(b))  && \text{$f$ is isomorphic (1)} \\
+                      &= g(f(a)) g(f(b)) && \text{$g$ is isomorphic (2)} \\
+                      &= (g \circ f)(a) (g\circ f)(b)
+   \end{align}
 
    \end{enumerate}
 
-	\item \textsc{Elements Which Correspond under an Isomophism}
-	Recall that an isomorphism $f$ from $G_1$ to $G_2$ is a one-to-one
-	correspondence between $G_1$ and $G_2$ satisfying $f(ab)=f(a)f(b)$.
-	$f$ matches every element of $G_1$ with a corresponding element of
-	$G_2$. It is important to note that:
-	\blank
+   \item \textsc{Elements Which Correspond under an Isomophism}
+   Recall that an isomorphism $f$ from $G_1$ to $G_2$ is a one-to-one
+   correspondence between $G_1$ and $G_2$ satisfying $f(ab)=f(a)f(b)$.
+   $f$ matches every element of $G_1$ with a corresponding element of
+   $G_2$. It is important to note that:
+   \blank
 
-	\begin{enumerate}[(i)]
-		\item $f$ matches the neutral element of $G_1$ with the neutral
-		element of $G_2$.
+   \begin{enumerate}[(i)]
+      \item $f$ matches the neutral element of $G_1$ with the neutral
+      element of $G_2$.
 
-		\item If $f$ matches an element $x$ in $G_1$ with $y$ in $G_2$,
-		then, necessarily, $f$ matches $x^{-1}$ with $y^{-1}$.
-		That is, if $x \leftrightarrow y$, then $x^{-1} \leftrightarrow
-		y^{-1}$.
+      \item If $f$ matches an element $x$ in $G_1$ with $y$ in $G_2$,
+      then, necessarily, $f$ matches $x^{-1}$ with $y^{-1}$.
+      That is, if $x \leftrightarrow y$, then $x^{-1} \leftrightarrow
+      y^{-1}$.
 
-		\item $f$ matches a generator of $G_1$ with a generator of $G_2$.
+      \item $f$ matches a generator of $G_1$ with a generator of $G_2$.
 
       \blank
       \begin{center}
-		\scalebox{1.2}{\includegraphics{img/chap9b.pdf}}
-		\end{center}
-		\blank
+      \scalebox{1.2}{\includegraphics{img/chap9b.pdf}}
+      \end{center}
+      \blank
 
-		The details of these statements are now left as an exercise. Let 
-		$G_1$ and $G_2$ be groups, and let $f : G_1 \to G_2$ be an 
-		isomorphism.
+      The details of these statements are now left as an exercise. Let 
+      $G_1$ and $G_2$ be groups, and let $f : G_1 \to G_2$ be an 
+      isomorphism.
 
-		\begin{enumerate}[1.]
-			\item If $e_1$ deontes the neutral element of $G_1$ and $e_2$
-			denotes the neutral element of $G_2$, prove that $f(e_1)=e_2$.
-			[\textsc{Hint}: In any group, there is exactly one neutral
-			element; show that $f(e_1)$ is the neutral element of $G_2$.]
+      \begin{enumerate}[1.]
+         \item If $e_1$ deontes the neutral element of $G_1$ and $e_2$
+         denotes the neutral element of $G_2$, prove that $f(e_1)=e_2$.
+         [\textsc{Hint}: In any group, there is exactly one neutral
+         element; show that $f(e_1)$ is the neutral element of $G_2$.]
 
-			\setcounter{equation}{0}
-			\blank \noindent \solution 
-			\begin{align}
-			   f(ae_1) &= f(a)   && \text{Identity}\\
-				f(ae_1) &= f(a)f(e_1) && \text{Isomorphism}\\
-				f(a)    &= f(a)f(e_1) && \text{(1) and (2)}\\
-				f(a)e_2 &= f(a)f(e_1) && \text{Identity of $e_2$}\\
-				    e_2 &= f(e_1)     && \text{Cancellation}
-			\end{align}
+         \setcounter{equation}{0}
+         \blank \noindent \solution 
+         \begin{align}
+            f(ae_1) &= f(a)   && \text{Identity}\\
+            f(ae_1) &= f(a)f(e_1) && \text{Isomorphism}\\
+            f(a)    &= f(a)f(e_1) && \text{(1) and (2)}\\
+            f(a)e_2 &= f(a)f(e_1) && \text{Identity of $e_2$}\\
+                e_2 &= f(e_1)     && \text{Cancellation}
+         \end{align}
 
-			\item Prove the for each element $a$ in $G_1$, $f(a^{-1})
-			= [f(a)]^{-1}$. (\textsc{Hint}: You may use Theorem 2 of 
-			Chapter 4.)
+         \item Prove the for each element $a$ in $G_1$, $f(a^{-1})
+         = [f(a)]^{-1}$. (\textsc{Hint}: You may use Theorem 2 of 
+         Chapter 4.)
 
-			\setcounter{equation}{0}
-			\blank \noindent \solution 
-			\begin{align}
-				f(aa^{-1}) &= f(e)          && \text{Inverses} \\
-				f(aa^{-1}) &= f(a)f(a^{-1}) && \text{Isomorphism} \\
-				f(e)       &= f(a)f(a^{-1}) && \text{(2) and (3)} \\
-				f(a^{-1})  &= [f(a)]^{-1}   && \text{Theorem 2 of Chap 4 (3)}
-			\end{align}
+         \setcounter{equation}{0}
+         \blank \noindent \solution 
+         \begin{align}
+            f(aa^{-1}) &= f(e)          && \text{Inverses} \\
+            f(aa^{-1}) &= f(a)f(a^{-1}) && \text{Isomorphism} \\
+            f(e)       &= f(a)f(a^{-1}) && \text{(2) and (3)} \\
+            f(a^{-1})  &= [f(a)]^{-1}   && \text{Theorem 2 of Chap 4 (3)}
+         \end{align}
 
-			\item If $G_1$ is a cyclic group with generator $a$, prove
-			that $G_2$ is also a cyclic group, with generator $f(a)$.
+         \item If $G_1$ is a cyclic group with generator $a$, prove
+         that $G_2$ is also a cyclic group, with generator $f(a)$.
 
-			\blank \noindent \solution Choose any element $y \in G_2$. 
-			Let $x = f^{-1}(y)$. We know that $x = a^n$ for some value of $n$.
-			If $n=0$ then we have $y = f(e_1) = e_2 = [f(a)]^0$.
-			If $n>0$ then $y = f(a^n) = \underbrace{f(a)f(a)\cdots f(a)}_{n
-			\text{ times}} = [f(a)]^n$. Finally, if $n<0$ then
-			$y = f(a^n) = \underbrace{f(a^{-1})f(a^{-1})\cdots f(a^{-1})}_{-n
-			\text{ times}} = [f(a^{-1})]^{-n}$. From part 2 we know that
-			$f(a^{-1}) = [f(a)]^{-1}$. Therefore 
-			$[f(a^{-1})]^{-n} = ([f(a)]^{-1})^{-n}$. For each value of
-			$n$ we have shown how to generate $y$ from $f(a)$. And since,
-			$y$ was an arbitrary element of $G_2$ this means any element
-			of $G_2$ can be generated from $f(a)$. Therefore,
-			$G_2$ is a cyclic group with generator $f(a)$.
+         \blank \noindent \solution Choose any element $y \in G_2$. 
+         Let $x = f^{-1}(y)$. We know that $x = a^n$ for some value of $n$.
+         If $n=0$ then we have $y = f(e_1) = e_2 = [f(a)]^0$.
+         If $n>0$ then $y = f(a^n) = \underbrace{f(a)f(a)\cdots f(a)}_{n
+         \text{ times}} = [f(a)]^n$. Finally, if $n<0$ then
+         $y = f(a^n) = \underbrace{f(a^{-1})f(a^{-1})\cdots f(a^{-1})}_{-n
+         \text{ times}} = [f(a^{-1})]^{-n}$. From part 2 we know that
+         $f(a^{-1}) = [f(a)]^{-1}$. Therefore 
+         $[f(a^{-1})]^{-n} = ([f(a)]^{-1})^{-n}$. For each value of
+         $n$ we have shown how to generate $y$ from $f(a)$. And since,
+         $y$ was an arbitrary element of $G_2$ this means any element
+         of $G_2$ can be generated from $f(a)$. Therefore,
+         $G_2$ is a cyclic group with generator $f(a)$.
 
-		\end{enumerate}
+      \end{enumerate}
 
-	\end{enumerate}
+   \end{enumerate}
 
    \blank
-	\item \textsc{Isomorphism of Some Finite Groups}
+   \item \textsc{Isomorphism of Some Finite Groups}
 
-	In each of the following, $G$ and $H$ are finite groups. Determine whether 
-	or not $G \iso H$. Prove your answer in either case.
+   In each of the following, $G$ and $H$ are finite groups. Determine whether 
+   or not $G \iso H$. Prove your answer in either case.
 
-	To find an isomorphism from $G$ to $H$ will require a little 
-	ingenuity. For example, if $G$ and $H$ are cyclic groups, it is clear
-	that we must match a generator $a$ of $G$ with a generator $b$ of
-	$H$; that is $f(a)=b$. Then $f(aa)=bb$, $f(aaa)=bbb$, and so on. If
-	$G$ and $H$ are not cyclic, we have other ways: for example, if 
-	$G$ has an element which is its own inverse, it must be matched with
-	an element of $H$ having the sampe property. Often, the specifics of a
-	problem will suggest an isomorphism, if we keep our eyes open.
+   To find an isomorphism from $G$ to $H$ will require a little 
+   ingenuity. For example, if $G$ and $H$ are cyclic groups, it is clear
+   that we must match a generator $a$ of $G$ with a generator $b$ of
+   $H$; that is $f(a)=b$. Then $f(aa)=bb$, $f(aaa)=bbb$, and so on. If
+   $G$ and $H$ are not cyclic, we have other ways: for example, if 
+   $G$ has an element which is its own inverse, it must be matched with
+   an element of $H$ having the sampe property. Often, the specifics of a
+   problem will suggest an isomorphism, if we keep our eyes open.
 
-	To prove that a specific one-to-one correspondence $f:G \to H$ is an
-	isomorphism, we may check that it transforms the table of $G$ into
-	the table of $H$.
+   To prove that a specific one-to-one correspondence $f:G \to H$ is an
+   isomorphism, we may check that it transforms the table of $G$ into
+   the table of $H$.
 
-	\begin{enumerate}[1]
-		\item $G$ is the checkerboard game group of Chapter 3, Exercise D.
-		$H$ is the group of the complex numbers $\{i, -i, 1, -1\}$ under
-		multiplication.
+   \begin{enumerate}[1]
+      \item $G$ is the checkerboard game group of Chapter 3, Exercise D.
+      $H$ is the group of the complex numbers $\{i, -i, 1, -1\}$ under
+      multiplication.
 
-		\blank \noindent \solution $G \niso H$. $G$ has the property 
-		that every element is it's own inverse (this can be seen by observing
-		that the product of every element and itself is $I$ which is the
-		neutral element). $H$ does not have this property.
-		The neutral element of $H$ is $1$. The inverse of $i$ is $-i$.
+      \blank \noindent \solution $G \niso H$. $G$ has the property 
+      that every element is it's own inverse (this can be seen by observing
+      that the product of every element and itself is $I$ which is the
+      neutral element). $H$ does not have this property.
+      The neutral element of $H$ is $1$. The inverse of $i$ is $-i$.
 
-		\blank
-		\item $G$ is the same as in part 1. $H=\mathbb{Z}_4$.
+      \blank
+      \item $G$ is the same as in part 1. $H=\mathbb{Z}_4$.
 
-		\blank \noindent \solution $G \niso H$. $H$ does not have
-		the property that every element is its own inverse.
+      \blank \noindent \solution $G \niso H$. $H$ does not have
+      the property that every element is its own inverse.
 
-		\blank
-		\item $G$ is the group $P_2$ of subsets of a two-element set. (See
-		Chapter 3, Exercise C.) $H$ is as in part 1.
+      \blank
+      \item $G$ is the group $P_2$ of subsets of a two-element set. (See
+      Chapter 3, Exercise C.) $H$ is as in part 1.
 
-		\blank\noindent\solution $G \iso H$. Let $H = P_2 = \{\emptyset,
-		\{a\}, \{b\}, \{a,b\}\}$. The operation for $H$ is 
-		\emph{symmetric difference} which I write as $\ominus$.
-		The table for $H$ is
+      \blank\noindent\solution $G \iso H$. Let $H = P_2 = \{\emptyset,
+      \{a\}, \{b\}, \{a,b\}\}$. The operation for $H$ is 
+      \emph{symmetric difference} which I write as $\ominus$.
+      The table for $H$ is
 
-		\blank
-		\begin{center}
-		\begin{tabular}{c|cccc}
-		   $\ominus$   & $\emptyset$ & $\{a\}$ & $\{b\}$ & $\{a,b\}$ \\ \hline
-			$\emptyset$ & $\emptyset$ & $\{a\}$ & $\{b\}$ & $\{a,b\}$ \\ 
-			$\{a\}$     & $\{a\}$ & $\emptyset$ & $\{a,b\}$ & $\{b\}$ \\
-			$\{b\}$     & $\{b\}$ & $\{a,b\}$ & $\emptyset$ & $\{a\}$ \\
-			$\{a,b\}$   & $\{a,b\}$ & $\{b\}$ & $\{a\}$ & $\emptyset$
-		\end{tabular}
-		\end{center}
-		\blank
+      \blank
+      \begin{center}
+      \begin{tabular}{c|cccc}
+         $\ominus$   & $\emptyset$ & $\{a\}$ & $\{b\}$ & $\{a,b\}$ \\ \hline
+         $\emptyset$ & $\emptyset$ & $\{a\}$ & $\{b\}$ & $\{a,b\}$ \\ 
+         $\{a\}$     & $\{a\}$ & $\emptyset$ & $\{a,b\}$ & $\{b\}$ \\
+         $\{b\}$     & $\{b\}$ & $\{a,b\}$ & $\emptyset$ & $\{a\}$ \\
+         $\{a,b\}$   & $\{a,b\}$ & $\{b\}$ & $\{a\}$ & $\emptyset$
+      \end{tabular}
+      \end{center}
+      \blank
 
-		As a reminder, the table for $G$ is
-		\blank
-		\begin{center}
-		\begin{tabular}{c|cccc}
-		   $*$ & $I$ & $V$ & $H$ & $D$ \\ \hline
-		   $I$ & $I$ & $V$ & $H$ & $D$ \\
-		   $V$ & $V$ & $I$ & $D$ & $H$ \\
-		   $H$ & $H$ & $D$ & $I$ & $V$ \\
-		   $D$ & $D$ & $H$ & $V$ & $I$
-		\end{tabular}
-		\end{center}
-		\blank
+      As a reminder, the table for $G$ is
+      \blank
+      \begin{center}
+      \begin{tabular}{c|cccc}
+         $*$ & $I$ & $V$ & $H$ & $D$ \\ \hline
+         $I$ & $I$ & $V$ & $H$ & $D$ \\
+         $V$ & $V$ & $I$ & $D$ & $H$ \\
+         $H$ & $H$ & $D$ & $I$ & $V$ \\
+         $D$ & $D$ & $H$ & $V$ & $I$
+      \end{tabular}
+      \end{center}
+      \blank
 
-		The function $f : G \to H$ is an isomorphism.
+      The function $f : G \to H$ is an isomorphism.
 
-		\begin{center}
-		\[
-		   f = \begin{pmatrix}
-				 	I & V & H & D \\
-					\emptyset & \{a\} & \{b\} & \{a,b\}
-			    \end{pmatrix}
-		\]
-		\end{center}
+      \begin{center}
+      \[
+         f = \begin{pmatrix}
+               I & V & H & D \\
+               \emptyset & \{a\} & \{b\} & \{a,b\}
+             \end{pmatrix}
+      \]
+      \end{center}
 
-		\item $G$ is $S_3$, $H$ is the group of matrices described on page 28
-		of the text.
+      \item $G$ is $S_3$, $H$ is the group of matrices described on page 28
+      of the text.
 
-		\blank \noindent \solution. See p28,29 and p71,72 of the text for the
-		description of each group and table of each group. The author of the
-		text made this easy by using Greek letters for the elements of
-		$S_3$ that correspond to the English letters used for the matrices.
+      \blank \noindent \solution. See p28,29 and p71,72 of the text for the
+      description of each group and table of each group. The author of the
+      text made this easy by using Greek letters for the elements of
+      $S_3$ that correspond to the English letters used for the matrices.
 
-		The function $f : G \to H$ is an isomorphism:
+      The function $f : G \to H$ is an isomorphism:
 
-		\begin{center}
-		\[
-			f =	\begin{pmatrix}
-						\epsilon & \alpha & \beta & \gamma & \delta & \kappa \\
-						I        & A      & B     & C      & D      & K
-				 	\end{pmatrix}
-		\]
-		\end{center}
+      \begin{center}
+      \[
+         f =   \begin{pmatrix}
+                  \epsilon & \alpha & \beta & \gamma & \delta & \kappa \\
+                  I        & A      & B     & C      & D      & K
+               \end{pmatrix}
+      \]
+      \end{center}
 
-		Therefore $G \iso H$. (It's interesting to me to think about what
-		the relationships are between the matrices and the permutations.
-		I tried to discern a pattern between them but didn't find one.)
+      Therefore $G \iso H$. (It's interesting to me to think about what
+      the relationships are between the matrices and the permutations.
+      I tried to discern a pattern between them but didn't find one.)
 
-		\blank
-		\item $G$ is the coin game of Chapter 3, Exercise E. $H$ is $D_4$,
-		the group of symmetries of the square.
+      \blank
+      \item $G$ is the coin game of Chapter 3, Exercise E. $H$ is $D_4$,
+      the group of symmetries of the square.
 
-		\blank \noindent \solution I believe that $G \iso H$ because I
-		developed a translation (in words) from one group to the other.
-		I'll write out my translation and then double check my work
-		by displaying the tables for each.
+      \blank \noindent \solution I believe that $G \iso H$ because I
+      developed a translation (in words) from one group to the other.
+      I'll write out my translation and then double check my work
+      by displaying the tables for each.
 
-		Imagine the top half of the square represents the face up side
-		of the coins, and the bottom half represents the face down side
-		of the coins. And let the left half represent position $A$ and
-		the right half represent position $B$. Then we have the following:
-		The top left corner represents the face up side of the coin at $A$, the
-		top right corner represents the face up side of the coin at $B$,
-		the bottom left corner represents the face down side of the coin at $A$,
-		and finally the bottom right corner represents the face down side
-		of the coin at $B$. With this ``mapping'' it is easy to translate
-		the rules of the coin game to symmetries of $D_4$.
+      Imagine the top half of the square represents the face up side
+      of the coins, and the bottom half represents the face down side
+      of the coins. And let the left half represent position $A$ and
+      the right half represent position $B$. Then we have the following:
+      The top left corner represents the face up side of the coin at $A$, the
+      top right corner represents the face up side of the coin at $B$,
+      the bottom left corner represents the face down side of the coin at $A$,
+      and finally the bottom right corner represents the face down side
+      of the coin at $B$. With this ``mapping'' it is easy to translate
+      the rules of the coin game to symmetries of $D_4$.
 
-		As a reminder: $R_0 = $ no change. $R_1$ is rotate $90\degree$.
-		$R_2$ is rotate $180\degree$, $R_3$ is rotate $270\degree$,
-		$R_4$ is flip about diagonal that runs from upper left to lower right,
-		$R_5$ is flip about diagonal that runs from upper right to lower left,
-		$R_6$ is flip about the vertical axis, $R_7$ is flip about the horizontal
-		axis.
+      As a reminder: $R_0 = $ no change. $R_1$ is rotate $90\degree$.
+      $R_2$ is rotate $180\degree$, $R_3$ is rotate $270\degree$,
+      $R_4$ is flip about diagonal that runs from upper left to lower right,
+      $R_5$ is flip about diagonal that runs from upper right to lower left,
+      $R_6$ is flip about the vertical axis, $R_7$ is flip about the horizontal
+      axis.
 
-		\begin{description}
-			\item[$I$] Do noth change anything. This corresponds to $R_0$.
-			\item[$M_1$] Flip over the coin at $A$. This corresponds to changing
-			which side of $A$ is face up and which is face down and leaves $B$
-			unchanged. This corresponds to $R_5$.
-			\item[$M_2$] Flip over the coin at $B$. This corresponds to
-			$R_4$.
-			\item[$M_3$] Flip over both coins. Flipping both coins is like 
-			rotation $180\degree$ $R_2$ because
-			each coin then stays in the same position but the side facing up
-			changes.
-			\item[$M_4$] Switch the coins. This corresponds to flipping about
-			vertical axis as it keeps the same sides facing up but exchanges
-			their positions. Therefore this corresponds to $R_6$.
-			\item[$M_5$] Flip coin at $A$; then switch. This is $R_5 \circ R_6$
-			which is same as $R_3$.
-			\item[$M_6$] Flip coin at $B$; then switch. This is $R_4 \circ R_6$
-			which is same as $R_1$.
-			\item[$M_7$] Flip both coins; then switch. This is $R_2 \circ R_6$
-			which is same as $R_7$.
-		\end{description}
+      \begin{description}
+         \item[$I$] Do noth change anything. This corresponds to $R_0$.
+         \item[$M_1$] Flip over the coin at $A$. This corresponds to changing
+         which side of $A$ is face up and which is face down and leaves $B$
+         unchanged. This corresponds to $R_5$.
+         \item[$M_2$] Flip over the coin at $B$. This corresponds to
+         $R_4$.
+         \item[$M_3$] Flip over both coins. Flipping both coins is like 
+         rotation $180\degree$ $R_2$ because
+         each coin then stays in the same position but the side facing up
+         changes.
+         \item[$M_4$] Switch the coins. This corresponds to flipping about
+         vertical axis as it keeps the same sides facing up but exchanges
+         their positions. Therefore this corresponds to $R_6$.
+         \item[$M_5$] Flip coin at $A$; then switch. This is $R_5 \circ R_6$
+         which is same as $R_3$.
+         \item[$M_6$] Flip coin at $B$; then switch. This is $R_4 \circ R_6$
+         which is same as $R_1$.
+         \item[$M_7$] Flip both coins; then switch. This is $R_2 \circ R_6$
+         which is same as $R_7$.
+      \end{description}
 
-		This gives me some confidence that I've defined a good mapping since
-		each rule of the coin game mapped (in a way that makes sense) to my
-		square model. I can summarize the mapping with the function 
-		$f : G \to H$ which I think is isomorphic (I'll check in a bit).
+      This gives me some confidence that I've defined a good mapping since
+      each rule of the coin game mapped (in a way that makes sense) to my
+      square model. I can summarize the mapping with the function 
+      $f : G \to H$ which I think is isomorphic (I'll check in a bit).
 
-		\blank
-		\begin{center}
-		\[
-			f =
-			\begin{pmatrix}
-				I   & M_1 & M_2 & M_3 & M_4 & M_5 & M_6 & M_7 \\
-				R_0 & R_5 & R_4 & R_2 & R_6 & R_3 & R_1 & R_7
-			\end{pmatrix}
-		\]
-		\end{center}
-		\blank
+      \blank
+      \begin{center}
+      \[
+         f =
+         \begin{pmatrix}
+            I   & M_1 & M_2 & M_3 & M_4 & M_5 & M_6 & M_7 \\
+            R_0 & R_5 & R_4 & R_2 & R_6 & R_3 & R_1 & R_7
+         \end{pmatrix}
+      \]
+      \end{center}
+      \blank
 
-		I like the way this looks because I already know that all the rules
-		of the coin game are their own inverse except $M_5$ and $M_6$ which
-		correspond to $R_1$ and $R_3$ which are the only square symmetries
-		which aren't their own inverses. 
+      I like the way this looks because I already know that all the rules
+      of the coin game are their own inverse except $M_5$ and $M_6$ which
+      correspond to $R_1$ and $R_3$ which are the only square symmetries
+      which aren't their own inverses. 
 
-		Here's the table for $D_4$:
+      Here's the table for $D_4$:
 
       \renewcommand{\r}[1]{$R_{#1}$}
-		\begin{center}
-		\begin{tabular}{c|cccccccc}
-		       & \r0 & \r5 & \r4 & \r2 & \r6 & \r3 & \r1 & \r7 \\ \hline
-			\r0 & \r0 & \r5 & \r4 & \r2 & \r6 & \r3 & \r1 & \r7 \\
-			\r5 & \r5 & \r0 & \r2 & \r4 & \r3 & \r6 & \r7 & \r1 \\
-			\r4 & \r4 & \r2 & \r0 & \r5 & \r1 & \r7 & \r6 & \r3 \\
-			\r2 & \r2 & \r4 & \r5 & \r0 & \r7 & \r1 & \r3 & \r6 \\
-			\r6 & \r6 & \r1 & \r3 & \r7 & \r0 & \r4 & \r5 & \r2 \\
-			\r3 & \r3 & \r7 & \r6 & \r1 & \r5 & \r2 & \r0 & \r4 \\
-			\r1 & \r1 & \r6 & \r7 & \r3 & \r4 & \r0 & \r2 & \r5 \\
-			\r7 & \r7 & \r3 & \r1 & \r6 & \r2 & \r5 & \r4 & \r0 
-		\end{tabular}
-		\end{center}
+      \begin{center}
+      \begin{tabular}{c|cccccccc}
+             & \r0 & \r5 & \r4 & \r2 & \r6 & \r3 & \r1 & \r7 \\ \hline
+         \r0 & \r0 & \r5 & \r4 & \r2 & \r6 & \r3 & \r1 & \r7 \\
+         \r5 & \r5 & \r0 & \r2 & \r4 & \r3 & \r6 & \r7 & \r1 \\
+         \r4 & \r4 & \r2 & \r0 & \r5 & \r1 & \r7 & \r6 & \r3 \\
+         \r2 & \r2 & \r4 & \r5 & \r0 & \r7 & \r1 & \r3 & \r6 \\
+         \r6 & \r6 & \r1 & \r3 & \r7 & \r0 & \r4 & \r5 & \r2 \\
+         \r3 & \r3 & \r7 & \r6 & \r1 & \r5 & \r2 & \r0 & \r4 \\
+         \r1 & \r1 & \r6 & \r7 & \r3 & \r4 & \r0 & \r2 & \r5 \\
+         \r7 & \r7 & \r3 & \r1 & \r6 & \r2 & \r5 & \r4 & \r0 
+      \end{tabular}
+      \end{center}
 
-		The tables show that there is an isomorphism. Therefore $G \iso H$.
+      The tables show that there is an isomorphism. Therefore $G \iso H$.
 
-		\blank
-		\item  $G$ is the group of symmetries of the rectangle. $H$ is
-		as in part 1.
+      \blank
+      \item  $G$ is the group of symmetries of the rectangle. $H$ is
+      as in part 1.
 
-		\blank \noindent \solution $G \niso H$ because the elements in the
-		group of symmetries of the rectangle are all inverses of themselves.
-		As we saw before this is not the case for $H$.
+      \blank \noindent \solution $G \niso H$ because the elements in the
+      group of symmetries of the rectangle are all inverses of themselves.
+      As we saw before this is not the case for $H$.
 
 
-	\end{enumerate}
+   \end{enumerate}
 
    \item \textsc{Separating Groups into Isomorphism Classes}
 
@@ -667,6 +668,16 @@ of A Book of Abstract Algebra.
       $(0,\infty)$ into $(0,1)$. It's impossible to find an isomorphism (a
       bijective function) that can do this.
 
+      Now, this ``proof'' is not entirely satisfactory to me, because
+      the way I've stated it, it applies equally well to prove
+      that $\Reals \niso \Reals^{pos}$. However, the book proved
+      the opposite.
+
+      My intuition tells me that my proof may be on the right track and
+      the difference is that the rationals are countable while the
+      reals are not. I'm not sure how that detail should show up in my
+      proof to make it work for rationals but not the reals.
+
    \end{enumerate}
 
    \item \textsc{Isomorphism of Groups Given by Generators and 
@@ -725,6 +736,103 @@ of A Book of Abstract Algebra.
       \blank \noindent \solution We can match up $(0,0,1)$ with $a$;
       $(0,1,0)$ with $b$; $(1,0,0)$ with $c$. All the generating
       equations then apply to $G$.
+
+
+   \end{enumerate}
+
+   \blank
+   \item \textsc{Isomophric Groups on the Set $\Reals$}
+
+   \begin{enumerate}[1]
+      \item $G$ is the set $\{ x \in \Reals : x \ne -1 \}$ with the operation
+      $x * y = x + y + xy$. Show that $f(x) = x - 1$ is an isomorphism from
+      $\Reals^*$ to $G$. Thus, $\Reals \iso G$.
+
+      \blank \noindent \solution The function $f$ is injective.
+      Assume $f(a) = f(b)$, then we have $a-1=b-1$, therfore $a=b$.
+      It is also surjective. For any $y \in G$ we have $f(x) = y$ for
+      $x = y + 1$. (We don't have to worry about finding $x$ if 
+      $y = -1$ because $-1 \notin G$. This is fortunate since $0 \notin
+      \Reals^*$).
+
+      Now we need to prove the identity $f(ab)=f(a)*f(b)$.
+      \setcounter{equation}{0}
+      \begin{align}
+         f(ab) &= ab - 1 \\
+         f(a)*f(b) &= (a-1)*(b-1) \\
+                   &= (a-1)+(b-1)+(a-1)(b-1) \\
+                   &= a - 1 + b - 1 + ab - a - b + 1\\
+                   &= a - a + b - b + ab - 1 - 1 + 1 \\
+                   &= ab -1 \\
+         f(ab) &= f(a)*f(b)  && \text{From lines 1 and 6}
+      \end{align}
+
+      \blank
+      \item $G$ is the set of the real numbers with the operation 
+      $x * y = x + y + 1$. Find an isomorphism $f : \Reals \to G$ and
+      show that is is an isomorphism.
+
+      \blank \noindent \solution Let's choose the function $f(x) = x - 1$.
+      We know from part 1 that $f$ is bijective.
+      Now to show that $f(a+b) = f(a)*f(b)$.
+      \begin{align*}
+         f(a+b) &= a + b - 1 \\
+         f(a)*f(b) &= f(a) + f(b) + 1 \\
+                   &= (a - 1) + (b - 1) + 1 \\
+                   &= a + b - 1 \\
+          f(a+b) &= f(a)*f(b)
+      \end{align*}
+
+      \blank
+      \item $G$ is the set of the nonzero real numbers with the operation
+      $x*y=xy/2$. Find an isomorphism from $\Reals^* to G$.
+
+      \blank \noindent \solution The trick I learned from the previous
+      one is to consider that whatever $f$ "does" it does it twice
+      on $f(a)*f(b)$, once to $a$ and once to $b$. But it only does
+      it once to $ab$ in $f(ab)$. We can use the $*$ operation of $G$
+      to "undo" the second thing that $f$ does. For example, the $*$
+      divides by 2. So if $f$ multiplies by 2 and it happens twice in 
+      $f(a)*f(b)$ but only once for $f(ab)$ it might just work. let's
+      check what happens if we let $f(x) = 2x$:
+      \begin{align*}
+         f(ab) &= 2ab \\
+         f(a)*f(b) &= 2a*2b \\
+                   &= (2a)(2b)/2 \\
+                   &= 2ab
+      \end{align*}
+
+      So we see that $f$ fulfills the required identity. Let's quick
+      check it for injective and surjective properties. Assume
+      $f(a)=f(b)$, then $2a=2b$ and therefore $a=b$. So it's injective.
+      Let $y \in G$ then $f(x)=y$ when $x = y/2$. So it's surjective.
+
+      \blank
+      \item Show that $f(x,y)=(-1)^y x$ is an isomorphism from 
+      $\Reals^{pos} \times \Integers_2$ to $\Reals^*$. (\textsc{Remark}:
+      To combine elements of $\Reals^{pos} \times \Integers_2$, one
+      multiplies first components, adds second components.) Conclude
+      that $\Reals^* \iso \Reals^{pos} \times \Integers_2$.
+
+      \blank \noindent \solution Injective: Assume $f(a,a')=f(b,b')$ where
+      $a,b \in \Reals^{pos}$ and $a',b' \in \Integers_2$. Then we
+      have $(-1)^{a'}a = (-1)^{b'}b$. We know that $a,b$ are both positive.
+      If $a' = 1$ then we have $-a = (-1)^{b'}b$ and therefore to keep
+      both numbers the same sign we have $b'=1$.
+      If $a' = 0$ then we have $a = (-a)^{b'}b$ and again, to keep
+      both numbers the same sign we have $b'=0$. So in both cases
+      we have $a'=b'$. So depending on the values for $a', b'$ we either
+      have $a=b$ or $-a=-b$. In either case, $a=b$.
+
+      Surjective: Let $y \in \Reals^{*}$. Then $f(x,x')=y$ for
+      $x = \abs(y)$ and $x' = 1$ if $y < 0$ otherwise $x' = 0$.
+
+      Now check the identity $f(ab,a'+b') = f(a,a')*f(b,b')$
+      \begin{align*}
+         f(ab,a'+b') &= (-1)^{a'+b'}ab \\
+         f(a,a')f(b,b') &= (-1)^{a'}a \times (-1)^{b'}b  \\
+                        &= (-1)^{a'+b'}ab
+      \end{align*}
 
 
    \end{enumerate}
