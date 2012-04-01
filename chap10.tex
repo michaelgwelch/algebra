@@ -98,6 +98,88 @@ of A Book of Abstract Algebra.
 
       \end{enumerate}
 
+      \blank
+      \item Prove that $(a^m)^n = a^{mn}$ in the following cases:
+      \begin{enumerate}[(a)]
+         \item $m=0$
+         \item $n=0$
+         \item $m<0$ and $n>0$
+         \item $m>0$ and $n<0$
+         \item $m<0$ and $n<0$
+      \end{enumerate}
+
+      \blank \noindent \solution
+      \begin{enumerate}[(a)]
+         \item $m=0$: $(a^m)^n = (a^0)^n = \epsilon^n = \epsilon
+         = a^{(0*n)} = a^{mn}$. $\qed$
+
+         \item $n=0$: $(a^m)^n = (a^m)^0 = \epsilon = a^{(m*0)} =
+         a^{mn}$. $\qed$
+
+         \item $m<0$ and $n>0$: Let $m' = -m$ so that $m'$ is positive.
+         Then we have
+         \[
+            (a^m)^n = (a^{-m'})^n = (\underbrace{a^{-1} a^{-1} \cdots
+            a^{-1}}_{m'\text{ times}})^n = \underbrace{a^{-1} a^{-1} \cdots
+            a^{-1}}_{m'n\text{ times}} = a^{-(m'n)} = a^{mn}
+         \] $\qed$
+
+         \item $m>0$ and $n<0$: Let $n' = -n$ so that $n'$ is positive.
+         Then we have
+         \[
+            (a^m)^n = (a^m)^{-n'} = \underbrace{(a^m)^{-1} (a^m)^{-1} 
+            \cdots (a^m)^{-1}}_{ n'\text{ times}}
+         \]
+         Recall that the text on p104 proved $(a^m)^{-1} = (a^{-1})^m$ when
+         $m >0$. So we have
+         \[
+           (a^m)^n = \underbrace{(a^{-1})^m (a^{-1})^m \cdots (a^{-1})^m}_{
+           n'\text{ times}} = \underbrace{a^{-1} a^{-1} \cdots a^{-1}}_{
+           mn'\text{ times}} = (a^{-1})^{mn'}
+         \]
+
+         Again we can use Theorem 1 part (iii) because $mn'$ is positive to
+         get $(a^m)^n = (a^{-1})^{mn'} = a^{-mn'} = a^{mn}$. $\qed$
+
+         \item $m<0$ and $n<0$. Let $m' = -m$ and $n' = -n$ so that both
+         $m', n'$ are positive. Then we have
+         \begin{align*} 
+            (a^m)^n &= (a^{-m'})^{-n'} \\
+                    &= ((a^{m'})^{-1})^{-n'} \text{ Theorem 1(iii) $m'>0$} \\
+                    &= \underbrace{((a^{m'})^{-1})^{-1} ((a^{m'})^{-1})^{-1}
+                        \cdots ((a^{m'})^{-1})^{-1}}_{n'\text{ times}} \\
+                    &= \underbrace{a^{m'} a^{m'} \cdots a^{m'}}_{n'\text{ 
+                    times}} \\
+                    &= a^{m'n'} \\
+                    &= a^{(-m)(-n)} \\
+                    &= a^{mn}
+         \end{align*}
+         $\qed$
+
+      \end{enumerate}
+
+      \blank
+      \item Prove that $(a^n)^{-1} = a^{-n}$ in the following cases:
+      \begin{enumerate}[(a)]
+         \item $n=0$
+         \item $n<0$
+      \end{enumerate}
+      
+      \blank \noindent \solution 
+      \begin{enumerate}[(a)]
+         \item $n=0$: $(a^n)^{-1} = (a^0)^{-1} = \epsilon = a^{-0} = a^{-n}$. 
+
+         \item $n<0$: Let $n' = -n$ so that $n'$ is positive. Then
+         we have 
+         \[
+         (a^n)^{-1} = (a^{-n'})^{-1} = (\underbrace{a^{-1} a^{-1} \cdots
+         a^{-1}}_{n' \text{ times}})^{-1} = ((\underbrace{a a \cdots
+         a}_{n'\text{ times}})^{-1})^{-1} = a^{n'} = a^{-n}
+         \]
+         $\qed$
+
+      \end{enumerate}
+
 
    \end{enumerate}
 
