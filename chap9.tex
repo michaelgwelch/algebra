@@ -1237,6 +1237,163 @@ of A Book of Abstract Algebra.
   $\pi_{\{a,b\}}$ & $\pi_{\{a,b\}}$ & $\pi_{\{b\}}$ & $\pi_{\{a\}}$ & $\pi_\eps$ \\ 
       \end{tabular}
       \end{center}
+
+      \blank
+      \item $\Integers_4$.
+
+      \blank \noindent \solution The regular representation of 
+      $\Integers_4$ is
+
+      \begin{align*}
+         \pi_0 &= 
+            \begin{pmatrix}
+               0 & 1 & 2 & 3 \\
+               0 & 1 & 2 & 3
+            \end{pmatrix} \\
+         \pi_1 &= 
+            \begin{pmatrix}
+               0 & 1 & 2 & 3 \\
+               1 & 2 & 3 & 0
+            \end{pmatrix} \\
+         \pi_2 &= 
+            \begin{pmatrix}
+               0 & 1 & 2 & 3 \\
+               2 & 3 & 0 & 1
+            \end{pmatrix} \\
+         \pi_3 &= 
+            \begin{pmatrix}
+               0 & 1 & 2 & 3 \\
+               3 & 0 & 1 & 2
+            \end{pmatrix} 
+      \end{align*}
+      The regular representation of $\Integers_3$ has the following table:
+
+      \begin{center}
+      \begin{tabular}{c|cccc}
+         $\circ$ & $\pi_0$ & $\pi_1$ & $\pi_2$ & $\pi_3$ \\ \hline
+         $\pi_0$ & $\pi_0$ & $\pi_1$ & $\pi_2$ & $\pi_3$ \\
+         $\pi_1$ & $\pi_1$ & $\pi_2$ & $\pi_3$ & $\pi_0$ \\
+         $\pi_2$ & $\pi_2$ & $\pi_3$ & $\pi_0$ & $\pi_1$ \\
+         $\pi_3$ & $\pi_3$ & $\pi_0$ & $\pi_1$ & $\pi_2$  
+      \end{tabular}
+      \end{center}
+
+      \blank
+      \item The group of $G$ matrics described on page 28 of the text.
+
+      \blank \noindent \solution Since matrix multiplication is not
+      abelian I need to give the left and right regular representations.
+
+      The left regular representation is
+
+      \begin{align*}
+         \pi_I &= 
+            \begin{pmatrix}
+               I & A & B & C & D & K \\
+               I & A & B & C & D & K
+            \end{pmatrix} &
+         \pi_A &=
+            \begin{pmatrix}
+               I & A & B & C & D & K \\
+               A & I & C & B & K & D
+            \end{pmatrix} \\
+         \pi_B &= 
+            \begin{pmatrix}
+               I & A & B & C & D & K \\
+               B & K & D & A & I & C
+            \end{pmatrix} &
+         \pi_C &=
+            \begin{pmatrix}
+               I & A & B & C & D & K \\
+               C & D & K & I & A & B
+            \end{pmatrix} \\
+         \pi_D &= 
+            \begin{pmatrix}
+               I & A & B & C & D & K \\
+               D & C & I & K & B & A
+            \end{pmatrix} &
+         \pi_K &=
+            \begin{pmatrix}
+               I & A & B & C & D & K \\
+               K & B & A & D & C & I
+            \end{pmatrix} 
+      \end{align*}
+
+      The right regular expression is
+      \begin{align*}
+         \rho_I &= 
+            \begin{pmatrix}
+               I & A & B & C & D & K \\
+               I & A & B & C & D & K
+            \end{pmatrix} &
+         \rho_A &=
+            \begin{pmatrix}
+               I & A & B & C & D & K \\
+               A & I & K & D & C & B
+            \end{pmatrix} \\
+         \rho_B &= 
+            \begin{pmatrix}
+               I & A & B & C & D & K \\
+               B & C & D & K & I & A
+            \end{pmatrix} &
+         \rho_C &=
+            \begin{pmatrix}
+               I & A & B & C & D & K \\
+               C & B & A & I & K & D
+            \end{pmatrix} \\
+         \rho_D &= 
+            \begin{pmatrix}
+               I & A & B & C & D & K \\
+               D & K & I & A & B & C
+            \end{pmatrix} &
+         \rho_K &=
+            \begin{pmatrix}
+               I & A & B & C & D & K \\
+               K & D & C & B & A & I
+            \end{pmatrix} 
+      \end{align*}
+
+      I'm going to rely on the fact that
+      \[
+         f = 
+            \begin{pmatrix}
+               I     & A     & B     & C     & D     & K \\
+               \pi_I & \pi_A & \pi_B & \pi_C & \pi_D & \pi_k
+            \end{pmatrix}
+      \]
+      is an isomorphism to generate the table. So I know that
+      $f(a)f(b) = f(ab)$ and $ab$ is already listed in the table on
+      p29. The left regular representation has the following table.
+
+      \begin{center}
+      \begin{tabular}{c|cccccc}
+         $\circ$ & $\pi_I$ & $\pi_A$ & $\pi_B$ & $\pi_C$ & $\pi_D$ & $\pi_K$\\
+            \hline
+         $\pi_I$ & $\pi_I$ & $\pi_A$ & $\pi_B$ & $\pi_C$ & $\pi_D$ & $\pi_K$\\
+         $\pi_A$ & $\pi_A$ & $\pi_I$ & $\pi_C$ & $\pi_B$ & $\pi_K$ & $\pi_D$\\
+         $\pi_B$ & $\pi_B$ & $\pi_K$ & $\pi_D$ & $\pi_A$ & $\pi_I$ & $\pi_C$\\
+         $\pi_C$ & $\pi_C$ & $\pi_D$ & $\pi_K$ & $\pi_I$ & $\pi_A$ & $\pi_B$\\
+         $\pi_D$ & $\pi_D$ & $\pi_C$ & $\pi_I$ & $\pi_K$ & $\pi_B$ & $\pi_A$\\
+         $\pi_K$ & $\pi_K$ & $\pi_B$ & $\pi_A$ & $\pi_D$ & $\pi_C$ & $\pi_I$\\
+      \end{tabular}
+      \end{center}
+
+      The right regular representation has the following table
+
+      \begin{center}
+      \begin{tabular}{c|cccccc}
+         $\circ$ & $\pi_I$ & $\pi_A$ & $\pi_B$ & $\pi_C$ & $\pi_D$ & $\pi_K$\\
+            \hline
+         $\pi_I$ & $\pi_I$ & $\pi_A$ & $\pi_B$ & $\pi_C$ & $\pi_D$ & $\pi_K$\\
+         $\pi_A$ & $\pi_A$ & $\pi_I$ & $\pi_C$ & $\pi_B$ & $\pi_K$ & $\pi_D$\\
+         $\pi_B$ & $\pi_B$ & $\pi_K$ & $\pi_D$ & $\pi_A$ & $\pi_I$ & $\pi_C$\\
+         $\pi_C$ & $\pi_C$ & $\pi_D$ & $\pi_K$ & $\pi_I$ & $\pi_A$ & $\pi_B$\\
+         $\pi_D$ & $\pi_D$ & $\pi_C$ & $\pi_I$ & $\pi_K$ & $\pi_B$ & $\pi_A$\\
+         $\pi_K$ & $\pi_K$ & $\pi_B$ & $\pi_A$ & $\pi_D$ & $\pi_C$ & $\pi_I$\\
+      \end{tabular}
+      \end{center}
+      
+
    \end{enumerate}
 
 \end{enumerate}
