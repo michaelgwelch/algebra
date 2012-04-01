@@ -1,0 +1,68 @@
+\documentclass[twoside]{amsart}
+\usepackage{amssymb,latexsym}
+\usepackage{amsfonts}
+\usepackage{xspace}
+\usepackage{enumerate}
+\usepackage{graphics}
+\usepackage{fitch}
+\newcommand{\Rationals}{\mathbb{Q}{}}
+\newcommand{\Reals}{\ensuremath{\mathbb{R}}\xspace}
+\newcommand{\Integers}{\ensuremath{\mathbb{Z}{}}\xspace}
+\newcommand{\solution}{\textsc{Solution}\xspace}
+\newcommand{\problem}{\textsc{Problem}\xspace}
+\newcommand{\Blank}{\mathrel{\phantom{=}}}
+\newcommand{\ltrue}{\top}
+\newcommand{\lfalse}{\bot}
+\newcommand{\fOfg}{\ensuremath{f \circ g}\xspace}
+\newcommand{\gOff}{\ensuremath{g \circ f}\xspace}
+\newcommand{\eps}{\ensuremath{\epsilon}\xspace}
+\newcommand{\iso}{\cong}
+\newcommand{\niso}{\ncong}
+\newcommand{\blank}{\vspace{5pt}}
+\newcommand{\ind}{\hspace{.35in}}
+\newcommand{\degree}{\ensuremath{^\circ}}
+\newcommand{\real}{\mathop{\mathrm{real}}}
+\newcommand{\img}{\mathop{\mathrm{img}}}
+\newcommand{\first}{\mathop{\mathrm{first}}}
+\newcommand{\second}{\mathop{\mathrm{second}}}
+\newcommand{\abs}{\mathop{\mathrm{abs}}}
+\begin{document}
+\title{Answers to Chapter 10 Exercises - A Book of Abstract Algebra}
+\author{Michael Welch}
+\date{\today}
+\maketitle
+
+This document contains selected answers to exercises from chapter 10
+of A Book of Abstract Algebra.
+
+
+\begin{enumerate}[A.]
+   
+   \item \textsc{Laws of Exponents}
+
+   Let $G$ be a group and $a \in G$.
+
+   \begin{enumerate}[1]
+      \blank
+      \item Prove that $a^m a^n = a^{m+n}$ in the following cases.
+      \begin{enumerate}[a]
+         \item $m=0$
+         \item $m<0$ and $n>0$
+         \item $m<0$ and $n<0$
+      \end{enumerate}
+
+      \blank \noindent \solution
+      \begin{enumerate}[a]
+         \item If $m=0$ then we have $a^m a^n = a^0 a^n = \epsilon a^n = a^n$.
+         In addition, $a^{m+n} = a^{0+n} = a^n$. Therefore, $a^m a^n = a^{m+n}$.
+
+         \item 
+      \end{enumerate}
+
+
+   \end{enumerate}
+
+
+\end{enumerate}
+
+\end{document}
