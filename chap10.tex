@@ -26,6 +26,7 @@
 \newcommand{\first}{\mathop{\mathrm{first}}}
 \newcommand{\second}{\mathop{\mathrm{second}}}
 \newcommand{\abs}{\mathop{\mathrm{abs}}}
+\renewcommand{\qed}{\blacksquare}
 \begin{document}
 \title{Answers to Chapter 10 Exercises - A Book of Abstract Algebra}
 \author{Michael Welch}
@@ -45,18 +46,56 @@ of A Book of Abstract Algebra.
    \begin{enumerate}[1]
       \blank
       \item Prove that $a^m a^n = a^{m+n}$ in the following cases.
-      \begin{enumerate}[a]
+      \begin{enumerate}[(a)]
          \item $m=0$
          \item $m<0$ and $n>0$
          \item $m<0$ and $n<0$
       \end{enumerate}
 
       \blank \noindent \solution
-      \begin{enumerate}[a]
+      \begin{enumerate}[(a)]
          \item If $m=0$ then we have $a^m a^n = a^0 a^n = \epsilon a^n = a^n$.
          In addition, $a^{m+n} = a^{0+n} = a^n$. Therefore, $a^m a^n = a^{m+n}$.
 
-         \item 
+         \item $m<0$ and $n>0$. 
+         Let $m' = -m$ and therefore $m'$ is positive. Then 
+         we have the following:
+         \[a^m = a^{-m'} = \underbrace{a^{-1}a^{-1}\cdots 
+         a^{-1}}_{m'\text{ times}}\] Therefore: \[a^m a^n =
+         \underbrace{a^{-1}a^{-1}\cdots a^{-1}}_{m'\text{ times}}
+         \underbrace{aa\cdots a}_{n\text{ times}}\] 
+         Now there are three case: $m'>n$, $m'<n$ and $m'=n$.
+         If $m' > n$
+         then $n$ of the $a^{-1}$ terms cancel out $n$ of the $a$
+         terms leaving $m'-n$ $a^{-1}$ terms: \[a^m a^n = \underbrace{
+         a^{-1} a^{-1} \cdots a^{-1}}_{m'-n\text{ times}}\] By
+         the definition of exponents we can rewrite this as
+         $a^{-(m'-n)} = a^{-m'+n} = a^{m+n}$. If
+         $m' < n$ then $m'$ terms of $a^{-1}$ cancel out
+         $m'$ terms of $a$ leaving $n-m'$ terms of $a$:
+         \[a^m a^n = \underbrace{a a \cdots a}_{n-m'\text{ times}}\]
+         This can be rewritten as $a^m a^n = a^{n-m'} = a^{-m' + n} 
+         = a^{m+n}$. Finally, if $m'=n$ then all the $a^{-1}$ terms
+         cancel out all of the $a$ terms leaving $a^m a^n = \epsilon
+         = a^0$. In addition if $m'=n$ then $m=-m'=-n$ and
+         $m+n=-n+n = 0$, so $a^{m+n} = \epsilon = a^ma^n$. $\qed$
+
+         \item $m<0$ and $n<0$. Let $m'=-m$ and $n'=-n$ (so $m'$ and
+         $n'$ are positive). Then
+         \[a^m a^n = a^{-m'} a^{-n'} = \underbrace{a^{-1} a^{-1}
+         \cdots a^{-1}}_{m'\text{ times}} \underbrace{a^{-1} a^{-1} \cdots
+         a^{-1}}_{n'\text{ times}} = (a^{-1})^{(m'+n')} \]
+
+         Now recall that the text on p104 proved that $a^{-n} =
+         (a^{-1})^n = (a^n)^{-1}$ when $n$ is positive. In our
+         case the term $m'+n'$ is positive so we can use
+         this identity to state that $(a^{-1})^{(m'+n')} = 
+         a^{-(m'+n')}$. Now putting it all together we have
+         \[
+         a^m a^n = a^{-(m'+n')} = a^{(-m' - n')} = a^{(m+n)} 
+         \]
+         $\qed$
+
       \end{enumerate}
 
 
