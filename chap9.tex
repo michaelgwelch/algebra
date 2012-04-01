@@ -834,6 +834,142 @@ of A Book of Abstract Algebra.
                         &= (-1)^{a'+b'}ab
       \end{align*}
 
+      \end{enumerate}
+   
+   \blank
+   \item \textsc{Some General Properties of Isomorphism}
+
+   \begin{enumerate}[1]
+      \item Let $G$ and $H$ be groups. Prove that $G \times H \iso
+      H \times G$. 
+
+      \blank \noindent \solution. This is trivial. Choose a value
+      for $f : G \times H \to H \times G$. $f((g,h))=(h,g)$
+      as the isomorphism. It's trivial to see that $f$ is injective. Let's
+      check that $f((g_1,h_1)(g_2,h_2)) = f((g_1,h_1))f((g_2,h_2))$.
+
+      \begin{align*}
+         f((g_1,h_1))f((g_2,h_2)) &= (h_1,g_1)(h_2,g_2) \\
+                                  &= (h_1h_2,g_1g_2) \\
+                                  &= f((g_1g_2,h_2h_2)) \\
+                                  &= f((g_1,h_1)(g_2,h_2))\\
+      \end{align*}
+
+      \blank
+      \item If $G_1 \iso G_2$ and $H_1 \iso H_2$, then $G_1 \times H_1
+      \iso G_2 \times H_2$.
+
+      \blank \noindent \solution 
+      Let $f_g : G_1 \to G_2$ be an isomorphism from $G_1$ to $G_2$.
+      Let $f_h : H_1 \to H_2$ be an isomorphism from $H_1$ to $H_2$.
+      We need to find $f : G_1 \times H_1 \to G_2 \times H_2$.
+      Choose it to be $f((g,h)) = (f_g(g),f_h(h))$.
+
+      Injective: Let $f((g,h))=f((g',h'))$. Then we have 
+      $(f_g(g),f_h(h)) = (f_g(g'),f_h(h'))$ and $f_g(g)=f_g(g'), 
+      f_h(h)=f_h(h')$. Since $f_g$ and $f_h$
+      are isomorphic we know that $g=g'$ and $h=h'$ and finally
+      $(g,h)=(g',h')$. 
+
+      Surjective: Let $(g_2,h_2) \in G_2 \times H_2$. Then
+      $f(x) = (g_2,h_2)$ for $x = (f^{-1}_g(g_2),f^{-1}_h(h_2))$.
+
+      Check that $f((g,h)(g',h')) = f((g,h))f((g',h'))$.
+
+      \setcounter{equation}{0}
+      \begin{align}
+         f((g,h)(g',h')) &= f((gg',hh')) \\
+                         &= (f_g(gg'),f_h(hh')) \\
+         f((g,h))f((g',h')) &= (f_g(g),f_h(h))(f_g(g'),f_h(h')) \\
+                            &= (f_g(g)f_g(g'),f_h(h)f_h(h')) \\
+                            &= (f_g(gg'),f_h(hh'))
+      \end{align}
+
+      We get from line 4 to line 5 by noting that $f_g, f_h$ are both
+      isomorphisms.
+      
+
+      \item Let $G$ be any group. Prove that $G$ is abelian iff the
+      function $f(x) = x^{-1}$ is an isomorphism from $G$ to $G$.
+
+      \blank \noindent \solution We have to prove both directions: 
+      1) If $G$ is abelian then $f(x) = x^{-1}$ is an isomorphism from
+      $G$ to $G$ and 2) If $f(x)$ is an isomorphism from $G$ to $G$
+      then $G$ is abelian.
+
+      So for the first case we will assume that $G$ is abelian.
+      Now let's prove that $f$ is an isomorphism from $G$ to $G$. It
+      is trivial to see that $f$ is bijective. Now let's check
+      that $f(ab)=f(a)f(b)$.
+      \begin{align*}
+         f(ab) &= (ab)^{-1} \\
+               &= b^{-1}a^{-1} && \text{Theorem 3} \\
+               &= a^{-1}b^{-1} && \text{$G$ is abelian} \\
+         f(a)f(b) &= a^{-1}b^{-1}
+      \end{align*}
+
+      So $f$ is an isomorphism from $G$ to $G$.
+
+      Now let's check the second case. Assume that $f$ is an isomorphism
+      from $G$ to $G$. Now prove that $G$ is abelian.
+      To prove that $G$ is abelian we need to show that $ab = ba$.
+      We know that $f(ab) = b^{-1}a^{-1} = f(a)f(b) = a^{-1}b^{-1}$, 
+      becaues $f$ is an isomorphism.
+      This can be rewritten as $b^{-1}a^{-1} = a^{-1}b^{-1}$. Multiplying
+      on the right of both sides by $ab$ we get:
+      \begin{align*}
+         b^{-1}a^{-1}ab &= a^{-1}b^{-1}ab \\
+         b^{-1}b &= a^{-1}b^{-1}ab \\
+         \epsilon &= a^{-1}b^{-1}ab
+      \end{align*}
+
+      And multilying on the left by $ba$ we get:
+      \begin{align*}
+         ba &= baa^{-1}b^{-1}ab \\
+         ba &= bb^{-1}ab \\
+         ba &= ab
+      \end{align*}
+
+      Therefore we have proven that $G$ is abelian iff the function 
+      $f(x) = x^{-1}$ is an isomorphism from $G$ to $G$.
+
+      \blank
+      \item Let $G$ be any group, with its operation denoted multiplicatively.
+      Let $H$ be a group with the same set as $G$ and let its operation be
+      defined by $x * y = y \circ x$ (where $\circ$ is the operation of $G$).
+      Prove that $G \iso H$.
+
+      \blank \noindent \solution Let $f$ be $f(x) = x^{-1}$. This function
+      is bijective. 
+      \begin{align*}
+         f(a \circ b) &= (a \circ b)^{-1} \\
+                      &= b^{-1} \circ a^{-1} \\
+         f(a)*f(b) &= f(b) \circ f(a) \\
+                   &= b^{-1} \circ a^{-1}
+      \end{align*}
+
+      I've shown that $f$ is an isomorphism from $G$ to $H$ and therefore
+      $G \iso H$.
+
+      \blank
+      \item Let $c$ be a fixed element of $G$. Let $H$ be a group with
+      the same set as $G$, and with the opeation $x * y = xcy$. Prove
+      that the function $f(x) = c^{-1}x$ is an isomorphism from $G$ to $H$.
+
+      \blank \noindent \solution Injective: Assume $f(a)=f(b)$. Then
+      we have $c^{-1}a = c^{-1}b$. Multiplying each side on the left by $c$
+      we have $a=b$. Surjective: Let $y$ be an element in $H$. Then
+      $f(x) = y$ for $x = cy$.
+
+      Now check that $f(ab)=f(a)f(b)$.
+      \begin{align*}
+         f(ab) &= c^{-1}ab \\
+         f(a)*f(b) &= f(a)cf(b) \\
+                   &= c^{-1}acc^{-1}b \\
+                   &= c^{-1}ab
+      \end{align*}
+
+
 
    \end{enumerate}
 
