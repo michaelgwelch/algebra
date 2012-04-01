@@ -973,6 +973,158 @@ of A Book of Abstract Algebra.
 
    \end{enumerate}
 
+   \item \textsc{Group Automorphism}
+
+   If $G$ is a group, an \emph{automorphism} of $G$ is an isomorphism from
+   $G$ to $G$. We have seen (Exercise A1) that the identity function 
+   $\epsilon(x)=x$ is an automorphism of $G$. However, many groups have
+   \emph{other} automorphisms besides this obvious one.
+
+   \blank
+   \begin{enumerate}[1]
+      \item Verify that 
+      \[
+         f = 
+            \begin{pmatrix}
+               0 & 1 & 2 & 3 & 4 & 5 \\
+               0 & 5 & 4 & 3 & 2 & 1 
+            \end{pmatrix}
+      \]
+
+      is an automorphism of $\Integers_6$.
+
+      \blank \noindent \solution By inspeciton the function is bijective.
+
+      The function $f$ can be restated as $f(x) = 0 - x$. $f(a+b) =
+      0 - (a+b) = - a - b$. $f(a)+f(b) = -a - b$. These equal therefore
+      $f$ is an automorphism.
+      
+      \blank
+      \item Verify that
+      \begin{align*}
+         f_1 &=
+            \begin{pmatrix}
+               0 & 1 & 2 & 3 & 4 \\
+               0 & 2 & 4 & 1 & 3
+            \end{pmatrix}
+            &
+         f_2 &=
+            \begin{pmatrix}
+               0 & 1 & 2 & 3 & 4 \\
+               0 & 3 & 1 & 4 & 2
+            \end{pmatrix}
+      \end{align*}
+
+      and
+
+      \[
+         f_3 =
+            \begin{pmatrix}
+               0 & 1 & 2 & 3 & 4 \\
+               0 & 4 & 3 & 2 & 1
+            \end{pmatrix}
+      \]
+
+      are all automorphisms of $\Integers_5$.
+
+      \blank \noindent \solution By inspection we see all of them are bijective.
+      We can write the formula for two of them:
+      $f_1(x) = x + x$ and $f_3(x) = -x$.
+
+      The first one: $f_1(a+b) = 2a + 2b$. $f_1(a)+f_1(b) = 2a + 2b$.
+      The third one: $f_3(a+b) = -a - b$. $f_3(a)+f_3(b) = -a - b$.
+
+      I don't immediately see a formulat for $f_2$ so I'm going to do it
+      bruce force by checking every combination.
+
+      In the following table $a$ are the column headers and $b$ are the
+      row headers.
+      \begin{center}
+      \begin{tabular}{c|ccccc}
+         $f(a+b)$ & 0 & 1 & 2 & 3 & 4 \\ \hline
+         0        & 0 & 3 & 1 & 4 & 2 \\
+         1        & 3 & 1 & 4 & 2 & 0 \\
+         2        & 1 & 4 & 2 & 0 & 3 \\
+         3        & 4 & 2 & 0 & 3 & 1 \\
+         4        & 2 & 0 & 3 & 1 & 4
+      \end{tabular}
+      \end{center}
+
+      Again in the following table $a$ are the column headers and $b$
+      are the row headers.
+      \begin{center}
+      \begin{tabular}{c|ccccc}
+         $f(a)+f(b)$ & 0 & 1 & 2 & 3 & 4 \\ \hline
+                   0 & 0 & 3 & 1 & 4 & 2 \\
+                   1 & 3 & 1 & 4 & 2 & 0 \\
+                   2 & 1 & 4 & 2 & 0 & 3 \\
+                   3 & 4 & 2 & 0 & 3 & 1 \\
+                   4 & 2 & 0 & 3 & 1 & 4 
+      \end{tabular}
+      \end{center}
+
+      therefore they are all automorphisms.
+
+      \blank
+      \item If $G$ is any group, and $a$ is any element of $G$, prove
+      that $f(x) = axa^{-1}$ is an automorphism of $G$.
+
+      \blank \noindent \solution Injective: Assume $f(s)=f(t)$,
+      then we have $asa^{-1} = ata^{-1}$. Multiplying on left and right
+      of both sides by $a$ we have $s=t$. It is surjective:
+      Let $y$ be in $G$. Then we have $f(x)=y$ and $f(x)=axa^{-1}$. 
+      Therefore, $y=axa^{-1}$ and $f(x)=y$ for $x=a^{-1}ya$.
+      Finally check $f(st)=f(s)f(t)$. $f(st)=asta^{-1}$. $f(s)f(t) =
+      asa^{-1}ata^{-1} = asta^{-1}$.
+
+      \blank
+      \item Since each automorphism of $G$ is a bijective function from $G$
+      to $G$, it is a \emph{permutation} of $G$. Prove the set 
+      $\mathrm{Aut}(G)$ of all the automorphisms is a subgroup of $S_G$.
+      (Remember that the operation is composition.)
+      
+      \blank \noindent \solution We must prove that the set Aut is closed
+      with respect to composition and function inverses.
+
+      Let $f, g$ be two functions in Aut. Each of them is from $G$ to $G$.
+      So we know that $f \circ g : G \to G$.
+      Each is an automorphism. Show that $f \circ g$ is an automorphism.
+      We have proven in previous chapters that the composition of 2 bijective
+      functions is bijective. Check $(f \circ g)(ab) = (f \circ g)(a)(f 
+      \circ g)(b)$.
+
+      \setcounter{equation}{0}
+      \begin{align}
+         (f \circ g)(ab) &= f(g(ab)) \\
+                         &= f(g(a)g(b)) & \text{$g$ is automorphism 1}\\
+                         &= f(g(a))f(g(b)) & \text{$f$ is automorphism 2} \\
+         (f \circ g)(a)(f \circ g)(b) &= f(g(a))f(g(b)) 
+      \end{align}
+
+      Therefore $f \circ g$ is an automorphism and Aut is closed with
+      respect to composition.
+
+
+      Now choose $f$ to be some function in Aut($G$). Show that
+      $f^{-1}$ is in Aug($G$) - in other words show that $f^{-1}$
+      is an automorphism. We know it's bijective because $f$ is.
+      Check that $f^{-1}(ab) = f^{-1}(a)f^{-1}(b)$. Choose
+      any two values $a,b \in G$. Let $s,t$
+      be the values in $G$ such that 
+      $f(s)=a$ and $f(t)=b$. We then know that $f(st)=f(s)f(t)=ab$.
+      Using this information we can derive the two equaiton below:
+
+      \setcounter{equation}{0}
+      \begin{align}
+         f^{-1}(a)f^{-1}(b) &= st \\
+         f^{-1}(ab) &= st 
+      \end{align}
+
+      Therefore Aut($G$) is a subgroup of $S_G$.
+
+      
+   \end{enumerate}
+
 \end{enumerate}
 
 \end{document}
