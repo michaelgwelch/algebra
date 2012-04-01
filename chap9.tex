@@ -1121,8 +1121,122 @@ of A Book of Abstract Algebra.
       \end{align}
 
       Therefore Aut($G$) is a subgroup of $S_G$.
-
       
+   \end{enumerate}
+
+   \blank
+   \item \textsc{Regular Representation of Groups}
+   By Cayley's theorem, every group $G$ is isomorphic to a group $G^*$ of
+   permuations of $G$. Recall that we match each element $a$ in $G$ with
+   the permutation $\pi_a$ defined by $\pi_a(x)=ax$, that is, the rule
+   ``multiply on the left by $a$''. We let $G^* = \{\pi_a : a \in G\}$;
+   with the operation $\circ$ of composition it is a group of permutations,
+   called the \emph{left regular representation} of $G$. (It is called a
+   ``representation'' of $G$ because it is isomorphic to $G$.)
+
+   Instead of using the permutations $\pi_a$, we could just as well have used
+   the permutations $\rho_a$ defined by $\rho_a(x)=xa$, that is, 
+   ``multiply on the right by $a$''. The group $G^\rho = \{ \rho_a :
+   a \in G\}$ is called the \emph{right regular representation} of $G$.
+
+   If $G$ is commutative, there is no difference between right and left
+   multiplications, so $G^*$ and $G^\rho$ are the same, and are simply
+   called the \emph{regular representation} of $G$. Also if the operation of
+   $G$ is denoted by $+$, the permutation corresponding to $a$ is
+   ``add $a$'' instead of ``multiply by $a$''.
+
+   \textbf{Example} The regular representation of $\Integers_3$ consists
+   of the following permutations:
+
+   \begin{align*}
+      \pi_0 &= 
+         \begin{pmatrix}
+            0 & 1 & 2 \\
+            0 & 1 & 2 
+         \end{pmatrix} && \text{that is, the identity permutation}\\
+      \pi_1 &= 
+         \begin{pmatrix}
+            0 & 1 & 2 \\
+            1 & 2 & 0
+         \end{pmatrix} && \text{that is, the rule ``add 1''} \\
+      \pi_2 &=
+         \begin{pmatrix}
+            0 & 1 & 2 \\
+            2 & 0 & 1
+         \end{pmatrix} && \text{that is, the rule ``add 2''}
+   \end{align*}
+
+   The regular representation of $\Integers_3$ has the following table:
+
+   \begin{center}
+   \begin{tabular}{c|ccc}
+      $\circ$ & $\pi_0$ & $\pi_1$ & $\pi_2$ \\ \hline
+      $\pi_0$ & $\pi_0$ & $\pi_1$ & $\pi_2$ \\
+      $\pi_1$ & $\pi_1$ & $\pi_2$ & $\pi_0$ \\
+      $\pi_2$ & $\pi_2$ & $\pi_0$ & $\pi_1$ 
+   \end{tabular}
+   \end{center}
+
+   The function 
+   \begin{align*}
+      f &= 
+         \begin{pmatrix}
+            0     &  1    &  2  \\
+            \pi_0 & \pi_1 & \pi_2
+         \end{pmatrix}
+   \end{align*}
+
+   is easily seen to be an isomorphism from $\Integers_3$ to its regular
+   representation.
+
+   Find the right and left regular representation of each of the following
+   groups, and computer their tables. (If the group is abelian, find its
+   regular representation.)
+
+   \begin{enumerate}[1]
+      \item $P_2$, the group of subsets of a two-element set. (See
+      Chapter 3, Exercise C.)
+
+      \blank \noindent \solution The elements are $\{\epsilon, \{a\}, \{b\},
+      \{a,b\}\}$,
+      and the operation is $\ominus$ the symmetric difference.
+
+      The regular representation (it's abelian) is 
+      \begin{align*}
+         \pi_\eps &=
+            \begin{pmatrix}
+               \eps  &  \{a\}  & \{b\}  &  \{a,b\} \\
+               \eps  &  \{a\}  & \{b\}  &  \{a,b\} \\
+            \end{pmatrix} \\
+         \pi_{\{a\}} &=
+            \begin{pmatrix}
+               \eps  &  \{a\}  & \{b\}  &  \{a,b\} \\
+               \{a\} &  \eps   & \{a,b\}  &  \{b\} \\
+            \end{pmatrix} \\
+         \pi_{\{b\}} &=
+            \begin{pmatrix}
+               \eps  &  \{a\}  & \{b\}  &  \{a,b\} \\
+               \{b\} &  \{a,b\}& \eps   &  \{a\} \\
+            \end{pmatrix} \\
+         \pi_{\{a,b\}} &=
+            \begin{pmatrix}
+               \eps  &  \{a\}  & \{b\}  &  \{a,b\} \\
+             \{a,b\} &  \{b\}  & \{a\}  &  \eps \\
+            \end{pmatrix}
+      \end{align*}
+
+      The table for the regular representation of $P_2$ is (to be clear
+      to calculate $f \circ g$ I draw $f$ from the row headers and $g$
+      from column headers.
+      \begin{center}
+      \begin{tabular}{c|cccc}
+      $\circ$ & $\pi_\eps$ & $\pi_{\{a\}}$ & $\pi_{\{b\}}$ & $\pi_{\{a,b\}}$ \\ \hline
+  $\pi_\eps$  & $\pi_\eps$ & $\pi_{\{a\}}$ & $\pi_{\{b\}}$ & $\pi_{\{a,b\}}$ \\ 
+  $\pi_{\{a\}}$ & $\pi_{\{a\}}$ & $\pi_\eps$ & $\pi_{\{a,b\}}$ & $\pi_{\{b\}}$ \\ 
+  $\pi_{\{b\}}$ & $\pi_{\{b\}}$ & $\pi_{\{a,b\}}$ & $\pi_\eps$ & $\pi_{\{a\}}$ \\ 
+  $\pi_{\{a,b\}}$ & $\pi_{\{a,b\}}$ & $\pi_{\{b\}}$ & $\pi_{\{a\}}$ & $\pi_\eps$ \\ 
+      \end{tabular}
+      \end{center}
    \end{enumerate}
 
 \end{enumerate}
