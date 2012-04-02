@@ -269,8 +269,34 @@ of A Book of Abstract Algebra.
       $(b)$ of order 3; $(c)$ of order 4; $(d)$ of order 6.
 
       \sol $(a)$: 12; $(b)$ 8, 16; $(c)$ 6, 18; $(d)$ 4, 20
+   \end{enumerate}
 
+   \itm \textsc{Elementary Properties of Order}
+   
+   \noindent Let $a, b, c$ be elements of a group $G$. Prove the following:
+
+   \begin{enumerate}[1]
+      \itm $\mathrm{Ord}(a) = 1$ iff $a=e$.
+
+      \sol First case. Assume that $\mathrm{Ord}(a) = 1$. Then we know by
+      definition of order that $a^1 = \epsilon$, but $a^1=a$. Therefore $a=e$.
+
+      Next case. Assume that $a=e$. Then trivially the order of $a$
+      is 1 since $a^1=a=e$. $\qed$
+
+      \itm If $\mathrm{Ord}(a)=n$, then $a^{n-r} = (a^r)^{-1}$.
+
+      \sol We are given that the order of $a$ is $n$. Therefore
+      $a^n = e$. So $a^{n-r} = a^n a^{-r} = a^{-r}$. And by theorem
+      1 we know $a^{-r}=(a^r)^{-1}$. Therefore $a^{n-r} = a^{-r} =
+      (a^r)^{-1}$. $\qed$
+
+      \itm If $a^k=e$ where $k$ is odd, then the order of $a$ is odd.
       
+      \sol Let $n$ be the order of $a$. By Theorem 5 on p 107 we know that
+      $k$ is a multiple of $n$. Assume $n$ is even. Then every multiple of
+      $n$ is also even which means $k$ is even. However we are told that
+      $k$ is odd. Therefore $n$ must be odd as well.
    \end{enumerate}
 
 
