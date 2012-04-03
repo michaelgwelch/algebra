@@ -29,6 +29,7 @@
 \renewcommand{\qed}{\blacksquare}
 \newcommand{\itm}{\blank\item}
 \newcommand{\sol}{\blank\noindent\solution}
+\newcommand{\ord}{\mathop{\mathrm{ord}}}
 \begin{document}
 \title{Answers to Chapter 10 Exercises - A Book of Abstract Algebra}
 \author{Michael Welch}
@@ -297,6 +298,104 @@ of A Book of Abstract Algebra.
       $k$ is a multiple of $n$. Assume $n$ is even. Then every multiple of
       $n$ is also even which means $k$ is even. However we are told that
       $k$ is odd. Therefore $n$ must be odd as well.
+
+      \itm $\ord(a) = \ord(bab^{-1})$.
+
+      \sol This one is easy to see. Let's assume the order of $a$
+      is $n$. Let's first see what happens when $n=1$. Then
+      $a=e$ and $\ord(bab^{-1}) = bb^{-1} = e = a$. So the order of
+      $a$ equals the order of $bab^{-1}$.
+
+      Now let's assume $n=2$. Then we have $a^2 = e$ and
+      $(bab^{-1})^2 = bab^{-1}bab^{-1} = ba^2b^{-1} = e$. Again
+      the order of each is $n$.
+
+      Now let's assume any positive value of $n$. We know that $a^n=e$.
+      Let's examing the value $(bab^{-1})^n$.
+      \[
+         (bab^{-1})^n = \underbrace{(bab^{-1})(bab^{-1})\cdots
+          (bab^{-1})}_{n\text{ times}}
+      \]
+      Now when you remove the parentheses, you will have $n-1$
+      instances of $b^{-1}b$ next to each other. After those are
+      all cancelled out you will have $b\underbrace{a a \cdots a}_{
+      n\text{ times}}b^{-1} = ba^nb^{-1} = e$. 
+
+      Now I really didn't prove that the order of $bab^{-1}$ is $n$.
+      There could be some number $m$ smaller than $n$ such
+      that $(bab^{-1})^m = e$. Let's assume there is. Then we know that
+      $a^m \ne e$. And we have $(bab^{-1})^m = ba^mb^{-1} = e$. Now
+      I can multiply on the right by $b$ and get $ba^m = b$. Nnow I
+      can multiply on the left by $b^{-1}$ and get $a^m = b^{-1}b = e$.
+      So I've just shown that $a^m = e$. But this can't be since $m < n$
+      and $n$ is the order of $a$. Therefore, there can be no number
+      $m$ less than $n$ that is the order of $bab^{-1}$. Therefore,
+      the order of $bab^{-1}$ is $n$. $\qed$
+
+      \itm The order of $a^{-1}$ is the same as the order of $a$.
+
+      \sol Assume the order of $a$ is $n$. Then we need to show that
+      $(a^{-1})^n = e$ and that there is no other number $m$ less than $n$
+      such that $(a^{-1})^m = e$.
+
+      So we are given that $a^n = e$. So I can multiply each side
+      by $a^{-n}$ and get $e = a^{-n} = (a^{-1})^n$. Which is the
+      first thing we wanted to show. Next assume there exists some
+      $m < n$ such that $(a^{-1})^m = e$. We know that $a^m \ne e$.
+      If $(a^{-1})^m = e$ then I can multiply both sides by $a^m$
+      to get $a^{-m}a^m = e = a^m$. Which is a contradiction. Therefore,
+      no $m$ can exist and $n$ is the order of $a^{-1}$. $\qed$
+
+      \itm The order of $ab$ is the same as the order of $ba$.
+
+      \sol Assume the order of $ab$ = $n$, so $(ab)^n = e$. 
+      \[
+         (ab)^n = \underbrace{(ab)(ab) \cdots (ab)}_{n\text{ times}} = e
+      \]
+      If I multiply on the right by $a$ and change how I group the
+      terms I get
+      \[
+         \underbrace{(ab)(ab) \cdots (ab)}_{n\text{ times}} a =
+            a\underbrace{(ba)(ba) \cdots (ba)}_{n\text{ times}} = ae
+      \]
+      and using cancellation law I can eliminate the extra $a$ on
+      each side and I'm left with
+      \[
+         \underbrace{(ba)(ba) \cdots (ba)}_{n\text{ times}} = (ba)^n = e
+      \]
+
+      Now I can use the same trick as the last two problems to prove
+      that there is no nuber $m$ smaller than  $n$  such that $(ba)^m = e$.
+      Let's assume that $m < n$ and $(ba)^m = e$. Then I have
+      \[
+         \underbrace{(ba)(ba) \cdots (ba)}_{m\text{ times}}b = 
+         b\underbrace{(ab)(ab) \cdots (ab)}_{m\text{ times}} = be
+      \]
+      and using cancellation laws we have $(ab)^m = e$ which can't be
+      becaues the order of $ab$ is $n$. Therefore the order
+      of $ba$ equals the order of $ab$. $\qed$
+
+      \itm $\ord(abc) = \ord(cab) = \ord(bca)$.
+
+      \sol Assume the order of $abc$ is $n$. Then $(abc)^n = e$.
+      Let's examine $(cab)^nc$. And use the same expansion trick
+      from last time.
+
+      \[
+         (cab)^nc = c(abc)^n = c
+      \]
+
+      Using cancellation we get $(cab)^n = e$. We can use the same trick
+      as last time to prove that $n$ is the smallest number for which
+      this is true.  And we can use the same trick for $bca$. $\qed$
+
+      \itm Let $x=a_1 a_2 \ldots a_n$, and let $y$ be a product of the same
+      factors, permutated cyclically. (That is, $y = a_k a_{k+1} \ldots
+      a_n a_1 \ldots a_{k-1}$.) Then $\ord(x) = \ord(y)$.
+
+      \sol Use the exact same tricks from the last two problems. $\qed$
+
+
    \end{enumerate}
 
 
