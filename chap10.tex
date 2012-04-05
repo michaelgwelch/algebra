@@ -395,8 +395,116 @@ of A Book of Abstract Algebra.
 
       \sol Use the exact same tricks from the last two problems. $\qed$
 
+   \end{enumerate}
+
+   \itm \textsc{Further Properties of Order}
+   
+   \noindent Let $a$ be any element of finite order of a group $G$. Prove
+   the following.
+
+   \begin{enumerate}[1]
+      \itm If $a^p = e$ where $p$ is a prime number, then $a$ has order
+      $p$. $(a \ne e.)$
+
+      \sol We know that there is no number $m$ greater than $p$ that is
+      the order of $a$ by definition of order. So let's assume the order of
+      $a$ is not $p$ and there is some $m$ less than $p$ such that
+      $a^m = e$. Now let's use the division algorithm to divide $p$
+      by $m$. We have $p = mq + r$ which means
+      \[
+         a^p = a^{mq} a^r = (a^m)^q a^r = e a^r = a^r
+      \]
+
+      So $a^p = a^r$ where $0 \leq r < m$. But we know that $a^p = e$ so
+      $a^r = e$. Now we know that $r = 0$ because by the definition of order
+      there can be no positive value less than $m$ such that $a$ raised
+      to that value is $e$. Therefore $r=0$. Which means that $p = mq$. 
+      Since $p$ is prime that means that $m$ must be equal to 1. But this
+      would imply that $a^1 = e$ which would mean that $a=e$. But we said
+      that $a$ is any element of finite order of $G$. So this means that
+      in general there is no $m < p$ for which $a^m = e$. Indeed this is
+      only true if we choose $a$ to be $e$. In which case $p = 1$. In the
+      all case $p$ is the order of $a$. $\qed$
+
+      \itm The order of $a^k$ is a divisor (factor) of the order of $a$.
+
+      \sol Let $n$ be the order of $a$ and let $m$ be the order of 
+      $a^k$. Since $m$ is the order of $a^k$ we have 
+      $(a^k)^m = e$. We also can see that $(a^k)^n = (a^n)^k = e$.
+      Now by Theorem 5 $n$ is a multiple of $m$. (This was hard for 
+      me to see. Let $b = a^k$ to make it more clear. We have
+      $b^m = e$ and $b^n = e$. Since $m$ is the order of $b$ it
+      is by definition smaller than $n$ and by Theorem 5 $n$ is a 
+      multiple of $m$.) $\qed$
+
+      \itm If $\ord(a) = km$, then $\ord(a^k) = m$.
+
+      \sol $(a^{km}) = (a^k) ^m = e$. Therefore the order of $a^k$ is $m$.
+      $\qed$
+
+      \itm If $\ord(a) = n$ where $n$ is odd, then $\ord(a^2) = n$.
+
+      \sol I will show two things: 1) $(a^2)^n = e$ and 2)
+      There is no number $m < n$ which is the order of $a^2$.
+
+      The first part is trivial: $(a^2)^n = (a^n)^2 = e^2 = e$.
+
+      The second part will be proved by contradiction. Assume there is
+      some $m < n$ such that $(a^2)^m = e$. Then, by Theorem 5, $n$
+      is a multiple of $m$. In other words there is some $q > 1$ 
+      such that $n = qm$.
+
+      Now assume $q=2$. Then $n=2q$. But this is impossible because we
+      are given that $n$ is odd. So even if $n$ is a multiple of $m$, 
+      it cannot be the case that $q=2$.
+
+      Now assume $q > 2$. Since $n=qm$ then $m=n/q$.
+      Then  $(a^2)^m = (a^2)^{n/q} = a^{(2/q)n} = e$. But $2/q < 1$
+      and $(2/q)n < n$.  But we know that $n$ is the order of $a$
+      so it cannot be possible that $a^{(2/q)n} = e$.
+
+      So we have shown that there is no possible value for $q$. Therefore,
+      our assumption that there is a value of $m < n$ for which
+      $(a^2)^m = e$ is false. Therefore $n$ is the order of $a^2$. $\qed$
+      
+      \itm If $a$ has order $n$, and $a^r = a^s$, then $n$ is a factor
+      of $r-s$.
+
+      \sol Given $a^n = e$, $a^r = a^s$. Therefore
+      $a^{r-s} = a^r a^{-s} = a^s a^{-s} = e$. By theorem 5, $r-s$ is
+      a multiple of $n$. Therefore $n$ is a factor of $r-s$. $\qed$
+
+      \itm If $a$ is the \emph{only} element of order $k$ in $G$, then
+      $a$ is in the center of $G$. (\textsc{Hint}: Use Exercise C4.
+      Also, see Chapter 4, Exercise C6.)
+
+      \sol Given $\ord(a)=k$. Therefore, for any element $b \in G$
+      (by part C4), we have $\ord(bab^{-1}) = k$. Therefore $(bab^{-1})^k = e$.
+
+      By Chapter 4 C6 $ab = ba$ iff $bab^{-1} = a$. 
+
+      STUMPED!!!
+
+      \itm If the order of $a$ is not a multiple of $m$, then
+      the order of $a^k$ is not a multiple of $m$.
+
+      \sol Given that the order of $a$ is not a multiple of $m$.
+      Assume that order of $a^k$ is a multiple of $m$. Then
+      for some integer $q_1 \geq 1$ we have $\ord(a^k) = q_1m$.
+      By part 2 we know that the order of $a$ is a multiple of
+      the order of $a^k$. Therefore there is some $q_2$ such
+      that $\ord(a) = q_2 \ord(a^k) = q_2 q_1 m$. Therefore
+      order of $a$ is a multiple of $m$. But this contradicts
+      our premise. So order of $a^k$ must not be a multiple of $m$.$\qed$.
+
+      \itm If $\ord(a) = mk$ and $a^{rk} = e$, then $r$ is a multiple of $m$.
+
+      \sol We know by theorem 5 that $rk$ is a multiple of $mk$. 
+      So $rk = qmk$ for some $q \ne 0$.  So $r = qm$. So $r$ is a multiple
+      of $m$. $\qed$
 
    \end{enumerate}
+
 
 
 \end{enumerate}
