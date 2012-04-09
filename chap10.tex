@@ -26,7 +26,7 @@
 \newcommand{\first}{\mathop{\mathrm{first}}}
 \newcommand{\second}{\mathop{\mathrm{second}}}
 \newcommand{\abs}{\mathop{\mathrm{abs}}}
-\renewcommand{\qed}{\blacksquare}
+%\renewcommand{\qed}{\blacksquare}
 \newcommand{\itm}{\blank\item}
 \newcommand{\sol}{\blank\noindent\solution}
 \newcommand{\ord}{\mathop{\mathrm{ord}}}
@@ -503,6 +503,137 @@ of A Book of Abstract Algebra.
       So $rk = qmk$ for some $q \ne 0$.  So $r = qm$. So $r$ is a multiple
       of $m$. $\qed$
 
+   \end{enumerate}
+   
+   \itm \textsc{Relationship between $\ord(ab)$, $\ord(a)$, and $\ord(b)$}
+
+   \noindent Let $a$ and $b$ be elements of a group $G$. Let $\ord(a)=m$ and
+   $\ord(b)=n$; let $\mathrm{lcm}(m,n)$ denote the least common multiple
+   of $m$ and $n$. Prove parts 1-5.
+
+   \begin{enumerate}[1]
+      \itm If $a$ and $b$ commute, then $\ord(ab)$ is a divisor of 
+      $\mathrm{lcm}(m,n)$. 
+
+      \sol Let $o$ be the order of $ab$. Let $l$ be the least common
+      multiple of $m$ and $n$.
+
+      First let's calculate $(ab)^l$. $(ab)^l = a^lb^l$ because
+      $a$ and $b$ commute. Since $l$ is a multiple of $m$ and $n$
+      we know there exist integers $q_m$ and $q_n$ such that
+      $mq_m = l$ and $nq_n = l$. So we have 
+      
+      \begin{align*}
+         (ab)^l &= a^l b^l \\
+                &= a^{mq_m} b^{nq_n} \\
+                &= (a^m)^{q_m} (b^n)^{q_n} \\
+                &= e^{q_m} e^{q_n} \\
+                &= e
+      \end{align*}
+
+      Since $o$ is the order of $(ab)$, by theorem 5, we know that $l$ is
+      a multiple of $o$. Therefore $\ord(ab)$ is a divisor of $\mathrm{lcm}
+      (m,n)$. $\qed$
+
+      \itm If $m$ and $n$ are relatively prime, then no power of $a$
+      can be equal to any power of $b$ (except for $e$). (\textsc{Remark}: Two
+      integers are said to be relatively prime if they have no common factors
+      except $\pm 1$.) (\textsc{Hint}: Use exercise D2.)
+
+      \sol The hint really gives it away. Okay let's assume the opposite.
+      Let's assume that there exist some numbers $s$, and $t$ such
+      that $a^s = b^t = c$ where $c \ne e$. In other words, we have found a
+      power of $a$ that is equal to a power of $b$ other than $e$. 
+      We know from D2 that
+      $\ord(c) = \ord(a^s)$ is a factor of the $\ord(a)$ which is $m$.
+      Likewise we know that the $\ord(c) = \ord(b^t)$ is a factor
+      of the $\ord(b)$ which is $n$. So we know that the
+      $\ord(c)$ is a factor of $m$ and $n$. 
+
+      Then we have found a factor common to both $m$ and $n$ which 
+      contradicts our givens. Therefore, we know there exists no $s$ or
+      $t$. $\qed$
+
+      \itm If $m$ and $n$ are relatively prime, then the products 
+      $a^ib^j (0 \le i < m, 0 \le j < n)$ are all distinct.
+
+      \sol To prove this, let's assume that there exists some $r,r',s,s'$ 
+      where $(r,s)$ and $(r',s')$ are distinct pairs of integers 
+      and $r, r'$ range over $[0,m-1]$ and
+      $s,s'$ range over $[0,n-1]$ and $a^rb^s = a^{r'} b^{s'}$.
+
+      \blank
+      Multiply each side on the left by $a^{-r'}$ and on the right by
+      $b^{-s}$ and we get $a^{r-r'} = b^{s'-s}$.
+
+      We proved in previous exercise that no power of $a$ can equal
+      any power of $b$ (except for $e$).  Therefore it is not the case
+      that $a^rb^s = a^{r'} b^{s'}$.
+
+      \itm Let $a$ and $b$ commute. If $m$ and $n$ are relativley prime,
+      then $\ord(ab) = mn$. (\textsc{Hint}: Use part 2.)
+
+      \sol First we show that $(ab)^{mn} = e$:
+      \begin{align*}
+         (ab)^{mn} &= a^{mn}b^{mn} \\
+                   &= (a^m)^n (b^n)^m \\
+                   &= e^n e^m \\
+                   &= e
+      \end{align*}
+
+      Now we will show that there doesn't exist any number $p$ less than
+      $mn$ for which $(ab)^p = e$. Assume that there is. Then $(ab)^p = e$.
+      Then we have $a^pb^p = e$ or $a^p = b^{-p}$. But by part 2 we know
+      that no power of $a$ can equal any power of $b$ except for $e$.
+
+      \itm Let $a$ and $b$ commute. There is an element $c$ in $G$ whose
+      order is $\mathrm{lcm}(m,n)$. (\textsc{Hint}: User part 4, above, 
+      together with Exercise D3. Let $c=a^ib$ where $a^i$ is a certain
+      power of $a$.)
+
+      \sol First let's prove this if $m$ and $n$ are relatively prime.
+      Then we choose $c = ab$. The order of $ab$ is the order of $c$ and by
+      part 4 is $mn$. But since $m$ and $n$ are relatively prime we know
+      that the least common multiple of $m$ and $n$ is $mn$. So we
+      have found $c$ if $m$ and $n$ are relatively prime.
+
+      \blank
+      Now let's assume that $m$ and $n$ are not relatively prime. This
+      means they share at least one factor. Let $l = \mathrm{lcm}( 
+      m,n)$. Then we know that $mn = ql$ for some integer $q > 1$.
+      Now we choose $c = a^ib$. By D3 the order of $a^i$ is $m/i$.
+
+
+      \sol $c = a^ib$ where $a^i$ is some power of $a$. Proof.
+      Let $l = \mathrm{lcm}(m,n)$. So $l = nr_n = mr_m$ for some $r_m, r_n$.
+      \begin{align*}
+         c^l &= (a^ib)^l \\
+             &= (a^i)^lb^l \\
+             &= (a^m)^{ir_m} (b^n)^{r_n} \\
+             &= e^{ir_m} e^{r_n} \\
+             &= e
+      \end{align*}
+
+      Now assume there is some number $p < l$ such that $c^p = e$.
+      \begin{align*}
+         c^p &= e \\
+         c^p &= (a^ib)^p \\
+             &= (a^i)^p b^p \\
+         (a^i)^p b^p &= e 
+      \end{align*}
+
+      STUMP
+
+      \itm Give an example to show that part 1 is not true if $a$ and $b$
+      do not commute.
+
+      \sol Choose $A$ and $B$ from the matrices on p28.
+
+
+
+
+
+      
    \end{enumerate}
 
 
