@@ -627,13 +627,47 @@ of A Book of Abstract Algebra.
       \itm Give an example to show that part 1 is not true if $a$ and $b$
       do not commute.
 
-      \sol Choose $A$ and $B$ from the matrices on p28.
+   \end{enumerate}
 
+   \itm Let $a$ be an element of order 12 in a group $G$.
 
+   \begin{enumerate}[1]
+      \itm What is the smallest positive integer $k$ such that $a^{8k} = e$?
+      (\textsc{Hint}: Use Theorem 5 and explain carefully!)
 
+      \sol By Theorem 5 if $k$ is chosen such that $a^{8k} = e$ then 
+      $8k$ must be a multiple of 12. So we know that $8k = 12q$
+      for some value of $q$. We want the smallest value of $k$ so we want
+      the least common multiple of $8$ and $12$ which is 24. So $k = 3$
+      and $q=2$. 
 
+      \itm What is the order of $a^8$?
 
-      
+      \sol The order of $a^8$ is 3. We know from previous exercise that 3
+      is the smallest value of $k$ such that $(a^8)^k = a^{8k} = e$. 
+
+      \itm What are the orders of $a^9$, $a^{10}$, $a^5$?
+
+      \sol The order of $a^9$ is 4: $(a^9)^4 = a^{36} = (a^{12})^3 = e$.
+      The order of $a^{10}$ is 6: $(a^{10})^6 = a^{60} = (a^{12})^5 = e$.
+      The order of $a^5$ is 12: $(a^5)^{12} = a^{60} = (a^{12})^5 = e$.
+      In each of these cases there is no smaller exponent that works.
+
+      \itm Which powers of $a$ have the same order as $a$? [That is, for
+      what values of $k$ is $\ord(a^k)$ = 12?]
+
+      \sol The powers of $a$ that have order 12 are: $a, a^5, a^7, a^{11}$.
+
+      \itm Let $a$ be an element of order $m$ in any group $G$. What 
+      is the order of $a^k$?
+
+      \sol The order of $a^k$ is $\mathrm{lcm}(k,m)/k$.
+
+      \itm Let $a$ be an element of order $m$ in any group $G$. For what
+      values of $k$ is $\ord(a^k)=m$. 
+
+      \sol The $\ord(a^k)=m$ for values of $k$ that are relatively prime
+      to $m$.
    \end{enumerate}
 
 
