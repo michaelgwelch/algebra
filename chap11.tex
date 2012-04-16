@@ -1,0 +1,127 @@
+\documentclass[twoside]{amsart}
+\usepackage{amssymb,latexsym}
+\usepackage{amsfonts}
+\usepackage{xspace}
+\usepackage{enumerate}
+\usepackage{graphics}
+\usepackage{fitch}
+\newcommand{\Rationals}{\mathbb{Q}{}}
+\newcommand{\Reals}{\ensuremath{\mathbb{R}}\xspace}
+\newcommand{\Integers}{\ensuremath{\mathbb{Z}{}}\xspace}
+\newcommand{\solution}{\textsc{Solution}\xspace}
+\newcommand{\problem}{\textsc{Problem}\xspace}
+\newcommand{\Blank}{\mathrel{\phantom{=}}}
+\newcommand{\ltrue}{\top}
+\newcommand{\lfalse}{\bot}
+\newcommand{\fOfg}{\ensuremath{f \circ g}\xspace}
+\newcommand{\gOff}{\ensuremath{g \circ f}\xspace}
+\newcommand{\eps}{\ensuremath{\epsilon}\xspace}
+\newcommand{\iso}{\cong}
+\newcommand{\niso}{\ncong}
+\newcommand{\blank}{\vspace{5pt}}
+\newcommand{\ind}{\hspace{.35in}}
+\newcommand{\degree}{\ensuremath{^\circ}}
+\newcommand{\real}{\mathop{\mathrm{real}}}
+\newcommand{\img}{\mathop{\mathrm{img}}}
+\newcommand{\first}{\mathop{\mathrm{first}}}
+\newcommand{\second}{\mathop{\mathrm{second}}}
+\newcommand{\abs}{\mathop{\mathrm{abs}}}
+%\renewcommand{\qed}{\blacksquare}
+\newcommand{\itm}{\blank\item}
+\newcommand{\sol}{\blank\noindent\solution}
+\newcommand{\ord}{\mathop{\mathrm{ord}}}
+\begin{document}
+\title{Answers to Chapter 11 Exercises - A Book of Abstract Algebra}
+\author{Michael Welch}
+\date{\today}
+\maketitle
+
+This document contains selected answers to exercises from chapter 11
+of A Book of Abstract Algebra.
+
+
+\begin{enumerate}[A.]
+   
+   \item \textsc{Examples of Cyclic Groups}
+
+   \begin{enumerate}[1)]
+      \itm List the elements of $\langle 6 \rangle$ in $\Integers_{16}$.
+
+      \sol $\langle 6 \rangle = \{ 6, 12, 2, 8, 14, 4, 10, 0 \}$.
+
+      \itm List the elements of $\langle f \rangle$ in $S_6$ where
+      \[
+         f = 
+            \begin{pmatrix}
+               1 & 2 & 3 & 4 & 5 & 6 \\
+               6 & 1 & 3 & 2 & 5 & 4
+            \end{pmatrix}
+      \]
+
+      \sol Let's write $f = (1642)$. $f^2 = (14)(26)$. $f^3 = (1246)$.
+      $f^4 = e$. So $\langle f \rangle = \{ e, (1642), (14)(26), (1246) \}$.
+
+      \itm Describe the cyclic subgroup $\langle \frac{1}{2} \rangle$ in 
+      $\Reals^*$. Describe the cyclic subgroup $\langle \frac{1}{2} \rangle$
+      in $\Reals$.
+
+      \sol The cyclic subgroup of $\langle \frac{1}{2} \rangle$ in 
+      $\Reals^*$ is the set $\{ 2^n \mid n \in \Integers\}$.
+      the cyclic subgroup of $\langle \frac{1}{2} \rangle$ in $\Reals$
+      is the set $\{ \frac{n}{2} \mid n \in \Integers \}$.
+
+      \itm If $f(x) = x + 1$, describe the cyclic subgroup $\langle f
+      \rangle$ of $S_\Reals$.
+
+      \sol $\langle f \rangle = \{ f(x) = x + n \mid n \in \Integers \}$.
+
+      \itm If $f(x) = x + 1$, describe the cyclic subgroup $\langle f
+      \rangle$ of $\mathbb{F}(\Reals)$.
+
+      \sol I had to remind myself that on p45 $\mathbb{F}(\Reals)$ is 
+      the set of all functions from $\Reals$ to $\Reals$. I will assume that
+      because the operation is not given in this problem that $+$ is assumed.
+      So the second multiple of $f$ is $f(x) + f(x) = 2x + 2$.  So
+      the multiples of $f$ are easy to describe as being of the
+      form $nx + n$. The inverses are a little trickier. We want 
+      $f^n(x) + f^{-n}(x) = \epsilon(x) = x$. So we have 
+      $f^{-n}(x) = (1-n)x - n $.
+      $\langle f \rangle = \{ nx + n \mid n \in \Integers \text{ and } n \ge
+      0\} \cup \{(1-n)x - n \mid n \in \Integers \text{ and } n \ge 0\}$.
+
+      \itm Show that -1, as well as 1, is a generator of $\Integers$. Are there
+      any other generators of $\Integers$? Explain! What are the generators
+      of an arbitrary infinite cyclic group $\langle a \rangle$?
+
+      \sol I don't know how to show this. To show that 1 is a generator is
+      to show that -1 is a generator. 1 (by itself) generates all of the
+      positive integers and combined with -1 generates 0 and -1 generates
+      all of the negative integers. They are inverses of each other.
+      There are no other generators of $\Integers$. Assume you had some
+      element $n$ that is a generator of $\Integers$. How does it
+      generate 1? Some multiple of $n$ must generate 1. So we say
+      $nq = 1$ or $q = 1/n$. But then $q$ is a fraction which doesn't make
+      sense when talking about multiples of $n$. Therefore $n$ can't
+      be a generator. (Note, this is unlike a finite group where 
+      multiples "wrap around").
+      
+      \ind The generators of an arbitrary infinite cyclic group $\langle a
+      \rangle$ are $a$ and $a^{-1}$. (By the same reasoning.)
+
+      \itm Is $\Reals^*$ cyclic? Try to prove your answer.
+
+      \sol No it is not cyclic. Assume that it is and $k$ is a generator. First
+      we can rule out $k=1$ since $1^n = 1$ for all $n$. But now assume that $k
+      > 1$.  Then we have $k < k^2 < k^3$. But there are elements of $\Reals^*$
+      between $k$ and $k^2$ (Like $(k + k^2)/2$ and infinitely many more).  How
+      are they generated?  They can't be generated by $k$. Therefore $k$
+      is not a generator. Same goes if $k< 1$. But we can also use Theorem 1.
+      If it were cyclic (and obviously of order infinity) then it would
+      be isomorphic with $\Integers$. But we know the positive reals are not
+      countable, therefore there is no isomorphism. And therfore they 
+      are not cyclic.
+   \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
