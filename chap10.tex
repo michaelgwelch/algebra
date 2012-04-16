@@ -735,6 +735,60 @@ of A Book of Abstract Algebra.
       $k$ is the order of $a^m$.
    \end{enumerate}
 
+   \itm \textsc{Relationship between the Order of $a$ and the Order of 
+   any $k$th Root of $a$}
+
+   \noindent Let $a$ denote an element of a group $G$.
+
+   \begin{enumerate}[1)]
+      \itm Let $a$ have order 12. Prove that if $a$ has a cube root, say $a =
+      b^3$ for some $b \in G$, then $b$ has order 36. \{\textsc{Hint}: Show
+      that $b^{36} = e$; then show that for each factor $k$ of 36,
+      $b^k = e$ is impossible. [Example: If $b^{12} = e$, then $b^{12} = 
+      (b^3)^4 = a^4 = e$.] Derive your conclusion from these facts.\}
+
+      \sol Given that order of $a$ is 12: $b^{36} = (b^3)^12 = a^12 = e$.
+      I will now proceed according to the hint. If $k < 36$ is the order of
+      $b$ then $k$ is a factor of 36. So I will consider the factors:
+      2, 3, 4, 6, 9, 12, 18.  In each line below I will assume $k$ 
+      is one of these values and that $k$ is the order of $b$ and show
+      that it leads to a contradictions:
+      \[
+         b^2 = e \Rightarrow b^6 = e \Rightarrow a^2 = e 
+      \]
+      \[
+         b^3 = e \Rightarrow a = e
+      \]
+      \[
+         b^4 = e \Rightarrow b^{12} = e \Rightarrow a^4 = e
+      \]
+      \[
+         b^6 = e \Rightarrow a^2 = e
+      \]
+      \[
+         b^9 = e \Rightarrow a^3 = e
+      \]  
+      \[
+         b^{12} = e \Rightarrow a^4 = e
+      \]  
+      \[
+         b^{18} = e \Rightarrow a^6 = e
+      \]  
+
+      \itm Let $a$ have order 6. If $a$ has a fourth root in $G$, say $a = 
+      b^4$, what is the order of $b$.
+
+      \sol The order of $b$ is 24. Demonstrate the same way as in 1.
+
+      \itm Let $a$ have order 10. If $a$ has a sixth root in $G$, say $a = 
+      b^6$, what is the order of $b$.
+
+      \sol The order of $b$ is 60. Demonstrate the same way as in 1.
+      
+         
+
+   \end{enumerate}
+
 
 \end{enumerate}
 
