@@ -1,6 +1,7 @@
-\documentclass[draft,twoside]{amsart}
+\documentclass[twoside]{amsart}
 \usepackage{amssymb,latexsym}
 \usepackage{xspace}
+\usepackage{enumitem}
 \newcommand{\Rationals}{\mathbb{Q}{}}
 \newcommand{\Reals}{\mathbb{R}{}}
 \newcommand{\Integers}{\mathbb{Z}{}}
@@ -17,73 +18,84 @@
 \date{\today}
 \maketitle
 
-\section{Examples of Operations}
-Which of the following rules are operations on the indicated set?  ($\Integers$
-designates the set of the integers, $\Rationals$ the rational numbers, and
-$\Reals$ the real numbers.) For each rule which is not an operation, explain
-why it is not. 
+\begin{enumerate}[label=\protect{\textbf{\Alph*}}]
+\item{\textbf{Examples of Operations}} 
 
-\textbf{Example} $a * b = \displaystyle \frac{a + b}{ab}$, on the set
-$\Integers$. 
+  \noindent Which of the following rules are operations on the
+  indicated set?  ($\Integers$ designates the set of the integers,
+  $\Rationals$ the rational numbers, and $\Reals$ the real numbers.)
+  For each rule which is not an operation, explain why it is not.
 
-\Solution This is not an operation on  $\Integers$. There are integers
-$a$ and $b$ such that $(a+b)/ab$ is not an integer. (For example,
+  \brk \noindent \textbf{Example} $a * b = \displaystyle \frac{a + b}{ab}$,
+  on the set $\Integers$.
 
-\[
-\frac{2+3}{2 \cdot 3} = \frac{5}{6}
-\]
+  \brk \noindsol This is not an operation on $\Integers$. There are
+  integers $a$ and $b$ such that $(a+b)/ab$ is not an integer. (For
+  example,
 
-is not an integer.) Thus, $\Integers$ is not closed under $*$. 
+  \[
+  \frac{2+3}{2 \cdot 3} = \frac{5}{6}
+  \]
+
+  is not an integer.) Thus, $\Integers$ is not closed under $*$.
+
+  \brk \begin{enumerate}[topsep=1ex,label=\protect{\textbf{\arabic*}},
+    leftmargin=1em]
+
+    % #1
+  \item $a*b = \sqrt{|ab|}$, on the set $\Rationals$. 
+
+    \brk \noindsol This is not an operation on $\Rationals$. Here is a
+    counter example: $2*1 = \sqrt{|2 \cdot 1|} = \sqrt{2}$. The result
+    is in irrational number, and therefore $\Rationals$ is not closed
+    under $*$.  \brk
+
+
+      % #2
+  \item $a*b = a \ln b$, on the set $\{x \in \Reals : x > 0\}$.
+
+    \brk \noindsol This is not an operation because it is not
+    closed. A counter example is obtained by choosing $a=1$ and
+    $b=0.5$: $1 * 0.5 = \ln 0.5 \approx -0.693 < 0$.  \brk
+
+
+      % #3
+  \item $a*b$ is a root of the equation $x^2 - a^2 b^2 = 0$, on the
+    set $\Reals$.
+
+    \brk \noindsol This is not an operation because it is not uniquely
+    defined.  If we pick $a=2,b=2$ then we have $x^2 - 2^2 2^2 =
+    0$. The roots of that equation are $x = \pm 4$. This means that
+    $a*b$ is not uniquely defined, therefore $*$ is not an operation.
+    \brk
+
+    % #4
+  \item Subtraction, on the set $\Integers$.
+
+    \brk \noindsol This is an operation. It is defined for all pairs
+    $\{(a,b) : a,b \in \Integers\}$, it is uniquely defined for each
+    pair, and it is closed.  \brk
+
+    % #5
+  \item Subtraction, on the set $\{ n \in \Integers : n \ge 0\}$.
+
+    \brk \noindsol This is not an operation because it is not closed:
+    $4*10 = 4 - 10 = -4 < 0$. \brk
+
+  \item $a * b = \abs|a-b|$, on the set $\{ n \in \Integers : n \ge 0\}$.
+
+    \brk \noindsol This is an operation. It is defined for all pairs
+    $\{(a,b) : a,b \in \Integers, a \ge 0, b \ge 0\}$. It is uniquely
+    defined for each pair, and it is closed.
+
+  \end{enumerate}
+
+\end{enumerate}
+
+
 
 \begin{enumerate}
 
-% #1
-\item $a*b = \sqrt{|ab|}$, on the set $\Rationals$. 
-
-\brk
-\noindsol This is not an operation on $\Rationals$. Here is a counter
-example: $2*1 = \sqrt{|2 \cdot 1|} = \sqrt{2}$. The result is in irrational
-number, and therefore $\Rationals$ is not closed under $*$.
-\brk
-
-
-% #2
-\item $a*b = a \ln b$, on the set $\{x \in \Reals  : x > 0\}$. 
-
-\brk
-\noindsol This is not an operation because it is not closed. A
-counter example is obtained by choosing $a=1$ and $b=0.5$: $1 * 0.5 = \ln 0.5
-\approx -0.693 < 0$. 
-\brk
-
-
-% #3
-\item $a*b$ is a root of the equation $x^2 - a^2 b^2 = 0$, on the set $\Reals$.
-
-\brk
-\noindsol This is not an operation because it is not uniquely defined.
-If we pick $a=2,b=2$ then we have $x^2 - 2^2 2^2 = 0$. The roots of that
-equation are $x = \pm 4$. This means that $a*b$ is not uniquely defined, 
-therefore $*$ is not an operation.
-\brk
-
-% #4
-\item Subtraction, on the set $\Integers$.
-
-\brk
-\noindsol This is an operation. It is defined for all pairs 
-$\{(a,b) : a,b \in \Integers\}$, it is uniquely defined for each pair, and it
-is closed.
-\brk
-
-% #5
-\item Subtraction, on the set $\{ n \in \Integers : n \ge 0\}$.
-
-\brk
-\noindsol This is not an operation because it is not closed:
-$4*10 = 4 - 10 = -4 < 0$.
-
-\end{enumerate}
 
 
 \section{Properties of Operations}
