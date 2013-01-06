@@ -74,7 +74,7 @@ of A Book of Abstract Algebra.
       \ind The cyclic subgroup of $\langle \frac{1}{2} \rangle$ in 
       $\Reals^*$ is the set $\{ 2^n \mid n \in \Integers\}$ which is
       $\{\ldots, \frac{1}{8}, \frac{1}{4}, \frac{1}{2}, 1, 2, 4, 8,
-      \ldots \}$.
+      \ldots \}$. 
       
       \ind The cyclic subgroup of $\langle \frac{1}{2} \rangle$ in
       $\Reals$ is the set $\{ \frac{n}{2} \mid n \in \Integers \}$
@@ -84,14 +84,49 @@ of A Book of Abstract Algebra.
       \itm If $f(x) = x + 1$, describe the cyclic subgroup $\langle f
       \rangle$ of $S_\Reals$.
 
-      \sol $\langle f \rangle = \{ f(x) = x + n \mid n \in \Integers \}$.
+      \sol Recall that the operator in use when permutations make up
+      the set in a group is function composition. Therefore $f^2(x) =
+      f(x) \circ f(x) = f(f(x)) = f(x+1) = (x+1)+1 = x+2$. Likewise
+      $f^3(x) = f(f(f(x))) = f(f(x+1)) = f(x+2) = (x+2)+1 = x+3$.
+
+      \ind In general then, $\langle f \rangle =
+      \{ f(x) = x + n \mid n \in \Integers \}$.
+
+      \ind Recall the identity element is $\epsilon(x) = x$ and the
+      inverse $g^{-1}(x)$ of an element $g(x) = x + n$ is $g^{-1}(x) =
+      x - n$. Let's just double check that for any $g \in \langle f
+      \rangle$, $g \circ e = e \circ g = g$ and $g \circ g^{-1} =
+      g^{-1} \circ g = e$. In the calculations below let $g(x) = x + n$.
+
+      \begin{align*}
+        g(x) \circ \epsilon(x) &= g(\epsilon(x)) \\
+        &= g(x)\\
+        &= x+n\\
+        \epsilon(x) \circ g(x) &= \epsilon(g(x)) \\
+        &= g(x) \\
+        &= x + n
+      \end{align*}
+
+      and now let $g(x) = x + n$ and $g^{-1}(x) = x - n$:
+
+      \begin{align*}
+        g(x) \circ g^{-1}(x) &= g(g^{-1}(x)) \\
+        &= g(x - n) \\
+        &= (x - n) + n\\
+        &= x\\
+        &= \epsilon(x)\\
+        g^{-1}(x) \circ g(x) &= g^{-1}(g(x)) \\
+        &= g^{-1}(x + n)\\
+        &= (x + n) - n\\
+        &= x\\
+        &= \epsilon(x)
+      \end{align*}
 
       \itm If $f(x) = x + 1$, describe the cyclic subgroup $\langle f
       \rangle$ of $\mathbb{F}(\Reals)$.
 
       \sol I had to remind myself that on p45 $\mathbb{F}(\Reals)$ is 
-      the set of all functions from $\Reals$ to $\Reals$. I will assume that
-      because the operation is not given in this problem that $+$ is assumed.
+      the additive group of all functions from $\Reals$ to $\Reals$.
       So the second multiple of $f$ is $f(x) + f(x) = 2x + 2$.  So
       the multiples of $f$ are easy to describe as being of the
       form $nx + n$. The inverses are a little trickier. We want 
