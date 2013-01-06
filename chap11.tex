@@ -129,11 +129,35 @@ of A Book of Abstract Algebra.
       the additive group of all functions from $\Reals$ to $\Reals$.
       So the second multiple of $f$ is $f(x) + f(x) = 2x + 2$.  So
       the multiples of $f$ are easy to describe as being of the
-      form $nx + n$. The inverses are a little trickier. We want 
-      $f^n(x) + f^{-n}(x) = \epsilon(x) = x$. So we have 
-      $f^{-n}(x) = (1-n)x - n $.
-      $\langle f \rangle = \{ nx + n \mid n \in \Integers \text{ and } n \ge
-      0\} \cup \{(1-n)x - n \mid n \in \Integers \text{ and } n \ge 0\}$.
+      form $nx + n$. Let's prove it by induction on $n$.
+
+      Base case with $n = 1$:
+      \begin{align*}
+        f^1(x) &= x + 1 \qquad \text{Given}
+      \end{align*}
+
+      Inductive case assuming that $f^n(x) = n(x + 1)$ for all $1 <=
+      n < k$, show that $f^k(x) = k(x + 1)$.
+
+      \begin{align*}
+        f^k{x} &= f^{k-1}(x) + f(x) & \text{Definition of +}\\
+        &= (k-1)(x+1) + (x+1) & \text{Given for $k-1$} \\
+        &= k(x+1) \qedhere
+      \end{align*}
+
+      Now this covers all cases of $n > 0$. Let's find the identity
+      element (or indeed show that the identity element is $f^{0} = 0(x
+      + 1) = 0$. We have that for some element $g(x) = x + n \in \langle f
+      \rangle$ for some $n > 0$ $g(x) + \epsilon(x) = g(x)$ so
+      $\epsilon(x) = 0 = 0(x+1)$. Therefore we have shown that $g^n{x}
+      = n(x+1)$ for $n > 0$ and $\epsilon(x) = g^0(x) = 0$.
+
+
+      Now we must find the inverses. Again for some $g(x) = n(x+1)$
+      for $n > 0$ we have that $g(x) + g^{-1}(x) = 0$, therefore
+      $n(x+1) + g^{-1}(x) = 0$ and $g^{-1}(x) = -n(x+1)$. So we now
+      have that $\langle f \rangle = \{f(x) = n(x+1) \mid n \in \Integers\}$.
+
 
       \itm Show that -1, as well as 1, is a generator of $\Integers$. Are there
       any other generators of $\Integers$? Explain! What are the generators
