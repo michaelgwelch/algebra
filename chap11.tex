@@ -210,20 +210,25 @@ of A Book of Abstract Algebra.
       1) $G$ is a group of order $n$ which means it has $n$ elements. 
       Also $G$ is cyclic which means that all its elements are generated
       by one element. Assume this element is $a$. Then we know that
-      $G = \langle a \rangle = \{a^0=e,a,a^2,\ldots,a^{n-1}\}$. Now
-      I just need to show that $a^n = e$. Assume that $a^n \ne e$.
-      Then I have the case $a^n = a^i$ for some $0 < i < n$.
+      $G = \langle a \rangle = \{a^0=e,a,a^2,\ldots,a^{n-1}\}$. 
+     
 
+      Now (by the definition of order of an element)
+      I just need to show that $a^n = e$.
+
+      \ind Assume that $a^n \ne e$.
+      Then I have the case $a^n = a^i$ for some $0 < i < n$.
+      %
       \begin{align*}
          a^n &= a^i \\
          a^na^{-i} &= a^ia^{-i} \\
          a^{n-i} &= e
       \end{align*}
-
-      Let $j = n-i$. I know that $0 < j < n$. So one of the multiples of
-      $a$ is equal to $e$. But this implies that we don't have $n$ distinct
-      elements. This contradicts our given. Therefore $a^n = e$ and also
-      $n$ is the order of $a$.
+      %
+      Let $j = n-i$. So $a^j = e$ and we know that $0 < j < n$. So one
+      of the multiples of $a$ is equal to $e$. But this implies that
+      we don't have $n$ distinct elements. This contradicts our
+      given. Therefore $a^n = e$ and also $n$ is the order of $a$.
 
       2) $G$ is a group of order $n$. Again, this means it has $n$ elements.
       Also the order of $a \in G$ is $n$. By Theorem 3 of Chapter 10 on p105
