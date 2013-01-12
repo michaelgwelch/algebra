@@ -688,13 +688,16 @@ of A Book of Abstract Algebra.
       order $n$. (\textsc{Hint}: If $a^{mk} = e$, use Theorem 5 and explain
       why $n$ must be a factor of $k$.)
 
-      \sol First I want to show that there is some exponent $s$ such
+      \sol I need to show that $(a^m)^n = e$ and $n$ is the smallest
+      integer $k$ for which $(a^m)^k = e$. 
+      First I want to show that there is some exponent $s$ such
       that $(a^m)^s = e$. Choose $s = n$. Then $(a^m)^s = (a^m)^n =
       (a^n)^m = e^m = e$. Now I want to show that their is no value $k$ 
       less than $n$ such that $(a^m)^k = e$. Assume there is. Then
       $(a^m)^k = a^{mk} = e$. By Theorem 5 we know that $n$ is a factor
       of $mk$. But since $m$ and $n$ are relatively prime, $n$ must
-      be a factor of $k$. Therefore it cannot be the case that $k < n$.
+      be a factor of $k$. Therefore it cannot be the case that there
+      is some $k < n$ such that $(a^m)^k = e$.
       Hence the order of $a^m$ is $n$. $\qed$
 
       \itm Prove that if $a^m$ has order $n$, then $m$ and $n$ are relatively
