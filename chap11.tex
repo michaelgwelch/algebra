@@ -283,6 +283,14 @@ of A Book of Abstract Algebra.
       By theorem 5 of chapter 10, this tells us that $n$ is a multiple of
       $l$. In other words $l$ is a factor of $n$. $\qed$
 
+      In reviewing this exercise I did not understand my own
+      proof. When applying Theorem 5. Consider the facts: There is an
+      element $b$ in a group and the element has order $l$. We also
+      have some $b^t = e$ where in this case $t = n$ (I showed that
+      $b^n = e$). Therefore, $n$ is a multiple of $l$. Hence, the order
+      of $b$ which is $l$ is a factor of the order of $a$ which is
+      $n$.
+
       \itm In any cyclic group of order $n$, there are elements of order $k$
       for every integer $k$ which divides $n$.
 
@@ -315,25 +323,37 @@ of A Book of Abstract Algebra.
       Exercise B3 and Chapter 10, Theorem 5.)
 
       \sol Need to show that $f$ is injective and surjective.
-      Let $b,c \in G$. Show that $f(b) = f(c) \Rightarrow b = c$.
-      We can write $b = a^i$ and $c = a^j$. Assume 
-      that $(a^i)^m = (a^j)^m$.  Then $(a^m)^i = (a^m)^j$.
-      We can divide each by $n$: 
-      $a^{im} = a^{nq_1}a^{r_1}$ and $a^{jm} = a^{nq_2}a^{r_2}$ where
-      $0 \le r_1, r_2 < n$. So we have 
-      $a^{nq_1}a^{r_1} = a^{nq_2}a^{r_2}$. But the powers of $n$ terms
-      reduce to $e$ leaving $a^{r_1}=a^{r_2}$. By Theorem 3 of Chapter 10
-      we know that $r_1 = r_2$. Let's just call the term $r$.
-      So $a^{im} = a^r = a^{jm}$.
 
-      Let's try this another way. Let's assume that $a^i \ne a^j$.
-      $a^{im} = a^{jm}$. So we have $im = nq_1+r$ and $jm = nq_2 + r$.
+      \ind INJECTIVE: Let $f(a^i)=f(a^j)$ where $0 \leq i,j <
+      n$. Because $f(x) = x^m$, we have $a^{im} = a^{jm}$. From this
+      we know that $im \bmod n = jm \bmod n = r$. Therefore, $nq_i + r
+      = im$ and $nq_j + r = jm$. Solving each for $r$: $r = im - nq_i
+      = jm - nq_j$. So $im = jm + nq_i - nq_j = jm + n(q_i -
+      q_j)$. Therfore $i = j + n/m(q_i - q_j)$. Now $n$ and $m$ are
+      relatively prime so $n/m$ is a fraction that cannot be
+      reduced. So the only way to get an integer value of $i$ is if
+      $q_i - q_j$ is a multiple of $m$ say $vm$ for some integer value
+      of $v$. So $i = j + nv$. And we can readily see that $j + nv
+      \bmod{n} = j$. Therefore $i = j$ and $a^i = a^j$. Therefore, the
+      function $f(x) = x ^m$ is injective.
 
+      \ind SURJECTIVE: Let $y = a^i$ be some value in $G$. We must
+      find some value of $x = a^j$ where $0 \leq j < n$ such that
+      $f(x) = f(a^j) = (a^j)^m = a^i$. So we need $jm \bmod{n} =
+      i$. In other words $nq + i = jm$ for some integer value of
+      $q$. We choose $j = (nq + i)/m$. This sets up the inequality
+      $0 \leq (nq + i)/m < n$. We just choose the right value of $q$
+      to make the inequality true and the resulting value is the value
+      of $j$. We need to show that there is some value of $q$ that
+      makes it true.
 
+      \begin{align*}
+        0 &\leq \frac{nq + i}{m} \\
+        0 &\leq nq + i \\
+        -i &\leq nq \\
+        -i/n &\leq q
+      \end{align*}
 
-      \ind Now to show $f$ is surjective. Let $y = a^i$ be
-      some value in $G$. I must find some value of $x$
-      such that $f(x) = x^m = a^i$.
 
       
    \end{enumerate}
@@ -347,7 +367,13 @@ of A Book of Abstract Algebra.
 
    \begin{enumerate}
      \item $a^r$ is a generator of $\langle a \rangle$ iff $r$ and $n$
-       are relatively prime. (\textsc{Hint}: See Chapter 10 Exercise G2.)
+       are relatively prime. (\textsc{Hint}: See Chapter 10 Exercise
+       G2.)
+
+       \sol First we assume $a^r$ is a generator or $\langle a
+       \rangle$ and show $r$ and $n$ are prime. First we know that the
+       order of $a^r$ is $n$. By 10G2 we know that $r$ and $n$ are
+       relatively prime.
    \end{enumerate}
 
 \end{enumerate}
