@@ -1,8 +1,8 @@
-:stem:
 = Chapter 2 Exercises
 Michael Welch <michaelgwelch@gmail.com>
 v2.0 : Converted to asciidoc
 :toc:
+:stem:
 
 This document contains my solutions to the Chatper 2 exercise.
 
@@ -650,19 +650,36 @@ a value latexmath:[m = e -
 
 // B.6.iv
 ..  Since there is no identity element, there are no inverses.
++
 
-////
-7.  latexmath:[\displaystyle x * y = \frac{xy}{x + y + 1}] on the set
+// B.7
+.  latexmath:[\displaystyle x * y = \frac{xy}{x + y + 1}] on the set
 of positive real numbers.
 +
 _Solution_ The solution is as follows
-1.  The operation is commutative. latexmath:[\[\begin{aligned}
-         x * y & = \frac{xy}{x + y + 1} \\
++
+
+["lowerroman"]
+// B.7.i
+..  The operation is commutative. 
++
+[latexmath]
+++++
+\begin{aligned}
+     x * y & = \frac{xy}{x + y + 1} \\
      y * x & = \frac{yx}{y + x + 1} \\
-           & = \frac{xy}{x + y + 1} && \text{(+,\cdot are commutative)}
-    \end{aligned}\]]
-2.  The operation is not associative. This can be demonstrated with the
-values latexmath:[x = 2, y = 3, z = 4]. latexmath:[\[\begin{aligned}
+           & = \frac{xy}{x + y + 1} && (+,\cdot \text{ are commutative})
+\end{aligned}
+++++
++
+
+// B.7.ii
+..  The operation is not associative. This can be demonstrated with the
+values latexmath:[x = 2, y = 3, z = 4]. 
++
+[latexmath]
+++++
+\begin{aligned}
          2 * (3 * 4) & = 2 * \frac{3 \cdot 4}{3 + 4 + 1}   \\
                  & = 2 * (3/2) \\
              & = \frac{2 \cdot (3/2)}{2 + (3/2) + 1} \\
@@ -674,19 +691,31 @@ values latexmath:[x = 2, y = 3, z = 4]. latexmath:[\[\begin{aligned}
              & = \frac{(6/7) \cdot 4}{(6/7) + 4 + 1} \\
              & = \frac{24/7}{41/7} \\
              & = \frac{24}{41} 
-    \end{aligned}\]]
-3.  There is no identity element. As a matter of fact, the equation
+\end{aligned}
+++++
++
+
+// B.7.iii
+..  There is no identity element. As a matter of fact, the equation
 latexmath:[x * e = x] can only be solved when latexmath:[x = 0] or
-latexmath:[x = -1], as shown below. latexmath:[\[\begin{aligned}
+latexmath:[x = -1], as shown below. 
++
+[latexmath]
+++++
+\begin{aligned}
          \frac{ex}{e + x + 1} & = x \\
      ex                   & = x^2 + ex + x \\
      x^2 + ex + x         & = ex \\
      x^2 + x              & = 0 \\
      x(x+1)               & = 0 \\
      x                    & = 0, -1
-    \end{aligned}\]]
-4.  Since there is no identity, there can be no inverses.
+\end{aligned}
+++++
++
 
+// B.7.iv
+..  Since there is no identity, there can be no inverses.
+////
 *C. latexmath:[\quad] Operations on a Two-Element Set*
 
 Let latexmath:[A] be the two-element set latexmath:[A = \{a,b\}].
