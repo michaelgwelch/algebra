@@ -1,7 +1,11 @@
 :stem:
+= Chapter 2 Exercises
+Michael Welch <michaelgwelch@gmail.com>
+v2.0, June 10, 2017: Converted to asciidoc
 
+This document contains my solutions to the Chatper 2 exercise.
 
-*A. latexmath:[\quad] Examples of Operations*
+== A. Examples of Operations
 
 Which of the following rules are operations on the indicated set?
 (latexmath:[{\mathbb{Z}{}}] designates the set of the integers,
@@ -15,71 +19,97 @@ not an operation, explain why it is not.
 _Solution_ This is not an operation on latexmath:[{\mathbb{Z}{}}]. There
 are integers latexmath:[a] and latexmath:[b] such that
 latexmath:[(a+b)/ab] is not an integer. (For example,
-latexmath:[\frac{2+3}{2 \cdot 3} = \frac{5}{6}\]] is not an integer.)
-Thus, latexmath:[{\mathbb{Z}{}}] is not closed under latexmath:[*].
 
-1.  latexmath:[a*b = \sqrt{|ab|}], on the set
+[latexmath]
+++++
+\frac{2+3}{2 \cdot 3} = \frac{5}{6}
+++++
+is not an integer.) Thus, latexmath:[{\mathbb{Z}{}}] is not closed under latexmath:[*].
+
+// A.1.
+.  latexmath:[a*b = \sqrt{|ab|}], on the set
 latexmath:[{\mathbb{Q}{}}].
 +
+
 _Solution_ This is not an operation on latexmath:[{\mathbb{Q}{}}]. Here
 is a counter example: latexmath:[2*1 = \sqrt{|2 \cdot 1|} = \sqrt{2}].
-The result is in irrational number, and therefore
+The result is an irrational number, and therefore
 latexmath:[{\mathbb{Q}{}}] is not closed under latexmath:[*].
-2.  latexmath:[a*b = a \ln b], on the set
++
+
+// A.2.
+.  latexmath:[a*b = a \ln b], on the set
 latexmath:[\{x \in {\mathbb{R}{}}: x > 0\}].
 +
+
 _Solution_ This is not an operation because it is not closed. A counter
 example is obtained by choosing latexmath:[a=1] and
 latexmath:[b=0.5]: latexmath:[1 * 0.5
   = \ln 0.5 \approx -0.693 < 0].
-3.  latexmath:[a*b] is a root of the equation
++
+
+// A.3
+.  latexmath:[a*b] is a root of the equation
 latexmath:[x^2 - a^2 b^2 = 0], on the set
 latexmath:[{\mathbb{R}{}}].
 +
+
 _Solution_ This is not an operation because it is not uniquely defined. If
 we pick latexmath:[a=2,b=2] then we have
-latexmath:[x^2 - 2^2 2^2 = 0]. The roots of that equation are
+latexmath:[x^2 - 2^2 \cdot 2^2 = 0]. The roots of that equation are
 latexmath:[x = \pm 4]. This means that latexmath:[a*b] is not
 uniquely defined, therefore latexmath:[*] is not an operation.
-4.  Subtraction, on the set latexmath:[{\mathbb{Z}{}}].
 +
+
+// A.4
+.  Subtraction, on the set latexmath:[{\mathbb{Z}{}}].
++
+
 _Solution_ This is an operation. It is defined for all pairs
 latexmath:[\{(a,b) : a,b \in {\mathbb{Z}{}}\}], it is uniquely defined
 for each pair, and it is closed.
-5.  Subtraction, on the set
++
+
+// A.5
+.  Subtraction, on the set
 latexmath:[\{ n \in {\mathbb{Z}{}}: n \ge 0\}].
 +
 _Solution_ This is not an operation because it is not closed:
 latexmath:[4*10 = 4 - 10 = -4 < 0].
-6.  latexmath:[a * b = |a-b|], on the set
++
+
+// A.6
+.  latexmath:[a * b = |a-b|], on the set
 latexmath:[\{ n \in {\mathbb{Z}{}}: n \ge 0\}].
 +
+
 _Solution_ This is an operation. It is defined for all pairs
 latexmath:[\{(a,b) : a,b \in {\mathbb{Z}{}}, a \ge 0, b \ge 0\}]. It
 is uniquely defined for each pair, and it is closed.
 
-*B. latexmath:[\quad] Properties of Operations*
+== B. Properties of Operations
 
 Each of the following is an operation latexmath:[*] on
 latexmath:[{\mathbb{R}{}}]. Indicate whether or not
 
-1.  [[list.comm]] it is commutative,
-2.  [[list.assoc]] it is associative,
-3.  [[list.identity]] latexmath:[{\mathbb{R}{}}] has an identity element
+["lowerroman"]
+.  it is commutative,
+.  it is associative,
+.  latexmath:[{\mathbb{R}{}}] has an identity element
 with respect to latexmath:[*],
-4.  [list.inverse] every latexmath:[x \in {\mathbb{R}{}}] has an
+.  every latexmath:[x \in {\mathbb{R}{}}] has an
 inverse with respect to latexmath:[*].
 
-*Instructions* For [list.comm], compute latexmath:[x * y] and
+*Instructions* For i, compute latexmath:[x * y] and
 latexmath:[y * x], and verify whether or not they are equal. For
-[list.assoc], compute latexmath:[x * (y
+ii, compute latexmath:[x * (y
 * z)] and latexmath:[(x * y) * z], and verify whether or not they are
-equal. For [list.identity], first solve the equation
+equal. For iii, first solve the equation
 latexmath:[x * e = x] for latexmath:[e]; if the equation caonnot be
 solved, there is no identity element. If it _can_ be solved, it is still
 necessary to check that latexmath:[e*x=x*e=x] for any
 latexmath:[x\in {\mathbb{R}{}}]. If it checks, then latexmath:[e] is
-an identity element. For [list.inverse], first note that if there is no
+an identity element. For iv, first note that if there is no
 identity element, there can be no inverses. If there is an identity
 element latexmath:[e], first solve the equation latexmath:[x*x'=e]
 for latexmath:[x']; if the equation cannot be solved, latexmath:[x]
@@ -93,152 +123,257 @@ inverse of latexmath:[x].
 |=======================================================================
 |_Associative_ |_Commutative_ |_Identity_ |_Inverses_
 
-|Yes latexmath:[\boxtimes \quad] No latexmath:[\square] |Yes
-latexmath:[\boxtimes \quad] No latexmath:[\square] |Yes
-latexmath:[\boxtimes \quad] No latexmath:[\square] |Yes
-latexmath:[\boxtimes \quad] No latexmath:[\square]
+|Yes latexmath:[\boxtimes \quad] No latexmath:[\square] 
+|Yes latexmath:[\boxtimes \quad] No latexmath:[\square] 
+|Yes latexmath:[\boxtimes \quad] No latexmath:[\square] 
+|Yes latexmath:[\boxtimes \quad] No latexmath:[\square]
 |=======================================================================
 
-1.  latexmath:[x * y = x + y + 1;\quad y * x = y + x + 1 = x + y + 1]. +
+["lowerroman"]
+.  latexmath:[x * y = x + y + 1;\quad y * x = y + x + 1 = x + y + 1]. +
 (_Thus, latexmath:[*] is commutative_.)
 
-2. latexmath:[x * (y * z) = x * (y + z + 1) = x + (y + z + 1) + 1 = x + y + z
+. latexmath:[x * (y * z) = x * (y + z + 1) = x + (y + z + 1) + 1 = x + y + z
   + 2].
 latexmath:[(x * y) * z = (x + y + 1) * z = (x + y + 1) + z + 1 = x + y
   + z +
   2]. +
 (_latexmath:[*] is associative._)
 
-3.  Solve latexmath:[x * e = x] for latexmath:[e]:
+.  Solve latexmath:[x * e = x] for latexmath:[e]: +
 latexmath:[x * e = x + e + 1 = x]; therefore latexmath:[e
-  = -1]. Check: latexmath:[x * (-1) = x + (-1) + 1 = x];
-latexmath:[(-1) * x = (-1) +
-  x + 1 = x]. Therefore, -1 is the identity element. +
+  = -1]. +
+Check: latexmath:[x * (-1) = x + (-1) + 1 = x]; latexmath:[(-1) * x = (-1) +
+  x + 1 = x]. +
+Therefore, latexmath:[-1] is the identity element. +
 (_latexmath:[*] has an identity element._)
 
-4.  Solve latexmath:[x * x' = e] for latexmath:[x']:
+.  Solve latexmath:[x * x' = e] for latexmath:[x']: +
 latexmath:[x * x' = x + x' + 1 = -1]; therefore
-latexmath:[x' = -2 - x]. Check:
-latexmath:[x * (-2 - x) = x + (-2 - x) + 1 =
-  -1]; latexmath:[(-2 - x) * x = (-2 - x) + x + 1 = -1]. Therefore,
-latexmath:[-x - 2] is the inverse of latexmath:[x]. +
+latexmath:[x' = -x - 2]. +
+Check: latexmath:[x * (-2 - x) = x + (-2 - x) + 1 =
+  -1]; latexmath:[(-2 - x) * x = (-2 - x) + x + 1 = -1]. +
+Therefore, latexmath:[-x - 2] is the inverse of latexmath:[x]. +
 (_Every element has an inverse._)
 
 [start=1]
+// B.1
 .  latexmath:[x*y = x + 2y + 4]
 +
+[cols="^,^,^,^",]
+|=======================================================================
+|_Associative_ |_Commutative_ |_Identity_ |_Inverses_
+
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes]
+|=======================================================================
++
+
 _Solution_ The solution follows:
 +
+["lowerroman"]
+// B.1.i
 ..  The operation is not commutative 
 +
-latexmath:[\begin{aligned}
+[latexmath]
+++++
+\begin{aligned}
         x * y & = x + 2y + 4 \\
         y * x & = y + 2x + 4 \\
               & = 2x + y + 4
-    \end{aligned}]
+\end{aligned}]
+++++
 +
 Now choose latexmath:[x=0] and latexmath:[y=1] and we see that
-latexmath:[\begin{aligned}
++
+[latexmath]
+++++
+\begin{aligned}
        0 * 1 & = 0 + 2 + 4 \\
              & = 6         \\
        1 * 0 & = 1 + 0 + 4 \\
              & = 5
-    \end{aligned}] +
-    (_latexmath:[*] is not commutative._)
+\end{aligned}
+++++ 
 +
+(_latexmath:[*] is not commutative._)
++
+
+// B.1.ii
 ..  The operation is not associative 
 +
-latexmath:[\begin{aligned}
+[latexmath]
+++++
+\begin{aligned}
         x * (y * z) & = x * (y + 2z + 4)      \\
                     & = x + 2(y + 2z + 4) + 4 \\
                     & = x + 2y + 4z + 12      \\
+\text{therefore} \quad       -4z - 12    & = x + 2y                \\
         (x * y) * z
                     & = (x + 2y + 4) * z      \\
                     & = (x + 2y + 4) + 2z + 4 \\
                     & = x + 2y + 2z + 8       \\
-                    & = (x + 2y + 4z + 12) - 2z - 4 \\
-                    & = x * (y * z) - 2z - 4  
-    \end{aligned}]
+\text{therefore} \quad      -2z - 8     & = x + 2y                \\
+\end{aligned}
+++++
 +
-Now let’s check: 
+From this we can see that the two ways to associate can only be equal 
+under the condition that latexmath:[-4z - 12 = -2z - 8], or only when
+latexmath:[z=-2]. So let's choose a combination of values where 
+latexmath:[z \ne -2]: latexmath:[\{ x = 0, y = 0, z = 0 \}]
 +
-latexmath:[\begin{aligned}
-    \text{If} \quad x * (y * z)   & = (x * y) * z         \\
-    \text{then} \quad x * (y * z) & = x * (y * z) - 2z -4 \\
-    \text{therefore} \quad 0      & = -2z - 4             \\
-    \text{This requires} \quad z  & = -2
-    \end{aligned}]
+[latexmath]
+++++
+\begin{aligned}
+    0 * (0 * 0) & = 0 * (0 + 2 \cdot 0 + 4) \\
+                & = 0 * 4                   \\
+                & = 0 + 2 \cdot 4 + 4       \\
+                & = 12                      \\
+    (0 * 0) * 0 & = (0 + 2 \cdot 0 + 4) * 0 \\
+                & = 4 * 0                   \\
+                & = 4 + 2 \cdot 0 + 4       \\
+                & = 8
+\end{aligned}
+++++
 +
 (_latexmath:[*] is not associative_)
 +
+
+// B.1.iii
 ..  Check to see if their is an identity element:
-latexmath:[\[\begin{aligned}
++
+[latexmath]
+++++
+\begin{aligned}
          x * e & = x           \\ 
          x * e & = x + 2e + 4  \\
          x & = x + 2e + 4  \\
          0 & =     2e + 4  \\
         2e & =         -4  \\
          e & =         -2  
-    \end{aligned}\]]
+\end{aligned}
+++++
 +
 Now check to see if latexmath:[x*e=e*x=x]:
-latexmath:[\[\begin{aligned}
++
+[latexmath]
+++++
+\begin{aligned}
          x * -2 & = x + (2)(-2) + 4 \\
             & = x - 4 + 4       \\
         & = x               \\
      -2 * x & = -2 + 2x + 4     \\
             & = 2x + 2          
-    \end{aligned}\]]
+\end{aligned}
+++++
 +
 We can see latexmath:[x*e \ne e*x] therefore there is no identity
 element.
-4.  No need to check for an inverse. There is no identity.
-2.  latexmath:[x * y = x + 2y - xy]
++
+
+// B.1.iv
+..  No need to check for an inverse. There is no identity.
++
+
+// B.2
+.  latexmath:[x * y = x + 2y - xy]
++
+[cols="^,^,^,^",]
+|=======================================================================
+|_Associative_ |_Commutative_ |_Identity_ |_Inverses_
+
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes]
+|=======================================================================
 +
 _Solution_ The solution follows:
-1.  The operation is not commutative: latexmath:[\[\begin{aligned}
++
+["lowerroman"]
+..  The operation is not commutative: 
++
+[latexmath]
+++++
+\begin{aligned}
          x * y & = x + 2y - xy \\
      y * x & = y + 2x - yx \\
            & = 2x + y - xy \\
                & = (x + 2y - xy) + x - y \\
                & = (x * y) + x - y
-    \end{aligned}\]]
+\end{aligned}
+++++
 +
 So if latexmath:[x * y = y * x] then
 latexmath:[x * y = x * y + x - y] which means latexmath:[0 = x
     - y] which requires that latexmath:[x = y]. So in general
-latexmath:[*] _is not commutative_.
-2.  The operation is not associative latexmath:[\[\begin{aligned}
-         x * (y * z) & = x * (y + 2z - yz)                          \\
-                 & = x + 2(y + 2z - yz) - x(y + 2z - yz) \notag \\
-             & = x + 2y + 4z - 2yz - xy - 2xz + xyz  \notag \\
-             & = x + 2y + 4z - xy - 2xz - 2yz + xyz  \notag \\
-     (x * y) * z & = (x + 2y - xy) * z                          \\
-                 & = (x + 2y - xy) + 2z - (x + 2y - xy)z \notag \\
-             & = (x + 2y - xy) + 2z - xz - 2yz - xyz \notag \\
-             & = x + 2y + 2z - xy - xz - 2yz - xyz   \notag
-    \end{aligned}\]]
-3.  From the following we can see that latexmath:[e=0].
-latexmath:[\[\begin{aligned}
+latexmath:[*] _is not commutative_. Check with latexmath:[\{ x = 0,
+y = 1 \}]: +
+latexmath:[0 * 1 = 0 + 2 \cdot 1 - 0 \cdot 1 = 2] +
+latexmath:[1 * 0 = 1 + 2 \cdot 0 - 1 \cdot 0 = 1] 
+// B.2.ii
+..  The operation is not associative. Check with 
+latexmath:[\{ x = 0, y = 0, z = 1 \}]:
++
+[latexmath]
+++++
+\begin{aligned}
+     0 * (0 * 1) & = 0 * (0 + 2 \cdot 1 - 0 \cdot 1) \\
+                 & = 0 * 2 \\
+                 & = 0 + 2 \cdot 2 - 0 \cdot 1 \\
+                 & = 4                          \\
+
+     (0 * 0) * 1 & = (0 + 2 \cdot 0 - 0 \cdot 0) * 0 \\
+                 & =  0 * 1                         \\
+                 & = 0 + 2 \cdot 1 - 0 \cdot 1      \\
+                 & = 2
+\end{aligned}
+++++
++
+
+// B.2.iii
+..  From the following we can see that latexmath:[e=0].
++
+[latexmath]
+++++
+\begin{aligned}
          x * e & = x                  \\
      x * e & = x + 2e - xe        \\
          x & = x + 2e - xe \notag \\
          0 & =     2e - xe \notag \\
     e(2-x) & = 0           \notag \\
-         e & = 0 \quad\text{(when x \ne 2)} \notag 
-    \end{aligned}\]] (We need to check what happens when
+         e & = 0 \quad (\text{when } x \ne 2)  \\
+\end{aligned} 
+++++
+(We need to check what happens when
 latexmath:[x = 2]: we have latexmath:[2*y=2+2y-2y=2]. So when
 latexmath:[x=2], latexmath:[x*y] is always equal to 2 no matter what
 latexmath:[y] is.)
 +
 Now we must check that latexmath:[x*e=e*x=x]:
-latexmath:[\[\begin{aligned}
++
+[latexmath]
+++++
+\begin{aligned}
          e * x & = e + 2x - ex      \\
            & = 0 + 2x - 0       \\
            & = 2x               \\
            & \ne x              
-    \end{aligned}\]] Therefore, there is no identity element.
-4.  Since there is no identity element, there are no inverses.
+\end{aligned}
+++++
+Therefore, there is no identity element.
++
+
+// B.2.iv
++
+..  Since there is no identity element, there are no inverses.
+
+
+////
+
+// B.3
 3.  latexmath:[x * y = | x + y |]
 +
 _Solution_ The solution follows:
@@ -1048,3 +1183,5 @@ latexmath:[\[\begin{aligned}
                & = \mathbf{a} && \text{Defn. of
                              \mathbf{a}} \qedhere
       \end{aligned}\]]
+
+////
