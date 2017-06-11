@@ -1,7 +1,7 @@
 :stem:
 = Chapter 2 Exercises
 Michael Welch <michaelgwelch@gmail.com>
-v2.0, June 10, 2017: Converted to asciidoc
+v2.0 : Converted to asciidoc
 
 This document contains my solutions to the Chatper 2 exercise.
 
@@ -369,41 +369,69 @@ Therefore, there is no identity element.
 // B.2.iv
 +
 ..  Since there is no identity element, there are no inverses.
-
-
-////
++
 
 // B.3
-3.  latexmath:[x * y = | x + y |]
+.  latexmath:[x * y = | x + y |]
++
+[cols="^,^,^,^",]
+|=======================================================================
+|_Associative_ |_Commutative_ |_Identity_ |_Inverses_
+
+|Yes latexmath:[\boxtimes \quad] No latexmath:[\square] 
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes]
+|=======================================================================
 +
 _Solution_ The solution follows:
-1.  From the following we can see that the operation is commutative:
-latexmath:[\[\begin{aligned}
-         x * y & = | x + y |         \\
++
+
+["lowerroman"]
+..  From the following we can see that the operation is commutative:
++
+[latexmath]
+++++
+\begin{aligned}
+     x * y & = | x + y |         \\
      y * x & = | y + x |         \\
-           & = | x + y | \notag  
-    \end{aligned}\]]
-2.  It is not associative. Here is a counter example using
+           & = | x + y |   
+\end{aligned}
+++++
++
+..  It is not associative. Here is a counter example using
 latexmath:[x = 7,
     y = -13, z = 1]
 +
-latexmath:[\[\begin{aligned}
-         x * (y * z) & = 7 * | -13 + 1 | \\
-                 & = | 7 + 12 | \notag \\
+[latexmath]
+++++
+\begin{aligned}
+         x * (y * z) & = 7 * \lvert -13 + 1 \rvert \\
+                 & = \lvert 7 + 12 \rvert \notag \\
              & = 19         \notag \\
-     (x * y) * z & = | 7 + -13 | * 1   \\
-                 & = | -6 | * 1 \notag \\
-             & = | 6 + 1 |  \notag \\
+     (x * y) * z & = \lvert 7 + -13 \rvert * 1   \\
+                 & = \lvert -6 \rvert * 1 \notag \\
+             & = \lvert 6 + 1 \rvert  \notag \\
              & = 7          \notag \\
              & \ne 19       \notag
-    \end{aligned}\]]
-3.  The value of latexmath:[0] works as an identity element for
+\end{aligned}
+++++
++
+
+// B.3.iii
+..  The value of latexmath:[0] works as an identity element for
 non-negative numbers. However, there is no possible identity element for
 negative numbers. This is because the result of the absolute value
 function always returns non-negative values.
-4.  Since there is no identity element, there are no inverses.
-4.  latexmath:[x * y = | x - y |]
 +
+
+// B.3.iv
+..  Since there is no identity element, there are no inverses.
++
+
+.  latexmath:[x * y = | x - y |]
++
+////
 _Solution_ The solution is as follows:
 1.  The operation is commutative: latexmath:[\[\begin{aligned}
          x * y & = | x - y |           \\
