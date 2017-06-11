@@ -4,7 +4,7 @@ v2.0 : Converted to asciidoc
 :toc:
 :stem:
 
-This document contains my solutions to the Chatper 2 exercise.
+This document contains my solutions to the Chapter 2 exercises.
 
 == A. Examples of Operations
 
