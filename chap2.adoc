@@ -429,27 +429,49 @@ function always returns non-negative values.
 ..  Since there is no identity element, there are no inverses.
 +
 
+// B.4
 .  latexmath:[x * y = | x - y |]
 +
-////
+[cols="^,^,^,^",]
+|=======================================================================
+|_Associative_ |_Commutative_ |_Identity_ |_Inverses_
+
+|Yes latexmath:[\boxtimes \quad] No latexmath:[\square] 
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes]
+|=======================================================================
++
 _Solution_ The solution is as follows:
-1.  The operation is commutative: latexmath:[\[\begin{aligned}
-         x * y & = | x - y |           \\
++
+
+// B.4.i
+["lowerroman"]
+..  The operation is commutative: 
++
+[latexmath]
+++++
+\begin{aligned}
+     x * y & = | x - y |           \\
            & =
            \begin{cases}
-              x - y,     & \text{if x \ge y;} \\
+              x - y,     & \text{if } x \ge y; \\
           y - x,     & \text{otherwise.}
-           \end{cases} \notag \\
+           \end{cases}  \\
      y * x & = | y - x |           \\
            & =
            \begin{cases}
-              x - y,     & \text{if x \ge y;} \\
+              x - y,     & \text{if } x \ge y; \\
           y - x,     & \text{otherwise.}
-           \end{cases} \notag 
-    \end{aligned}\]]
-2.  The operation is not associative. A counter example is provided by
+           \end{cases}  
+\end{aligned}
+++++
+..  The operation is not associative. A counter example is provided by
 choosing latexmath:[x = 1, y = -2, z = 3].
-latexmath:[\[\begin{aligned}
++
+[latexmath]
+++++
+\begin{aligned}
          x * (y * z) & = 1 * |(-2) - 3|    \\
                  & = 1 * 5       \notag \\
              & = | 1 - 5 |   \notag \\
@@ -459,13 +481,18 @@ latexmath:[\[\begin{aligned}
              & = | 3 - 3 |   \notag \\
              & = 0           \notag \\
              & \ne 4         \notag
-    \end{aligned}\]]
-3.  Again, there can be no identity element, since the result of the
+\end{aligned}
+++++
++
+
+..  Again, there can be no identity element, since the result of the
 operation is always non-negative. Therefore, there can be no number
 latexmath:[x * e = x] for latexmath:[x < 0].
-4.  Again, since there is no identity element, there can be no inverses.
-However, latexmath:[-x] acts as an inverse for any number assuming
-that latexmath:[0] actually was an identity element.
++
+
+..  Since there is no identity element, there can be no inverse.
+
+////
 5.  latexmath:[x*y = xy + 1]
 +
 _Solution_ The solution is as follows:
