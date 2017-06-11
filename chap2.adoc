@@ -491,19 +491,34 @@ latexmath:[x * e = x] for latexmath:[x < 0].
 +
 
 ..  Since there is no identity element, there can be no inverse.
++
 
-////
-5.  latexmath:[x*y = xy + 1]
+// B.5
+.  latexmath:[x*y = xy + 1]
 +
 _Solution_ The solution is as follows:
-1.  The operation is commutative as seen below.
-latexmath:[\[\begin{aligned}
++
+
+// B.5.i
+["lowerroman"]
+..  The operation is commutative as seen below.
++
+[latexmath]
+++++
+\begin{aligned}
          x * y & = xy + 1  \\
      y * x & = yx + 1 \\
            & = xy + 1 \quad\text{(Multiplication is commutative.)}
-    \end{aligned}\]]
-2.  The operation is not associative as seen below.
-latexmath:[\[\begin{aligned}
+\end{aligned}
+++++
++
+
+// B.5.ii
+..  The operation is not associative as seen below.
++
+[latexmath]
+++++
+\begin{aligned}
          x * (y * z) & = x * (yz + 1) \\
                  & = x(yz + 1) + 1 \\
              & = x + xyz + 1 \\
@@ -511,19 +526,32 @@ latexmath:[\[\begin{aligned}
                  & = (xy + 1)z + 1 \\
              & = z + xyz + 1 \\
              & \ne x + xyz + 1
-    \end{aligned}\]]
-3.  We can see below that their is no constant value defined for the
+\end{aligned}
+++++
++
+
+// B.5.iii
+..  We can see below that their is no constant value defined for the
 identity element. Our equations find a formula for latexmath:[e] which
 depens on latexmath:[x]. This is not a constant value.
-latexmath:[\[\begin{aligned}
++
+[latexmath]
+++++
+\begin{aligned}
          x * e & = x \\
      x * e & = xe + 1 \\
          x & = xe + 1 \\
      x - 1 & = xe     \\
      xe    & = x - 1  \\
       e    & = \frac{x - 1}{x} \\
-    \end{aligned}\]]
-4.  There is no identity element, so there are no inverses.
+\end{aligned}
+++++
++
+
+// B.5.iv
+..  There is no identity element, so there is no inverse.
+
+////
 6.  latexmath:[x * y = \max\{x,y\} =] the larger of the two numbers
 latexmath:[x] and latexmath:[y].
 +
