@@ -2,6 +2,7 @@
 = Chapter 2 Exercises
 Michael Welch <michaelgwelch@gmail.com>
 v2.0 : Converted to asciidoc
+:toc:
 
 This document contains my solutions to the Chatper 2 exercise.
 
@@ -378,8 +379,8 @@ Therefore, there is no identity element.
 |=======================================================================
 |_Associative_ |_Commutative_ |_Identity_ |_Inverses_
 
-|Yes latexmath:[\boxtimes \quad] No latexmath:[\square] 
 |Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
+|Yes latexmath:[\boxtimes \quad] No latexmath:[\square] 
 |Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
 |Yes latexmath:[\square \quad] No latexmath:[\boxtimes]
 |=======================================================================
@@ -436,8 +437,8 @@ function always returns non-negative values.
 |=======================================================================
 |_Associative_ |_Commutative_ |_Identity_ |_Inverses_
 
-|Yes latexmath:[\boxtimes \quad] No latexmath:[\square] 
 |Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
+|Yes latexmath:[\boxtimes \quad] No latexmath:[\square] 
 |Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
 |Yes latexmath:[\square \quad] No latexmath:[\boxtimes]
 |=======================================================================
@@ -496,6 +497,16 @@ latexmath:[x * e = x] for latexmath:[x < 0].
 // B.5
 .  latexmath:[x*y = xy + 1]
 +
+[cols="^,^,^,^",]
+|=======================================================================
+|_Associative_ |_Commutative_ |_Identity_ |_Inverses_
+
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
+|Yes latexmath:[\boxtimes \quad] No latexmath:[\square] 
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes]
+|=======================================================================
++
 _Solution_ The solution is as follows:
 +
 
@@ -550,67 +561,97 @@ depens on latexmath:[x]. This is not a constant value.
 
 // B.5.iv
 ..  There is no identity element, so there is no inverse.
++
 
-////
-6.  latexmath:[x * y = \max\{x,y\} =] the larger of the two numbers
+// B.6
+.  latexmath:[x * y = \max\{x,y\} =] the larger of the two numbers
 latexmath:[x] and latexmath:[y].
 +
+[cols="^,^,^,^",]
+|=======================================================================
+|_Associative_ |_Commutative_ |_Identity_ |_Inverses_
+
+|Yes latexmath:[\boxtimes \quad] No latexmath:[\square] 
+|Yes latexmath:[\boxtimes \quad] No latexmath:[\square] 
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes] 
+|Yes latexmath:[\square \quad] No latexmath:[\boxtimes]
+|=======================================================================
++
 _Solution_ The solution is as follows.
-1.  The operation is commutative. latexmath:[\[\begin{aligned}
++
+
+// B.6.i
+["lowerroman"]
+..  The operation is commutative.
++
+[latexmath]
+++++
+\begin{aligned}
          x * y & = \max\{x,y\}    \\
            & =
            \begin{cases}
-              x,       & \text{if x \ge y;} \\
+              x,       & \text{if } x \ge y; \\
           y,       & \text{otherwise.}
            \end{cases} \\
      y * x & = \max\{y,x\}   \\
            & =
            \begin{cases}
-                 x,       & \text{if x \ge y;} \\
+                 x,       & \text{if } x \ge y; \\
                  y, & \text{otherwise.}
            \end{cases}
-    \end{aligned}\]]
-2.  The operation is associative. latexmath:[\[\begin{aligned}
+\end{aligned}
+++++
++
+
+// B.6.ii
+..  The operation is associative. 
++
+[latexmath]
+++++
+\begin{aligned}
          x * (y * z) & = x * \max\{y,z\} \\
                  &= \max\{x, \max\{y,z\}\} \\
              &=
              \begin{cases}
-                \max\{x, y\}, \text{if y \ge z;} \\
+                \max\{x, y\}, \text{if } y \ge z; \\
             \max\{x, z\}, \text{otherwise.}
              \end{cases} \\
              & =
              \begin{cases}
-                x,  & \text{if x \ge y \land y \ge z;} \\
-            y,  & \text{if x < y \land y \ge z;}   \\
-            z,  & \text{otherwise.}
-             \end{cases} \\
-                     & =
-             \begin{cases}
-                x,  & \text{if x \ge y \land x \ge z;} \\
-            y,  & \text{if x < y \land y \ge z;}   \\
+                x,  & \text{if } x \ge y \land x \ge z; \\
+            y,  & \text{if } x < y \land y \ge z;   \\
             z,  & \text{otherwise.}
              \end{cases} \\
      (x * y) * z & = \max\{x,y\} * z \\
                  & = \max\{\max\{x,y\}, z\} \\
              & =
              \begin{cases}
-                \max\{x,z\}, \text{if x \ge y;} \\
+                \max\{x,z\}, \text{if } x \ge y; \\
             \max\{y,z\}, \text{otherwise.}
              \end{cases} \\
              & =
              \begin{cases}
-                x, & \text{if x \ge y \land x \ge z;} \\
-            y, & \text{if x < y \land y \ge z;} \\
-            z, & \text{otherwise.}
-             \end{cases}
-  \end{aligned}\]]
-3.  There is no identity element. We will prove this by contradiction.
+                x,  & \text{if } x \ge y \land x \ge z; \\
+            y,  & \text{if } x < y \land y \ge z;   \\
+            z,  & \text{otherwise.}
+             \end{cases} \\
+\end{aligned}
+++++
++
+
+// B.6.iii
+..  There is no identity element. We will prove this by contradiction.
 Assume that there is some identity element latexmath:[e]. Then by
-definition latexmath:[x * e = x] forall latexmath:[x]. Let us choose
+definition latexmath:[x * e = x] for all latexmath:[x]. Let us choose
 a value latexmath:[m = e -
   1]. Then we have latexmath:[m * e = (e-1) * e = \max(e-1,e) = e \ne
-  m]. Therefore, e is not an identity element. .
-4.  Since there is no identity element, there are no inverses.
+  m]. Therefore, latexmath:[e] is not an identity element.
++
+
+// B.6.iv
+..  Since there is no identity element, there are no inverses.
+
+////
 7.  latexmath:[\displaystyle x * y = \frac{xy}{x + y + 1}] on the set
 of positive real numbers.
 +
