@@ -1,7 +1,7 @@
 = Chapter 2 Exercises
 Michael Welch <michaelgwelch@gmail.com>
 v2.0 : Converted to asciidoc
-:toc:
+:toc: left
 :stem:
 
 This document contains my solutions to the Chapter 2 exercises.
@@ -715,167 +715,158 @@ latexmath:[x = -1], as shown below.
 
 // B.7.iv
 ..  Since there is no identity, there can be no inverses.
-////
-*C. latexmath:[\quad] Operations on a Two-Element Set*
+
+== C. Operations on a Two-Element Set
 
 Let latexmath:[A] be the two-element set latexmath:[A = \{a,b\}].
 
-1.  Write the tables of all 16 operations on latexmath:[A]. (Use the
+.  Write the tables of all 16 operations on latexmath:[A]. (Use the
 format explained on page 20.) Label these operations latexmath:[O_1]
 to latexmath:[O_{16}].
 +
-_Solution_ The tables are shown in table [tab:boolean_ops] on page .
+_Solution_ The tables are shown below:
 +
-cccc & & & +
+
+[cols="4*^"]
+|===
+|  
+++++
+latexmath:[O_{16}]
+\begin{array}{cc}
+  (x,y)  & x*y  \\\hline
+  (a,a)  & a \\
+  (a,b)  & a \\
+  (b,a)  & a \\
+  (b,b)  & a \\
+\end{array}
+| latexmath:[O_1]
+\begin{array}{cc}
+  (x,y)  & x*y  \\\hline
+  (a,a)  & a \\
+  (a,b)  & a \\
+  (b,a)  & a \\
+  (b,b)  & b \\
+\end{array}
+| latexmath:[O_2]
+\begin{array}{cc}
+  (x,y)  & x*y  \\\hline
+  (a,a)  & a \\
+  (a,b)  & a \\
+  (b,a)  & b \\
+  (b,b)  & a \\
+\end{array}
+| latexmath:[O_3]
+\begin{array}{cc}
+  (x,y)  & x*y  \\\hline
+  (a,a)  & a \\
+  (a,b)  & a \\
+  (b,a)  & b \\
+  (b,b)  & b \\
+\end{array}
+| latexmath:[O_4]
+++++
+\begin{array}{cc}
+  (x,y)  & x*y  \\\hline
+  (a,a)  & a \\
+  (a,b)  & b \\
+  (b,a)  & a \\
+  (b,b)  & a \\
+\end{array}
+| latexmath:[O_5]
+\begin{array}{cc}
+  (x,y)  & x*y  \\\hline
+  (a,a)  & a \\
+  (a,b)  & b \\
+  (b,a)  & a \\
+  (b,b)  & b \\
+\end{array}
+| latexmath:[O_6]
+\begin{array}{cc}
+  (x,y)  & x*y  \\\hline
+  (a,a)  & a \\
+  (a,b)  & b \\
+  (b,a)  & b \\
+  (b,b)  & a \\
+\end{array}
+| latexmath:[O_7]
+\begin{array}{cc}
+  (x,y)  & x*y  \\\hline
+  (a,a)  & a \\
+  (a,b)  & b \\
+  (b,a)  & b \\
+  (b,b)  & b \\
+\end{array}
+| latexmath:[O_8]
+\begin{array}{cc}
+  (x,y)  & x*y  \\\hline
+  (a,a)  & b \\
+  (a,b)  & a \\
+  (b,a)  & a \\
+  (b,b)  & a \\
+\end{array}
+| latexmath:[O_9]
+\begin{array}{cc}
+  (x,y)  & x*y  \\\hline
+  (a,a)  & b \\
+  (a,b)  & a \\
+  (b,a)  & a \\
+  (b,b)  & b \\
+\end{array}
+| latexmath:[O_{10}]
+\begin{array}{cc}
+  (x,y)  & x*y  \\\hline
+  (a,a)  & b \\
+  (a,b)  & a \\
+  (b,a)  & b \\
+  (b,b)  & a \\
+\end{array}
+| latexmath:[O_{11}]
+\begin{array}{cc}
+  (x,y)  & x*y  \\\hline
+  (a,a)  & b \\
+  (a,b)  & a \\
+  (b,a)  & b \\
+  (b,b)  & b \\
+\end{array}
+| latexmath:[O_{12}]
+++++
+\begin{array}{cc}
+  (x,y)  & x*y  \\\hline
+  (a,a)  & b \\
+  (a,b)  & b \\
+  (b,a)  & a \\
+  (b,b)  & a \\
+\end{array}
+| latexmath:[O_{13}]
+\begin{array}{cc}
+  (x,y)  & x*y  \\\hline
+  (a,a)  & b \\
+  (a,b)  & b \\
+  (b,a)  & a \\
+  (b,b)  & b \\
+\end{array}
+| latexmath:[O_{14}]
+\begin{array}{cc}
+  (x,y)  & x*y  \\\hline
+  (a,a)  & b \\
+  (a,b)  & b \\
+  (b,a)  & b \\
+  (b,b)  & a \\
+\end{array}
+| latexmath:[O_{15}]
+\begin{array}{cc}
+  (x,y)  & x*y  \\\hline
+  (a,a)  & b \\
+  (a,b)  & b \\
+  (b,a)  & b \\
+  (b,b)  & b \\
+\end{array}
+++++
+|===
 +
-c|c +
-latexmath:[(x,y)] & latexmath:[x * y] +
-latexmath:[(a,a)] & latexmath:[a] +
-latexmath:[(a,b)] & latexmath:[a] +
-latexmath:[(b,a)] & latexmath:[a] +
-latexmath:[(b,b)] & latexmath:[a]
-+
-&
-+
-c|c +
-latexmath:[(x,y)] & latexmath:[x * y] +
-latexmath:[(a,a)] & latexmath:[a] +
-latexmath:[(a,b)] & latexmath:[a] +
-latexmath:[(b,a)] & latexmath:[a] +
-latexmath:[(b,b)] & latexmath:[b]
-+
-&
-+
-c|c +
-latexmath:[(x,y)] & latexmath:[x * y] +
-latexmath:[(a,a)] & latexmath:[a] +
-latexmath:[(a,b)] & latexmath:[a] +
-latexmath:[(b,a)] & latexmath:[b] +
-latexmath:[(b,b)] & latexmath:[a]
-+
-&
-+
-c|c +
-latexmath:[(x,y)] & latexmath:[x * y] +
-latexmath:[(a,a)] & latexmath:[a] +
-latexmath:[(a,b)] & latexmath:[a] +
-latexmath:[(b,a)] & latexmath:[b] +
-latexmath:[(b,b)] & latexmath:[b]
-+
- +
-& & & +
-+
-c|c +
-latexmath:[(x,y)] & latexmath:[x * y] +
-latexmath:[(a,a)] & latexmath:[a] +
-latexmath:[(a,b)] & latexmath:[b] +
-latexmath:[(b,a)] & latexmath:[a] +
-latexmath:[(b,b)] & latexmath:[a]
-+
-&
-+
-c|c +
-latexmath:[(x,y)] & latexmath:[x * y] +
-latexmath:[(a,a)] & latexmath:[a] +
-latexmath:[(a,b)] & latexmath:[b] +
-latexmath:[(b,a)] & latexmath:[a] +
-latexmath:[(b,b)] & latexmath:[b]
-+
-&
-+
-c|c +
-latexmath:[(x,y)] & latexmath:[x * y] +
-latexmath:[(a,a)] & latexmath:[a] +
-latexmath:[(a,b)] & latexmath:[b] +
-latexmath:[(b,a)] & latexmath:[b] +
-latexmath:[(b,b)] & latexmath:[a]
-+
-&
-+
-c|c +
-latexmath:[(x,y)] & latexmath:[x * y] +
-latexmath:[(a,a)] & latexmath:[a] +
-latexmath:[(a,b)] & latexmath:[b] +
-latexmath:[(b,a)] & latexmath:[b] +
-latexmath:[(b,b)] & latexmath:[b]
-+
- +
-& & & +
-+
-c|c +
-latexmath:[(x,y)] & latexmath:[x * y] +
-latexmath:[(a,a)] & latexmath:[b] +
-latexmath:[(a,b)] & latexmath:[a] +
-latexmath:[(b,a)] & latexmath:[a] +
-latexmath:[(b,b)] & latexmath:[a]
-+
-&
-+
-c|c +
-latexmath:[(x,y)] & latexmath:[x * y] +
-latexmath:[(a,a)] & latexmath:[b] +
-latexmath:[(a,b)] & latexmath:[a] +
-latexmath:[(b,a)] & latexmath:[a] +
-latexmath:[(b,b)] & latexmath:[b]
-+
-&
-+
-c|c +
-latexmath:[(x,y)] & latexmath:[x * y] +
-latexmath:[(a,a)] & latexmath:[b] +
-latexmath:[(a,b)] & latexmath:[a] +
-latexmath:[(b,a)] & latexmath:[b] +
-latexmath:[(b,b)] & latexmath:[a]
-+
-&
-+
-c|c +
-latexmath:[(x,y)] & latexmath:[x * y] +
-latexmath:[(a,a)] & latexmath:[b] +
-latexmath:[(a,b)] & latexmath:[a] +
-latexmath:[(b,a)] & latexmath:[b] +
-latexmath:[(b,b)] & latexmath:[b]
-+
- +
-& & & +
-+
-c|c +
-latexmath:[(x,y)] & latexmath:[x * y] +
-latexmath:[(a,a)] & latexmath:[b] +
-latexmath:[(a,b)] & latexmath:[b] +
-latexmath:[(b,a)] & latexmath:[a] +
-latexmath:[(b,b)] & latexmath:[a]
-+
-&
-+
-c|c +
-latexmath:[(x,y)] & latexmath:[x * y] +
-latexmath:[(a,a)] & latexmath:[b] +
-latexmath:[(a,b)] & latexmath:[b] +
-latexmath:[(b,a)] & latexmath:[a] +
-latexmath:[(b,b)] & latexmath:[b]
-+
-&
-+
-c|c +
-latexmath:[(x,y)] & latexmath:[x * y] +
-latexmath:[(a,a)] & latexmath:[b] +
-latexmath:[(a,b)] & latexmath:[b] +
-latexmath:[(b,a)] & latexmath:[b] +
-latexmath:[(b,b)] & latexmath:[a]
-+
-&
-+
-c|c +
-latexmath:[(x,y)] & latexmath:[x * y] +
-latexmath:[(a,a)] & latexmath:[b] +
-latexmath:[(a,b)] & latexmath:[b] +
-latexmath:[(b,a)] & latexmath:[b] +
-latexmath:[(b,b)] & latexmath:[b]
-+
- +
-& & & +
-2.  Identify which of the operations latexmath:[O_1] to
+
+// C2
+.  Identify which of the operations latexmath:[O_1] to
 latexmath:[O_{16}] are commutative.
 +
 _Solution_ This can be solved very easily by looking at the second and
@@ -883,13 +874,16 @@ third entries in each table to see if latexmath:[a*b=b*a]. The
 commutative entries are
 latexmath:[O_1, O_6, O_7, O_8, O_9, O_{14}, O_{15}, O_{16}].
 commutative.
-3.  Identify which operations, among latexmath:[O_1] to
++
+
+// C3
+.  Identify which operations, among latexmath:[O_1] to
 latexmath:[O_{16}], are associative.
 +
-_Solution_ In general there are eight cases to check. These cases are
-shown in table [tab:eight_cases] on page .
+_Solution_ There are eight cases to check for each operation. 
+They are identified and labelled here.
 +
-latexmath:[\[\begin{aligned}
+latexmath:[\begin{aligned}
       a * (a * a) & = (a * a) * a && 1\\
       a * (a * b) & = (a * a) * b && 2\\
       a * (b * a) & = (a * b) * a && 3\\
@@ -898,79 +892,112 @@ latexmath:[\[\begin{aligned}
       b * (a * b) & = (b * a) * b && 6\\
       b * (b * a) & = (b * b) * a && 7\\
       b * (b * b) & = (b * b) * b && 8
-   \end{aligned}\]]
+   \end{aligned}]
 +
-Let’s consider how many cases there are when latexmath:[*] is
-commutative. It will be shown that only two cases need to be checked: 2
-and 4. All the others are trivially true by commutativity, or else they
-are true if 2 or 4 is true. See table [tab:com_check] on page  to see
-the list of proofs.
+If an operation is commutative then only cases 2 and 4 actually need to be checked.
+The rest can be proven just with the fact that they are commutative.
+This is proven by the following list of proofs (except for cases 2 and 4 which must be checked).
 +
-latexmath:[\[\begin{aligned}
-      a * (a * a) & = (a * a) * a    && \text{(Commutativity)} \\
-      \\
-      a * (a * b) & = (a * a) * b    && \text{(Must be checked)} \\
-      \\
-      a * (b * a) & = a * (a * b)    && \text{(Commutativity)} \\
-                  & = (a * b) * a    && \text{(Commutativity)} \\
-      \\
-      a * (b * b) & = (a * b) * b    && \text{(Must be checked)} \\
-      \\
-      b * (a * a) & = (a * a) * b    && \text{(Commutativity)} \\
-                  & = a * (a * b)    && \text{(By case 2)} \\
-          & = a * (b * a)    && \text{(Commutativity)} \\
-          & = (b * a) * a    && \text{(Commutativity)} \\
-      \\
-      b * (a * b) & = b * (b * a)    && \text{(Commutativity)} \\
-                  & = (b * a) * b    && \text{(Commutativity)} \\
-      \\
-      b * (b * a) & = b * (a * b)    && \text{(Commutativity)} \\
-                  & = (a * b) * b    && \text{(Commutativity)} \\
-          & = a * (b * b)    && \text{(By case 4)}     \\
-          & = (b * b) * a    && \text{(Commutativity)} \\
-      \\
-      b * (b * b) & = (b * b) * b    && \text{(Commutativity)}
-   \end{aligned}\]]
+*Case 1:*
+\begin{aligned}
+    a * (a * a) & = (a * a) * a    && \text{(Commutativity)}
+\end{aligned}
 +
+*Case 2:*  
+\begin{aligned}
+    a * (a * b) & = (a * a) * b   && \text{Must be checked}
+\end{aligned}
++
+*Case 3:*
+\begin{aligned} 
+    a * (b * a) & = a * (a * b)    && \text{(Commutativity)} \\
+                & = (a * b) * a    && \text{(Commutativity)} 
+\end{aligned}
++
+*Case 4:*
+\begin{aligned}
+a * (b * b) & = (a * b) * b    && \text{Must be checked}
+\end{aligned}
++
+*Case 5:* Assuming Case 2 is shown to be true for an operation then this is true:
+\begin{aligned}
+    b * (a * a) & = (a * a) * b    && \text{(Commutativity)} \\
+                & = a * (a * b)    && \text{(By case 2)} \\
+                & = a * (b * a)    && \text{(Commutativity)} \\
+                & = (b * a) * a    && \text{(Commutativity)}
+\end{aligned}
++
+*Case 6:*
+\begin{aligned}
+    b * (a * b) & = b * (b * a)    && \text{(Commutativity)} \\
+                & = (b * a) * b    && \text{(Commutativity)}
+\end{aligned}
++
+*Case 7:* Assuming Case 4 is shown to be true for an operation then this is true:
+\begin{aligned}
+    b * (b * a) & = b * (a * b)    && \text{(Commutativity)} \\
+                & = (a * b) * b    && \text{(Commutativity)} \\
+                & = a * (b * b)    && \text{(By case 4)}     \\
+                & = (b * b) * a    && \text{(Commutativity)} 
+\end{aligned}
++
+*Case 8:*
+\begin{aligned}
+    b * (b * b) & = (b * b) * b    && \text{(Commutativity)}
+\end{aligned} 
+// The plus sign on previous line is a line break to break out of the labelled list without breaking out of the C list of items
++
+
 Now we need to start checking all the cases.
 +
 latexmath:[\mathbf{O_1}]**:** This operation is commutative. Cases 2
-and 4 are true, so this operation is associative. See figure [fig:o1]
+and 4 are true, so this operation is associative.
 +
-latexmath:[\[\begin{aligned}
-      a * (a * b) & = a * a  && \text{(Left hand side of case 2.)}\\
-                  & = a      \\
-      (a * a) * b & = a * b  && \text{(Right hand side of case 2.)}\\
-                  & = a      && \text{(Case 2 is true.)} \\
-      a * (b * b) & = a * b && \text{(Left hand side of case 4.)}\\
-                  & = a \\
-      (a * b) * b & = a * b && \text{(Right hand side of case 4.)}\\
-                  & = a     && \text{(Case 4 is true.)}
-   \end{aligned}\]]
+Case 2 Proof:
 +
+++++
+\begin{aligned}
+      a *_1 (a *_1 b) & = a *_1 a  && (O_1)\\
+                      & = a        && (O_1)\\
+      (a *_1 a) *_1 b & = a *_1 b  && (O_1)\\
+                      & = a        && (O_1)
+\end{aligned}
+
+Case 4 Proof:
+\begin{aligned}
+      a *_1 (b *_1 b) & = a *_1 b && (O_1)\\
+                      & = a          (O_1)\\
+      (a *_1 b) *_1 b & = a *_1 b && (O_1)\\
+                      & = a       && (O_1)
+\end{aligned}
+++++
++
+
 latexmath:[\mathbf{O_2}]**:** This operation is not commutative.
-Therefore there are eight cases to check. Rather than check them all,
-we’ll use boolean algebra. We assume latexmath:[a] is the value
-`false` and latexmath:[b] is the value `true`. The operation is
-equivalent to the boolean equation latexmath:[x\land
-   \lnot y]. We calculate the appropriate equations for
-latexmath:[x * (y * z)] and latexmath:[(x * y) * z] in
-figure [fig:o2_bool_eq].
+Therefore there are eight cases to check. 
+Rather than check them all, we’ll use boolean algebra. 
+We assume latexmath:[a] is the value `false` and latexmath:[b] is the value `true`. 
+Then the operation is equivalent to the boolean equation latexmath:[x\land \lnot y]. 
+Here are the equations for latexmath:[x * (y * z)] and latexmath:[(x * y) * z].
 +
-latexmath:[\[\begin{aligned}
+[latexmath]
+++++
+\begin{aligned}
       x * (y * z) & = x * (y \land \lnot z) \\
           & = x \land \lnot(y \land \lnot z)\\
           & = x \land (\lnot y \lor z) \\
       (x * y) * z & = (x \land \lnot y) * z \\
                   & = (x \land \lnot y) \land \lnot z \\
           & = x \land \lnot y \land \lnot z 
-   \end{aligned}\]]
+\end{aligned}
+++++
 +
-Now we need to find a difference. So we’ll calculate a triple of values
-where the first formula is true, but the second formula is not. We’ll do
-this with an equation of the form latexmath:[f \land \lnot s] where
-latexmath:[f] is the first equation and latexmath:[s] is the second
-equation. latexmath:[\[\begin{aligned}
+Now we need to find a difference. 
+So we’ll find values for latexmath:[x,y,z] where the first equation evalutes to a different value than the second equation.
+We’ll do this with an equation of the form latexmath:[f \land \lnot s] where latexmath:[f] is the first equation and latexmath:[s] is the second equation. 
++
+++++
+\begin{aligned}
       f \land \lnot s & = x \land (\lnot y \lor z) \land \lnot 
                        (x \land \lnot y \land \lnot z))\\
          & = (x \land \lnot y \lor x \land z) \land 
@@ -979,75 +1006,106 @@ equation. latexmath:[\[\begin{aligned}
           \lor (x \land z) \\
      & = (x \land z) \land (y \lor \lnot y \lor \top) \\
      & = x \land z
-   \end{aligned}\]]
+\end{aligned}
+++++
 +
-So the two formulas differ when latexmath:[x = b, z = b]. Let’s check.
-latexmath:[\[\begin{aligned}
+So the two formulas differ when latexmath:[x = b, z = b]. 
+Let’s check.
++
+++++
+\begin{aligned}
        b * (a * b) & = b * a \\
                    & = b \\
        (b * a) * b & = b * b \\
                    & = a     \\
            & \ne b
-   \end{aligned}\]]
+\end{aligned}
+++++
 +
-latexmath:[\mathbf{O_3}]**:** This operation is equivalent to the
-equation latexmath:[x * y = x]. This can be seen by observing the
-table for latexmath:[O_3]. With this information we can easily check
-to see if the operation is associative. latexmath:[\[\begin{aligned}
+Therefore this operation is not associative.
++
+
+latexmath:[\mathbf{O_3}]**:** 
+This operation is equivalent to the equation latexmath:[x * y = x].
+This can be seen by observing the table for latexmath:[O_3].
+With this information we can easily check to see if the operation is associative. 
++
+++++
+\begin{aligned}
       x * (y * z) & = x * y \\
                   & = x     \\
       (x * y) * z & = x * z \\
                   & = x
-   \end{aligned}\]]
+\end{aligned}
+++++
 +
-Both equations evaluate to latexmath:[x] so we can see that
-latexmath:[O_3] is associative.
+Both equations evaluate to latexmath:[x] so we can see that latexmath:[O_3] is associative.
 +
-latexmath:[\mathbf{O_4}]**:** This operation is not commutative. It is
-equivalent to the equatioin latexmath:[x * y = \lnot x \land y].
-latexmath:[\[\begin{aligned}
+
+latexmath:[\mathbf{O_4}]**:**
+This operation is not commutative.
+It is equivalent to the equation latexmath:[x * y = \lnot x \land y].
++
+++++
+\begin{aligned}
       x * (y * z) & = x * (\lnot y \land z)    \\
                   & = \lnot x \land \lnot y \land z \\
       (x * y) * z & = (\lnot x \land y) * z \\
                   & = \lnot (\lnot x \land y) \land z
-   \end{aligned}\]]
+\end{aligned}
+++++
 +
-The first formula is more restrictive. Let’s find a set of values where
-the second formula is true but the first is not:
-latexmath:[s \land \lnot f]. latexmath:[\[\begin{aligned}
+Let’s find a set of values where the second formula is true but the first is not: latexmath:[s \land \lnot f]. 
++
+++++
+\begin{aligned}
       s \land \lnot f & = (\lnot (\lnot x \land y) \land z) \land \lnot
                  (\lnot x \land \lnot y \land z ) \\
          & = (x \lor \lnot y) \land z \land (x \lor y \lor \lnot z) \\
      & = (x \lor \lnot y) \land ((x \land z) \lor (y \land z) \lor \bot)\\
      & = (x \land z) \lor (x \land y \land z) \lor 
          (\lnot y \land x \land z) \lor (\lnot y \land y \land z)  \\
-     & = (x \land z) \land (y \lor \lnot y) \\
+     & = (x \land z) \land (\top \lor y \lor \lnot y) \\
      & = x \land z
-   \end{aligned}\]]
+\end{aligned}
+++++
 +
-When latexmath:[x = b, z = b] we find a difference, therefore
-latexmath:[O_4] is not associative. latexmath:[\[\begin{aligned}
+When latexmath:[x = b, z = b] we find a difference, therefore latexmath:[O_4] is not associative. 
++
+++++
+\begin{aligned}
       b * (b * b) & = b * a \\
                   & = a \\
       (b * b) * b & = a * b \\
                   & = b \\
           & \ne a
-   \end{aligned}\]]
+\end{aligned}
+++++
 +
-latexmath:[\mathbf{O_5}]**:** This is not commutative either. It is
-equivalent to latexmath:[x * y = y]. It is associative. We can see
-this since both formulas evaluate to the same thing.
-latexmath:[\[\begin{aligned}
+
+latexmath:[\mathbf{O_5}]**:**
+This is not commutative either.
+It is equivalent to latexmath:[x * y = y]. 
+It is associative. 
+We can see this since both formulas evaluate to the same thing.
++
+++++
+\begin{aligned}
       x * (y * z) & = x * z \\
                   & = z \\
       (x * y) * z & = y * z \\
                   & = z 
-   \end{aligned}\]]
+\end{aligned}
+++++
 +
-latexmath:[\mathbf{O_6}]**:** This operation is commutative. We just
-have to check cases 2 and 4 from above. Below we see both cases are
-true, therefore this operation is associative.
-latexmath:[\[\begin{aligned}
+
+latexmath:[\mathbf{O_6}]**:**
+This operation is commutative.
+We just have to check cases 2 and 4 from above. 
+Below we see both cases are true, therefore this operation is associative.
++
+++++
+\begin{aligned}
       a * (a * b) & = a * b && \text{(Left hand side of case 2.)}\\
                   & = b \\
       (a * a) * b & = a * b && \text{(Right hand side of case 2.)}\\
@@ -1056,11 +1114,16 @@ latexmath:[\[\begin{aligned}
                   & = a \\
       (a * b) * b & = b * b && \text{(Right hand side of case 4.)} \\
                   & = a     && \text{(Case 4 is true.)}
-   \end{aligned}\]]
+\end{aligned}
+++++
 +
-latexmath:[\mathbf{O_7}]**:** This operation is commutative. Cases 2
-and 4 are true, therefore this operation is associative.
-latexmath:[\[\begin{aligned}
+
+latexmath:[\mathbf{O_7}]**:**
+This operation is commutative. 
+Cases 2 and 4 are true, therefore this operation is associative.
++
+++++
+\begin{aligned}
       a * (a * b) & = a * b && \text{(Left hand side of case 2.)}\\
                   & = b \\
       (a * a) * b & = a * b && \text{(Right hand side of case 2.)}\\
@@ -1069,20 +1132,30 @@ latexmath:[\[\begin{aligned}
                   & = b  \\
       (a * b) * b & = b * b && \text{(Right hand side of case 4.)} \\
                   & = b     && \text{(Case 4 is true.)}
-   \end{aligned}\]]
+\end{aligned}
+++++
 +
-latexmath:[\mathbf{O_8}]**:** This operation is commutative. Case 2 is
-false, therefore this operation is not associative.
-latexmath:[\[\begin{aligned}
+
+latexmath:[\mathbf{O_8}]**:**
+This operation is commutative.
+Case 2 is false, therefore this operation is not associative.
++
+++++
+\begin{aligned}
       a * (a * b) & = a * a && \text{(Left hand side of case 2.)} \\
                   & = b     \\
       (a * a) * b & = b * b && \text{(Right hand side of case 2.)} \\
                   & = a     && \text{(Case 2 is false.)}
-   \end{aligned}\]]
+\end{aligned}
+++++
 +
-latexmath:[\mathbf{O_9}]**:** This operation is commutative. Cases 2
-and 4 are true, therefore this operation is associative.
-latexmath:[\[\begin{aligned}
+
+latexmath:[\mathbf{O_9}]**:**
+This operation is commutative. 
+Cases 2 and 4 are true, therefore this operation is associative.
++
+++++
+\begin{aligned}
       a * (a * b) & = a * a  \\
                   & = b \\
       (a * a) * b & = b * b \\
@@ -1091,33 +1164,33 @@ latexmath:[\[\begin{aligned}
                   & = a \\
       (a * b) * b & = a * b \\
                   & = a && \text{(Case 4 is true.)} 
-   \end{aligned}\]]
+   \end{aligned}
+++++
 +
-latexmath:[\mathbf{O_{10}}]**:** This operation is not commutative.
-This operation corresponds to the boolean equation
-latexmath:[x * y = \lnot y]. See figure [fig:o10_assoc] for proof that
-this operation is not associative.
+
+latexmath:[\mathbf{O_{10}}]**:**
+This operation is not commutative.
+This operation corresponds to the boolean equation latexmath:[x * y = \lnot y]. 
 +
-latexmath:[\[\begin{aligned}
-         x * y & = \lnot y  && \text{(Boolean equivalent equation for O_{10}.)} \\
+++++
+\begin{aligned}
+         x * y & = \lnot y  \\
          x * (y * z) & = x * \lnot z \\
                  & = z \\
          (x * y) * z & = \lnot y * z \\
-                 & = \lnot z && \text{(Doesn't equal z.)}.
-      \end{aligned}\]]
+                 & = \lnot z         \\
+                 & \ne z
+\end{aligned}
+++++
 +
-latexmath:[\mathbf{O_{11}}]**:** This operation is not commutative.
-The equivalent binary equation is
-latexmath:[x * y = x \lor \lnot x \land \lnot y]. See the derivation
-of the boolean equivalent equations for latexmath:[x * (y * z)] and
-latexmath:[(x
-   * y) * z] in figure [fig:o11_assoc] to see that they equal
-latexmath:[x \lor \lnot
-   * x \land \lnot y \land z] and
-latexmath:[x \lor \lnot x \land \lnot y] respectively.
+
+latexmath:[\mathbf{O_{11}}]**:**
+This operation is not commutative.
+The equivalent binary equation is latexmath:[x * y = x \lor \lnot x \land \lnot y].
 +
-latexmath:[\[\begin{aligned}
-         x * y & = x \lor (\lnot z \land \lnot y) \\
+++++
+\begin{aligned}
+         x * y   & = x \lor (\lnot z \land \lnot y) \\
      x * (y * z) & = x * (y \lor (\lnot y \land \lnot z)) \\
                  & = x \lor (\lnot x \land \lnot (y \lor (\lnot y 
                  \land \lnot z))) \\
@@ -1133,59 +1206,70 @@ latexmath:[\[\begin{aligned}
              & = x \lor (\lnot x \land \lnot y) \lor (x \land z)
                  \lor (\lnot x \land \lnot y \land z) \\
              & = x \lor (\lnot x \land \lnot y)
-      \end{aligned}\]]
+\end{aligned}
+++++
 +
-From the equations in figure [fig:o11_assoc] you can see that one of the
-equations is true for latexmath:[{x = a, y = a, z = a}] and the other
-one is false for the same set of values. So this is our counter example
-that latexmath:[O_{11}] is not associative. See
-figure [fig:o11_assoc2] for the derivation.
+One of the equations is true for latexmath:[{x = a, y = a }] and the other one is false for the same set of values. 
+So this is our counter example to show that latexmath:[O_{11}] is not associative. 
 +
-latexmath:[\[\begin{aligned}
+++++
+\begin{aligned}
          a * (a * a) & = a * b \\
                      & = a \\
          (a * a) * a & = b * a \\
                  & = b        
-      \end{aligned}\]]
+\end{aligned}
+++++
 +
-latexmath:[\mathbf{O_{12}}]**:** This operation is not commutative.
-Its boolean equivalent equation is latexmath:[x * y = \lnot x]. This
-operation is not associative The two equations evaluate to different
-values. See figure [fig:o12_assoc].
+
+latexmath:[\mathbf{O_{12}}]**:**
+This operation is not commutative.
+Its boolean equivalent equation is latexmath:[x * y = \lnot x]. 
+This operation is not associative. The two equations evaluate to different values.
 +
-latexmath:[\[\begin{aligned}
+++++
+\begin{aligned}
          x * y & = \lnot x  \\
-         x * (y * z) & = x * \lnot z \\
+         x * (y * z) & = x * \lnot y \\
                  & = \lnot x \\
          (x * y) * z & = \lnot x * z \\
                  & = x
-      \end{aligned}\]]
+\end{aligned}
+++++
 +
-latexmath:[\mathbf{O_{13}}]**:** This operation is not commutative.
-It’s boolean equivalent equation is
-latexmath:[x * y = \lnot x \lor (x \land y)]. Using calculations
-similar to the other problems we find a set of values that shows this
-operation is not associative. Chose latexmath:[x = a, y = a, z = a].
-See figure [fig:o13_assoc].
+
+latexmath:[\mathbf{O_{13}}]**:**
+This operation is not commutative.
+It’s boolean equivalent equation is latexmath:[x * y = \lnot x \lor (x \land y)].
+Using calculations similar to the other problems we find a set of values that shows this operation is not associative. 
+Choose latexmath:[x = a, y = a, z = a].
 +
-latexmath:[\[\begin{aligned}
+++++
+\begin{aligned}
       a * (a * a) & = a * b \\
                   & = b \\
       (a * a) * a & = b * a \\
                   & = a
-   \end{aligned}\]]
+\end{aligned}
+++++
 +
-latexmath:[\mathbf{O_{14}}]**:** This operation is commutative. Check
-cases 2 and 4. See figure [fig:o14_assoc]. Case 2 is false. So this
-operation is not associative.
+
+latexmath:[\mathbf{O_{14}}]**:**
+This operation is commutative. 
+Check cases 2 and 4. 
+Case 2 is false.
+So this operation is not associative.
 +
-latexmath:[\[\begin{aligned}
-         a * (a * a) & = a * b \\
+++++
+\begin{aligned}
+         a * (a * b) & = a * b \\
                  & = b \\
-         (a * a) * a & = b * b \\
+         (a * a) * b & = b * b \\
                  & = a
-      \end{aligned}\]]
+\end{aligned}
+++++
 +
+
 latexmath:[\mathbf{O_{15}}]**:** This operation is associative since
 it always evaluates to latexmath:[b].
 +
@@ -1195,79 +1279,74 @@ it always evaluates to latexmath:[a].
 Finally we have the following operations are associative:
 latexmath:[O_1], latexmath:[O_3], latexmath:[O_5],
 latexmath:[O_6], latexmath:[O_7], latexmath:[O_9],
-latexmath:[O_15], latexmath:[O_16].
-4.  For which of the operations latexmath:[O_1] to
+latexmath:[O_{15}], latexmath:[O_{16}].
++
+
+.  For which of the operations latexmath:[O_1] to
 latexmath:[O_{16}] is there an identity element?
 +
-_Solution_ We can first rule out all operations that are not commutative.
-This is because we require that latexmath:[x*e=e*x=x]. That leaves
-eight cases. Next we can rule out latexmath:[O_{15}] and
-latexmath:[O_{16}] because the former never returns a latexmath:[b]
-value, and the latter never returns an latexmath:[a] value. Then we
-can rule out latexmath:[O_8] because there is no value of
-latexmath:[y] such that latexmath:[b *_8 y = b]. Likewise, we can
-rule out latexmath:[O_{14}] because there is no value of
-latexmath:[y] such that latexmath:[a *_{14} y = a]. That leaves four
-operations for consideration: latexmath:[O_1, O_6, O_7] and
-latexmath:[O_9]. It will be shown that each of these has an identity
-element.
+
+_Solution_ 
+First We can  rule out all operations that are not commutative.
+This is because we require that latexmath:[x*e=e*x=x].
+That leaves eight cases.
+Next we can rule out latexmath:[O_{15}] and latexmath:[O_{16}] because the former never returns a latexmath:[b] value, and the latter never returns an latexmath:[a] value.
+Then we can rule out latexmath:[O_8] because there is no value of latexmath:[y] such that latexmath:[b *_8 y = b].
+Likewise, we can rule out latexmath:[O_{14}] because there is no value of latexmath:[y] such that latexmath:[a *_{14} y = a].
+That leaves four operations for consideration: latexmath:[O_1, O_6, O_7] and latexmath:[O_9].
+It will be shown that each of these has an identity element.
 +
-The identity element of latexmath:[O_1] is latexmath:[b]. This can
-be shown by noting latexmath:[a *_{1} b = b *_{1} a = a] and
-latexmath:[b *_1 b = b]. The identity element of latexmath:[O_6] is
-latexmath:[a] because latexmath:[a *_6 a = a] and
-latexmath:[b *_6 a = a *_6 b = b]. The identity element of
-latexmath:[O_7] is latexmath:[a]. We can check that
-latexmath:[a *_7 a = a] and latexmath:[b *_7 a = a *_7 b = a]. The
-identity element of latexmath:[O_9] is latexmath:[b].
+
+The identity element of latexmath:[O_1] is latexmath:[b].
+This can be shown by noting latexmath:[a *_{1} b = b *_{1} a = a] and latexmath:[b *_1 b = b].
+The identity element of latexmath:[O_6] is latexmath:[a] because latexmath:[a *_6 a = a] and latexmath:[b *_6 a = a *_6 b = b].
+The identity element of latexmath:[O_7] is latexmath:[a].
+We can check that latexmath:[a *_7 a = a] and latexmath:[b *_7 a = a *_7 b = a].
+The identity element of latexmath:[O_9] is latexmath:[b].
 latexmath:[a *_9 b = b *_9 a = a] and latexmath:[b *_9 b = b].
-(These results are validated using boolean algebra in
-figure [fig:bool_ids].)
+These results are validated using boolean algebra.
 +
-latexmath:[\[\begin{aligned}
+++++
+\begin{aligned}
       O_1&=  x \land y  && \text{Operation 1}    \\
      & = x \land {\top}&& \text{Subst: } e_1 = {\top}\\
-     & = x               && \qed                  \\
+     & = x               && \square                 \\
       O_6& = (\lnot x \land y) \lor (x \land \lnot y)
                          && \text{Operation 6}    \\
      & = (\lnot x \land {\bot}) \lor (x \land \lnot {\bot})
                          && \text{Subst: } e_6 = {\bot}\\
      & = {\bot}\lor (x \land {\top})            \\
-     & = x               && \qed                  \\
+     & = x               && \square                  \\
       O_7& = x \lor y    && \text{Operation 7}    \\
      & = x \lor {\bot}&& \text{Subst: } e_7 = {\bot}\\
-     & = x               && \qed                  \\
+     & = x               && \square                  \\
       O_9& = (\lnot x \land \lnot y) \lor (x \land y)
                          && \text{Operation 9}    \\
      & = (\lnot x \land \lnot {\top}) \lor (x \land {\top})
                          && \text{Subst: } e_9 = {\top}\\
      & = (\lnot x \land {\bot}) \lor x           \\
      & = {\bot}\lor x                           \\
-     & = x               && \qed
-      \end{aligned}\]]
-5.  ProblemFor which of the operations latexmath:[O_1] to
-latexmath:[O_{16}] does every element have an inverse?
+     & = x               && \square
+\end{aligned}
+++++
++
+
+.  For which of the operations latexmath:[O_1] to latexmath:[O_{16}] does every element have an inverse?
 +
 _Solution_ The answer is that only latexmath:[O_6] and latexmath:[O_9]
 provide inverses for every element.
 +
-As we saw in the last problem only 4 operations have an identity:
-latexmath:[O_1], latexmath:[O_6], latexmath:[O_7] and
-latexmath:[O_9] so these are the only four operations we need to
-consider. latexmath:[O_1] does not have an inverse for the value
-latexmath:[a], as there is no value of latexmath:[y] that makes the
-following equation true: latexmath:[a * y = b]. Likewise,
-latexmath:[O_7] does not provide an inverse for the value
-latexmath:[b] as there is no value for latexmath:[y] which makes the
-following equation true: latexmath:[b * y = a].
+As we saw in the last problem only 4 operations have an identity: latexmath:[O_1], latexmath:[O_6], latexmath:[O_7] and latexmath:[O_9].
+So, these are the only four operations we need to consider. 
+latexmath:[O_1] does not have an inverse for the value latexmath:[a], as there is no value of latexmath:[y] that makes the following equation true: latexmath:[a * y = b]. 
+Likewise, latexmath:[O_7] does not provide an inverse for the value latexmath:[b] as there is no value for latexmath:[y] which makes the following equation true: latexmath:[b * y = a].
 +
-The remaining two operations do provide inverses for every element. For
-latexmath:[O_6] we have that latexmath:[a^{-1} = a \And b^{-1} = b].
-For latexmath:[O_9] we have that
-latexmath:[a^{-1} = a \And b^{-1} = b]. In general for these two
-operations we have that latexmath:[x^{-1} = x].
+The remaining two operations do provide inverses for every element. 
+For latexmath:[O_6] we have that latexmath:[a^{-1} = a \text{ and } b^{-1} = b].
+For latexmath:[O_9] we have that latexmath:[a^{-1} = a \text{ and } b^{-1} = b]. 
+In general for these two operations we have that latexmath:[x^{-1} = x].
 
-*D. latexmath:[\quad] Automata: The Algebra of Input/Output Sequences*
+== D. Automata: The Algebra of Input/Output Sequences
 
 Digital computers and related machines proces information which is
 received in the form of input sequences. An _input sequence_ is a finite
@@ -1279,13 +1358,17 @@ are _babbcac_ and _cccabaa_. _Output sequences_ are defined in the same
 way as input sequences. The set of all sequences of symbols in the
 alphabet latexmath:[A] is denoted by latexmath:[A^*].
 
-There is an operation on latexmath:[A^*] called _concatenation_: If
-latexmath:[\mathbf{a}] and latexmath:[\mathbf{b}] are in
-latexmath:[A^*], say latexmath:[\mathbf{a} = a_1 a_2 \ldots a_n] and
-latexmath:[\mathbf{b} = b_1 b_2 \ldots b_m], then
-latexmath:[\[\begin{aligned}
+There is an operation on latexmath:[A^*] called _concatenation_: 
+If latexmath:[\mathbf{a}] and latexmath:[\mathbf{b}] are in latexmath:[A^*], say latexmath:[\mathbf{a} = a_1 a_2 \ldots a_n] and latexmath:[\mathbf{b} = b_1 b_2 \ldots b_m], then
+
+++++
+\begin{aligned}
  \mathbf{ab} & = a_1 a_2
-\ldots a_n b_1 b_2 \ldots b_m \end{aligned}\]] In other words, the
+\ldots a_n b_1 b_2 \ldots b_m 
+\end{aligned}
+++++
+
+In other words, the
 sequence latexmath:[\mathbf{ab}] consists of the two sequences
 latexmath:[\mathbf{a}] and latexmath:[\mathbf{b}] end to end. For
 example, in the alphabet latexmath:[A=\{0,1\}], if
@@ -1299,7 +1382,10 @@ The symbol latexmath:[\lambda] denotes the empty sequence.
 Let latexmath:[\mathbf{a} = a_1 a_2 \ldots a_r], and
 latexmath:[\mathbf{b} = b_1 b_2
       \ldots b_s], and latexmath:[\mathbf{c} = c_1 c_2 \ldots c_t].
-Then we have latexmath:[\[\begin{aligned}
+Then we have
++
+++++
+\begin{aligned}
         (\mathbf{ab})\mathbf{c} 
                    & = (a_1 a_2 \ldots a_r b_1 b_2 \ldots b_s)\mathbf{c}\\
                    & = a_1 a_2 \ldots a_r b_1 b_2 \ldots b_s c_1 c_2 
@@ -1307,8 +1393,10 @@ Then we have latexmath:[\[\begin{aligned}
         \mathbf{a}(\mathbf{bc})
                    & = \mathbf{a}(b_1 b_2 \ldots b_s c_1 c_2 \ldots c_t)\\
                    & = a_1 a_2 \ldots a_r b_1 b_2 \ldots b_s c_1 c_2 
-                   \ldots c_t \qedhere
-      \end{aligned}\]]
+                   \ldots c_t \square
+\end{aligned}
+++++
++
 2.  Explain why the operation is not commutative.
 +
 _Solution_ It is not commutative because commutativity changes the order of
@@ -1325,16 +1413,19 @@ We choose the identity element, latexmath:[e], to be the empty
 sequence latexmath:[\lambda], and again choose
 latexmath:[\mathbf{a} = a_1 a_2 \ldots a_n]. Now we will demonstrate
 that latexmath:[e] is indeed the identity element.
-latexmath:[\[\begin{aligned}
++
+++++
+\begin{aligned}
          \mathbf{a}\lambda & = a_1 a_2 \ldots a_n \lambda \\
                        & = a_1 a_2 \ldots a_n 
-                        && \text{Defn. of \lambda} \\
-               & = \mathbf{a} && \text{Defn. of \mathbf{a}} \\
+                        && \text{Defn. of }\lambda \\
+               & = \mathbf{a} && \text{Defn. of }\mathbf{a} \\
      \lambda\mathbf{a} & = \lambda a_1 a_2 \ldots a_n \\
                        & = a_1 a_2 \ldots a_n 
-                        && \text{Defn. of \lambda} \\
-               & = \mathbf{a} && \text{Defn. of
-                             \mathbf{a}} \qedhere
-      \end{aligned}\]]
+                        && \text{Defn. of }\lambda \\
+               & = \mathbf{a} && \text{Defn. of }
+                             \mathbf{a} \square
+\end{aligned}
+++++
 
 ////
