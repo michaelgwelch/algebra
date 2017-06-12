@@ -1,0 +1,861 @@
+= Chapter 3 Exercises
+Michael Welch <michaelgwelch@gmail.com>
+v2.0 : Converted to asciidoc
+:toc: left
+:stem:
+
+This document contains selected answers to exercises from chapter 3 of A
+Book of Abstract Algebra.
+
+== A.  Examples of Abelian Groups
+
+Prove that each of the following sets, with the indicated operation, is
+an abelian group.
+
+*Instructions* Proceed as in Chapter 2, Exercise B.
+
+.  latexmath:[x * y = x + y + k] (latexmath:[k] is a fixed constant), on the set
+latexmath:[\mathbb{R}{}] of the real numbers.
++
+["lowerroman"]
+.. It is commutative
++
+++++
+\begin{aligned}
+           x * y & = x + y + k \\
+           y * x & = y + x + k \\
+             & = x + y + k && \text{Commute addition} \square
+\end{aligned}
+++++
++
+
+.. It is associative
++
+++++
+\begin{aligned}
+           x * (y * z) & = x * (y + z + k) \\
+               & = x + (y + z + k) + k \\
+               & = x + y + z + 2k \\
+           (x * y) * z & = (x + y + k) * z \\
+               & = (x + y + k) + z + k \\
+               & = x + y + z + 2k \square
+\end{aligned}
+++++
++
+
+..  The identity element can be calculated: 
++
+++++
+\begin{aligned}
+        x * e & = x         \\
+        x * e & = x + e + k \\
+        x & = x + e + k \\
+        e & = -k
+\end{aligned}
+++++
++
+We know by commuativity that latexmath:[x * (-k) = (-k) * x].
+Therefore, latexmath:[-k] is the identity element. 
++
+
+..  We can caluclate the inverse of \$x\$ which we label \$x'\$. 
++
+++++
+\begin{aligned}
+        x * x' & = -k          \\
+        x * x' & = x + x' + k  \\
+           -k  & = x + x' + k  \\
+        x' & = -x - 2k
+\end{aligned}
+++++
++
+
+.  latexmath:[\displaystyle x * y = \frac{xy}{2}], on the set
+latexmath:[\{x \in {\mathbb{R}{}}: x \ne 0\}]
++
+
+["lowerroman"]
+..  Commutative 
++
+++++
+\begin{aligned}
+          x * y & = \frac{xy}{2}         \\
+          y * x & = \frac{yx}{2}         \\
+            & = \frac{xy}{2} \square
+\end{aligned}
+++++
++
+
+..  Associative
++
+++++
+\begin{aligned}
+          x * (y * z) & = x * \frac{yz}{2}   \\
+                  & = \frac{x\displaystyle\frac{yz}{2}}{2} \\
+                  & = \frac{xyz}{4} \\
+          (x * y) * z & = \frac{xy}{2} * z \\
+                  & = \frac{\displaystyle \frac{xy}{2}z}{2} \\
+                  & = \frac{xyz}{4} \square
+\end{aligned}
+++++
++
+..  The following calculation shows that the identity element is 2.
++
+++++
+\begin{aligned}
+           x * e & = x              \\
+           x * e & = \frac{xe}{2}   \\
+           x & = \frac{xe}{2}   \\
+           1 & = \frac{e}{2}    \\
+           e & = 2
+\end{aligned}
+++++
++
+
+..  The following calculation shows that the inverse of \$x\$
+is latexmath:[4/x].
++
+++++
+\begin{aligned}
+           x * x' & = 2             \\
+           x * x' & = \frac{xx'}{2} \\
+           2  & = \frac{xx'}{2} \\
+           4  & = xx'           \\
+           x' & = 4/x    && \text{$x \ne 0$ is given}
+\end{aligned}
+++++
++
+
+.  latexmath:[x * y = x + y + xy], on the set
+latexmath:[\{x \in {\mathbb{R}{}}: x \ne -1\}]
++
+
+["lowerroman"]
+..  Commutative 
++
+++++
+\begin{aligned}
+          x * y & = x + y + xy \\
+          y * x & = y + x + yx \\
+            & = x + y + xy \square
+\end{aligned}
+++++
++
+
+..  Associative 
++
+++++
+\begin{aligned}
+          x * (y * z) & = x * (y + z + yz) \\
+                  & = x + (y + z + yz) + x(y + z + yz) \\
+                  & = x + y + z + yz + xy + xz + xyz\\
+                  & = x + y + xy + xz + yz + xyz \\
+          (x * y) * z & = (x + y + xy) * z \\
+                  & = (x + y + xy) + z + (x + y + xy)z \\
+                  & = x + y + xy + z + xz + yz + xyz \\
+                  & = x + y + xy + xz + yz + xyz \square
+\end{aligned}
+++++
++
+
+..  The following calculation shows the identity element to be 0.
++
+++++
+\begin{aligned}
+           x * e & = x           \\
+           x * e & = x + e + xe  \\
+           x & = x + e + xe  \\
+           0 & =     e + xe  \\
+           0 & =   e(1 + x)  \\
+           e & = 0 && \text{$x\ne-1$ given}
+\end{aligned}
+++++
++
+
+..  The following calculation shows the inverse of latexmath:[x] is
+latexmath:[\displaystyle \frac{-x}{1+x}].
++
+++++
+\begin{aligned}
+           x * x' & = 0            \\
+           x * x' & = x + x' + xx' \\
+            0 & = x + x' + xx' \\
+            0 & = x + x'(1 + x) \\
+           -x & = x'(1+x) \\
+           x'(1+x)& = -x \\
+           x' & = \frac{-x}{1+x} && \text{$x\ne-1$ given}
+\end{aligned}
+++++
++
+
+.  latexmath:[x * y = \displaystyle \frac{x + y}{xy + 1}], on the set
+latexmath:[\{x \in {\mathbb{R}{}}: -1 < x < 1\}].
++
+
+["lowerroman"]
+.. Commutative
++
+++++
+\begin{aligned}
+          x * y & = \frac{x+y}{xy + 1} \\
+          y * x & = \frac{y+x}{yx + 1} \\
+            & = \frac{x+y}{xy + 1} \square
+\end{aligned}
+++++
++
+
+.. Associative
++
+++++
+\begin{aligned}
+          x * (y * z) & = x * \frac{y + z}{yz + 1} \\
+                  & = \frac{x + \displaystyle \frac{y + z}{yz + 1}}
+                  {x\displaystyle \frac{y + z}{yz + 1} + 1} \\
+                  & = \frac{x(yz+1)+y+z}{xy+xz+yz+1} \\
+                  & = \frac{x + y + z + xyz}{xy + xz + yz + 1}
+                  \square
+\end{aligned}
+++++
++
+
+..  The following caluclation shows the identity element to be 0.
++
+++++
+\begin{aligned}
+           x * e & = x \\
+           x * e & = \frac{x + e}{xe + 1} \\
+           x & = \frac{x + e}{xe + 1} \\
+           x + e & = x(xe + 1) \\
+           x + e & = x^2e + x \\
+           e - x^2e & = 0  \\
+           e(1-x^2) & = 0    \\
+           e & = 0  && \text{$-1 < x < 1$ is given}
+\end{aligned}
+++++
++
+
+..  The following caluclation shows the inverse of latexmath:[x] to be
+latexmath:[-x]. 
++
+++++
+\begin{aligned}
+           x * x' & = 0                      \\
+           x * x' & = \frac{x + x'}{xx' + 1} \\
+           0  & = \frac{x + x'}{xx' + 1} \\
+           0  & = x + x' \\
+           x' & = -x
+        \end{aligned}
+++++
+
+
+== B.  Groups on the Set latexmath:[${\mathbb{R}{}}\times {\mathbb{R}{}}$]
++
+The symbol latexmath:[${\mathbb{R}{}}\times {\mathbb{R}{}}$] represents
+the set of all ordered pairs latexmath:[$(x,y)$] of real numbers.
+latexmath:[${\mathbb{R}{}}\times {\mathbb{R}{}}$] may therefore be
+identified with the set of all the points in the plane. Which of the
+following subsets of latexmath:[${\mathbb{R}{}}\times {\mathbb{R}{}}$],
+with the indicated operation, is a group? Which is an abelian group?
++
+*Instructions* Proceed as in the preceding exercise. To find the
+identity element, which in these problems is an ordered pair
+latexmath:[$(e_1, e_2)$] of real numbers, solve the equation
+latexmath:[$(a,b) * (e_1, e_2) = (a,b)$] for latexmath:[$e_1$] and
+latexmath:[$e_2$]. To find the inverse latexmath:[$(a',b')$] of
+latexmath:[$(a,b)$], solve the equation
+latexmath:[$(a,b)*(a',b')=(e_1,e_2)$] for latexmath:[$a'$] and
+latexmath:[$b'$]. [Remember that latexmath:[$(x,y)=(x',y')$] if and only
+if latexmath:[$x=x'$] and latexmath:[$y=y'$].]
+1.  latexmath:[$(a,b)*(c,d)=(ad+bc,bd)$], on the set
+latexmath:[$\{(x,y) \in {\mathbb{R}{}}\times {\mathbb{R}{}}: y \ne 0\}$].
+1.  The operation is commutative.
++
+latexmath:[\[\begin{aligned}
+          (a,b)*(c,d) & = (ad+bc,bd) \\
+          (c,d)*(a,b) & = (cb+da,db) \\
+                  & = (ad+bc,bd) \qedhere
+           \end{aligned}\]]
+2.  The operation is associative.
++
+latexmath:[\[\begin{aligned}
+          (a,b) * ((c,d) * (e,f)) & = (a,b) * (cf+de,df)  \\
+                      & = (adf + b(cf+de), bdf) \\
+                      & = (adf +bcf + bde, bdf) \\
+          ((a,b) * (c,d)) * (e,f) & = (ad+bc,bd) * (e,f)    \\
+                      & = ((ad+bc)f+bde, bdf)   \\
+                      & = (adf+bcf+bde,bdf) \qedhere
+           \end{aligned}\]]
+3.  latexmath:[\[\begin{aligned}
+           (a,b) * (e_1,e_2) & = (a,b)            \\
+           (a,b) * (e_1,e_2) & = (ae_2+be_1,be_2) \\
+               (a,b)     & = (ae_2+be_1,be_2) 
+        \end{aligned}\]]
++
+This implies that latexmath:[$a=ae_2+be_1$] and latexmath:[$b=be_2$]. So
+latexmath:[$e_2=1$] and latexmath:[$e_1=0$]. So the identity element is
+latexmath:[$(0,1)$].
+4.  latexmath:[\[\begin{aligned}
+           (a,b) * (a',b') & = (0,1) \\
+           (a,b) * (a',b') & = (ab'+ba',bb') \\
+         (ab'+ba',bb') & = (0,1) \\
+        \end{aligned}\]]
++
+This implies latexmath:[$ab'+ba'=0$] and latexmath:[$bb'=1$]. So
+latexmath:[$b'=1/b$]. Let’s solve for latexmath:[$a$]:
+latexmath:[\[\begin{aligned}
+           ab'+ba' & = 0         \\
+           a(1/b) + ba' & = 0    \\
+            ba' & = -1(a/b)  \\
+            a' & = -a/b^2
+        \end{aligned}\]] So latexmath:[$(a',b') = (-a/b^2,1/b)$].
+
+== C.  Groups of Subsets of a Set
+
+If latexmath:[$A$] and latexmath:[$B$] are any two sets, their
+_symmetric difference_ is the set latexmath:[$A \ominus B$] defined as
+follows (see figure [fig:symmdif]):
+
+latexmath:[A \ominus B = (A-B) \cup (B-A)]
+
+Note: latexmath:[$A - B$] represents the set obtained by removing from
+latexmath:[$A$] all the elements which are in latexmath:[$B$].
+
+.The shaded area is latexmath:[A \ominus B]
+image:img/symdiff.pdf[The shaded area is latexmath:[$A \ominus B$],align="center"]
+
+It is perfectly clear that latexmath:[$A \ominus B = B \ominus A$];
+hence this operation is commutative. It is also associative, as the
+accompanying pictorial representation suggests: Let the union of
+latexmath:[$A$], latexmath:[$B$], and latexmath:[$C$] be divided into
+seven regions as illustrated.
++
+image:img/symdiff3.pdf[image]
++
+latexmath:[\[\begin{gathered}
+      A \ominus B \text{ consists of the regions 1, 4, 3, and 6.} \\
+      B \ominus C \text{ consists of the regions 2, 3, 4, and 7.} \\
+      A \ominus (B \ominus C) \text{ consists of the regions 1, 3, 5, and 7.}
+      \\
+      (A \ominus B) \ominus C \text{ consists of the regions 1, 3, 5, and 7.} 
+   \end{gathered}\]]
++
+Thus, latexmath:[$A \ominus (B \ominus C) = (A \ominus B) \ominus C$].
++
+If latexmath:[$D$] is a set, then the _power set_ of latexmath:[$D$] is
+the set latexmath:[$P_D$] of all the subsets of latexmath:[$D$]. That
+is,
++
+latexmath:[\[P_D = \{ A : A \subseteq D \}\]]
++
+The operation latexmath:[$\ominus$] is to be regarded as an operation on
+latexmath:[$P_D$].
+1.  Prove that there is an identity element with respect to the
+operation latexmath:[$\ominus$].
++
+The identity element of latexmath:[$\ominus$] is
+latexmath:[$\emptyset$]. latexmath:[\[\begin{aligned}
+      A \ominus \emptyset & = (A - \emptyset) \cup (\emptyset - A) \\
+                          & = A \cup \emptyset \\
+              & = A
+   \end{aligned}\]] By inspection, it’s obvious that
+latexmath:[$\ominus$] is commutative. Therefore, latexmath:[$\emptyset$]
+is the identity element.
+2.  Prove every subset latexmath:[$A$] of latexmath:[$D$] has an inverse
+with respect to latexmath:[$\ominus$], thus showing
+latexmath:[$\langle P_D,\ominus \rangle$] is a group!
++
+The inverse of latexmath:[$A$] is latexmath:[$A$].
+latexmath:[\[\begin{aligned}
+         A \ominus A & = (A - A) \cup (A - A) \\
+                 & = \emptyset \cup \emptyset \\
+             & = \emptyset
+      \end{aligned}\]]
+3.  Let latexmath:[$D$] be the three-element set
+latexmath:[$D = \{a,b,c\}$]. List the elements of latexmath:[$P_D$].
+(For example, one element is latexmath:[$\{a\}$], another is
+latexmath:[$\{a,b\}$] and so on. Do not forget the empty set and the
+whole set latexmath:[$D$].) Then write the operation table for
+latexmath:[$\langle P_D,\ominus \rangle$].
++
+latexmath:[\[P_D = \{ \emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{b,c\}, 
+                  \{a,c\}, \{a,b,c\} \}\]]
++
+....
+
+   
+....
+D.  A Checkerboard Game
++
+image:img/checker.pdf[image]
++
+Our checkerboard has only four squares, numbered 1, 2, 3, and 4. There
+is a single checker on the board, and it has four possible moves:
+1.  Move vertically; that is, move from 1 to 3, or from 3 to 1, or from
+2 to 4, or from 4 to 2.
+2.  Move horizontally; that is, move from 1 to 2 or vice versa, or from
+3 to 4 or vice versa.
+3.  Move diagonally; that is, move from 2 to 3 or vice versa, or move
+from 1 to 4 or vice versa.
+4.  Stay put.
++
+We may consider an operation on the set of these four moves, which
+consists of performing moves successively. For example, if we move
+horizontally and then vertically, we end up with the same result as if
+we had moved diagonally:
++
+latexmath:[\[\begin{gathered}
+      H * V = D
+   \end{gathered}\]]
++
+If we perform two horizontal moves in succession, we end up where we
+started: latexmath:[$H*H=I$]. And so on. If latexmath:[$G=\{V,D,H,I\}$],
+and latexmath:[$*$] is the operation we have just described, write the
+table of latexmath:[$G$].
++
+[cols="^,^,^,^,^",options="header",]
+|=======================================================================
+|latexmath:[$*$] |latexmath:[$I$] |latexmath:[$V$] |latexmath:[$H$]
+|latexmath:[$D$]
+|latexmath:[$I$] |latexmath:[$I$] |latexmath:[$V$] |latexmath:[$H$]
+|latexmath:[$D$]
+
+|latexmath:[$V$] |latexmath:[$V$] |latexmath:[$I$] |latexmath:[$D$]
+|latexmath:[$H$]
+
+|latexmath:[$H$] |latexmath:[$H$] |latexmath:[$D$] |latexmath:[$I$]
+|latexmath:[$V$]
+
+|latexmath:[$D$] |latexmath:[$D$] |latexmath:[$H$] |latexmath:[$V$]
+|latexmath:[$I$]
+|=======================================================================
++
+Granting associativity, explain why latexmath:[$\langle G,* \rangle$] is
+a group.
++
+_Explanation_ latexmath:[$\langle G,* \rangle$] is a group because it
+has an identity element, latexmath:[$I$], and has an inverse for each
+element. We can see that for every element latexmath:[$M \in G$],
+latexmath:[$M * I = I * M = M$]. Also, for every element latexmath:[$M$]
+we have an inverse latexmath:[$M^{-1} = M$].
+E.  A Coin Game
++
+image:img/coingame.pdf[image]
++
+Imagine two coins on a table, at positions latexmath:[$A$] and
+latexmath:[$B$]. In this game there are eight possible moves:
++
+[cols=">,<,^,>,<",]
+|=======================================================================
+|latexmath:[$M_1$]: |Flip over the coin at latexmath:[$A$]. |`   `
+|latexmath:[$M_5$]: |Flip coin at latexmath:[$A$]; then switch.
+
+|latexmath:[$M_2$]: |Flip over the coin at latexmath:[$B$]. |`   `
+|latexmath:[$M_6$]: |Flip coin at latexmath:[$B$]; then switch.
+
+|latexmath:[$M_3$]: |Flip over both coins. |`   ` |latexmath:[$M_7$]:
+|Flip both coins; then switch.
+
+|latexmath:[$M_4$]: |Switch the coins. |`   ` |latexmath:[$I$]: |Do not
+change anything.
+|=======================================================================
++
+We may consider an operation on the set
+latexmath:[$\{I, M_1,\ldots,M_7\}$], which consists of performing any
+two moves in succession. For example, if we switch coins, then flip over
+the coin at latexmath:[$A$], this is the same as first flipping over the
+coin at latexmath:[$B$] then switching:
++
+latexmath:[\[M_4 * M_1 = M_2 * M_4 = M_6\]]
++
+If latexmath:[$G = \{I,M_1,\ldots,M_7\}$] and latexmath:[$*$] is the
+operation we have just described, write the table of
+latexmath:[$\langle G,* \rangle$].
++
+[cols="^,^,^,^,^,^,^,^,^",options="header",]
+|=======================================================================
+|latexmath:[$*$] |latexmath:[$I$] |latexmath:[$M_1$] |latexmath:[$M_2$]
+|latexmath:[$M_3$] |latexmath:[$M_4$] |latexmath:[$M_5$]
+|latexmath:[$M_6$] |latexmath:[$M_7$]
+|latexmath:[$I$] |latexmath:[$I$] |latexmath:[$M_1$] |latexmath:[$M_2$]
+|latexmath:[$M_3$] |latexmath:[$M_4$] |latexmath:[$M_5$]
+|latexmath:[$M_6$] |latexmath:[$M_7$]
+
+|latexmath:[$M_1$] |latexmath:[$M_1$] |latexmath:[$I$]
+|latexmath:[$M_3$] |latexmath:[$M_2$] |latexmath:[$M_5$]
+|latexmath:[$M_4$] |latexmath:[$M_7$] |latexmath:[$M_6$]
+
+|latexmath:[$M_2$] |latexmath:[$M_2$] |latexmath:[$M_3$]
+|latexmath:[$I$] |latexmath:[$M_1$] |latexmath:[$M_6$]
+|latexmath:[$M_7$] |latexmath:[$M_4$] |latexmath:[$M_5$]
+
+|latexmath:[$M_3$] |latexmath:[$M_3$] |latexmath:[$M_2$]
+|latexmath:[$M_1$] |latexmath:[$I$] |latexmath:[$M_7$]
+|latexmath:[$M_6$] |latexmath:[$M_5$] |latexmath:[$M_4$]
+
+|latexmath:[$M_4$] |latexmath:[$M_4$] |latexmath:[$M_6$]
+|latexmath:[$M_5$] |latexmath:[$M_7$] |latexmath:[$I$]
+|latexmath:[$M_2$] |latexmath:[$M_1$] |latexmath:[$M_3$]
+
+|latexmath:[$M_5$] |latexmath:[$M_5$] |latexmath:[$M_7$]
+|latexmath:[$M_4$] |latexmath:[$M_6$] |latexmath:[$M_1$]
+|latexmath:[$M_3$] |latexmath:[$I$] |latexmath:[$M_2$]
+
+|latexmath:[$M_6$] |latexmath:[$M_6$] |latexmath:[$M_4$]
+|latexmath:[$M_7$] |latexmath:[$M_5$] |latexmath:[$M_2$]
+|latexmath:[$I$] |latexmath:[$M_3$] |latexmath:[$M_1$]
+
+|latexmath:[$M_7$] |latexmath:[$M_7$] |latexmath:[$M_5$]
+|latexmath:[$M_6$] |latexmath:[$M_4$] |latexmath:[$M_3$]
+|latexmath:[$M_1$] |latexmath:[$M_2$] |latexmath:[$I$]
+|=======================================================================
++
+Granting associativity, explain why latexmath:[$\langle G,* \rangle$] is
+a group. Is it commutative? If not, show why not.
++
+Solution It is a group because latexmath:[$I$] is an identity element,
+and we can see from the table that every element has an inverse.
+However, the operation is not commutative. There are at least a dozen
+counter-examples, here is but one:
+latexmath:[$M_1*M_7=M_6\ne M_5=M7*M1$].
+F.  Groups in Binary Codes The most basic way of transmitting
+information is to code it into strings of 0s and 1s, such as 0010111,
+1010011, etc. Such strings are called _binary words_, and the number of
+0s and 1s in any binary word is called its _length_. All information may
+be coded in this fashion.
++
+When information is transmitted, it is sometimes received incorrectly.
+One of the most important purposes of coding theory is to find ways of
+_detecting errors_, and _correcting_ errors of transimission.
++
+If a word latexmath:[$\mathbf{a}=a_1 a_2 \cdots a_n$] is sent, but a
+word latexmath:[$\mathbf{b}=b_1 b_2 \cdots b_n$] is received (where the
+latexmath:[$a_i$] and latexmath:[$b_i$] are 0s or 1s), then the _error
+pattern_ is the word latexmath:[$\mathbf{e}=e_1 e_2 \cdots e_n$] where
+latexmath:[\[\begin{gathered}
+      e_i =
+         \begin{cases}
+        0, & \text{if $a_i = b_i$} \\
+        1, & \text{if $1_i \ne b_i$}
+     \end{cases}
+   \end{gathered}\]]
++
+With this motivation, we define an operation of _adding_ words, as
+follows: If latexmath:[$\mathbf{a}$] and latexmath:[$\mathbf{b}$] are
+both of length latexmath:[$l$], we add them according to the rules
+latexmath:[\[\begin{aligned}
+      0 + 0 &= 0   &   1 + 1 & = 0   &   0 + 1 & = 1   &   1 + 1 & = 0
+   \end{aligned}\]]
++
+If latexmath:[$\mathbf{a}$] and latexmath:[$\mathbf{b}$] are both of
+length _n_, we add them by _adding corresponding digits_. That is (let
+us introduce commas for convenience), latexmath:[\[\begin{gathered}
+     (a_1,a_2,\ldots,a_n) + (b_1,b_2,\ldots,b_n) = (a_1+b_1, a_2+b_2,
+     \ldots,a_n+b_n)
+   \end{gathered}\]]
++
+Thus, the sum of latexmath:[$\mathbf{a}$] and latexmath:[$\mathbf{b}$]
+is the error pattern latexmath:[$\mathbf{e}$].
++
+For example,
++
+cc
++
+[cols=">",]
+|========
+|0010110
+|+0011010
+|=0001100
+|========
++
+&
++
+[cols=">",]
+|=========
+|10100111
+|+11110111
+|=01010000
+|=========
++
+The symbol latexmath:[$\mathbb{B}^n$] will designate the set of all the
+binary words of length latexmath:[$n$]. We will prove that the operation
+of word addition has the following properties on
+latexmath:[$\mathbb{B}^n$]:
+1.  It is commutative.
+2.  It is associative.
+3.  There is an identity element for word addition.
+4.  Every word has an inverse under word addition.
++
+First, we verify the commutative law for words of length 1:
+latexmath:[\[\begin{gathered}
+      0+1=1=1=1+1
+   \end{gathered}\]]
++
+*1* Show that latexmath:[$(a_1,a_2,\ldots,a_n) + (b_1,b_2,\ldots,b_n)
+   = (b_1,b_2,\ldots,b_n) + (a_1,a_2,\ldots,a_n)$].
++
+This is easy to show by using the commutativity property of words of
+length 1. latexmath:[\[\begin{aligned}
+              & {\mathrel{\phantom{=}}}(a_1,a_2,\ldots,a_n) + (b_1,b_2,\ldots,b_n) \\
+          & = (a_1+b_1,a_2+b_2,\ldots,a_n+b_n) \\
+          & = (b_1+a_1,b_2+a_2,\ldots,b_n+a_n) \\
+          & = (b_1,b_2,\ldots,b_n) + (a_1,a_2,\ldots,a_n) \qedhere
+      \end{aligned}\]]
++
+*2* To verify the associative law, we first verify it for words of
+length 1: latexmath:[\[\begin{gathered}
+      1 + (1 + 1) = 1 + 0 = 1 = 0 + 1 = (1 + 1) + 1 \\
+      1 + (1 + 0) = 1 + 1 = 0 = 0 + 0 = (1 + 1) + 0
+   \end{gathered}\]]
++
+Check the remaining six cases.
++
+latexmath:[\[\begin{gathered}
+     0 + (0 + 0) = 0 + 0 = 0 = 0 + 0 = (0 + 0) + 0 \\
+     0 + (0 + 1) = 0 + 1 = 1 = 0 + 1 = (0 + 0) + 1 \\
+     0 + (1 + 0) = 0 + 1 = 1 = 1 + 0 = (0 + 1) + 0 \\
+     0 + (1 + 1) = 0 + 0 = 0 = 1 + 1 = (0 + 1) + 1 \\
+         1 + (0 + 0) = 1 + 0 = 1 = 1 + 0 = (1 + 0) + 0 \\
+     1 + (0 + 1) = 1 + 1 = 0 = 1 + 1 = (1 + 0) + 1 \qedhere
+      \end{gathered}\]]
++
+*3* Show that latexmath:[$(a_1,\ldots,a_n)+[(b_1,\ldots,b_n)+
+   (c_1,\ldots,c_n)]=[(a_1,\ldots,a_n)+(b_1,\ldots,b_n)]+(c_1,\ldots,c_n)$].
++
+latexmath:[\[\begin{aligned}
+         & {\mathrel{\phantom{=}}}(a_1,\ldots,a_n)+[(b_1,\ldots,b_n)+(c_1,\ldots,c_n)] \\
+     & = (a_1,\ldots,a_n)+[(b_1+c_1),\ldots,(b_n+c_n)] \\
+     & = [a_1+(b_1+c_1),\ldots,a_n+(b_n+c_n)] \\
+     & = [(a_1+b_1)+c_1,\ldots,(a_n+b_n)+c_n] \\
+     & = [(a_1+b_1),\ldots,(a_n+b_n)]+(c_1,\ldots,c_n)\\
+     & = [(a_1,\ldots,a_n)+(b_1,\ldots,b_n)]+(c_1,\ldots,c_n) \qedhere
+      \end{aligned}\]]
++
+*4* The identity element of latexmath:[$\mathbb{B}^n$], that is, the
+identity element for adding words of length latexmath:[$n$], is:
+latexmath:[${\ensuremath{\mathbf{z}}} = z_1 z_2 \cdots z_n$] where
+latexmath:[$z_i = 0$].
++
+*5* The inverse, with respect to word addition, of any word
+latexmath:[$(a_1,\ldots,a_n)$] is: itself.
++
+*6* Show that latexmath:[$a+b=a-b$] [where latexmath:[$a-b=a+(-b)$]].
+(Well, unfortunately latexmath:[$(-b)$] is not defined. I will assume it
+means latexmath:[$(-b_1,\ldots,-b_n)$] where latexmath:[$-0 = 0$] and
+latexmath:[$-1 = -1$].
++
+First we show it to be true for words of length 1.
+latexmath:[\[\begin{gathered}
+         0 + 0 = 0 = 0 + (-0) = 0 - 0 \\
+     0 + 1 = 1 = 0 + (-1) = 0 - 1 \\
+     1 + 0 = 1 = 1 + (-0) = 1 - 0 \\
+     1 + 1 = 0 = 1 + (-1) = 1 - 1 
+      \end{gathered}\]]
++
+Now we will show for words of length latexmath:[$n$].
+latexmath:[\[\begin{aligned}
+         & {\mathrel{\phantom{=}}}(a_1,\ldots, a_n) + (b_1,\ldots,b_n) \\
+     & = (a_1+b_1,\ldots,a_n+b_n) \\
+     & = (a_1-b_1,\ldots,a_n-b_n) \\
+     & = (a_1,\ldots,a_n) + (-b_1,\ldots,-b_n) \\
+     & = (a_1,\ldots,a_n) - (b_1,\ldots,b_n) \qedhere
+      \end{aligned}\]]
++
+*7* If latexmath:[$a+b=c$], show that latexmath:[$a=b+c$].
++
+The proof is shown in figure [fig:f7proof].
++
+latexmath:[\[\begin{aligned}
+         a + b & = c \\
+     a + (b + b) & = c + b \\
+     a + z & = c + b \\
+     a & = b + c \qed
+      \end{aligned}\]]
+G.  Theory of Coding: Maximum Likelihood Decoding See text pp. 34,35 for
+introductory material.
++
+Let latexmath:[$C_1$] contain the codewords listed in
+table [tab:c1codewords].
++
+.The codewords for latexmath:[$C_1$] of section G.
+[cols="^,^,^",options="header",]
+|=======================================================================
+|latexmath:[$\mathbf{c}$] |latexmath:[$c_1 + c_3$]
+|latexmath:[$c_1 + c_2 + c_3$]
+|00000 |0 |0
+
+|00111 |1 |1
+
+|01001 |0 |1
+
+|01110 |1 |0
+
+|10011 |1 |1
+
+|10100 |0 |0
+
+|11010 |1 |0
+
+|11101 |0 |1
+|=======================================================================
++
+\1. Verify that every codeword latexmath:[$a_1 a_2 a_3 a_4 a_5$] in
+latexmath:[$C_1$] satisifies the following two parity-check equations:
+latexmath:[$a_4=a_1+a_3$]; latexmath:[$a_5=a_1+a_2+a_3$].
++
+This can be verified by inspecting table [tab:c1codewords] where the
+values for the equations are shown for each codeword along with the
+codeword.
++
+\2. Let latexmath:[$C_2$] be the following code in
+latexmath:[$\mathbb{B}^6$]. The first three positions are the
+information positions, and every codeword
+latexmath:[$a_1 a_2 a_3 a_4 a_5 a_6$] satisifies the parity-check
+equations latexmath:[$a_4 = a_2$], latexmath:[$a_5 = a_1 + a_2$] and
+latexmath:[$a_6 = a_1 + a_2 + a_3$].
+a.  List the codewords of latexmath:[$C_2$].
++
+SolutionThe codewords are as follows:
++
+[cols="<",]
+|======
+|000000
+|001001
+|010111
+|011110
+|100011
+|101010
+|110100
+|111101
+|======
+b.  Find the minimum distance of the code latexmath:[$C_2$].
++
+SolutionThe minimum distance is 2.
++
+\3. Design a code in latexmath:[$\mathbb{B}^4$] where the first two
+positions are information positions. Give the parity-check equations,
+list the codewords, and find the minimum distance.
++
+SolutionMy code uses the equations latexmath:[$a_3=a_2$] and
+latexmath:[$a_4 = a_1 + a_2$]. The code words are listed below. The
+minimum distance is 2.
++
+[cols="<",]
+|====
+|0000
+|0111
+|1001
+|1110
+|====
++
+If latexmath:[$\mathbf{a}$] and latexmath:[$\mathbf{b}$] are any two
+words, let
+latexmath:[$d({\ensuremath{\mathbf{a}}},{\ensuremath{\mathbf{b}}})$]
+denote the distance between latexmath:[$\mathbf{a}$] and
+latexmath:[$\mathbf{b}$]. To _decode_ a received word
+latexmath:[$\mathbf{x}$] (which may contain errors of transmission)
+means to find the codeword closes to latexmath:[$\mathbf{x}$], that is,
+the codeword latexmath:[$\mathbf{a}$] such that
+latexmath:[$d({\ensuremath{\mathbf{a}}},{\ensuremath{\mathbf{x}}})$] is
+a minimum. This is called _maximum-likelihood decoding_.
++
+....
+....
++
+\4. Decode the following words in latexmath:[$C_1$]: 11111, 00101,
+11000, 10011, 10001, and 10111.
++
+SolutionThe decoded words are 11101, 00111, 11010, 10011, 10011, and
+(10011 or 00111).
++
+You may have noticed that the last two words in part 4 had ambigous
+decodings [welch: I can’t find a second decoding for the second to last
+codeword in part 4]: for example, 10111 may be decoded as either 10011
+or 00111. This situation is clearly unsatisfactory. We shall see next
+what conditions will ensure that every word can be decoded into only
+_one_ possible codeword.
++
+In the remaining exercises, let latexmath:[$C$] be a code in
+latexmath:[$\mathbb{B}^n$], let latexmath:[$m$] denote the minimum
+distance in latexmath:[$C$], and let latexmath:[$\mathbf{a}$] and
+latexmath:[$\mathbf{b}$] denote codewords in latexmath:[$C$].
++
+\5. Prove that it is possible to detect up to latexmath:[$m-1$] errors.
+(That is, if there are errors of transmission in latexmath:[$m-1$] or
+fewer positions of a codeword, it can always be determined that the
+received word is incorrect.)
++
+Let latexmath:[$w$] be the sent word and latexmath:[$w'$] be the
+received word. Let latexmath:[$n$] be the number of errors in
+latexmath:[$w'$] such that latexmath:[$0 < n <= m - 1$]. Assume that
+latexmath:[$w'$] is not determined to be incorrect. This means that it
+was accepted as a codeword. However, the distance between
+latexmath:[$w$] and latexmath:[$w'$] is latexmath:[$n$] and
+latexmath:[$n < m$]. Therefore, the minimum distance of latexmath:[$C$]
+is latexmath:[$n$]. But this contradicts the definition of our code that
+states that latexmath:[$m$] is the minimum distance. Therefore, our
+assumption is proved incorect, and the word latexmath:[$w'$] will be
+detected to have errors.
++
+\6. By the _sphere of radius_ latexmath:[$k$] about a codeword
+latexmath:[$\mathbf{a}$] we mean the set of all words in
+latexmath:[$\mathbb{B}^n$] whose distance from latexmath:[$\mathbf{a}$]
+is no greater than latexmath:[$k$]. This set is denoted by
+latexmath:[$S_k(\mathbf{a})$]; hence
++
+latexmath:[\[S_k(\mathbf{a}) = \{\mathbf{x} : d(\mathbf{a},\mathbf{x}) \le k \}\]]
++
+If latexmath:[$t=\frac{1}{2}(m-1)$], prove that any two spheres of
+radius latexmath:[$t$], say latexmath:[$S_t(\mathbf{a})$] and
+latexmath:[$S_t(\mathbf{b})$], have no elements in common. [Hint: Assume
+there is a word latexmath:[$\mathbf{x}$] such that
+latexmath:[$\mathbf{x} \in S_t(\mathbf{a})$] and
+latexmath:[$\mathbf{x}\in S_t(
+      \mathbf{b})$]. Using the definitions of latexmath:[$t$] and
+latexmath:[$m$], show that this is impossible.]
++
+Assume there is a word latexmath:[$\mathbf{x}$] such that
+latexmath:[$\mathbf{x} \in
+         S_t(\mathbf{a})$] and
+latexmath:[$\mathbf{x}\in S_t( \mathbf{b})$]. This means that we need to
+flip at most latexmath:[$\frac{1}{2}(m-1)$] bits to transform
+latexmath:[$\mathbf{a}$] into latexmath:[$\mathbf{x}$], and at most
+latexmath:[$\frac{1}{2}(m-1)$] bits to tranform latexmath:[$\mathbf{x}$]
+into latexmath:[$\mathbf{b}$]. This implies that we need to flip at most
+latexmath:[$\frac{1}{2}(m-1) \times 2 = (m-1)$] bits to transform
+latexmath:[$\mathbf{a}$] into latexmath:[$\mathbf{b}$]. However, we know
+that the minimum distance between any two codewords is latexmath:[$m$].
+Therefore, our assumption that latexmath:[$\mathbf{x}$] exists is false
+and there is no common element between latexmath:[$S_t(\mathbf{a})$] and
+latexmath:[$S_t(\mathbf{b})$].
++
+\7. Deduce from part 6 that if there are latexmath:[$t$] or fewer errors
+of transmission in a codeword, the received word will be decoded
+correctly.
++
+By design we have a sphere of radius latexmath:[$t$] around every
+codeword. We know from part 6 that no two spheres have elements in
+common. If there are latexmath:[$t$] or fewer errors in a transmission,
+then the received word will be in the sphere surrounding the sent word
+and no other sphere. Therefore, we can correctly decode the received
+word to be the codeword in the sphere.
++
+\8. Let latexmath:[$C_2$] be the code described in part 2. Using the
+results of parts 5 and 7, explain why two errors in any codeword can
+always be detected, and why one error in any codeword can always be
+corrected.
++
+SolutionI claim that the author is incorrect in his claims. It is
+readily apparent that the minimum distance of latexmath:[$C_2$] is 2.
+This can be seen by looking at the first two elements 000000 and 001001.
+Since two errors in transmission can change 000000 into 001001, the
+claim that 2 errors can always be detected is false. Likewise, one error
+in transmission can transform 000000 into 001000. This error can be
+detected but it cannot be corrected. Therefore, both claims are false.
++
+Now, let’s assume for the sake of this exercise that the minimum
+distance of latexmath:[$C_2$] is 3. Then the author’s claims follow
+directly from parts 5-7. If there are 2 errors or less they will always
+be detected because by part 5 it’s impossible for the received word to
+be a codeword. If there is 1 error or less then the received word will
+fall within a sphere of radius of latexmath:[$t=1/2(3-1)=1$] and
+therefore be readily correctable (by parts 6 and 7).
