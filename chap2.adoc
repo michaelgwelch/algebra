@@ -1288,6 +1288,9 @@ latexmath:[O_{16}] is there an identity element?
 
 _Solution_ 
 First We can  rule out all operations that are not commutative.
++
+TODO I think this logic is flawed. Just because an operation is not commutative doesn't mean that it's not commutative for \$e\$
++
 This is because we require that latexmath:[x*e=e*x=x].
 That leaves eight cases.
 Next we can rule out latexmath:[O_{15}] and latexmath:[O_{16}] because the former never returns a latexmath:[b] value, and the latter never returns an latexmath:[a] value.
