@@ -1668,9 +1668,6 @@ then the received word will be in the sphere surrounding the sent word
 and no other sphere. Therefore, we can correctly decode the received
 word to be the codeword in the sphere.</p>
 </div>
-<div class="paragraph">
-<p>Plus more stuff</p>
-</div>
 </li>
 <li>
 <p>Let \(C_2\) be the code described in part 2. Using the
@@ -1679,28 +1676,36 @@ always be detected, and why one error in any codeword can always be
 corrected.</p>
 <div class="paragraph">
 <p>I claim that the author has made a mistake in this exercise and that the
-claims are false for the codewords in Part 2. It is
-readily apparent that the minimum distance of \(C_2\) is no larger than
-2. This can be seen by looking at the first two elements 000000 and 001001.
-Since two errors in transmission can change 000000 into 001001, the
-claim that 2 errors can always be detected is false.
-Likewise, one error
-in transmission can transform 000000 into 001000. This error can be
-detected but it cannot be corrected.
+claims are false for the codewords in Part 2.
+It is readily apparent that the minimum distance of \(C_2\) is no larger than 2.
+This can be seen by looking at the first two elements 000000 and 001001.
+Since two errors in transmission can change 000000 into 001001, the claim that 2 errors can always be detected is false.
+Likewise, one error in transmission can transform 000000 into 001000.
+This error can be detected but it cannot be corrected.
 Therefore, both claims are false.</p>
 </div>
 <div class="paragraph">
-<p>+</p>
+<p>Now, let’s assume for the sake of this exercise that the minimum distance of \(C_2\) is 3.
+Then the author’s claims follow directly from parts 5-7.
+If there are 2 errors or less they will always be detected because by part 5 it’s impossible for the received word to be a codeword.
+If there is 1 error or less then the received word will fall within a sphere of radius of \(t=1/2(3-1)=1\) and therefore be readily correctable (by parts 6 and 7).</p>
 </div>
 <div class="paragraph">
-<p>Now, let’s assume for the sake of this exercise that the minimum
-distance of \(C_2\) is 3. Then the author’s claims follow
-directly from parts 5-7. If there are 2 errors or less they will always
-be detected because by part 5 it’s impossible for the received word to
-be a codeword. If there is 1 error or less then the received word will
-fall within a sphere of radius of \(t=1/2(3-1)=1\) and
-therefore be readily correctable (by parts 6 and 7).</p>
+<p>One way to achieve these results is to use the following parity-check equations
+instead of the ones used in Part 2:
+\$a_4 = a_1 + a_2\$, \$a_5 = a_1 + a_3\$, \$a_6 = a_2 + a_3\$. Then the codewords
+are</p>
 </div>
+\begin{gathered}
+000000 \\
+001011 \\
+010101 \\
+011110 \\
+100110 \\
+101101 \\
+110011 \\
+111000
+\end{gathered}
 </li>
 </ol>
 </div>
@@ -1710,7 +1715,7 @@ therefore be readily correctable (by parts 6 and 7).</p>
 <div id="footer">
 <div id="footer-text">
 Version 2.0<br>
-Last updated 2017-06-13 11:18:10 CDT
+Last updated 2017-06-13 13:04:12 CDT
 </div>
 </div>
 <script type="text/x-mathjax-config">
