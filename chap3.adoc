@@ -1047,22 +1047,27 @@ then the received word will be in the sphere surrounding the sent word
 and no other sphere. Therefore, we can correctly decode the received
 word to be the codeword in the sphere.
 +
+Plus more stuff
++
+
 // 8
 . Let latexmath:[C_2] be the code described in part 2. Using the
 results of parts 5 and 7, explain why two errors in any codeword can
 always be detected, and why one error in any codeword can always be
 corrected.
-
-TODO Fix this. Certainly we can use parity checks to help us with this.
 +
-I claim that the author is incorrect in his claims. It is
-readily apparent that the minimum distance of latexmath:[C_2] is 2.
-This can be seen by looking at the first two elements 000000 and 001001.
+I claim that the author has made a mistake in this exercise and that the
+claims are false for the codewords in Part 2. It is
+readily apparent that the minimum distance of latexmath:[C_2] is no larger than
+2. This can be seen by looking at the first two elements 000000 and 001001.
 Since two errors in transmission can change 000000 into 001001, the
-claim that 2 errors can always be detected is false. Likewise, one error
+claim that 2 errors can always be detected is false.
+Likewise, one error
 in transmission can transform 000000 into 001000. This error can be
-detected but it cannot be corrected. Therefore, both claims are false.
+detected but it cannot be corrected. 
+Therefore, both claims are false.
 +
+
 Now, let’s assume for the sake of this exercise that the minimum
 distance of latexmath:[C_2] is 3. Then the author’s claims follow
 directly from parts 5-7. If there are 2 errors or less they will always
@@ -1071,3 +1076,25 @@ be a codeword. If there is 1 error or less then the received word will
 fall within a sphere of radius of latexmath:[t=1/2(3-1)=1] and
 therefore be readily correctable (by parts 6 and 7).
 ////
++
+
+One way to achieve these results is to use the following parity-check equations
+instead of the ones used in Part 2:
+\$a_4 = a_1 + a_2\$, \$a_5 = a_1 + a_3\$, \$a_6 = a_2 + a_3\$. Then the codewords
+are 
++
+
+++++
+\begin{gathered}
+000000 \\
+001011 \\
+010101 \\
+011110 \\
+100110 \\
+101101 \\
+110011 \\
+111000
+\end{gathered}
+++++
++
+The end

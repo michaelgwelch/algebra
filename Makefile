@@ -31,4 +31,4 @@ docs/%.html : %.adoc
 	asciidoctor $< -o $@
 clean:
 	latexmk -CA
-	rm -rf docs
+	rm docs/*.html
