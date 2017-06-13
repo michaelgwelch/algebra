@@ -437,6 +437,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_d_a_checkerboard_game">D.  A Checkerboard Game</a></li>
 <li><a href="#_e_a_coin_game">E.  A Coin Game</a></li>
 <li><a href="#_f_groups_in_binary_codes">F.  Groups in Binary Codes</a></li>
+<li><a href="#_g_theory_of_coding_maximum_likelihood_decoding">G.  Theory of Coding: Maximum Likelihood Decoding</a></li>
 </ul>
 </div>
 </div>
@@ -766,9 +767,9 @@ follows:</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="img/symdiff.pdf" alt="symdiff">
+<img src="img/symdiff.pdf" alt="Symmetric Difference" width="200" height="200">
 </div>
-<div class="title">Figure 1. The shaded area is \(A \ominus B\)</div>
+<div class="title">The shaded area is \(A \ominus B\)</div>
 </div>
 <div class="paragraph">
 <p>It is perfectly clear that \(A \ominus B = B \ominus A\);
@@ -779,7 +780,7 @@ seven regions as illustrated.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="img/symdiff3.pdf" alt="symdiff3">
+<img src="img/symdiff3.pdf" alt="Symmetric Difference Of 3" width="200" height="200">
 </div>
 </div>
 \begin{gathered}
@@ -880,7 +881,7 @@ whole set \(D\).) Then write the operation table for
 <div class="sectionbody">
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="img/checker.pdf" alt="image">
+<img src="img/checker.pdf" alt="4 Square Checkerboard" width="200" height="200">
 </div>
 </div>
 <div class="paragraph">
@@ -991,7 +992,7 @@ we have an inverse \(M^{-1} = M\).</p>
 <div class="sectionbody">
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="img/coingame.pdf" alt="image">
+<img src="img/coingame.pdf" alt="image" width="200" height="200">
 </div>
 </div>
 <div class="paragraph">
@@ -1204,7 +1205,7 @@ pattern</em> is the word \(\mathbf{e}=e_1 e_2 \cdots e_n\) where</p>
       e_i =
          \begin{cases}
         0, & \text{if $a_i = b_i$} \\
-        1, & \text{if $1_i \ne b_i$}
+        1, & \text{if $a_i \ne b_i$}
      \end{cases}
 \end{gathered}
 <div class="paragraph">
@@ -1233,33 +1234,21 @@ is the error pattern \(\mathbf{e}\).</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 100%;">
+<col style="width: 50%;">
+<col style="width: 50%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock">0010110</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock">+0011010</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock">=0001100</p></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock">10100111</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock">+11110111</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock">=01010000</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\begin{array}{rr}
+   &amp; 0010110 \\
+ + &amp; 0011010 \\\hline
+ = &amp; 0001100
+\end{array}</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\begin{array}{rr}
+   &amp; 10100111 \\
+ + &amp; 11110111 \\\hline
+ = &amp; 01010000
+\end{array}</p></td>
 </tr>
 </tbody>
 </table>
@@ -1267,142 +1256,192 @@ is the error pattern \(\mathbf{e}\).</p>
 <p>The symbol \(\mathbb{B}^n\) will designate the set of all the
 binary words of length \(n\). We will prove that the operation
 of word addition has the following properties on
-\(\mathbb{B}^n\):
-1.  It is commutative.
-2.  It is associative.
-3.  There is an identity element for word addition.
-4.  Every word has an inverse under word addition.</p>
+\(\mathbb{B}^n\):</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>It is commutative.</p>
+</li>
+<li>
+<p>It is associative.</p>
+</li>
+<li>
+<p>There is an identity element for word addition.</p>
+</li>
+<li>
+<p>Every word has an inverse under word addition.</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p>+
-First, we verify the commutative law for words of length 1:
-\(\[\begin{gathered}
+<p>First, we verify the commutative law for words of length 1:</p>
+</div>
+\begin{gathered}
       0+1=1=1=1+1
-   \end{gathered}]\)</p>
-</div>
+\end{gathered}
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Show that \((a_1,a_2,\ldots,a_n) + (b_1,b_2,\ldots,b_n)
+= (b_1,b_2,\ldots,b_n) + (a_1,a_2,\ldots,a_n)\).</p>
 <div class="paragraph">
-<p>+
-<strong>1</strong> Show that \((a_1,a_2,\ldots,a_n) + (b_1,b_2,\ldots,b_n)
-   = (b_1,b_2,\ldots,b_n) + (a_1,a_2,\ldots,a_n)\).</p>
+<p>This is easy to show by using the commutativity property of words of
+length 1.</p>
 </div>
-<div class="paragraph">
-<p>+
-This is easy to show by using the commutativity property of words of
-length 1. \(\[\begin{aligned}
-              &amp; {\mathrel{\phantom{=}}}(a_1,a_2,\ldots,a_n) + (b_1,b_2,\ldots,b_n) \\
-          &amp; = (a_1+b_1,a_2+b_2,\ldots,a_n+b_n) \\
-          &amp; = (b_1+a_1,b_2+a_2,\ldots,b_n+a_n) \\
-          &amp; = (b_1,b_2,\ldots,b_n) + (a_1,a_2,\ldots,a_n) \qedhere
-      \end{aligned}]\)</p>
-</div>
-<div class="paragraph">
-<p>+
-<strong>2</strong> To verify the associative law, we first verify it for words of
-length 1: \(\[\begin{gathered}
+\begin{aligned}
+              & {\mathrel{\phantom{=}}}(a_1,a_2,\ldots,a_n) + (b_1,b_2,\ldots,b_n) \\
+          & = (a_1+b_1,a_2+b_2,\ldots,a_n+b_n) \\
+          & = (b_1+a_1,b_2+a_2,\ldots,b_n+a_n) \\
+          & = (b_1,b_2,\ldots,b_n) + (a_1,a_2,\ldots,a_n) \quad\square
+\end{aligned}
+</li>
+<li>
+<p>To verify the associative law, we first verify it for words of
+length 1:</p>
+\begin{gathered}
       1 + (1 + 1) = 1 + 0 = 1 = 0 + 1 = (1 + 1) + 1 \\
       1 + (1 + 0) = 1 + 1 = 0 = 0 + 0 = (1 + 1) + 0
-   \end{gathered}]\)</p>
-</div>
+\end{gathered}
 <div class="paragraph">
-<p>+
-Check the remaining six cases.</p>
+<p>Check the remaining six cases.</p>
 </div>
-<div class="paragraph">
-<p>+
-\(\[\begin{gathered}
+\begin{gathered}
      0 + (0 + 0) = 0 + 0 = 0 = 0 + 0 = (0 + 0) + 0 \\
      0 + (0 + 1) = 0 + 1 = 1 = 0 + 1 = (0 + 0) + 1 \\
      0 + (1 + 0) = 0 + 1 = 1 = 1 + 0 = (0 + 1) + 0 \\
      0 + (1 + 1) = 0 + 0 = 0 = 1 + 1 = (0 + 1) + 1 \\
-         1 + (0 + 0) = 1 + 0 = 1 = 1 + 0 = (1 + 0) + 0 \\
-     1 + (0 + 1) = 1 + 1 = 0 = 1 + 1 = (1 + 0) + 1 \qedhere
-      \end{gathered}]\)</p>
-</div>
-<div class="paragraph">
-<p>+
-<strong>3</strong> Show that \((a_1,\ldots,a_n)[(b_1,\ldots,b_n)
-   (c_1,\ldots,c_n)\)=[(a_1,\ldots,a_n)(b_1,\ldots,b_n)](c_1,\ldots,c_n)].</p>
-</div>
-<div class="paragraph">
-<p>+
-\(\[\begin{aligned}
-         &amp; {\mathrel{\phantom{=}}}(a_1,\ldots,a_n)[(b_1,\ldots,b_n)(c_1,\ldots,c_n)\) \\
-     &amp; = (a_1,\ldots,a_n)[(b_1+c_1),\ldots,(b_n+c_n)] \\
-     &amp; = [a_1(b_1+c_1),\ldots,a_n+(b_n+c_n)] \\
-     &amp; = [(a_1+b_1)c_1,\ldots,(a_n+b_n)+c_n] \\
-     &amp; = [(a_1+b_1),\ldots,(a_n+b_n)](c_1,\ldots,c_n)\\
-     &amp; = [(a_1,\ldots,a_n)(b_1,\ldots,b_n)](c_1,\ldots,c_n) \qedhere
-      \end{aligned}\]]</p>
-</div>
-<div class="paragraph">
-<p>+
-<strong>4</strong> The identity element of \(\mathbb{B}^n\), that is, the
+     1 + (0 + 0) = 1 + 0 = 1 = 1 + 0 = (1 + 0) + 0 \\
+     1 + (0 + 1) = 1 + 1 = 0 = 1 + 1 = (1 + 0) + 1
+\end{gathered}
+</li>
+<li>
+<p>Show that \((a_1,\ldots,a_n) + [(b_1,\ldots,b_n) +
+(c_1,\ldots,c_n)]=[(a_1,\ldots,a_n) + (b_1,\ldots,b_n)] + (c_1,\ldots,c_n)\).</p>
+\begin{aligned}
+         & {\mathrel{\phantom{=}}}(a_1,\ldots,a_n)+[(b_1,\ldots,b_n)+(c_1,\ldots,c_n)] \\
+     & = (a_1,\ldots,a_n)+[(b_1+c_1),\ldots,(b_n+c_n)] \\
+     & = [a_1+(b_1+c_1),\ldots,a_n+(b_n+c_n)] \\
+     & = [(a_1+b_1)+c_1,\ldots,(a_n+b_n)+c_n] \\
+     & = [(a_1+b_1),\ldots,(a_n+b_n)]+(c_1,\ldots,c_n)\\
+     & = [(a_1,\ldots,a_n)+(b_1,\ldots,b_n)]+(c_1,\ldots,c_n)
+\end{aligned}
+</li>
+<li>
+<p>The identity element of \(\mathbb{B}^n\), that is, the
 identity element for adding words of length \(n\), is:
-\({\ensuremath{\mathbf{z}}} = z_1 z_2 \cdots z_n\) where
+\(\mathbf{z} = z_1 z_2 \cdots z_n\) where
 \(z_i = 0\).</p>
-</div>
 <div class="paragraph">
-<p>+
-<strong>5</strong> The inverse, with respect to word addition, of any word
+<p>Trivially true.</p>
+</div>
+</li>
+<li>
+<p>The inverse, with respect to word addition, of any word
 \((a_1,\ldots,a_n)\) is: itself.</p>
-</div>
 <div class="paragraph">
-<p>+
-<strong>6</strong> Show that \(a+b=a-b\) [where \(a-b=a+(-b)\)].
+<p>Trivially true</p>
+</div>
+</li>
+<li>
+<p>Show that \(a+b=a-b\) [where \(a-b=a+(-b)\)].
 (Well, unfortunately \((-b)\) is not defined. I will assume it
 means \((-b_1,\ldots,-b_n)\) where \(-0 = 0\) and
 \(-1 = -1\).</p>
-</div>
 <div class="paragraph">
-<p>+
-First we show it to be true for words of length 1.
-\(\[\begin{gathered}
-         0 + 0 = 0 = 0 + (-0) = 0 - 0 \\
+<p>First we show it to be true for words of length 1.</p>
+</div>
+\begin{gathered}
+     0 + 0 = 0 = 0 + (-0) = 0 - 0 \\
      0 + 1 = 1 = 0 + (-1) = 0 - 1 \\
      1 + 0 = 1 = 1 + (-0) = 1 - 0 \\
      1 + 1 = 0 = 1 + (-1) = 1 - 1
-      \end{gathered}]\)</p>
+\end{gathered}
+<div class="paragraph">
+<p>Now we will show for words of length \(n\).</p>
+</div>
+\begin{aligned}
+         & {\mathrel{\phantom{=}}}(a_1,\ldots, a_n) + (b_1,\ldots,b_n) \\
+     & = (a_1+b_1,\ldots,a_n+b_n) \\
+     & = (a_1-b_1,\ldots,a_n-b_n) \\
+     & = (a_1,\ldots,a_n) + (-b_1,\ldots,-b_n) \\
+     & = (a_1,\ldots,a_n) - (b_1,\ldots,b_n)
+\end{aligned}
+</li>
+<li>
+<p>If \(a+b=c\), show that \(a=b+c\).</p>
+<div class="paragraph">
+<p>Proof:</p>
+</div>
+\begin{aligned}
+         a + b & = c \\
+     a + (b + b) & = c + b \\
+     a + z & = c + b \\
+     a & = b + c
+\end{aligned}
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_g_theory_of_coding_maximum_likelihood_decoding">G.  Theory of Coding: Maximum Likelihood Decoding</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We continue the discussion started in Exercise F:
+Recall that \(\mathbb{B}^n\) designates the set of all binary words of length \$n\$.
+By a <em>code</em> we mean a subset of \(\mathbb{B}^n\).
+For example, below is a code \(\mathbb{B}^5\).
+The code, which we shall call \$C_1\$, consists of the following binary words of length 5.</p>
+</div>
+\begin{gathered}
+00000 \\
+00111 \\
+01001 \\
+01110 \\
+10011 \\
+10100 \\
+11010 \\
+11101
+\end{gathered}
+<div class="paragraph">
+<p>Note that there are 32 possible words of length 5, but only eight of them are in the code \$C_1\$.
+These eight words are called <em>codewords</em>; the remaining words of \(\mathbb{B}^5\) are note codewords.
+Only codewords are transmitted.
+If a word is received which is not a codeword, it is clear that there has been an <em>error of transmission</em>.
+In a well-designed code, it is unlikely that an error in transmitting a codeword  will produce another codeword (if that were to happen, the error would be be detected).
+Moreover, in a good code it should be fairly easy  to locate errors and correct them.
+These ideas are made precise in the discussion which follows.</p>
 </div>
 <div class="paragraph">
-<p>+
-Now we will show for words of length \(n\).
-\(\[\begin{aligned}
-         &amp; {\mathrel{\phantom{=}}}(a_1,\ldots, a_n) + (b_1,\ldots,b_n) \\
-     &amp; = (a_1+b_1,\ldots,a_n+b_n) \\
-     &amp; = (a_1-b_1,\ldots,a_n-b_n) \\
-     &amp; = (a_1,\ldots,a_n) + (-b_1,\ldots,-b_n) \\
-     &amp; = (a_1,\ldots,a_n) - (b_1,\ldots,b_n) \qedhere
-      \end{aligned}]\)</p>
+<p>The <em>weight</em> of a binary word is the number of 1s in the word: for example, \$11011\$ has weight 4.
+The <em>distance</em> between two binary words is the number of positions in which the words differ.
+Thus, the distance between \$11011\$ and \$01001\$ is 2 (since thse words differ only in their first and fourth positions).
+The <em>minimum distance</em> in a code is the smallest distance among all the distances between paris of codewords.
+For the code \$C_1\$ above, pairwise comparison of the words show that the minimum distance is 2.
+What this means is that <em>at least two</em> errors of transmission are needed in order to transform a codeword into another codeword;
+single errors will change a codeword into a <em>non</em>codeword, and the error will therefore be detected.
+In more desirable codes (for example, the so-called Hamming code), the minimum distance is 3, so any one or two errors are <em>always</em> detected,
+and only three errors in a single word (a very unlikely occurrence) might go undetected.</p>
 </div>
 <div class="paragraph">
-<p>+
-<strong>7</strong> If \(a+b=c\), show that \(a=b+c\).</p>
+<p>In practice, a code is constructed as follows:
+in every codeword, certain positions are <em>information positions</em>, and the remaining positions are <em>redundancy positions</em>.
+For instance, in our code \$C_1\$ the first three positions of every codeword are the information positions:
+if you look at the eight codewords (and confine your attention only to the first three digits in each word),
+you will see that every three-digit sequence of 0s and 1s is there namely,</p>
+</div>
+\begin{gathered}
+ 000 & 001 & 010 & 011 & 100 & 101 & 110 & 111
+\end{gathered}
+<div class="paragraph">
+<p>The numbers in the fourth and fifth positions of every codeword satisfy <em>parity-check equations</em>.</p>
 </div>
 <div class="paragraph">
-<p>+
-The proof is shown in figure [fig:f7proof].</p>
-</div>
-<div class="paragraph">
-<p>+
-\(\[\begin{aligned}
-         a + b &amp; = c \\
-     a + (b + b) &amp; = c + b \\
-     a + z &amp; = c + b \\
-     a &amp; = b + c \qed
-      \end{aligned}]\)
-G.  Theory of Coding: Maximum Likelihood Decoding See text pp. 34,35 for
-introductory material.</p>
-</div>
-<div class="paragraph">
-<p>+
-Let \(C_1\) contain the codewords listed in
-table [tab:c1codewords].</p>
-</div>
-<div class="paragraph">
-<p>+
-.The codewords for \(C_1\) of section G.</p>
+<p>Let \(C_1\) contain the codewords listed here.</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
+<caption class="title">The codewords for \(C_1\) of section G.</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -1458,126 +1497,93 @@ table [tab:c1codewords].</p>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>+
-\1. Verify that every codeword \(a_1 a_2 a_3 a_4 a_5\) in
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Verify that every codeword \(a_1 a_2 a_3 a_4 a_5\) in
 \(C_1\) satisifies the following two parity-check equations:
 \(a_4=a_1+a_3\); \(a_5=a_1+a_2+a_3\).</p>
-</div>
 <div class="paragraph">
-<p>+
-This can be verified by inspecting table [tab:c1codewords] where the
+<p>This can be verified by inspecting table above where the
 values for the equations are shown for each codeword along with the
 codeword.</p>
 </div>
-<div class="paragraph">
-<p>+
-\2. Let \(C_2\) be the following code in
+</li>
+<li>
+<p>Let \(C_2\) be the following code in
 \(\mathbb{B}^6\). The first three positions are the
 information positions, and every codeword
 \(a_1 a_2 a_3 a_4 a_5 a_6\) satisifies the parity-check
 equations \(a_4 = a_2\), \(a_5 = a_1 + a_2\) and
-\(a_6 = a_1 + a_2 + a_3\).
-a.  List the codewords of \(C_2\).</p>
-</div>
-<div class="paragraph">
-<p>+
-SolutionThe codewords are as follows:</p>
-</div>
-<div class="paragraph">
-<p>+</p>
-</div>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">000000</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">001001</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">010111</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">011110</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">100011</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">101010</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">110100</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">111101</p></td>
-</tr>
-</tbody>
-</table>
+\(a_6 = a_1 + a_2 + a_3\).</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
+<p>List the codewords of \(C_2\).</p>
+<div class="paragraph">
+<p>The codewords are as follows:</p>
+</div>
+\begin{gathered}
+000000 \\
+001001 \\
+010111 \\
+011110 \\
+100011 \\
+101010 \\
+110100 \\
+111101
+\end{gathered}
+</li>
+<li>
 <p>Find the minimum distance of the code \(C_2\).</p>
 <div class="paragraph">
-<p>SolutionThe minimum distance is 2.</p>
+<p>The minimum distance is 2.</p>
 </div>
-<div class="paragraph">
-<p>\3. Design a code in \(\mathbb{B}^4\) where the first two
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Design a code in \(\mathbb{B}^4\) where the first two
 positions are information positions. Give the parity-check equations,
 list the codewords, and find the minimum distance.</p>
-</div>
 <div class="paragraph">
-<p>SolutionMy code uses the equations \(a_3=a_2\) and
+<p>My code uses the equations \(a_3=a_2\) and
 \(a_4 = a_1 + a_2\). The code words are listed below. The
 minimum distance is 2.</p>
 </div>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0000</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0111</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1001</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1110</p></td>
-</tr>
-</tbody>
-</table>
+\begin{gathered}
+0000 \\
+0111 \\
+1001 \\
+1110
+\end{gathered}
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p>If \(\mathbf{a}\) and \(\mathbf{b}\) are any two
 words, let
-\(d({\ensuremath{\mathbf{a}}},{\ensuremath{\mathbf{b}}})\)
+\(d(\mathbf{a},\mathbf{b})\)
 denote the distance between \(\mathbf{a}\) and
 \(\mathbf{b}\). To <em>decode</em> a received word
 \(\mathbf{x}\) (which may contain errors of transmission)
-means to find the codeword closes to \(\mathbf{x}\), that is,
+means to find the codeword closest to \(\mathbf{x}\), that is,
 the codeword \(\mathbf{a}\) such that
-\(d({\ensuremath{\mathbf{a}}},{\ensuremath{\mathbf{x}}})\) is
+\(d(\mathbf{a},\mathbf{x})\) is
 a minimum. This is called <em>maximum-likelihood decoding</em>.</p>
 </div>
-<div class="literalblock">
-<div class="content">
-<pre></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>\4. Decode the following words in \(C_1\): 11111, 00101,
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p>Decode the following words in \(C_1\): 11111, 00101,
 11000, 10011, 10001, and 10111.</p>
-</div>
 <div class="paragraph">
-<p>SolutionThe decoded words are 11101, 00111, 11010, 10011, 10011, and
+<p>The decoded words are 11101, 00111, 11010, 10011, 10011, and
 (10011 or 00111).</p>
+</div>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p>You may have noticed that the last two words in part 4 had ambigous
@@ -1593,12 +1599,13 @@ what conditions will ensure that every word can be decoded into only
 distance in \(C\), and let \(\mathbf{a}\) and
 \(\mathbf{b}\) denote codewords in \(C\).</p>
 </div>
-<div class="paragraph">
-<p>\5. Prove that it is possible to detect up to \(m-1\) errors.
+<div class="olist arabic">
+<ol class="arabic" start="5">
+<li>
+<p>Prove that it is possible to detect up to \(m-1\) errors.
 (That is, if there are errors of transmission in \(m-1\) or
 fewer positions of a codeword, it can always be determined that the
 received word is incorrect.)</p>
-</div>
 <div class="paragraph">
 <p>Let \(w\) be the sent word and \(w'\) be the
 received word. Let \(n\) be the number of errors in
@@ -1612,16 +1619,16 @@ states that \(m\) is the minimum distance. Therefore, our
 assumption is proved incorect, and the word \(w'\) will be
 detected to have errors.</p>
 </div>
-<div class="paragraph">
-<p>\6. By the <em>sphere of radius</em> \(k\) about a codeword
+</li>
+<li>
+<p>By the <em>sphere of radius</em> \(k\) about a codeword
 \(\mathbf{a}\) we mean the set of all words in
 \(\mathbb{B}^n\) whose distance from \(\mathbf{a}\)
 is no greater than \(k\). This set is denoted by
 \(S_k(\mathbf{a})\); hence</p>
-</div>
-<div class="paragraph">
-<p>\(\[S_k(\mathbf{a}) = \{\mathbf{x} : d(\mathbf{a},\mathbf{x}) \le k \}]\)</p>
-</div>
+\begin{gathered}
+    S_k(\mathbf{a}) = \{ \mathbf{x} : d(\mathbf{a},\mathbf{x}) \le k \}
+\end{gathered}
 <div class="paragraph">
 <p>If \(t=\frac{1}{2}(m-1)\), prove that any two spheres of
 radius \(t\), say \(S_t(\mathbf{a})\) and
@@ -1648,11 +1655,11 @@ Therefore, our assumption that \(\mathbf{x}\) exists is false
 and there is no common element between \(S_t(\mathbf{a})\) and
 \(S_t(\mathbf{b})\).</p>
 </div>
-<div class="paragraph">
-<p>\7. Deduce from part 6 that if there are \(t\) or fewer errors
+</li>
+<li>
+<p>Deduce from part 6 that if there are \(t\) or fewer errors
 of transmission in a codeword, the received word will be decoded
 correctly.</p>
-</div>
 <div class="paragraph">
 <p>By design we have a sphere of radius \(t\) around every
 codeword. We know from part 6 that no two spheres have elements in
@@ -1661,14 +1668,21 @@ then the received word will be in the sphere surrounding the sent word
 and no other sphere. Therefore, we can correctly decode the received
 word to be the codeword in the sphere.</p>
 </div>
-<div class="paragraph">
-<p>\8. Let \(C_2\) be the code described in part 2. Using the
+</li>
+<li>
+<p>Let \(C_2\) be the code described in part 2. Using the
 results of parts 5 and 7, explain why two errors in any codeword can
 always be detected, and why one error in any codeword can always be
 corrected.</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p>SolutionI claim that the author is incorrect in his claims. It is
+<p>TODO Fix this. Certainly we can use parity checks to help us with this.</p>
+</div>
+<div class="paragraph">
+<p>+
+I claim that the author is incorrect in his claims. It is
 readily apparent that the minimum distance of \(C_2\) is 2.
 This can be seen by looking at the first two elements 000000 and 001001.
 Since two errors in transmission can change 000000 into 001001, the
@@ -1677,7 +1691,8 @@ in transmission can transform 000000 into 001000. This error can be
 detected but it cannot be corrected. Therefore, both claims are false.</p>
 </div>
 <div class="paragraph">
-<p>Now, let’s assume for the sake of this exercise that the minimum
+<p>+
+Now, let’s assume for the sake of this exercise that the minimum
 distance of \(C_2\) is 3. Then the author’s claims follow
 directly from parts 5-7. If there are 2 errors or less they will always
 be detected because by part 5 it’s impossible for the received word to
@@ -1685,16 +1700,13 @@ be a codeword. If there is 1 error or less then the received word will
 fall within a sphere of radius of \(t=1/2(3-1)=1\) and
 therefore be readily correctable (by parts 6 and 7).</p>
 </div>
-</li>
-</ol>
-</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 2.0<br>
-Last updated 2017-06-12 16:33:08 CDT
+Last updated 2017-06-12 22:51:58 CDT
 </div>
 </div>
 <script type="text/x-mathjax-config">

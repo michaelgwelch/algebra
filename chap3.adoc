@@ -3,6 +3,8 @@ Michael Welch <michaelgwelch@gmail.com>
 v2.0 : Converted to asciidoc
 :toc: left
 :stem:
+:figure-caption!:
+:table-caption!:
 
 This document contains selected answers to exercises from chapter 3 of A
 Book of Abstract Algebra.
@@ -344,7 +346,7 @@ Note: latexmath:[A - B] represents the set obtained by removing from
 latexmath:[A] all the elements which are in latexmath:[B].
 
 .The shaded area is latexmath:[A \ominus B]
-image::img/symdiff.pdf[align="center"]
+image::img/symdiff.pdf[Symmetric Difference,200,200,align="center"]
 
 It is perfectly clear that latexmath:[A \ominus B = B \ominus A];
 hence this operation is commutative. It is also associative, as the
@@ -352,7 +354,7 @@ accompanying pictorial representation suggests: Let the union of
 latexmath:[A], latexmath:[B], and latexmath:[C] be divided into
 seven regions as illustrated.
 
-image::img/symdiff3.pdf[align="center"]
+image::img/symdiff3.pdf[Symmetric Difference Of 3,200,200,align="center"]
 
 ++++
 \begin{gathered}
@@ -452,7 +454,7 @@ latexmath:[\langle P_D,\ominus \rangle].
 == D.  A Checkerboard Game
 
 
-image::img/checker.pdf[image,align="center"]
+image::img/checker.pdf[4 Square Checkerboard,200,200,align="center"]
 
 Our checkerboard has only four squares, numbered 1, 2, 3, and 4. There
 is a single checker on the board, and it has four possible moves:
@@ -510,7 +512,7 @@ we have an inverse latexmath:[M^{-1} = M].
 
 == E.  A Coin Game
 
-image::img/coingame.pdf[image,align="center"]
+image::img/coingame.pdf[image,200,200,align="center"]
 
 Imagine two coins on a table, at positions latexmath:[A] and
 latexmath:[B]. In this game there are eight possible moves:
@@ -622,7 +624,7 @@ pattern_ is the word latexmath:[\mathbf{e}=e_1 e_2 \cdots e_n] where
       e_i =
          \begin{cases}
         0, & \text{if $a_i = b_i$} \\
-        1, & \text{if $1_i \ne b_i$}
+        1, & \text{if $a_i \ne b_i$}
      \end{cases}
 \end{gathered}
 ++++
@@ -653,120 +655,214 @@ is the error pattern latexmath:[\mathbf{e}].
 
 For example,
 
-[cols=">",]
-|========
-|0010110
-|+0011010
-|=0001100
-|========
+[cols="^,^"]
+|====
+|
+\begin{array}{rr}
+   & 0010110 \\
+ + & 0011010 \\\hline
+ = & 0001100
+\end{array}
 
-[cols=">",]
-|=========
-|10100111
-|+11110111
-|=01010000
-|=========
+| 
+\begin{array}{rr}
+   & 10100111 \\
+ + & 11110111 \\\hline
+ = & 01010000
+\end{array}
+|====
 
 The symbol latexmath:[\mathbb{B}^n] will designate the set of all the
 binary words of length latexmath:[n]. We will prove that the operation
 of word addition has the following properties on
 latexmath:[\mathbb{B}^n]:
-1.  It is commutative.
-2.  It is associative.
-3.  There is an identity element for word addition.
-4.  Every word has an inverse under word addition.
-+
+
+.  It is commutative.
+.  It is associative.
+.  There is an identity element for word addition.
+.  Every word has an inverse under word addition.
+
+
 First, we verify the commutative law for words of length 1:
-latexmath:[\[\begin{gathered}
+
+++++
+\begin{gathered}
       0+1=1=1=1+1
-   \end{gathered}\]]
-+
-*1* Show that latexmath:[(a_1,a_2,\ldots,a_n) + (b_1,b_2,\ldots,b_n)
+\end{gathered}
+++++
+
+// 1
+. Show that latexmath:[(a_1,a_2,\ldots,a_n) + (b_1,b_2,\ldots,b_n)
    = (b_1,b_2,\ldots,b_n) + (a_1,a_2,\ldots,a_n)].
 +
 This is easy to show by using the commutativity property of words of
-length 1. latexmath:[\[\begin{aligned}
+length 1. 
++
+++++
+\begin{aligned}
               & {\mathrel{\phantom{=}}}(a_1,a_2,\ldots,a_n) + (b_1,b_2,\ldots,b_n) \\
           & = (a_1+b_1,a_2+b_2,\ldots,a_n+b_n) \\
           & = (b_1+a_1,b_2+a_2,\ldots,b_n+a_n) \\
-          & = (b_1,b_2,\ldots,b_n) + (a_1,a_2,\ldots,a_n) \qedhere
-      \end{aligned}\]]
+          & = (b_1,b_2,\ldots,b_n) + (a_1,a_2,\ldots,a_n) \quad\square
+\end{aligned}
+++++
 +
-*2* To verify the associative law, we first verify it for words of
-length 1: latexmath:[\[\begin{gathered}
+
+// 2
+. To verify the associative law, we first verify it for words of
+length 1:
++
+++++
+\begin{gathered}
       1 + (1 + 1) = 1 + 0 = 1 = 0 + 1 = (1 + 1) + 1 \\
       1 + (1 + 0) = 1 + 1 = 0 = 0 + 0 = (1 + 1) + 0
-   \end{gathered}\]]
+\end{gathered}
+++++
 +
 Check the remaining six cases.
 +
-latexmath:[\[\begin{gathered}
+++++
+\begin{gathered}
      0 + (0 + 0) = 0 + 0 = 0 = 0 + 0 = (0 + 0) + 0 \\
      0 + (0 + 1) = 0 + 1 = 1 = 0 + 1 = (0 + 0) + 1 \\
      0 + (1 + 0) = 0 + 1 = 1 = 1 + 0 = (0 + 1) + 0 \\
      0 + (1 + 1) = 0 + 0 = 0 = 1 + 1 = (0 + 1) + 1 \\
-         1 + (0 + 0) = 1 + 0 = 1 = 1 + 0 = (1 + 0) + 0 \\
-     1 + (0 + 1) = 1 + 1 = 0 = 1 + 1 = (1 + 0) + 1 \qedhere
-      \end{gathered}\]]
+     1 + (0 + 0) = 1 + 0 = 1 = 1 + 0 = (1 + 0) + 0 \\
+     1 + (0 + 1) = 1 + 1 = 0 = 1 + 1 = (1 + 0) + 1 
+\end{gathered}
+++++
 +
-*3* Show that latexmath:[(a_1,\ldots,a_n)+[(b_1,\ldots,b_n)+
-   (c_1,\ldots,c_n)]=[(a_1,\ldots,a_n)+(b_1,\ldots,b_n)]+(c_1,\ldots,c_n)].
+
+// 3
+. Show that latexmath:[(a_1,\ldots,a_n) + [(b_1,\ldots,b_n) + 
+   (c_1,\ldots,c_n)\]=[(a_1,\ldots,a_n) + (b_1,\ldots,b_n)\] + (c_1,\ldots,c_n)].
 +
-latexmath:[\[\begin{aligned}
+++++
+\begin{aligned}
          & {\mathrel{\phantom{=}}}(a_1,\ldots,a_n)+[(b_1,\ldots,b_n)+(c_1,\ldots,c_n)] \\
      & = (a_1,\ldots,a_n)+[(b_1+c_1),\ldots,(b_n+c_n)] \\
      & = [a_1+(b_1+c_1),\ldots,a_n+(b_n+c_n)] \\
      & = [(a_1+b_1)+c_1,\ldots,(a_n+b_n)+c_n] \\
      & = [(a_1+b_1),\ldots,(a_n+b_n)]+(c_1,\ldots,c_n)\\
-     & = [(a_1,\ldots,a_n)+(b_1,\ldots,b_n)]+(c_1,\ldots,c_n) \qedhere
-      \end{aligned}\]]
+     & = [(a_1,\ldots,a_n)+(b_1,\ldots,b_n)]+(c_1,\ldots,c_n) 
+\end{aligned}
+++++
 +
-*4* The identity element of latexmath:[\mathbb{B}^n], that is, the
+
+// 4
+. The identity element of latexmath:[\mathbb{B}^n], that is, the
 identity element for adding words of length latexmath:[n], is:
-latexmath:[{\ensuremath{\mathbf{z}}} = z_1 z_2 \cdots z_n] where
+latexmath:[\mathbf{z} = z_1 z_2 \cdots z_n] where
 latexmath:[z_i = 0].
 +
-*5* The inverse, with respect to word addition, of any word
+Trivially true.
++
+
+// 5
+. The inverse, with respect to word addition, of any word
 latexmath:[(a_1,\ldots,a_n)] is: itself.
 +
-*6* Show that latexmath:[a+b=a-b] [where latexmath:[a-b=a+(-b)]].
+Trivially true
++
+
+// 6
+. Show that latexmath:[a+b=a-b] [where latexmath:[a-b=a+(-b)]].
 (Well, unfortunately latexmath:[(-b)] is not defined. I will assume it
 means latexmath:[(-b_1,\ldots,-b_n)] where latexmath:[-0 = 0] and
 latexmath:[-1 = -1].
 +
 First we show it to be true for words of length 1.
-latexmath:[\[\begin{gathered}
-         0 + 0 = 0 = 0 + (-0) = 0 - 0 \\
++
+++++
+\begin{gathered}
+     0 + 0 = 0 = 0 + (-0) = 0 - 0 \\
      0 + 1 = 1 = 0 + (-1) = 0 - 1 \\
      1 + 0 = 1 = 1 + (-0) = 1 - 0 \\
      1 + 1 = 0 = 1 + (-1) = 1 - 1 
-      \end{gathered}\]]
+\end{gathered}
+++++
 +
 Now we will show for words of length latexmath:[n].
-latexmath:[\[\begin{aligned}
++
+++++
+\begin{aligned}
          & {\mathrel{\phantom{=}}}(a_1,\ldots, a_n) + (b_1,\ldots,b_n) \\
      & = (a_1+b_1,\ldots,a_n+b_n) \\
      & = (a_1-b_1,\ldots,a_n-b_n) \\
      & = (a_1,\ldots,a_n) + (-b_1,\ldots,-b_n) \\
-     & = (a_1,\ldots,a_n) - (b_1,\ldots,b_n) \qedhere
-      \end{aligned}\]]
+     & = (a_1,\ldots,a_n) - (b_1,\ldots,b_n) 
+\end{aligned}
+++++
 +
-*7* If latexmath:[a+b=c], show that latexmath:[a=b+c].
+
+// 7
+. If latexmath:[a+b=c], show that latexmath:[a=b+c].
 +
-The proof is shown in figure [fig:f7proof].
+Proof:
 +
-latexmath:[\[\begin{aligned}
+++++
+\begin{aligned}
          a + b & = c \\
      a + (b + b) & = c + b \\
      a + z & = c + b \\
-     a & = b + c \qed
-      \end{aligned}\]]
-G.  Theory of Coding: Maximum Likelihood Decoding See text pp. 34,35 for
-introductory material.
-+
-Let latexmath:[C_1] contain the codewords listed in
-table [tab:c1codewords].
-+
+     a & = b + c 
+\end{aligned}
+++++
+     
+== G.  Theory of Coding: Maximum Likelihood Decoding 
+We continue the discussion started in Exercise F:
+Recall that latexmath:[\mathbb{B}^n] designates the set of all binary words of length \$n\$.
+By a _code_ we mean a subset of latexmath:[\mathbb{B}^n].
+For example, below is a code latexmath:[\mathbb{B}^5].
+The code, which we shall call \$C_1\$, consists of the following binary words of length 5.
+
+++++
+\begin{gathered}
+00000 \\
+00111 \\
+01001 \\
+01110 \\
+10011 \\
+10100 \\
+11010 \\
+11101
+\end{gathered}
+++++
+
+Note that there are 32 possible words of length 5, but only eight of them are in the code \$C_1\$.
+These eight words are called _codewords_; the remaining words of latexmath:[\mathbb{B}^5] are note codewords.
+Only codewords are transmitted.
+If a word is received which is not a codeword, it is clear that there has been an _error of transmission_.
+In a well-designed code, it is unlikely that an error in transmitting a codeword  will produce another codeword (if that were to happen, the error would be be detected).
+Moreover, in a good code it should be fairly easy  to locate errors and correct them.
+These ideas are made precise in the discussion which follows.
+
+The _weight_ of a binary word is the number of 1s in the word: for example, \$11011\$ has weight 4.
+The _distance_ between two binary words is the number of positions in which the words differ.
+Thus, the distance between \$11011\$ and \$01001\$ is 2 (since thse words differ only in their first and fourth positions).
+The _minimum distance_ in a code is the smallest distance among all the distances between paris of codewords.
+For the code \$C_1\$ above, pairwise comparison of the words show that the minimum distance is 2.
+What this means is that _at least two_ errors of transmission are needed in order to transform a codeword into another codeword;
+single errors will change a codeword into a __non__codeword, and the error will therefore be detected.
+In more desirable codes (for example, the so-called Hamming code), the minimum distance is 3, so any one or two errors are _always_ detected, 
+and only three errors in a single word (a very unlikely occurrence) might go undetected.
+
+In practice, a code is constructed as follows:
+in every codeword, certain positions are _information positions_, and the remaining positions are _redundancy positions_.
+For instance, in our code \$C_1\$ the first three positions of every codeword are the information positions:
+if you look at the eight codewords (and confine your attention only to the first three digits in each word),
+you will see that every three-digit sequence of 0s and 1s is there namely,
+
+++++
+\begin{gathered}
+ 000 & 001 & 010 & 011 & 100 & 101 & 110 & 111
+\end{gathered}
+++++
+
+The numbers in the fourth and fifth positions of every codeword satisfy _parity-check equations_.
+
+Let latexmath:[C_1] contain the codewords listed here.
+
 .The codewords for latexmath:[C_1] of section G.
 [cols="^,^,^",options="header",]
 |=======================================================================
@@ -788,89 +884,102 @@ table [tab:c1codewords].
 
 |11101 |0 |1
 |=======================================================================
-+
-\1. Verify that every codeword latexmath:[a_1 a_2 a_3 a_4 a_5] in
+
+// 1
+. Verify that every codeword latexmath:[a_1 a_2 a_3 a_4 a_5] in
 latexmath:[C_1] satisifies the following two parity-check equations:
 latexmath:[a_4=a_1+a_3]; latexmath:[a_5=a_1+a_2+a_3].
 +
-This can be verified by inspecting table [tab:c1codewords] where the
+This can be verified by inspecting table above where the
 values for the equations are shown for each codeword along with the
 codeword.
 +
-\2. Let latexmath:[C_2] be the following code in
+
+// 2
+. Let latexmath:[C_2] be the following code in
 latexmath:[\mathbb{B}^6]. The first three positions are the
 information positions, and every codeword
 latexmath:[a_1 a_2 a_3 a_4 a_5 a_6] satisifies the parity-check
 equations latexmath:[a_4 = a_2], latexmath:[a_5 = a_1 + a_2] and
 latexmath:[a_6 = a_1 + a_2 + a_3].
-a.  List the codewords of latexmath:[C_2].
 +
-SolutionThe codewords are as follows:
+
+// 2a
+..  List the codewords of latexmath:[C_2].
 +
-[cols="<",]
-|======
-|000000
-|001001
-|010111
-|011110
-|100011
-|101010
-|110100
-|111101
-|======
-b.  Find the minimum distance of the code latexmath:[C_2].
+The codewords are as follows:
 +
-SolutionThe minimum distance is 2.
+++++
+\begin{gathered}
+000000 \\
+001001 \\
+010111 \\
+011110 \\
+100011 \\
+101010 \\
+110100 \\
+111101
+\end{gathered}
+++++
 +
-\3. Design a code in latexmath:[\mathbb{B}^4] where the first two
+
+// 2b
+..  Find the minimum distance of the code latexmath:[C_2].
++
+The minimum distance is 2.
++
+
+// 3
+. Design a code in latexmath:[\mathbb{B}^4] where the first two
 positions are information positions. Give the parity-check equations,
 list the codewords, and find the minimum distance.
 +
-SolutionMy code uses the equations latexmath:[a_3=a_2] and
+My code uses the equations latexmath:[a_3=a_2] and
 latexmath:[a_4 = a_1 + a_2]. The code words are listed below. The
 minimum distance is 2.
 +
-[cols="<",]
-|====
-|0000
-|0111
-|1001
-|1110
-|====
-+
+++++
+\begin{gathered}
+0000 \\
+0111 \\
+1001 \\
+1110
+\end{gathered}
+++++
+
 If latexmath:[\mathbf{a}] and latexmath:[\mathbf{b}] are any two
 words, let
-latexmath:[d({\ensuremath{\mathbf{a}}},{\ensuremath{\mathbf{b}}})]
+latexmath:[d(\mathbf{a},\mathbf{b})]
 denote the distance between latexmath:[\mathbf{a}] and
 latexmath:[\mathbf{b}]. To _decode_ a received word
 latexmath:[\mathbf{x}] (which may contain errors of transmission)
-means to find the codeword closes to latexmath:[\mathbf{x}], that is,
+means to find the codeword closest to latexmath:[\mathbf{x}], that is,
 the codeword latexmath:[\mathbf{a}] such that
-latexmath:[d({\ensuremath{\mathbf{a}}},{\ensuremath{\mathbf{x}}})] is
+latexmath:[d(\mathbf{a},\mathbf{x})] is
 a minimum. This is called _maximum-likelihood decoding_.
-+
-....
-....
-+
-\4. Decode the following words in latexmath:[C_1]: 11111, 00101,
+
+[start=4]
+. Decode the following words in latexmath:[C_1]: 11111, 00101,
 11000, 10011, 10001, and 10111.
 +
-SolutionThe decoded words are 11101, 00111, 11010, 10011, 10011, and
+The decoded words are 11101, 00111, 11010, 10011, 10011, and
 (10011 or 00111).
-+
+
+
 You may have noticed that the last two words in part 4 had ambigous
 decodings [welch: I can’t find a second decoding for the second to last
 codeword in part 4]: for example, 10111 may be decoded as either 10011
 or 00111. This situation is clearly unsatisfactory. We shall see next
 what conditions will ensure that every word can be decoded into only
 _one_ possible codeword.
-+
+
 In the remaining exercises, let latexmath:[C] be a code in
 latexmath:[\mathbb{B}^n], let latexmath:[m] denote the minimum
 distance in latexmath:[C], and let latexmath:[\mathbf{a}] and
 latexmath:[\mathbf{b}] denote codewords in latexmath:[C].
-+
-\5. Prove that it is possible to detect up to latexmath:[m-1] errors.
+
+[start=5]
+. Prove that it is possible to detect up to latexmath:[m-1] errors.
 (That is, if there are errors of transmission in latexmath:[m-1] or
 fewer positions of a codeword, it can always be determined that the
 received word is incorrect.)
@@ -887,13 +996,19 @@ states that latexmath:[m] is the minimum distance. Therefore, our
 assumption is proved incorect, and the word latexmath:[w'] will be
 detected to have errors.
 +
-\6. By the _sphere of radius_ latexmath:[k] about a codeword
+
+// 6
+. By the _sphere of radius_ latexmath:[k] about a codeword
 latexmath:[\mathbf{a}] we mean the set of all words in
 latexmath:[\mathbb{B}^n] whose distance from latexmath:[\mathbf{a}]
 is no greater than latexmath:[k]. This set is denoted by
 latexmath:[S_k(\mathbf{a})]; hence
 +
-latexmath:[\[S_k(\mathbf{a}) = \{\mathbf{x} : d(\mathbf{a},\mathbf{x}) \le k \}\]]
+++++
+\begin{gathered}
+    S_k(\mathbf{a}) = \{ \mathbf{x} : d(\mathbf{a},\mathbf{x}) \le k \}
+\end{gathered}
+++++
 +
 If latexmath:[t=\frac{1}{2}(m-1)], prove that any two spheres of
 radius latexmath:[t], say latexmath:[S_t(\mathbf{a})] and
@@ -919,7 +1034,9 @@ Therefore, our assumption that latexmath:[\mathbf{x}] exists is false
 and there is no common element between latexmath:[S_t(\mathbf{a})] and
 latexmath:[S_t(\mathbf{b})].
 +
-\7. Deduce from part 6 that if there are latexmath:[t] or fewer errors
+
+// 7
+. Deduce from part 6 that if there are latexmath:[t] or fewer errors
 of transmission in a codeword, the received word will be decoded
 correctly.
 +
@@ -930,12 +1047,15 @@ then the received word will be in the sphere surrounding the sent word
 and no other sphere. Therefore, we can correctly decode the received
 word to be the codeword in the sphere.
 +
-\8. Let latexmath:[C_2] be the code described in part 2. Using the
+// 8
+. Let latexmath:[C_2] be the code described in part 2. Using the
 results of parts 5 and 7, explain why two errors in any codeword can
 always be detected, and why one error in any codeword can always be
 corrected.
+
+TODO Fix this. Certainly we can use parity checks to help us with this.
 +
-SolutionI claim that the author is incorrect in his claims. It is
+I claim that the author is incorrect in his claims. It is
 readily apparent that the minimum distance of latexmath:[C_2] is 2.
 This can be seen by looking at the first two elements 000000 and 001001.
 Since two errors in transmission can change 000000 into 001001, the
@@ -950,3 +1070,4 @@ be detected because by part 5 it’s impossible for the received word to
 be a codeword. If there is 1 error or less then the received word will
 fall within a sphere of radius of latexmath:[t=1/2(3-1)=1] and
 therefore be readily correctable (by parts 6 and 7).
+////
