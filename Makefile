@@ -10,7 +10,9 @@ inkscape=/Applications/Inkscape.app/Contents/Resources/bin/inkscape
 INKOPTS=-D -z --file=$< --export-pdf=$@
 INKOPTS_LATEX=$(INKOPTS) --export-latex
 
-.PHONY: all
+.PHONY: all html
+
+html: docs/index.html docs/chap2.html docs/chap3.html
 
 all: chap2.pdf chap3.pdf chap4.pdf chap5.pdf chap6.pdf chap7.pdf chap8.pdf\
 	chap9.pdf chap10.pdf chap11.pdf ref.pdf
@@ -24,5 +26,9 @@ all: chap2.pdf chap3.pdf chap4.pdf chap5.pdf chap6.pdf chap7.pdf chap8.pdf\
 %.pdf : %.tex
 	latexmk -pdf -pdflatex="pdflatex -interactive=nonstopmode" \
 		-use-make $<
+
+docs/%.html : %.adoc
+	asciidoctor $< -o $@
 clean:
 	latexmk -CA
+	rm -rf docs

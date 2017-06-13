@@ -432,8 +432,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_a_examples_of_abelian_groups">A.  Examples of Abelian Groups</a></li>
-<li><a href="#_b_groups_on_the_set_mathbb_r_times_mathbb_r">B.  Groups on the Set \(${\mathbb{R}{}}\times {\mathbb{R}{}}$\)</a></li>
+<li><a href="#_b_groups_on_the_set_mathbb_r_times_mathbb_r">B.  Groups on the Set \(\mathbb{R}{}\times \mathbb{R}{}\)</a></li>
 <li><a href="#_c_groups_of_subsets_of_a_set">C.  Groups of Subsets of a Set</a></li>
+<li><a href="#_d_a_checkerboard_game">D.  A Checkerboard Game</a></li>
+<li><a href="#_e_a_coin_game">E.  A Coin Game</a></li>
+<li><a href="#_f_groups_in_binary_codes">F.  Groups in Binary Codes</a></li>
 </ul>
 </div>
 </div>
@@ -664,78 +667,85 @@ is \(4/x\).</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_b_groups_on_the_set_mathbb_r_times_mathbb_r">B.  Groups on the Set \(${\mathbb{R}{}}\times {\mathbb{R}{}}$\)</h2>
+<h2 id="_b_groups_on_the_set_mathbb_r_times_mathbb_r">B.  Groups on the Set \(\mathbb{R}{}\times \mathbb{R}{}\)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>+
-The symbol \(${\mathbb{R}{}}\times {\mathbb{R}{}}$\) represents
-the set of all ordered pairs \($(x,y)$\) of real numbers.
-\(${\mathbb{R}{}}\times {\mathbb{R}{}}$\) may therefore be
-identified with the set of all the points in the plane. Which of the
-following subsets of \(${\mathbb{R}{}}\times {\mathbb{R}{}}$\),
-with the indicated operation, is a group? Which is an abelian group?</p>
+<p>The symbol \(\mathbb{R}{}\times \mathbb{R}{}\) represents the set of all ordered pairs \((x,y)\) of real numbers.
+\(\mathbb{R}{}\times \mathbb{R}{}\) may therefore be identified with the set of all the points in the plane.
+Which of the following subsets of \(\mathbb{R}{}\times \mathbb{R}{}\), with the indicated operation, is a group? Which is an abelian group?</p>
 </div>
 <div class="paragraph">
-<p>+
-<strong>Instructions</strong> Proceed as in the preceding exercise. To find the
-identity element, which in these problems is an ordered pair
-\($(e_1, e_2)$\) of real numbers, solve the equation
-\($(a,b) * (e_1, e_2) = (a,b)$\) for \($e_1$\) and
-\($e_2$\). To find the inverse \($(a',b')$\) of
-\($(a,b)$\), solve the equation
-\($(a,b)*(a',b')=(e_1,e_2)$\) for \($a'$\) and
-\($b'$\). [Remember that \($(x,y)=(x',y')$\) if and only
-if \($x=x'$\) and \($y=y'$\).]
-1.  \($(a,b)*(c,d)=(ad+bc,bd)$\), on the set
-\($\{(x,y) \in {\mathbb{R}{}}\times {\mathbb{R}{}}: y \ne 0\}$\).
-1.  The operation is commutative.</p>
+<p><strong>Instructions</strong> Proceed as in the preceding exercise.
+To find the identity element, which in these problems is an ordered pair \((e_1, e_2)\) of real numbers, solve the equation
+\((a,b) * (e_1, e_2) = (a,b)\) for \(e_1\) and \(e_2\).
+To find the inverse \((a',b')\) of \((a,b)\), solve the equation \((a,b)*(a',b')=(e_1,e_2)\) for \(a'\) and \(b'\).
+[Remember that \((x,y)=(x',y')\) if and only
+if \(x=x'\) and \(y=y'\).]</p>
 </div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>\((a,b)*(c,d)=(ad+bc,bd)\), on the set
+\(\{(x,y) \in {\mathbb{R}{}}\times {\mathbb{R}{}}: y \ne 0\}\).</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>The operation is commutative.</p>
+\begin{aligned}
+          (a,b)*(c,d) & = (ad+bc,bd) \\
+          (c,d)*(a,b) & = (cb+da,db) \\
+                  & = (ad+bc,bd) \square
+\end{aligned}
+</li>
+<li>
+<p>The operation is associative.</p>
+\begin{aligned}
+          (a,b) * ((c,d) * (e,f)) & = (a,b) * (cf+de,df)  \\
+                      & = (adf + b(cf+de), bdf) \\
+                      & = (adf +bcf + bde, bdf) \\
+          ((a,b) * (c,d)) * (e,f) & = (ad+bc,bd) * (e,f)    \\
+                      & = ((ad+bc)f+bde, bdf)   \\
+                      & = (adf+bcf+bde,bdf) \square
+\end{aligned}
+</li>
+<li>
+<p>Identity element:</p>
+\begin{aligned}
+           (a,b) * (e_1,e_2) & = (a,b)            \\
+           (a,b) * (e_1,e_2) & = (ae_2+be_1,be_2) \\
+               (a,b)     & = (ae_2+be_1,be_2)
+\end{aligned}
 <div class="paragraph">
-<p>+
-\(\[\begin{aligned}
-          (a,b)*(c,d) &amp; = (ad+bc,bd) \\
-          (c,d)*(a,b) &amp; = (cb+da,db) \\
-                  &amp; = (ad+bc,bd) \qedhere
-           \end{aligned}]\)
-2.  The operation is associative.</p>
+<p>This implies that \(a=ae_2+be_1\) and \(b=be_2\). So
+\(e_2=1\) and \(e_1=0\). So the identity element is
+\((0,1)\).</p>
 </div>
+</li>
+<li>
+<p>Inverse:</p>
+\begin{aligned}
+           (a,b) * (a',b') & = (0,1) \\
+           (a,b) * (a',b') & = (ab'+ba',bb') \\
+         (ab'+ba',bb') & = (0,1) \\
+\end{aligned}
 <div class="paragraph">
-<p>+
-\(\[\begin{aligned}
-          (a,b) * ((c,d) * (e,f)) &amp; = (a,b) * (cf+de,df)  \\
-                      &amp; = (adf + b(cf+de), bdf) \\
-                      &amp; = (adf +bcf + bde, bdf) \\
-          ((a,b) * (c,d)) * (e,f) &amp; = (ad+bc,bd) * (e,f)    \\
-                      &amp; = ((ad+bc)f+bde, bdf)   \\
-                      &amp; = (adf+bcf+bde,bdf) \qedhere
-           \end{aligned}]\)
-3.  \(\[\begin{aligned}
-           (a,b) * (e_1,e_2) &amp; = (a,b)            \\
-           (a,b) * (e_1,e_2) &amp; = (ae_2+be_1,be_2) \\
-               (a,b)     &amp; = (ae_2+be_1,be_2)
-        \end{aligned}]\)</p>
+<p>This implies \(ab'+ba'=0\) and \(bb'=1\). So
+\(b'=1/b\). Let’s solve for \(a\):</p>
 </div>
+\begin{aligned}
+           ab'+ba' & = 0         \\
+           a(1/b) + ba' & = 0    \\
+            ba' & = -1(a/b)  \\
+            a' & = -a/b^2
+\end{aligned}
 <div class="paragraph">
-<p>+
-This implies that \($a=ae_2+be_1$\) and \($b=be_2$\). So
-\($e_2=1$\) and \($e_1=0$\). So the identity element is
-\($(0,1)$\).
-4.  \(\[\begin{aligned}
-           (a,b) * (a',b') &amp; = (0,1) \\
-           (a,b) * (a',b') &amp; = (ab'+ba',bb') \\
-         (ab'+ba',bb') &amp; = (0,1) \\
-        \end{aligned}]\)</p>
+<p>So \((a',b') = (-a/b^2,1/b)\).</p>
 </div>
-<div class="paragraph">
-<p>+
-This implies \($ab'+ba'=0$\) and \($bb'=1$\). So
-\($b'=1/b$\). Let’s solve for \($a$\):
-\(\[\begin{aligned}
-           ab'+ba' &amp; = 0         \\
-           a(1/b) + ba' &amp; = 0    \\
-            ba' &amp; = -1(a/b)  \\
-            a' &amp; = -a/b^2
-        \end{aligned}]\) So \($(a',b') = (-a/b^2,1/b)$\).</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
 </div>
 </div>
 </div>
@@ -743,145 +753,177 @@ This implies \($ab'+ba'=0$\) and \($bb'=1$\). So
 <h2 id="_c_groups_of_subsets_of_a_set">C.  Groups of Subsets of a Set</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If \($A$\) and \($B$\) are any two sets, their
-<em>symmetric difference</em> is the set \($A \ominus B$\) defined as
-follows (see figure [fig:symmdif]):</p>
+<p>If \(A\) and \(B\) are any two sets, their
+<em>symmetric difference</em> is the set \(A \ominus B\) defined as
+follows:</p>
+</div>
+\begin{gathered}
+    A \ominus B = (A-B) \cup (B-A)
+\end{gathered}
+<div class="paragraph">
+<p>Note: \(A - B\) represents the set obtained by removing from
+\(A\) all the elements which are in \(B\).</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="img/symdiff.pdf" alt="symdiff">
+</div>
+<div class="title">Figure 1. The shaded area is \(A \ominus B\)</div>
 </div>
 <div class="paragraph">
-<p>\(A \ominus B = (A-B) \cup (B-A)\)</p>
-</div>
-<div class="paragraph">
-<p>Note: \($A - B$\) represents the set obtained by removing from
-\($A$\) all the elements which are in \($B$\).</p>
-</div>
-<div class="paragraph">
-<div class="title">The shaded area is \(A \ominus B\)</div>
-<p><span class="image"><img src="img/symdiff.pdf" alt="The shaded area is \($A \ominus B$\)"></span></p>
-</div>
-<div class="paragraph">
-<p>It is perfectly clear that \($A \ominus B = B \ominus A$\);
+<p>It is perfectly clear that \(A \ominus B = B \ominus A\);
 hence this operation is commutative. It is also associative, as the
 accompanying pictorial representation suggests: Let the union of
-\($A$\), \($B$\), and \($C$\) be divided into
+\(A\), \(B\), and \(C\) be divided into
 seven regions as illustrated.</p>
 </div>
-<div class="paragraph">
-<p>+
-<span class="image"><img src="img/symdiff3.pdf" alt="image"></span></p>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="img/symdiff3.pdf" alt="symdiff3">
 </div>
-<div class="paragraph">
-<p>+
-\(\[\begin{gathered}
+</div>
+\begin{gathered}
       A \ominus B \text{ consists of the regions 1, 4, 3, and 6.} \\
       B \ominus C \text{ consists of the regions 2, 3, 4, and 7.} \\
       A \ominus (B \ominus C) \text{ consists of the regions 1, 3, 5, and 7.}
       \\
       (A \ominus B) \ominus C \text{ consists of the regions 1, 3, 5, and 7.}
-   \end{gathered}]\)</p>
+   \end{gathered}
+<div class="paragraph">
+<p>Thus, \(A \ominus (B \ominus C) = (A \ominus B) \ominus C\).</p>
 </div>
 <div class="paragraph">
-<p>+
-Thus, \($A \ominus (B \ominus C) = (A \ominus B) \ominus C$\).</p>
-</div>
-<div class="paragraph">
-<p>+
-If \($D$\) is a set, then the <em>power set</em> of \($D$\) is
-the set \($P_D$\) of all the subsets of \($D$\). That
+<p>If \(D\) is a set, then the <em>power set</em> of \(D\) is
+the set \(P_D\) of all the subsets of \(D\). That
 is,</p>
 </div>
 <div class="paragraph">
-<p>+
-\(\[P_D = \{ A : A \subseteq D \}]\)</p>
+<p>\begin{gathered}
+    P_D = \{ A : A \subseteq D \}
+\end{gathered}</p>
 </div>
 <div class="paragraph">
-<p>+
-The operation \($\ominus$\) is to be regarded as an operation on
-\($P_D$\).
-1.  Prove that there is an identity element with respect to the
-operation \($\ominus$\).</p>
+<p>The operation \(\ominus\) is to be regarded as an operation on
+\(P_D\).</p>
 </div>
-<div class="paragraph">
-<p>+
-The identity element of \($\ominus$\) is
-\($\emptyset$\). \(\[\begin{aligned}
-      A \ominus \emptyset &amp; = (A - \emptyset) \cup (\emptyset - A) \\
-                          &amp; = A \cup \emptyset \\
-              &amp; = A
-   \end{aligned}]\) By inspection, it’s obvious that
-\($\ominus$\) is commutative. Therefore, \($\emptyset$\)
-is the identity element.
-2.  Prove every subset \($A$\) of \($D$\) has an inverse
-with respect to \($\ominus$\), thus showing
-\($\langle P_D,\ominus \rangle$\) is a group!</p>
-</div>
-<div class="paragraph">
-<p>+
-The inverse of \($A$\) is \($A$\).
-\(\[\begin{aligned}
-         A \ominus A &amp; = (A - A) \cup (A - A) \\
-                 &amp; = \emptyset \cup \emptyset \\
-             &amp; = \emptyset
-      \end{aligned}]\)
-3.  Let \($D$\) be the three-element set
-\($D = \{a,b,c\}$\). List the elements of \($P_D$\).
-(For example, one element is \($\{a\}$\), another is
-\($\{a,b\}$\) and so on. Do not forget the empty set and the
-whole set \($D$\).) Then write the operation table for
-\($\langle P_D,\ominus \rangle$\).</p>
-</div>
-<div class="paragraph">
-<p>+
-\(\[P_D = \{ \emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{b,c\},
-                  \{a,c\}, \{a,b,c\} \}]\)</p>
-</div>
-<div class="paragraph">
-<p>+</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre></pre>
-</div>
-</div>
-<div class="olist upperalpha">
-<ol class="upperalpha" type="A">
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>A Checkerboard Game</p>
+<p>Prove that there is an identity element with respect to the
+operation \(\ominus\).</p>
 <div class="paragraph">
-<p><span class="image"><img src="img/checker.pdf" alt="image"></span></p>
+<p>The identity element of \(\ominus\) is
+\(\emptyset\).</p>
+</div>
+\begin{aligned}
+      A \ominus \emptyset & = (A - \emptyset) \cup (\emptyset - A) \\
+                          & = A \cup \emptyset \\
+              & = A
+\end{aligned}
+<div class="paragraph">
+<p>By inspection, it’s obvious that
+\(\ominus\) is commutative. Therefore, \(\emptyset\)
+is the identity element.</p>
+</div>
+</li>
+<li>
+<p>Prove every subset \(A\) of \(D\) has an inverse
+with respect to \(\ominus\), thus showing
+\(\langle P_D,\ominus \rangle\) is a group!</p>
+<div class="paragraph">
+<p>The inverse of \(A\) is \(A\).</p>
+</div>
+\begin{aligned}
+         A \ominus A & = (A - A) \cup (A - A) \\
+                 & = \emptyset \cup \emptyset \\
+             & = \emptyset
+\end{aligned}
+</li>
+<li>
+<p>Let \(D\) be the three-element set
+\(D = \{a,b,c\}\). List the elements of \(P_D\).
+(For example, one element is \(\{a\}\), another is
+\(\{a,b\}\) and so on. Do not forget the empty set and the
+whole set \(D\).) Then write the operation table for
+\(\langle P_D,\ominus \rangle\).</p>
+\begin{gathered}
+    P_D = \{ \emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{b,c\},
+                  \{a,c\}, \{a,b,c\} \}
+\end{gathered}
+\begin{array}{c|cccccccc}
+      \ominus & \emptyset & \{a\} & \{b\} & \{c\} & \{a,b\} &
+          \{b,c\} & \{a,c\} & \{a,b,c\}  \\ \hline
+      \emptyset & \emptyset & \emptyset & \emptyset & \emptyset
+                  & \emptyset & \emptyset & \emptyset & \emptyset\\
+      \{a\} & \emptyset & \emptyset & \{a,b\} & \{a,c\} & \{b\} &
+         \{a,b,c\} & \{c\} & \{b,c\}\\
+      \{b\} & \emptyset & \{a,b\} & \emptyset & \{b,c\} & \{a\} &
+         \{c\} & \{a,b,c\} & \{a,c\} \\
+      \{c\} & \emptyset & \{a,c\} & \{b,c\} & \emptyset
+         & \{a,b,c\} & \{b\} & \{a\} & \{a,b\} \\
+      \{a,b\} & \emptyset & \{b\} & \{a\} & \{a,b,c\} & \emptyset
+         & \{a,c\} & \{b,c\} & \{c\} \\
+      \{a,c\} & \emptyset & \{c\} & \{a,b,c\} & \{a\} & \{b,c\}
+         & \{a,b\} & \emptyset & \{b\}\\
+      \{b,c\} & \emptyset & \{a,b,c\} & \{c\} & \{b\} & \{a,c\}
+         & \emptyset & \{a,b\} & \{a\} \\
+      \{a,b,c\} & \emptyset & \{b,c\} & \{a,c\} & \{a,b\} & \{c\}
+         & \{a\} & \{b\} & \emptyset\\
+\end{array}
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_d_a_checkerboard_game">D.  A Checkerboard Game</h2>
+<div class="sectionbody">
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="img/checker.pdf" alt="image">
+</div>
 </div>
 <div class="paragraph">
 <p>Our checkerboard has only four squares, numbered 1, 2, 3, and 4. There
-is a single checker on the board, and it has four possible moves:
-1.  Move vertically; that is, move from 1 to 3, or from 3 to 1, or from
-2 to 4, or from 4 to 2.
-2.  Move horizontally; that is, move from 1 to 2 or vice versa, or from
-3 to 4 or vice versa.
-3.  Move diagonally; that is, move from 2 to 3 or vice versa, or move
-from 1 to 4 or vice versa.
-4.  Stay put.</p>
+is a single checker on the board, and it has four possible moves:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">V</dt>
+<dd>
+<p>Move vertically; that is, move from 1 to 3, or from 3 to 1, or from
+2 to 4, or from 4 to 2.</p>
+</dd>
+<dt class="hdlist1">H</dt>
+<dd>
+<p>Move horizontally; that is, move from 1 to 2 or vice versa, or from
+3 to 4 or vice versa.</p>
+</dd>
+<dt class="hdlist1">D</dt>
+<dd>
+<p>Move diagonally; that is, move from 2 to 3 or vice versa, or move
+from 1 to 4 or vice versa.</p>
+</dd>
+<dt class="hdlist1">I</dt>
+<dd>
+<p>Stay put.</p>
+</dd>
+</dl>
 </div>
 <div class="paragraph">
-<p>+
-We may consider an operation on the set of these four moves, which
+<p>We may consider an operation on the set of these four moves, which
 consists of performing moves successively. For example, if we move
 horizontally and then vertically, we end up with the same result as if
 we had moved diagonally:</p>
 </div>
-<div class="paragraph">
-<p>+
-\(\[\begin{gathered}
+\begin{gathered}
       H * V = D
-   \end{gathered}]\)</p>
-</div>
+\end{gathered}
 <div class="paragraph">
-<p>+
-If we perform two horizontal moves in succession, we end up where we
-started: \($H*H=I$\). And so on. If \($G=\{V,D,H,I\}$\),
-and \($*$\) is the operation we have just described, write the
-table of \($G$\).</p>
-</div>
-<div class="paragraph">
-<p>+</p>
+<p>If we perform two horizontal moves in succession, we end up where we
+started: \(H*H=I\). And so on. If \(G=\{V,D,H,I\}\),
+and \(*\) is the operation we have just described, write the
+table of \(G\).</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
@@ -893,102 +935,99 @@ table of \($G$\).</p>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-center valign-top">\($*$\)</th>
-<th class="tableblock halign-center valign-top">\($I$\)</th>
-<th class="tableblock halign-center valign-top">\($V$\)</th>
-<th class="tableblock halign-center valign-top">\($H$\)</th>
-<th class="tableblock halign-center valign-top">\($D$\)</th>
+<th class="tableblock halign-center valign-top">\(*\)</th>
+<th class="tableblock halign-center valign-top">\(I\)</th>
+<th class="tableblock halign-center valign-top">\(V\)</th>
+<th class="tableblock halign-center valign-top">\(H\)</th>
+<th class="tableblock halign-center valign-top">\(D\)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($I$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($I$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($V$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($H$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($D$\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(I\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(I\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(V\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(H\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(D\)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($V$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($V$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($I$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($D$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($H$\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(V\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(V\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(I\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(D\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(H\)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($H$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($H$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($D$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($I$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($V$\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(H\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(H\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(D\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(I\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(V\)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($D$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($D$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($H$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($V$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($I$\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(D\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(D\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(H\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(V\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(I\)</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>+
-Granting associativity, explain why \($\langle G,* \rangle$\) is
+<p>Granting associativity, explain why \(\langle G,* \rangle\) is
 a group.</p>
 </div>
 <div class="paragraph">
-<p>+
-<em>Explanation</em> \($\langle G,* \rangle$\) is a group because it
-has an identity element, \($I$\), and has an inverse for each
-element. We can see that for every element \($M \in G$\),
-\($M * I = I * M = M$\). Also, for every element \($M$\)
-we have an inverse \($M^{-1} = M$\).</p>
+<p><em>Explanation</em> \(\langle G,* \rangle\) is a group because it
+has an identity element, \(I\), and has an inverse for each
+element. We can see that for every element \(M \in G\),
+\(M * I = I * M = M\). Also, for every element \(M\)
+we have an inverse \(M^{-1} = M\).</p>
 </div>
-</li>
-<li>
-<p>A Coin Game</p>
-<div class="paragraph">
-<p><span class="image"><img src="img/coingame.pdf" alt="image"></span></p>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_e_a_coin_game">E.  A Coin Game</h2>
+<div class="sectionbody">
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="img/coingame.pdf" alt="image">
+</div>
 </div>
 <div class="paragraph">
-<p>Imagine two coins on a table, at positions \($A$\) and
-\($B$\). In this game there are eight possible moves:</p>
+<p>Imagine two coins on a table, at positions \(A\) and
+\(B\). In this game there are eight possible moves:</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
+<col style="width: 8.3333%;">
+<col style="width: 41.6666%;">
+<col style="width: 8.3333%;">
+<col style="width: 41.6668%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock">\($M_1$\):</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Flip over the coin at \($A$\).</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">`   `</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">\($M_5$\):</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Flip coin at \($A$\); then switch.</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">\(M_1\):</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flip over the coin at \(A\).</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">\(M_5\):</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flip coin at \(A\); then switch.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock">\($M_2$\):</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Flip over the coin at \($B$\).</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">`   `</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">\($M_6$\):</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Flip coin at \($B$\); then switch.</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">\(M_2\):</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flip over the coin at \(B\).</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">\(M_6\):</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flip coin at \(B\); then switch.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock">\($M_3$\):</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">\(M_3\):</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Flip over both coins.</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">`   `</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">\($M_7$\):</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">\(M_7\):</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Flip both coins; then switch.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-top"><p class="tableblock">\($M_4$\):</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">\(M_4\):</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Switch the coins.</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">`   `</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">\($I$\):</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">\(I\):</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Do not
 change anything.</p></td>
 </tr>
@@ -996,18 +1035,18 @@ change anything.</p></td>
 </table>
 <div class="paragraph">
 <p>We may consider an operation on the set
-\($\{I, M_1,\ldots,M_7\}$\), which consists of performing any
+\(\{I, M_1,\ldots,M_7\}\), which consists of performing any
 two moves in succession. For example, if we switch coins, then flip over
-the coin at \($A$\), this is the same as first flipping over the
-coin at \($B$\) then switching:</p>
+the coin at \(A\), this is the same as first flipping over the
+coin at \(B\) then switching:</p>
 </div>
+\begin{gathered}
+M_4 * M_1 = M_2 * M_4 = M_6
+\end{gathered}
 <div class="paragraph">
-<p>\(\[M_4 * M_1 = M_2 * M_4 = M_6]\)</p>
-</div>
-<div class="paragraph">
-<p>If \($G = \{I,M_1,\ldots,M_7\}$\) and \($*$\) is the
+<p>If \(G = \{I,M_1,\ldots,M_7\}\) and \(*\) is the
 operation we have just described, write the table of
-\($\langle G,* \rangle$\).</p>
+\(\langle G,* \rangle\).</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
@@ -1023,169 +1062,174 @@ operation we have just described, write the table of
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-center valign-top">\($*$\)</th>
-<th class="tableblock halign-center valign-top">\($I$\)</th>
-<th class="tableblock halign-center valign-top">\($M_1$\)</th>
-<th class="tableblock halign-center valign-top">\($M_2$\)</th>
-<th class="tableblock halign-center valign-top">\($M_3$\)</th>
-<th class="tableblock halign-center valign-top">\($M_4$\)</th>
-<th class="tableblock halign-center valign-top">\($M_5$\)</th>
-<th class="tableblock halign-center valign-top">\($M_6$\)</th>
-<th class="tableblock halign-center valign-top">\($M_7$\)</th>
+<th class="tableblock halign-center valign-top">\(*\)</th>
+<th class="tableblock halign-center valign-top">\(I\)</th>
+<th class="tableblock halign-center valign-top">\(M_1\)</th>
+<th class="tableblock halign-center valign-top">\(M_2\)</th>
+<th class="tableblock halign-center valign-top">\(M_3\)</th>
+<th class="tableblock halign-center valign-top">\(M_4\)</th>
+<th class="tableblock halign-center valign-top">\(M_5\)</th>
+<th class="tableblock halign-center valign-top">\(M_6\)</th>
+<th class="tableblock halign-center valign-top">\(M_7\)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($I$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($I$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_1$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_2$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_3$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_4$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_5$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_6$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_7$\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(I\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(I\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_1\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_2\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_3\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_4\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_5\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_6\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_7\)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_1$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_1$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($I$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_3$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_2$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_5$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_4$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_7$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_6$\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_1\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_1\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(I\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_3\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_2\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_5\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_4\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_7\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_6\)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_2$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_2$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_3$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($I$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_1$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_6$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_7$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_4$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_5$\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_2\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_2\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_3\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(I\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_1\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_6\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_7\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_4\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_5\)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_3$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_3$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_2$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_1$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($I$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_7$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_6$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_5$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_4$\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_3\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_3\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_2\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_1\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(I\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_7\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_6\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_5\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_4\)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_4$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_4$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_6$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_5$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_7$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($I$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_2$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_1$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_3$\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_4\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_4\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_6\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_5\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_7\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(I\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_2\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_1\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_3\)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_5$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_5$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_7$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_4$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_6$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_1$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_3$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($I$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_2$\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_5\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_5\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_7\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_4\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_6\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_1\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_3\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(I\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_2\)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_6$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_6$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_4$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_7$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_5$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_2$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($I$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_3$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_1$\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_6\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_6\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_4\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_7\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_5\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_2\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(I\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_3\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_1\)</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_7$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_7$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_5$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_6$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_4$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_3$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_1$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($M_2$\)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">\($I$\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_7\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_7\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_5\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_6\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_4\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_3\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_1\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(M_2\)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">\(I\)</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Granting associativity, explain why \($\langle G,* \rangle$\) is
+<p>Granting associativity, explain why \(\langle G,* \rangle\) is
 a group. Is it commutative? If not, show why not.</p>
 </div>
 <div class="paragraph">
-<p>Solution It is a group because \($I$\) is an identity element,
+<p><em>Solution</em> It is a group because \(I\) is an identity element,
 and we can see from the table that every element has an inverse.
 However, the operation is not commutative. There are at least a dozen
-counter-examples, here is but one:
-\($M_1*M_7=M_6\ne M_5=M7*M1$\).</p>
+counter-examples, here is but one:</p>
 </div>
-</li>
-<li>
-<p>Groups in Binary Codes The most basic way of transmitting
+\begin{gathered}
+M_1*M_7=M_6\ne M_5=M7*M1
+\end{gathered}
+</div>
+</div>
+<div class="sect1">
+<h2 id="_f_groups_in_binary_codes">F.  Groups in Binary Codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The most basic way of transmitting
 information is to code it into strings of 0s and 1s, such as 0010111,
 1010011, etc. Such strings are called <em>binary words</em>, and the number of
 0s and 1s in any binary word is called its <em>length</em>. All information may
 be coded in this fashion.</p>
+</div>
 <div class="paragraph">
 <p>When information is transmitted, it is sometimes received incorrectly.
 One of the most important purposes of coding theory is to find ways of
 <em>detecting errors</em>, and <em>correcting</em> errors of transimission.</p>
 </div>
 <div class="paragraph">
-<p>If a word \($\mathbf{a}=a_1 a_2 \cdots a_n$\) is sent, but a
-word \($\mathbf{b}=b_1 b_2 \cdots b_n$\) is received (where the
-\($a_i$\) and \($b_i$\) are 0s or 1s), then the <em>error
-pattern</em> is the word \($\mathbf{e}=e_1 e_2 \cdots e_n$\) where
-\(\[\begin{gathered}
+<p>If a word \(\mathbf{a}=a_1 a_2 \cdots a_n\) is sent, but a
+word \(\mathbf{b}=b_1 b_2 \cdots b_n\) is received (where the
+\(a_i\) and \(b_i\) are 0s or 1s), then the <em>error
+pattern</em> is the word \(\mathbf{e}=e_1 e_2 \cdots e_n\) where</p>
+</div>
+\begin{gathered}
       e_i =
          \begin{cases}
-        0, &amp; \text{if $a_i = b_i$} \\
-        1, &amp; \text{if $1_i \ne b_i$}
+        0, & \text{if $a_i = b_i$} \\
+        1, & \text{if $1_i \ne b_i$}
      \end{cases}
-   \end{gathered}]\)</p>
-</div>
+\end{gathered}
 <div class="paragraph">
 <p>With this motivation, we define an operation of <em>adding</em> words, as
-follows: If \($\mathbf{a}$\) and \($\mathbf{b}$\) are
-both of length \($l$\), we add them according to the rules
-\(\[\begin{aligned}
-      0 + 0 &amp;= 0   &amp;   1 + 1 &amp; = 0   &amp;   0 + 1 &amp; = 1   &amp;   1 + 1 &amp; = 0
-   \end{aligned}]\)</p>
+follows: If \(\mathbf{a}\) and \(\mathbf{b}\) are
+both of length \(1\), we add them according to the rules</p>
 </div>
+\begin{aligned}
+      0 + 0 &= 0   &   1 + 1 & = 0   &   0 + 1 & = 1   &   1 + 1 & = 0
+\end{aligned}
 <div class="paragraph">
-<p>If \($\mathbf{a}$\) and \($\mathbf{b}$\) are both of
+<p>If \(\mathbf{a}\) and \(\mathbf{b}\) are both of
 length <em>n</em>, we add them by <em>adding corresponding digits</em>. That is (let
-us introduce commas for convenience), \(\[\begin{gathered}
+us introduce commas for convenience),</p>
+</div>
+\begin{gathered}
      (a_1,a_2,\ldots,a_n) + (b_1,b_2,\ldots,b_n) = (a_1+b_1, a_2+b_2,
      \ldots,a_n+b_n)
-   \end{gathered}]\)</p>
-</div>
+\end{gathered}
 <div class="paragraph">
-<p>Thus, the sum of \($\mathbf{a}$\) and \($\mathbf{b}$\)
-is the error pattern \($\mathbf{e}$\).</p>
+<p>Thus, the sum of \(\mathbf{a}\) and \(\mathbf{b}\)
+is the error pattern \(\mathbf{e}\).</p>
 </div>
 <div class="paragraph">
 <p>For example,</p>
-</div>
-<div class="paragraph">
-<p>cc</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
@@ -1203,9 +1247,6 @@ is the error pattern \($\mathbf{e}$\).</p>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>&amp;</p>
-</div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
 <col style="width: 100%;">
@@ -1223,10 +1264,10 @@ is the error pattern \($\mathbf{e}$\).</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>The symbol \($\mathbb{B}^n$\) will designate the set of all the
-binary words of length \($n$\). We will prove that the operation
+<p>The symbol \(\mathbb{B}^n\) will designate the set of all the
+binary words of length \(n\). We will prove that the operation
 of word addition has the following properties on
-\($\mathbb{B}^n$\):
+\(\mathbb{B}^n\):
 1.  It is commutative.
 2.  It is associative.
 3.  There is an identity element for word addition.
@@ -1241,8 +1282,8 @@ First, we verify the commutative law for words of length 1:
 </div>
 <div class="paragraph">
 <p>+
-<strong>1</strong> Show that \($(a_1,a_2,\ldots,a_n) + (b_1,b_2,\ldots,b_n)
-   = (b_1,b_2,\ldots,b_n) + (a_1,a_2,\ldots,a_n)$\).</p>
+<strong>1</strong> Show that \((a_1,a_2,\ldots,a_n) + (b_1,b_2,\ldots,b_n)
+   = (b_1,b_2,\ldots,b_n) + (a_1,a_2,\ldots,a_n)\).</p>
 </div>
 <div class="paragraph">
 <p>+
@@ -1279,8 +1320,8 @@ Check the remaining six cases.</p>
 </div>
 <div class="paragraph">
 <p>+
-<strong>3</strong> Show that \($(a_1,\ldots,a_n)[(b_1,\ldots,b_n)
-   (c_1,\ldots,c_n)\)=[(a_1,\ldots,a_n)(b_1,\ldots,b_n)](c_1,\ldots,c_n)$].</p>
+<strong>3</strong> Show that \((a_1,\ldots,a_n)[(b_1,\ldots,b_n)
+   (c_1,\ldots,c_n)\)=[(a_1,\ldots,a_n)(b_1,\ldots,b_n)](c_1,\ldots,c_n)].</p>
 </div>
 <div class="paragraph">
 <p>+
@@ -1295,22 +1336,22 @@ Check the remaining six cases.</p>
 </div>
 <div class="paragraph">
 <p>+
-<strong>4</strong> The identity element of \($\mathbb{B}^n$\), that is, the
-identity element for adding words of length \($n$\), is:
-\(${\ensuremath{\mathbf{z}}} = z_1 z_2 \cdots z_n$\) where
-\($z_i = 0$\).</p>
+<strong>4</strong> The identity element of \(\mathbb{B}^n\), that is, the
+identity element for adding words of length \(n\), is:
+\({\ensuremath{\mathbf{z}}} = z_1 z_2 \cdots z_n\) where
+\(z_i = 0\).</p>
 </div>
 <div class="paragraph">
 <p>+
 <strong>5</strong> The inverse, with respect to word addition, of any word
-\($(a_1,\ldots,a_n)$\) is: itself.</p>
+\((a_1,\ldots,a_n)\) is: itself.</p>
 </div>
 <div class="paragraph">
 <p>+
-<strong>6</strong> Show that \($a+b=a-b$\) [where \($a-b=a+(-b)$\)].
-(Well, unfortunately \($(-b)$\) is not defined. I will assume it
-means \($(-b_1,\ldots,-b_n)$\) where \($-0 = 0$\) and
-\($-1 = -1$\).</p>
+<strong>6</strong> Show that \(a+b=a-b\) [where \(a-b=a+(-b)\)].
+(Well, unfortunately \((-b)\) is not defined. I will assume it
+means \((-b_1,\ldots,-b_n)\) where \(-0 = 0\) and
+\(-1 = -1\).</p>
 </div>
 <div class="paragraph">
 <p>+
@@ -1324,7 +1365,7 @@ First we show it to be true for words of length 1.
 </div>
 <div class="paragraph">
 <p>+
-Now we will show for words of length \($n$\).
+Now we will show for words of length \(n\).
 \(\[\begin{aligned}
          &amp; {\mathrel{\phantom{=}}}(a_1,\ldots, a_n) + (b_1,\ldots,b_n) \\
      &amp; = (a_1+b_1,\ldots,a_n+b_n) \\
@@ -1335,7 +1376,7 @@ Now we will show for words of length \($n$\).
 </div>
 <div class="paragraph">
 <p>+
-<strong>7</strong> If \($a+b=c$\), show that \($a=b+c$\).</p>
+<strong>7</strong> If \(a+b=c\), show that \(a=b+c\).</p>
 </div>
 <div class="paragraph">
 <p>+
@@ -1348,18 +1389,20 @@ The proof is shown in figure [fig:f7proof].</p>
      a + (b + b) &amp; = c + b \\
      a + z &amp; = c + b \\
      a &amp; = b + c \qed
-      \end{aligned}]\)</p>
-</div>
-</li>
-<li>
-<p>Theory of Coding: Maximum Likelihood Decoding See text pp. 34,35 for
+      \end{aligned}]\)
+G.  Theory of Coding: Maximum Likelihood Decoding See text pp. 34,35 for
 introductory material.</p>
+</div>
 <div class="paragraph">
-<p>Let \($C_1$\) contain the codewords listed in
+<p>+
+Let \(C_1\) contain the codewords listed in
 table [tab:c1codewords].</p>
 </div>
+<div class="paragraph">
+<p>+
+.The codewords for \(C_1\) of section G.</p>
+</div>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 1. The codewords for \($C_1$\) of section G.</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -1367,9 +1410,9 @@ table [tab:c1codewords].</p>
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-center valign-top">\($\mathbf{c}$\)</th>
-<th class="tableblock halign-center valign-top">\($c_1 + c_3$\)</th>
-<th class="tableblock halign-center valign-top">\($c_1 + c_2 + c_3$\)</th>
+<th class="tableblock halign-center valign-top">\(\mathbf{c}\)</th>
+<th class="tableblock halign-center valign-top">\(c_1 + c_3\)</th>
+<th class="tableblock halign-center valign-top">\(c_1 + c_2 + c_3\)</th>
 </tr>
 </thead>
 <tbody>
@@ -1416,23 +1459,26 @@ table [tab:c1codewords].</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>\1. Verify that every codeword \($a_1 a_2 a_3 a_4 a_5$\) in
-\($C_1$\) satisifies the following two parity-check equations:
-\($a_4=a_1+a_3$\); \($a_5=a_1+a_2+a_3$\).</p>
+<p>+
+\1. Verify that every codeword \(a_1 a_2 a_3 a_4 a_5\) in
+\(C_1\) satisifies the following two parity-check equations:
+\(a_4=a_1+a_3\); \(a_5=a_1+a_2+a_3\).</p>
 </div>
 <div class="paragraph">
-<p>This can be verified by inspecting table [tab:c1codewords] where the
+<p>+
+This can be verified by inspecting table [tab:c1codewords] where the
 values for the equations are shown for each codeword along with the
 codeword.</p>
 </div>
 <div class="paragraph">
-<p>\2. Let \($C_2$\) be the following code in
-\($\mathbb{B}^6$\). The first three positions are the
+<p>+
+\2. Let \(C_2\) be the following code in
+\(\mathbb{B}^6\). The first three positions are the
 information positions, and every codeword
-\($a_1 a_2 a_3 a_4 a_5 a_6$\) satisifies the parity-check
-equations \($a_4 = a_2$\), \($a_5 = a_1 + a_2$\) and
-\($a_6 = a_1 + a_2 + a_3$\).
-a.  List the codewords of \($C_2$\).</p>
+\(a_1 a_2 a_3 a_4 a_5 a_6\) satisifies the parity-check
+equations \(a_4 = a_2\), \(a_5 = a_1 + a_2\) and
+\(a_6 = a_1 + a_2 + a_3\).
+a.  List the codewords of \(C_2\).</p>
 </div>
 <div class="paragraph">
 <p>+
@@ -1475,18 +1521,18 @@ SolutionThe codewords are as follows:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Find the minimum distance of the code \($C_2$\).</p>
+<p>Find the minimum distance of the code \(C_2\).</p>
 <div class="paragraph">
 <p>SolutionThe minimum distance is 2.</p>
 </div>
 <div class="paragraph">
-<p>\3. Design a code in \($\mathbb{B}^4$\) where the first two
+<p>\3. Design a code in \(\mathbb{B}^4\) where the first two
 positions are information positions. Give the parity-check equations,
 list the codewords, and find the minimum distance.</p>
 </div>
 <div class="paragraph">
-<p>SolutionMy code uses the equations \($a_3=a_2$\) and
-\($a_4 = a_1 + a_2$\). The code words are listed below. The
+<p>SolutionMy code uses the equations \(a_3=a_2\) and
+\(a_4 = a_1 + a_2\). The code words are listed below. The
 minimum distance is 2.</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
@@ -1509,15 +1555,15 @@ minimum distance is 2.</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>If \($\mathbf{a}$\) and \($\mathbf{b}$\) are any two
+<p>If \(\mathbf{a}\) and \(\mathbf{b}\) are any two
 words, let
-\($d({\ensuremath{\mathbf{a}}},{\ensuremath{\mathbf{b}}})$\)
-denote the distance between \($\mathbf{a}$\) and
-\($\mathbf{b}$\). To <em>decode</em> a received word
-\($\mathbf{x}$\) (which may contain errors of transmission)
-means to find the codeword closes to \($\mathbf{x}$\), that is,
-the codeword \($\mathbf{a}$\) such that
-\($d({\ensuremath{\mathbf{a}}},{\ensuremath{\mathbf{x}}})$\) is
+\(d({\ensuremath{\mathbf{a}}},{\ensuremath{\mathbf{b}}})\)
+denote the distance between \(\mathbf{a}\) and
+\(\mathbf{b}\). To <em>decode</em> a received word
+\(\mathbf{x}\) (which may contain errors of transmission)
+means to find the codeword closes to \(\mathbf{x}\), that is,
+the codeword \(\mathbf{a}\) such that
+\(d({\ensuremath{\mathbf{a}}},{\ensuremath{\mathbf{x}}})\) is
 a minimum. This is called <em>maximum-likelihood decoding</em>.</p>
 </div>
 <div class="literalblock">
@@ -1526,7 +1572,7 @@ a minimum. This is called <em>maximum-likelihood decoding</em>.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>\4. Decode the following words in \($C_1$\): 11111, 00101,
+<p>\4. Decode the following words in \(C_1\): 11111, 00101,
 11000, 10011, 10001, and 10111.</p>
 </div>
 <div class="paragraph">
@@ -1542,88 +1588,88 @@ what conditions will ensure that every word can be decoded into only
 <em>one</em> possible codeword.</p>
 </div>
 <div class="paragraph">
-<p>In the remaining exercises, let \($C$\) be a code in
-\($\mathbb{B}^n$\), let \($m$\) denote the minimum
-distance in \($C$\), and let \($\mathbf{a}$\) and
-\($\mathbf{b}$\) denote codewords in \($C$\).</p>
+<p>In the remaining exercises, let \(C\) be a code in
+\(\mathbb{B}^n\), let \(m\) denote the minimum
+distance in \(C\), and let \(\mathbf{a}\) and
+\(\mathbf{b}\) denote codewords in \(C\).</p>
 </div>
 <div class="paragraph">
-<p>\5. Prove that it is possible to detect up to \($m-1$\) errors.
-(That is, if there are errors of transmission in \($m-1$\) or
+<p>\5. Prove that it is possible to detect up to \(m-1\) errors.
+(That is, if there are errors of transmission in \(m-1\) or
 fewer positions of a codeword, it can always be determined that the
 received word is incorrect.)</p>
 </div>
 <div class="paragraph">
-<p>Let \($w$\) be the sent word and \($w'$\) be the
-received word. Let \($n$\) be the number of errors in
-\($w'$\) such that \($0 &lt; n &lt;= m - 1$\). Assume that
-\($w'$\) is not determined to be incorrect. This means that it
+<p>Let \(w\) be the sent word and \(w'\) be the
+received word. Let \(n\) be the number of errors in
+\(w'\) such that \(0 &lt; n &lt;= m - 1\). Assume that
+\(w'\) is not determined to be incorrect. This means that it
 was accepted as a codeword. However, the distance between
-\($w$\) and \($w'$\) is \($n$\) and
-\($n &lt; m$\). Therefore, the minimum distance of \($C$\)
-is \($n$\). But this contradicts the definition of our code that
-states that \($m$\) is the minimum distance. Therefore, our
-assumption is proved incorect, and the word \($w'$\) will be
+\(w\) and \(w'\) is \(n\) and
+\(n &lt; m\). Therefore, the minimum distance of \(C\)
+is \(n\). But this contradicts the definition of our code that
+states that \(m\) is the minimum distance. Therefore, our
+assumption is proved incorect, and the word \(w'\) will be
 detected to have errors.</p>
 </div>
 <div class="paragraph">
-<p>\6. By the <em>sphere of radius</em> \($k$\) about a codeword
-\($\mathbf{a}$\) we mean the set of all words in
-\($\mathbb{B}^n$\) whose distance from \($\mathbf{a}$\)
-is no greater than \($k$\). This set is denoted by
-\($S_k(\mathbf{a})$\); hence</p>
+<p>\6. By the <em>sphere of radius</em> \(k\) about a codeword
+\(\mathbf{a}\) we mean the set of all words in
+\(\mathbb{B}^n\) whose distance from \(\mathbf{a}\)
+is no greater than \(k\). This set is denoted by
+\(S_k(\mathbf{a})\); hence</p>
 </div>
 <div class="paragraph">
 <p>\(\[S_k(\mathbf{a}) = \{\mathbf{x} : d(\mathbf{a},\mathbf{x}) \le k \}]\)</p>
 </div>
 <div class="paragraph">
-<p>If \($t=\frac{1}{2}(m-1)$\), prove that any two spheres of
-radius \($t$\), say \($S_t(\mathbf{a})$\) and
-\($S_t(\mathbf{b})$\), have no elements in common. [Hint: Assume
-there is a word \($\mathbf{x}$\) such that
-\($\mathbf{x} \in S_t(\mathbf{a})$\) and
-\($\mathbf{x}\in S_t(
-      \mathbf{b})$\). Using the definitions of \($t$\) and
-\($m$\), show that this is impossible.]</p>
+<p>If \(t=\frac{1}{2}(m-1)\), prove that any two spheres of
+radius \(t\), say \(S_t(\mathbf{a})\) and
+\(S_t(\mathbf{b})\), have no elements in common. [Hint: Assume
+there is a word \(\mathbf{x}\) such that
+\(\mathbf{x} \in S_t(\mathbf{a})\) and
+\(\mathbf{x}\in S_t(
+      \mathbf{b})\). Using the definitions of \(t\) and
+\(m\), show that this is impossible.]</p>
 </div>
 <div class="paragraph">
-<p>Assume there is a word \($\mathbf{x}$\) such that
-\($\mathbf{x} \in
-         S_t(\mathbf{a})$\) and
-\($\mathbf{x}\in S_t( \mathbf{b})$\). This means that we need to
-flip at most \($\frac{1}{2}(m-1)$\) bits to transform
-\($\mathbf{a}$\) into \($\mathbf{x}$\), and at most
-\($\frac{1}{2}(m-1)$\) bits to tranform \($\mathbf{x}$\)
-into \($\mathbf{b}$\). This implies that we need to flip at most
-\($\frac{1}{2}(m-1) \times 2 = (m-1)$\) bits to transform
-\($\mathbf{a}$\) into \($\mathbf{b}$\). However, we know
-that the minimum distance between any two codewords is \($m$\).
-Therefore, our assumption that \($\mathbf{x}$\) exists is false
-and there is no common element between \($S_t(\mathbf{a})$\) and
-\($S_t(\mathbf{b})$\).</p>
+<p>Assume there is a word \(\mathbf{x}\) such that
+\(\mathbf{x} \in
+         S_t(\mathbf{a})\) and
+\(\mathbf{x}\in S_t( \mathbf{b})\). This means that we need to
+flip at most \(\frac{1}{2}(m-1)\) bits to transform
+\(\mathbf{a}\) into \(\mathbf{x}\), and at most
+\(\frac{1}{2}(m-1)\) bits to tranform \(\mathbf{x}\)
+into \(\mathbf{b}\). This implies that we need to flip at most
+\(\frac{1}{2}(m-1) \times 2 = (m-1)\) bits to transform
+\(\mathbf{a}\) into \(\mathbf{b}\). However, we know
+that the minimum distance between any two codewords is \(m\).
+Therefore, our assumption that \(\mathbf{x}\) exists is false
+and there is no common element between \(S_t(\mathbf{a})\) and
+\(S_t(\mathbf{b})\).</p>
 </div>
 <div class="paragraph">
-<p>\7. Deduce from part 6 that if there are \($t$\) or fewer errors
+<p>\7. Deduce from part 6 that if there are \(t\) or fewer errors
 of transmission in a codeword, the received word will be decoded
 correctly.</p>
 </div>
 <div class="paragraph">
-<p>By design we have a sphere of radius \($t$\) around every
+<p>By design we have a sphere of radius \(t\) around every
 codeword. We know from part 6 that no two spheres have elements in
-common. If there are \($t$\) or fewer errors in a transmission,
+common. If there are \(t\) or fewer errors in a transmission,
 then the received word will be in the sphere surrounding the sent word
 and no other sphere. Therefore, we can correctly decode the received
 word to be the codeword in the sphere.</p>
 </div>
 <div class="paragraph">
-<p>\8. Let \($C_2$\) be the code described in part 2. Using the
+<p>\8. Let \(C_2\) be the code described in part 2. Using the
 results of parts 5 and 7, explain why two errors in any codeword can
 always be detected, and why one error in any codeword can always be
 corrected.</p>
 </div>
 <div class="paragraph">
 <p>SolutionI claim that the author is incorrect in his claims. It is
-readily apparent that the minimum distance of \($C_2$\) is 2.
+readily apparent that the minimum distance of \(C_2\) is 2.
 This can be seen by looking at the first two elements 000000 and 001001.
 Since two errors in transmission can change 000000 into 001001, the
 claim that 2 errors can always be detected is false. Likewise, one error
@@ -1632,15 +1678,12 @@ detected but it cannot be corrected. Therefore, both claims are false.</p>
 </div>
 <div class="paragraph">
 <p>Now, let’s assume for the sake of this exercise that the minimum
-distance of \($C_2$\) is 3. Then the author’s claims follow
+distance of \(C_2\) is 3. Then the author’s claims follow
 directly from parts 5-7. If there are 2 errors or less they will always
 be detected because by part 5 it’s impossible for the received word to
 be a codeword. If there is 1 error or less then the received word will
-fall within a sphere of radius of \($t=1/2(3-1)=1$\) and
+fall within a sphere of radius of \(t=1/2(3-1)=1\) and
 therefore be readily correctable (by parts 6 and 7).</p>
-</div>
-</li>
-</ol>
 </div>
 </li>
 </ol>
@@ -1651,7 +1694,7 @@ therefore be readily correctable (by parts 6 and 7).</p>
 <div id="footer">
 <div id="footer-text">
 Version 2.0<br>
-Last updated 2017-06-11 23:33:51 CDT
+Last updated 2017-06-12 16:33:08 CDT
 </div>
 </div>
 <script type="text/x-mathjax-config">
