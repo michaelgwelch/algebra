@@ -185,7 +185,7 @@ _Solution_ The solution follows:
         x * y & = x + 2y + 4 \\
         y * x & = y + 2x + 4 \\
               & = 2x + y + 4
-\end{aligned}]
+\end{aligned}
 ++++
 +
 Now choose latexmath:[x=0] and latexmath:[y=1] and we see that
