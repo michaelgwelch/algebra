@@ -1,0 +1,1061 @@
+= Chapter 4 exercises
+Michael Welch <michaelgwelch@gmail.com>
+v2.0 : Converted to asciidoc
+:toc: left
+:stem:
+:figure-caption!:
+:table-caption!:
+
+This document contains selected answers to exercises from chapter 4 of A
+Book of Abstract Algebra.
+
+Remark on notation. In the exercises in this document, the exponential
+notation latexmath:[a^n] is used in the following sense: if
+latexmath:[a] is any element of a group latexmath:[G], then
+latexmath:[a^2] means latexmath:[aa], and latexmath:[a^3] means
+latexmath:[aaa], and, in general, latexmath:[a^n] is the product of
+latexmath:[n] factors of latexmath:[a], for any positive integer
+latexmath:[n].
+
+== A.  Solving Equations in Groups
+
+Let latexmath:[a], latexmath:[b], latexmath:[c], and
+latexmath:[x] be elements of a group latexmath:[G]. In each of the
+following, solve for latexmath:[x] in terms of latexmath:[a],
+latexmath:[b], and latexmath:[c].
+
+// 1
+. latexmath:[axb = c] 
++
+++++
+\begin{aligned}
+         axb & = c \\
+     a^{-1}axb & = a^{-1}c \\
+     xbb^{-1} & = a^{-1}cb^{-1} \\
+     x & = a^{-1}cb^{-1}
+\end{aligned}
+++++
++
+
+// 2
+. latexmath:[x^2b = xa^{-1}c] 
++
+++++
+\begin{aligned}
+         x^2b & = xa^{-1}c    \\
+     x^2bb^{-1} & = xa^{-1}cb^{-1} \\
+     x^2        & = xa^{-1}cb^{-1} \\
+     x^{-1}x^2  & = x^{-1}xa^{-1}cb^{-1}\\
+     x^{-1}xx   & = a^{-1}cb^{-1} \\
+     x          & = a^{-1}cb^{-1}
+\end{aligned}
+++++
+
+Solve simultaneously:
+
+[start=3]
+// 3
+. latexmath:[x^2a = bxc^{-1}] and latexmath:[acx = xac]
++
+++++
+\begin{aligned}
+      acx & = xac      & \text{Given} \\
+      xacx & = x^2ac   & \text{Multiply by $x$} \\
+      xacxc^{-1} & = x^2a \\
+      xacxc^{-1} & = bxc^{-1} & \text{Substitute} \\
+      xacx       & = bx  \\
+      xac        & = b  \\
+      x          & = bc^{-1}a^{-1}
+\end{aligned}
+++++
++
+
+// 4
+. latexmath:[ax^2=b] and latexmath:[x^3=e]
+
++
+++++
+\begin{aligned}
+      ax^2 & = b     & \text{Given} \\
+      ax^3 & = bx    & \text{Multiply, on right, by x} \\
+      a    & = bx    & \text{Subst other given} \\
+      x    & = ab^{-1}
+\end{aligned}
+++++
++
+
+// 5
+. latexmath:[x^2 = a^2] and latexmath:[x^5 = e]
+
++
+++++
+\begin{aligned}
+      x^2 & = a^2   & \text{Given} \\
+      x^2 x^2 & = a^2 x^2 & \text{Multiply on right by $x^2$}\\
+      x^4     & = a^4     & \text{Because $x^2 = a^2$.}\\
+      x^5     & = a^4x \\
+      e       & = a^4x \\
+      x       & = (a^4)^{-1}
+\end{aligned}
+++++
++
+
+// 6
+. latexmath:[(xax)^3 = bx] and latexmath:[x^2 a = (xa)^{-1}].
++
+++++
+   \begin{align}
+     \tag{1}  (xax)^3  & = bx \\ 
+     \tag{2}  xaxxaxxax & = bx \\
+     \tag{3} x^2a      & = (xa)^{-1} \\
+     \tag{4} xxaxa     & = e  & \text{from 3} \\
+     \tag{5} xaxxa     & = e  & \text{from 3} \\
+     \tag{6} e xxax    & = bx & \text{subst 5 into 2} \\
+     \tag{7} exxaxa    & = bxa & \text{mult by a on right} \\
+     \tag{8} ee        & = bxa & \text{subst 4 into 7} \\
+     \tag{9} b^{-1}    & = xa \\
+     \tag{10} b^{-1}a^{-1} & = x  \\
+     \tag{11} x & = (ab)^{-1}
+   \end{align}
+++++
+
+
+== B.  Rules of Algebra in Groups 
+For each of the following rules, either
+prove that it is true in every group latexmath:[G], or give a
+counterexample to show that it is false in some groups. (All the
+counterexamples you need may be found in the group of matrices
+latexmath:[\{I,A,B,C,D,K\}] described on page 28.)
+
+The matrices from page 28 and the matrix multiplication table are
+recreated here.
+
+++++
+\begin{aligned}
+     I & = \left( \begin{array}{rr} 
+              1 & 0 \\ 
+          0 & 1
+       \end{array} \right) & 
+     A & = \left( \begin{array}{rr}
+              0 & 1 \\
+          1 & 0
+       \end{array} \right)  &
+     B & = \left( \begin{array}{rr}
+              0 & 1 \\
+          -1 & -1
+       \end{array}  \right) \\ \\
+     C & = \left( \begin{array}{rr}
+              -1 & -1 \\
+           0 &  1
+       \end{array} \right) &
+     D & = \left( \begin{array}{rr}
+              -1 & -1 \\
+           1 &  0
+       \end{array} \right) &
+     K & = \left( \begin{array}{rr}
+               1 &  0 \\
+          -1 & -1
+       \end{array} \right)
+\end{aligned}
+++++
+
+.Matrix multiplication of the matrices in latexmath:[G]
+[cols="^,^,^,^,^,^,^",options="header",]
+|=======================================================================
+|latexmath:[*] |latexmath:[I] |latexmath:[A] |latexmath:[B]
+|latexmath:[C] |latexmath:[D] |latexmath:[K]
+|latexmath:[I] |latexmath:[I] |latexmath:[A] |latexmath:[B]
+|latexmath:[C] |latexmath:[D] |latexmath:[K]
+
+|latexmath:[A] |latexmath:[A] |latexmath:[I] |latexmath:[C]
+|latexmath:[B] |latexmath:[K] |latexmath:[D]
+
+|latexmath:[B] |latexmath:[B] |latexmath:[K] |latexmath:[D]
+|latexmath:[A] |latexmath:[I] |latexmath:[C]
+
+|latexmath:[C] |latexmath:[C] |latexmath:[D] |latexmath:[K]
+|latexmath:[I] |latexmath:[A] |latexmath:[B]
+
+|latexmath:[D] |latexmath:[D] |latexmath:[C] |latexmath:[I]
+|latexmath:[K] |latexmath:[B] |latexmath:[A]
+
+|latexmath:[K] |latexmath:[K] |latexmath:[B] |latexmath:[A]
+|latexmath:[D] |latexmath:[C] |latexmath:[I]
+|=======================================================================
+
+// 1
+. If latexmath:[x^2=e], then latexmath:[x=e].
++
+This rule is false. A counter example is latexmath:[A*A=I] yet
+latexmath:[A\ne I].
++
+
+// 2
+. If latexmath:[x^2=a^2] then latexmath:[x=a].
++
+This rule is false. A counter example is latexmath:[A*A=I=I*I]
+yet latexmath:[A \ne I].
++
+
+// 3
+. latexmath:[(ab)^2 = a^2b^2].
++
+This rule is false. A counter example is given by letting
+latexmath:[a=A] and latexmath:[b=B].
+latexmath:[(AB)^2=C^2=I \ne D = ID = A^2B^2].
++
+
+// 4
+. If latexmath:[x^2=x], then latexmath:[x=e].
++
+This rule is true.
++
+
++
+++++
+\begin{aligned}
+         x^2 & = x \\
+     xx  & = x \\
+     xxx^{-1} & = xx^{-1} \\
+     xe       &= e \\
+     x        & = e \quad \square
+\end{aligned}
+++++
++
+
+// 5
+. For every latexmath:[x \in G], there is some latexmath:[y \in G]
+such that latexmath:[x = y^2]. (This is the same as saying that every
+element of latexmath:[G] has a "`square root`".)
++
+This rule is false. In the group G, it
+is clear that the matrices latexmath:[A], latexmath:[C], and
+latexmath:[K] do not have a "`square root`".
++
+
+// 6
+. For any two elements latexmath:[x] and latexmath:[y] in
+latexmath:[G], there is an element latexmath:[z] in latexmath:[G]
+such that latexmath:[y=xz].
++
+This rule is true.
++
+We want to make the equality latexmath:[y=xz] hold. Since
+latexmath:[G] is a group we know that latexmath:[x] has an inverse.
+So we can write latexmath:[z=x^{-1}y]. Also since latexmath:[G] is a
+group we know that latexmath:[x^{-1}y] is defined and unique.
+Therefore, latexmath:[z] exists.
+
+
+== C.  Elements That Commute
+
+If latexmath:[a] and latexmath:[b] are in latexmath:[G] and
+latexmath:[ab=ba], we say that latexmath:[a] and latexmath:[b]
+_commute_. Assuming that latexmath:[a] and latexmath:[b] commute,
+prove the following:
+
+// 1.
+. latexmath:[a^{-1}] and latexmath:[b^{-1}] commute.
++
+
++
+++++
+\begin{aligned}
+         a^{-1}b^{-1} & = (ba)^{-1} && \text{Theorem 3} \\
+                  & = (ab)^{-1} && \text{Given $a,b$ commute} \\
+              & = b^{-1}a^{-1} && \text{Theorem 3} \quad \square
+\end{aligned}
+++++
++
+
+// 2.
+. latexmath:[a] and latexmath:[b^{-1}] commute. (Hint: First show
+that latexmath:[a=b^{-1}ab].
++
+Since latexmath:[ab=ba], it is true that latexmath:[ba=ab] and
+latexmath:[b^{-1}ba=b^{-1}ab]. This can be reduced and we have that
+latexmath:[a=b^{-1}ab]. Finally, we can multiply by
+latexmath:[b^{-1}] on both sides to get latexmath:[ab^{-1}=b^{-1}a].\$\quad \square\$
++
+
+// 3.
+. latexmath:[a] commutes with latexmath:[ab].
++
+We know that latexmath:[a(ab) = a(ba)] by commutativity, and
+latexmath:[a(ba)=(ab)a] by associativity. So we have
+latexmath:[a(ab)=(ab)a].\$\quad \square\$
++
+
+// 4.
+. latexmath:[a^2] commutes with latexmath:[b^2].
++
+
++
+++++
+\begin{aligned}
+         a^2b^2 & = (aa)(bb) && \text{Definition}\\
+            & = a(a(bb)) && \text{Associativity}\\
+        & = a((ab)b) && \text{Associativity}\\
+        & = a((ba)b) && \text{Commutativity Given} \\
+        & = a(b(ab)) && \text{Associativity} \\
+        & = a(b(ba)) && \text{Commutativity Given} \\
+        & = (ab)(ba) && \text{Associativity} \\
+        & = (ba)(ba) && \text{Commutativity} \\
+        & = b(a(ba)) && \text{Associativity} \\
+        & = b((ab)a) && \text{Associativity} \\
+        & = b((ba)a) && \text{Commutativity} \\
+        & = b(b(aa)) && \text{Associativity} \\
+        & = (bb)(aa) && \text{Associativity} \\
+        & = b^2a^2   && \text{Definition} \quad \square
+\end{aligned}
+++++
++
+
+// 5.
+. latexmath:[xax^{-1}] commutes with latexmath:[xbx^{-1}], for any
+latexmath:[x\in G].
++
+
++
+++++
+\begin{aligned}
+      xax^{-1}xbx^{-1} & = xabx^{-1} \\
+                       & = xbax^{-1} && \text{Commutativity} \\
+               & = x(be)ax^{-1} && \text{Identity} \\
+               & = x(b(x^{-1}x)ax^{-1} && \text{Inverses}\\
+               & = xbx^{-1}xax^{-1} && \text{Associativity}\quad\square
+\end{aligned}
+++++
++
+
+// 6.
+. latexmath:[ab=ba] iff latexmath:[aba^{-1}=b].
++
+First we will assume latexmath:[ab=ba]. Given this we can derive
+latexmath:[abe=aba^{-1}a=ba] and this can be reduced to
+latexmath:[aba^{-1}=b]. It is trivial to reverse:
+latexmath:[aba^{-1}=b], therefore latexmath:[aba^{-1}a=ba],
+therefore latexmath:[ab=ba].
++
+
+// 7.
+. latexmath:[ab=ba] iff latexmath:[aba^{-1}b^{-1}=e].
++
+Assume latexmath:[ab=ba]. Then we know (by 6) that
+latexmath:[aba^{-1}=b]. Therefore, latexmath:[aba^{-1}b^{-1}=e]. The
+reverse direction is trivial.
+
+== D.  Group Elements and Their Inverses
+
+Let latexmath:[G] be a group. Let latexmath:[a], latexmath:[b],
+latexmath:[c] denote elements of latexmath:[G], and let
+latexmath:[e] be the neutral element of latexmath:[G].
+
+// 1.
+. Prove that if latexmath:[ab=e], then latexmath:[ba=e].
++
+
++
+++++
+\begin{aligned}
+         ab & = e && \text{Given} \\
+     bab & = be && \\
+     bab & = a^{-1}e && \text{Theorem 2}\\
+     ba  & = a^{-1}eb^{-1} \\
+     ba  & = a^{-1}b^{-1} \\
+     ba  & = a^{-1}a && \text{Theorem 2} \\
+     ba  & = e \quad \square
+\end{aligned}
+++++
++
+
+// 2.
+. Prove that if latexmath:[abc=e], then latexmath:[cab=e] and
+latexmath:[bca=e].
++
+We are given that latexmath:[abc=e]. By associativity we have
+latexmath:[(ab)c=e]. By D1 we have that latexmath:[c(ab)=cab=e]. We
+can do this one more time: latexmath:[(ca)b=e] and therefore
+latexmath:[b(ca)=bca=e].
++
+
+// 3.
+. State a generalization of 1 and 2
++
+SolutionIf latexmath:[a_1 a_2 \cdots a_{n-2} a_{n-1} a_n=e] then
+latexmath:[a_n a_1 a_2 \cdots a_{n-2} a_{n-1}=e]. We have proved it
+for latexmath:[n=2,3]. We can group the first latexmath:[n-1]
+elements in parentheses. We then let latexmath:[a] equal these terms
+and latexmath:[b=a_n] and then apply D1 to get the desired result.
++
+Prove the following:
++
+
+// 4.
+. If latexmath:[xay=a^{-1}], then latexmath:[yax=a^{-1}].
++
+++++
+\begin{aligned}
+         xay  & = a^{-1} \\
+     xaya & = e \\
+     axay & = e && \text{D3} \\
+     yaxa & = e && \text{D3} \\
+     yax  & = a^{-1}
+\end{aligned}
+++++
++
+
+// 5.
+. Let latexmath:[a], latexmath:[b], latexmath:[c] each be equal
+to its own inverse. If latexmath:[ab=c], then latexmath:[bc=a] and
+latexmath:[ca=b].
++
+
++
+++++
+\begin{aligned}
+         ab & = c    && \text{Given} \\
+     abc^{-1} & = e \\
+     abc      & = e && \text{Given $c=c^{-1}$} \\
+     cab      & = e && \text{D1}\\
+     ca       & = b^{-1} \\ 
+     ca       & = b  && \text{Given $b=b^{-1}$}\\
+     bc       & = a^{-1} && \text{From third line}\\
+     bc       & = a      && \text{Given $a=a^{-1}$} \quad\square
+\end{aligned}
+++++
++
+
+// 
+. If latexmath:[abc] is its own inverse, then latexmath:[bca] is
+its own inverse, and latexmath:[cab] is its own inverse.
++
+++++
+\begin{aligned}
+         abc & = (abc)^{-1}     \\
+     abc(abc) & = e  \\
+     a(bca)bc & = e  \\
+     (bca)bc & = a^{-1} \\
+     (bca)b  & = a^{-1}c^{-1} \\
+     bca     & = a^{-1}c^{-1}b^{-1} \\
+     bca     & = a^{-1}(bc)^{-1} \\
+     bca     & = (bca)^{-1} \quad\square
+\end{aligned}
+++++
++
+And similarly.
++
+
++
+++++
+\begin{aligned}
+         abc(abc) & = e \\
+     ab(cab)c & = e \\
+     ab(cab)  & = c^{-1} \\
+     b(cab)   & = a^{-1}c^{-1} \\
+     cab      & = b^{-1}a^{-1}c^{1} \\
+              & = (ba)^{-1}c^{-1}   \\
+          & = (c(ba))^{-1} \\
+          & = (cba) ^{-1} \quad\square
+\end{aligned}
+++++
++
+
+// 7.
+. Let latexmath:[a] and latexmath:[b] each be equal to
+their own inverse. Then latexmath:[ba] is the inverse of
+latexmath:[ab].
++
+++++
+\begin{aligned}
+        a & = a^{-1}       && \text{Given} \\
+    b & = b^{-1}       && \text{Given} \\
+        ba & = b^{-1}a^{-1}  && \text{Subst} \\
+           & = (ab)^{-1} && \text{Theorem 3}  \quad\square
+\end{aligned}
+++++
++
+
+// 8.
+. latexmath:[a=a^{-1}] iff latexmath:[aa=e]. (That is,
+latexmath:[a] is its own inverse iff latexmath:[a^2 = e].) The first
+case:
++
+++++
+\begin{aligned}
+            & {\mathrel{\phantom{=}}}&& \text{First case} \\
+         a  & = a^{-1}     && \text{Given} \\
+     aa & = a^{-1}a    && \text{Mult by $a$} \\
+     aa & = e \\
+        & {\mathrel{\phantom{=}}}&& \text{Second case} \\
+     aa & = e          && \text{Given}\\
+     aaa^{-1} & =  a^{-1} && \text{Mult by $a^{-1}$}\\   
+     a  & = a^{-1}     && \quad\square
+\end{aligned}
+++++
++
+
+// 9.
+. Let latexmath:[c=c^{-1}]. Then latexmath:[ab=c] iff
+latexmath:[abc=e].
++
+++++
+\begin{aligned}
+            & {\mathrel{\phantom{=}}}&& \text{First case} \\
+         ab & = c         && \text{Given} \\
+     ab & = c^{-1}    && \text{Substitute} \\
+     abc & = c^{-1}c  && \text{Mult by $c$} \\
+     abc & = e        \\
+         & {\mathrel{\phantom{=}}}&& \text{Second case} \\
+     abc & = e        && \text{Given} \\
+     abcc^{-1} & = c^{-1} && \text{Mult by $c^{-1}$} \\
+     ab & = c^{-1}   \\
+     ab & = c        && \text{Substitute} \quad\square
+\end{aligned}
+++++
+
+
+== E.  Counting Elements and Their Inverses
+
+Let latexmath:[G] be a finite group, and let latexmath:[S] be the
+set of all the elements of latexmath:[G] which are _not_ equal to
+their own inverse. That is, latexmath:[S= \{ x \in G : x \ne x^{-1} \}]. 
+The set latexmath:[S] can be
+divided up into pairs so that each element is paired off with its own
+inverse. Prove the following:
+
+image::img/chap4e.pdf [The set latexmath:[S] for exercise E.]
+
+// 1.
+. In any finite group latexmath:[G], the number of elements not
+equal to their own inverse is an even number.
++
+The proof is trivial. The question is talking about the number of
+elements in latexmath:[S]. The elements in latexmath:[S] can be
+paired off with their inverses. Therefore, there are latexmath:[n]
+pairs of elements. Therefore, there are latexmath:[2n] elements, which
+is, by definition, an even number.
++
+
+// 2.
+. The number of elements of latexmath:[G] equal to their own inverse
+is odd or even, depending on whether the number of elements in
+latexmath:[G] is odd or even.
++
+Let the number of elements in latexmath:[G] be an even number,
+latexmath:[2m]. From E1 we know that the number of elements not equal
+to their inverse is some even number, latexmath:[2n]. Therefore, the
+number of elements equal to their inverse is
+latexmath:[2m - 2n = 2(m-n)] which is always even.
++
+Next consider that the number of elements in latexmath:[G] is some odd
+number latexmath:[2m + 1]. Then the number of elements equal to their
+inverse is latexmath:[(2m + 1) - 2n = 2(m-n) + 1] which is always an
+odd number.
++
+
+// 3.
+. If the order of latexmath:[G] is even, there is at least one
+element latexmath:[x] in latexmath:[G] such that
+latexmath:[x \ne e] and latexmath:[x = x^{-1}].
++
+The number of elements in latexmath:[G] is even. From E1 we know that
+the number of elements in latexmath:[G] that are equal to their own
+inverse is even. We know that one of the elements that is equal to
+its own inverse is latexmath:[e]. That gives us 1 element. Since the
+number of such elements is even, there must be at least one other
+latexmath:[x] in latexmath:[G] such that latexmath:[x = x^{-1}]
+and this element must not be equal to latexmath:[e] or we would still
+only have an odd number of such elements.
+
+In parts 4 to 6, let latexmath:[G] be a finite _abelian_ group, say,
+latexmath:[G = \{ \epsilon, a_1, a_2, \ldots , a_n\}]. Prove the
+following:
+
+// 4.
+[start=4]
+. latexmath:[(a_1a_2\cdots a_n)^2 = e]
++
+We can expand latexmath:[(a_1a_2 \cdots a_n)^2] to
+latexmath:[(a_1a_2\cdots a_na_1a_2 \cdots
+      a_n)]. Then we can use commutative property to place each element
+next to it’s inverse (either itself if it is equal to it’s own inverse,
+or another element that is its inverse). Now that every element is place
+next to it’s inverse we can simplify the entire expression to
+latexmath:[e].
++
+
+// 5.
+. If there is no element latexmath:[x \ne e] in latexmath:[G] such
+that latexmath:[x=x^{-1}], then latexmath:[a_1a_2 \cdots a_n = e].
++
+First observe that latexmath:[G] must have an odd number of elements.
+(If it had an even number of elements, then by E3 there must be an
+element latexmath:[x \ne e] such that latexmath:[x=x^{-1}]. In that
+case the stated assumption does not hold.) We know that one of the
+elements is latexmath:[e]. That leaves an even number of elements each
+of which must have an inverse in latexmath:[G]. We can use the
+commutative property to place each element next to it’s inverse, and
+then simplify to latexmath:[e].
++
+
+// 6.
+. If there is exactly one latexmath:[x \ne e] in latexmath:[G]
+such that latexmath:[x=x^{-1}], then
+latexmath:[a_1a_2 \cdots a_n = x].
++
+Observe that there must be an even number of elements. There is
+latexmath:[e] and latexmath:[x] and then an even number of elements
+that are not equal to their own inverse (by E1). By commuatitive
+property, we can align all the pairs next to each other and they all
+simplify to latexmath:[e]. That leaves latexmath:[x].
+
+
+== F.  Constructing Small Groups
+
+In each of the following, let latexmath:[G] be any group. Let
+latexmath:[e] denote the neutral element of latexmath:[G].
+
+// 1.
+. If latexmath:[a,b] are any elements of latexmath:[G], prove each
+of the following:
+a.  If latexmath:[a^2 = a], then latexmath:[a=e].
++
+
++
+++++
+\begin{aligned}
+         a^2 & = a && \text{Given} \\
+     aa  & = a && \\
+     aaa^{-1} & = aa^{-1} \\
+     a   & = e \quad\square
+\end{aligned}
+++++
+b.  If latexmath:[ab=a], then latexmath:[b=e].
++
+
++
+++++
+\begin{aligned}
+        ab & = a   && \text{Given} \\
+        ab & = ae  && \text{Neutral element} \\
+        b & = e    && \text{Theorem 1} \quad\square
+\end{aligned}
+++++
+c.  If latexmath:[ab=b], then latexmath:[a=e].
++
+
++
+++++
+\begin{aligned}
+        ab & = b   && \text{Given} \\
+        ab & = eb  && \text{Neutral element} \\
+        a  & = e   && \text{Theorem 1} \quad\square
+\end{aligned}
+++++
++
+
+// 2.
+. Explain why every row of a group table must contain each element of
+the group exactly once. (Hint: Suppose latexmath:[x] appears twice in
+the row of latexmath:[a]:
++
+[cols="^,^,^,^,^,^",options="header",]
+|=======================================================================
+| |latexmath:[\cdots] |latexmath:[y_1] |latexmath:[\cdots]
+|latexmath:[y_2] |latexmath:[\cdots]
+|latexmath:[\vdots] | |latexmath:[\vdots] | |latexmath:[\vdots] |
+
+|a |latexmath:[\cdots] |latexmath:[x] |latexmath:[\cdots]
+|latexmath:[x] |
+|=======================================================================
++
+Now use the cancellation law for groups.)
++
+As the hint suggests, let’s assume that latexmath:[x] appears twice.
+Then we have latexmath:[ay_1 = x = ay_2]. By the cancellation law for
+groups we have latexmath:[y_1=y_2] which contradicts are assumption
+that latexmath:[y_1] and latexmath:[y_2] where distinct elements in
+latexmath:[G]. Therefore, every element of latexmath:[G] must show
+up in each row exactly once.
++
+
+// 3.
+. There is _exactly one group_ on any set of three distinct elements,
+say the set latexmath:[\{e,a,b\}]. Indeed, keeping in mind parts 1 and
+2 above, there is only one way of completing the following table. Do so!
+_You need not prove associativity._
++
+[cols="^,^,^,^",options="header",]
+|==========
+| |e |a |b
+|e |e |a |b
+|a |a |b |e
+|b |b |e |a
+|==========
++
+
+// 4.
+. There is exactly one group latexmath:[G] of four elements, say
+latexmath:[G = \{e,a,b,c\}], satisfying the additional property that
+latexmath:[xx = e] for every latexmath:[x \in G]. Using only part 1
+above, complete the following group table of latexmath:[G]:
++
+....
+
+      
+....
++
+[cols="^,^,^,^,^",options="header",]
+|=============
+| |e |a |b |c
+|e |e |a |b |c
+|a |a |e |c |b
+|b |b |c |e |a
+|c |c |b |a |e
+|=============
++
+
+// 5.
+. There is exactly one group latexmath:[G] of four elements, say
+latexmath:[G = \{e,a,b,c\}], such that latexmath:[xx=e] for some
+latexmath:[x\ne e] in latexmath:[G], and latexmath:[yy \ne e] for
+some latexmath:[y \in G] (say, latexmath:[aa=e] and
+latexmath:[bb\ne e]). Complete the group table of latexmath:[G], as
+in the preceding exercise.
++
+[cols="^,^,^,^,^",options="header",]
+|=============
+| |e |a |b |c
+|e |e |a |b |c
+|a |a |e |c |b
+|b |b |c |a |e
+|c |c |b |e |a
+|=============
++
+
+Let's try an alternative, say let's try the assignment latexmath:[bb=c] rather than latexmath:[bb=a].
++
+[cols="^,^,^,^,^",options="header",]
+|=============
+|  |e |a |b |c
+|e |e |a |b |c
+|a |a |e |? | 
+|b |b |  |c | 
+|c |c |  |  | 
+|=============
++
+What should go in the cell with the `?`, in other words
+what value should we assign to \$ab\$? It can't be \$ab=b\$ else
+\$a=e\$ by Part 1. If it is the case \$ab=c\$ then we have that fact
+and \$b b=c\$. Therefore \$ab=b b\$ and so \$a=b\$ which breaks our assumption
+that \$a,b\$ are distinct elements.
++
+There are no alternatives. Therefore there is only one group of
+four elements that meets the given constraints.
++
+
+// 6.
+. Use Exercise E3 to explain why the groups in parts 4 and 5 are the
+only possible groups of four elements (except for renaming the elements
+with different symbols).
++
+By E1 we know that the number of elements not equal to their own inverse
+is an even number. Since latexmath:[e] is always in our group, that
+leaves 2 choices: 0 elements not equal to their own inverse, or 2
+elements not equal to their own inverse.
++
+The first case is handled by part 4. Every element is equal to their own
+inverse. That leaves only 6 pairs to figure out
+latexmath:[ab,ac,ba,bc,ca,cb]. In each case we are constrained by what
+we learned in F1. latexmath:[ab] must equal latexmath:[c],
+latexmath:[ac] must equal latexmath:[b] etc.
++
+The second case is handled by part 5. We choose 2 elements (besides
+latexmath:[e] to not be equal to their inverse and 1 to be equal to
+its inverse). We chose latexmath:[a] to be the one equal to its
+inverse. That requires latexmath:[ab=c] and latexmath:[ac=b]. We
+know latexmath:[ba] must be latexmath:[c] or latexmath:[e],
+latexmath:[bb] can be latexmath:[a] or latexmath:[c] and
+latexmath:[bc] must be latexmath:[a] or latexmath:[e]. We can
+choose these in any way as long as we maitain the constraints. However,
+the results are always the ``same'' in that they only amount to
+relabeling our elements with different symbols.
++
+FURTHER AND BETTER ANALYSIS FOR PROOF REQUIRED
+d.  Direct Products of Groups
++
+If latexmath:[G] and latexmath:[H] are any two groups, their _direct
+product_ is a new group, denoted by latexmath:[G \times H], and
+defined as follows: latexmath:[G \times H] consists of all the ordered
+pairs latexmath:[(x,y)] where latexmath:[x] is in latexmath:[G]
+and latexmath:[y] is in latexmath:[H]. That is,
++
+
++
+++++
+G \times H = \{(x,y) : x \in G \text{ and } y \in H \}\]]
++
+The operation of latexmath:[G \times H] consists of multiplying
+corresponding components:
++
+
++
+++++
+(x,y)\cdot(x',y') = (xx',yy')\]]
++
+If latexmath:[G] and latexmath:[H] are denoted additively, it is
+customary to denote latexmath:[G \times H] additively:
++
+
++
+++++
+(x,y)+(x',y') = (x+x',y+y')\]]
++
+\1. Prove that latexmath:[G \times H] is a group by proving the three
+group axioms, (latexmath:[G1]) to (latexmath:[G3]):
+1.  
++
+++++
+\begin{aligned}
+        (x_1,y_1)[(x_2,y_w)(x_3,y_3)] & = (x_1,y_1)(x_2x_3,y_2y_3) \\
+                                      & = (x_1x_2x_3,y_1y_2y_3) \\
+        [(x_1,y_1)(x_2,y_2)](x_3,y_3) & = (x_1x_2,y_1y_2)(x_3,y_3) \\
+                                      & = (x_1x_2x_3,y_1y_2y_3)
+\end{aligned}
+++++
+2.  Let latexmath:[e_G] be the identity element of latexmath:[G],
+and latexmath:[e_H] be the identity element of latexmath:[H]. The
+identity element of latexmath:[G \times H] is latexmath:[(e_G,e_H)]:
+
++
+++++
+\begin{aligned}
+        (x,y)(e_G,e_H) & = (xe_G,ye_H)  \\
+                       & = (x,y)
+\end{aligned}
+++++
+3.  For each latexmath:[(a,b)\in G \times H], the inverse of
+latexmath:[(a,b)] is latexmath:[(a^{-1},b^{-1})]:
+
++
+++++
+\begin{aligned}
+        (a,b)(a^{-1},b^{-1}) & = (aa^{-1},bb^{-1}) \\
+                             & = (e_G,e_H)
+\end{aligned}
+++++
++
+\2. List the elements of latexmath:[\mathbb{Z}_2 \times \mathbb{Z}_3],
+and write the operation table. (Note: There are six elements, each of
+which is an ordered pair. The notation is additive.)
++
+SolutionRemember that latexmath:[\mathbb{Z}_2 = \{0,1\}] and
+latexmath:[\mathbb{Z}_3 =
+      \{0,1,2\}]. This means
+latexmath:[\mathbb{Z}_2 \times \mathbb{Z}_3 =
+      \{(0,0), (0,1), (0,2), (1,0), (1,1), (1,2)\}].
++
+....
+      
+      
+....
++
+[cols="^,^,^,^,^,^,^",options="header",]
+|===============================================
+|+ |(0,0) |(0,1) |(0,2) |(1,0) |(1,1) |(1,2)
+|(0,0) |(0,0) |(0,1) |(0,2) |(1,0) |(1,1) |(1,2)
+|(0,1) |(0,1) |(0,2) |(0,0) |(1,1) |(1,2) |(1,0)
+|(0,2) |(0,2) |(0,0) |(0,1) |(1,2) |(1,0) |(1,1)
+|(1,0) |(1,0) |(1,1) |(1,2) |(0,0) |(0,1) |(0,2)
+|(1,1) |(1,1) |(1,2) |(1,0) |(0,1) |(0,2) |(0,0)
+|(1,2) |(1,2) |(1,0) |(1,1) |(0,2) |(0,0) |(0,1)
+|===============================================
++
+....
+      
+      
+....
++
+\3. If latexmath:[G] and latexmath:[H] are abelian, prove that
+latexmath:[G \times H] is abelian.
++
+
++
+++++
+\begin{aligned}
+         (x,y)(x',y') & = (xx',yy') \\
+     (x',y')(x,y) & = (x'x,y'y) \\
+                  & = (xx',yy') && \text{Commutativity on $G$ and $H$}
+              \quad\square
+\end{aligned}
+++++
++
+\4. Suppose the groups latexmath:[G] and latexmath:[H] both have the
+following property:
++
+_Every element of the group is its own inverse_
++
+Prove that latexmath:[G\times H] has this property.
++
+
++
+++++
+\begin{aligned}
+        (a,b)(a,b) & = (aa,bb)  \\
+                   & = (aa^{-1},bb^{-1}) && \text{Given} \\
+               & = (e_G,e_H) \quad\square
+\end{aligned}
+++++
+
+
+
+== G.  Power and Roots of Group Elements
+
+Let latexmath:[G] be a group, and latexmath:[a,b\in G]. For any
+positive integer latexmath:[n] we define latexmath:[a^n] by
+
+++++
+a^n = \underbrace{aaa\cdots a}_{n\text{ factors}}\]]
++
+If there is an element latexmath:[x \in G] such that
+latexmath:[a = x^2], we say that latexmath:[a] has a square root in
+latexmath:[G]. Similarly, if latexmath:[a = y^3] for some
+latexmath:[y \in G], we say latexmath:[a] has a cube root in
+latexmath:[G]. In general, latexmath:[a] has an latexmath:[n]th
+root in latexmath:[G] if latexmath:[a=z^n] for some
+latexmath:[z \in G]. Prove the following:
++
+\1. latexmath:[(bab^{-1})^n = ba^nb^{-1}], for every positive integer
+latexmath:[n]. Prove by induction.
++
+First we prove it for latexmath:[n=1]: 
++
+++++
+\begin{aligned}
+         (bab^{-1})^1 & = bab^{-1} \\
+                  & = ba^1b^{-1}
+\end{aligned}
+++++
++
+Next we assume that it is true for latexmath:[n=k] and show that it is
+true for latexmath:[n=k+1]. 
++
+++++
+\begin{aligned}
+         (bab^{-1})^{k+1} & = (bab^{-1})^k(bab^{-1}) \\
+                      & = (ba^kb^{-1})(bab^{-1}) && \text{By induction}\\
+              & = ba^kb^{-1}bab^{-1} \\
+              & = ba^kab^{-1} \\
+              & = ba^{k+1}b^{-1} \quad\square
+\end{aligned}
+++++
++
+\2. If latexmath:[ab = ba], then latexmath:[(ab)^n = a^nb^n] for
+every positive integer latexmath:[n]. Prove by induction.
++
+First the case when latexmath:[n=1]: 
++
+++++
+\begin{aligned}
+         (ab)^1 & = ab \\
+                & = a^1b^1
+\end{aligned}
+++++
++
+Next we assume it holds for latexmath:[n=k] and show that it holds for
+latexmath:[n=k+1]. 
++
+++++
+\begin{aligned}
+         (ab)^{k+1} & = (ab)^k(ab) \\
+                & = (a^kb^k)(ab) && \text{By induction} \\
+            & = a^{k+1}b^{k+1} && \text{commutativity $k$ times}
+                \quad\square
+\end{aligned}
+++++
++
+\3. If latexmath:[xax=e], then latexmath:[(xa)^{2n} = a^n].
++
+
++
+++++
+\begin{aligned}
+         xax & = e        && \text{Given} \\
+     (xa)^{2n} & = \underbrace{(xa)(xa)\cdots (xa)}_{2n \text{ factors}}\\
+               & = 
+           \underbrace{(xaxa)(xaxa)\cdots(xaxa)}_{n \text{ factors}}\\
+           & = \underbrace{(a)(a)\cdots(a)}_{n \text{ factors}} 
+               && \text{Substitute $xax=e$} \\
+           & = a^n \quad\square
+\end{aligned}
+++++
++
+\4. If latexmath:[a^3=e], then latexmath:[a] has a square root.
++
+
++
+++++
+\begin{aligned}
+         a^3 & = e       && \text{Given} \\
+     a^3a^{-1}a^{-1} & = a^{-1}a^{-1}  \\
+                     & {\mathrel{\phantom{=}}}&& \text{Let $b=a^{-1}$}\\
+     a               & = b^2 && \text{Therefore square root of $a=b$} 
+                         \quad\square
+\end{aligned}
+++++
++
+\5. If latexmath:[a^2=e], then latexmath:[a] has a cube root.
++
+
++
+++++
+\begin{aligned}
+         a^2   & = e     && \text{Given} \\
+     a^3   & = a     && \text{The cube root of $a$ is $a$}\quad\square
+\end{aligned}
+++++
++
+\6. If latexmath:[a^{-1}] has a cube root, so does latexmath:[a].
++
+Let latexmath:[b] be the cube root of latexmath:[a].
+
++
+++++
+\begin{aligned}
+         a^{-1}   & = b^3        && \text{Given}\\
+     a^{-1}b^{-1}b^{-1}b^{-1} & = e \\
+     b^{-1}b^{-1}b^{-1} & = a 
+\end{aligned}
+++++ The cube root of latexmath:[a] is
+latexmath:[b^{-1}].
++
+\7. If latexmath:[x^2ax=a^{-1}], then latexmath:[a] has a cube root.
++
+
++
+++++
+\begin{aligned}
+     xxax      & = a^{-1} \\
+     xa a^{-1} xax & = a^{-1} \\
+         xaxxaxxax & = a^{-1} \\
+     (xax)^3 & = a^{-1}
+\end{aligned}
+++++
++
+The cube root of latexmath:[a^{-1}] is latexmath:[xax]. By H6 we
+know that latexmath:[a] has a cube root.
++
+\8. If latexmath:[xax=b], then latexmath:[ab] has a square root.
++
+
++
+++++
+\begin{aligned}
+         xax & = b \\
+     axax & = ab \\
+     (ax)^2 & = ab
+\end{aligned}
+++++
++
+The square root of latexmath:[ab] is latexmath:[ax].

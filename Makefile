@@ -12,7 +12,7 @@ INKOPTS_LATEX=$(INKOPTS) --export-latex
 
 .PHONY: all html
 
-html: docs/index.html docs/chap2.html docs/chap3.html
+html: docs/index.html docs/chap2.html docs/chap3.html docs/chap4.html
 
 all: chap2.pdf chap3.pdf chap4.pdf chap5.pdf chap6.pdf chap7.pdf chap8.pdf\
 	chap9.pdf chap10.pdf chap11.pdf ref.pdf
