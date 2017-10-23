@@ -1,0 +1,65 @@
+= Chapter 12 Exercises
+Michael Welch <michaelgwelch@gmail.com>
+:toc: left
+:stem:
+
+This document contains my solutions to the Chapter 12 exercises.
+
+== A. Examples of Partitions
+
+Prove that each of the following is a partition of the indicated set. 
+Then describe the equivalence relation associated with that partition.
+
+//A.1.
+. For each integer latexmath:[r \in {0, 1, 2, 3, 4}], let latexmath:[A], be the set of all the integers which leave a remainder of _r_ when divided by 5.
+(That is, latexmath:[x \in A], iff latexmath:[x = 5q + r] for some integer _q_.
+Prove: latexmath:[ \{ A_0, A_1, A_2, A_3, A_4 \} ] is a partition of latexmath:[ \mathbb{Z} ].
++
+
+_Solution_: First I must show that each subset is non-empty. 
+It is trival to show that latexmath:[0 \in A_0], latexmath:[1 \in A_1], latexmath:[2 \in A_2], latexmath[3 \in A_3], and latexmath:[4 \in A_4]. For example, latexmath:[0/5 = 0] with a remainder of 0, latexmath:[1/5 = 0] with a remainder of 1, etc.
++ 
+
+Next I'll show that each class is disjoint. 
+Let's assume that we some latexmath:[x] that is an element of two classes: latexmath:[x \in A_i,x \in A_j]. 
+Then we have, latexmath:[x = 5q + i = 5q + j]. 
+Therefore, latexmath:[i = j] and latexmath:[A_i = A_j].
++
+
+Finally, I must show that every element of latexmath:[\mathbb{Z}] is in one of the classes. It is trivially true. Any division of an integer by 5 leaves a remainder in the range 0-4.
++
+
+Now I must describe the equivalence relation associated with this partition. The equivalence relation is latexmath:[x \sim 5n + x] where latexmath:[x,n \in \mathbb{Z}].
++
+
+//A.2.
+. For each integer _n_, let latexmath:[A_n = \{ x \in \mathbb{Q} : n \leq x < n + 1 \}]. 
+Prove latexmath:[ \{ A_n : n \in \mathbb{Z} \}] is a partition of latexmath:[\mathbb{Q}].
++
+
+Each set is non-empty. This is trivial to prove. Add latexmath:[1/10] or any other positive rational number (less than 1) to any integer _n_ to get an element of latexmath:[A_n].
++
+
+The classes are obviously disjoint. 
+Assume you had an element _m_ where latexmath:[m \in A_i, m \in A_j].
+Then you have latexmath:[i <= m < i+1] and latexmath:[j <= m < j+1].
+From this we know that latexmath:[i < j + 1] and latexmath:[ j < i+1].
++
+
+[latexmath]
+++++
+\begin{aligned}
+        i & < j + 1 \\
+    i - j & < 1 \\
+        j & < i + 1 \\
+    i - j & > -1 \\
+\end{aligned}
+++++
++
+
+So latexmath:[-1 < i-j < 1].
+Therefore, since _i_ and _j_ are integers, it must be the case that latexmath:[i - j = 0] and therefore latexmath:[i = j] and latexmath:[A_i = A_j].
++
+
+This equivalence relation can be described as the following:
+Given that latexmath:[n <= x < n + 1] for some integers _x_ and _n_, latexmath:[x \sim y] iff latexmath:[n <= y < n + 1].
