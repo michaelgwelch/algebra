@@ -21,6 +21,7 @@ _Solution_ This is not an operation on latexmath:[{\mathbb{Z}{}}]. There
 are integers latexmath:[a] and latexmath:[b] such that
 latexmath:[(a+b)/ab] is not an integer. (For example,
 
+
 [latexmath]
 ++++
 \frac{2+3}{2 \cdot 3} = \frac{5}{6}
